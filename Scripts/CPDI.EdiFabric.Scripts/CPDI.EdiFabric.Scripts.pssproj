@@ -26,7 +26,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Script3.ps1" />
+    <Compile Include="Add-ItsMarker-Min.ps1" />
+    <Compile Include="Add-ItsMarkerToBaseTemplates.ps1" />
+    <Compile Include="Script1.ps1" />
+    <Compile Include="Script2.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
 </Project>

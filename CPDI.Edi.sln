@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CF99
 EndProject
 Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "CPDI.EdiFabric.Scripts", "Scripts\CPDI.EdiFabric.Scripts\CPDI.EdiFabric.Scripts.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.EdiFabric.Utilities.WebValidator", "Utilities\CPDI.EdiFabric.Utilities.WebValidator\CPDI.EdiFabric.Utilities.WebValidator.csproj", "{2E446550-3980-4DCD-87E9-D384F208729A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E446550-3980-4DCD-87E9-D384F208729A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E446550-3980-4DCD-87E9-D384F208729A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E446550-3980-4DCD-87E9-D384F208729A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E446550-3980-4DCD-87E9-D384F208729A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{FFD2D6D4-F51B-40BA-956F-49ED1F9804F1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{339B66BB-A42C-451E-AD9C-C6501383666D} = {EDB501FB-9D2C-4042-A8DA-2A1B84D3F09D}
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51} = {CF99F521-CAE1-4CB6-82F3-BF96030A3F02}
+		{2E446550-3980-4DCD-87E9-D384F208729A} = {FA532E0D-F8FB-4992-9857-1F1F4808F16C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4407D3D1-5E99-4654-AD4D-2DA1D38DC5FC}
