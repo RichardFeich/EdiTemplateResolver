@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Facing Direction
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004040
     [Group(typeof(FAC))]
     public class Loop_FAC_161
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58,7 +58,7 @@ namespace EdiFabric.Templates.X12004040
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -67,7 +67,7 @@ namespace EdiFabric.Templates.X12004040
     [Group(typeof(NM1))]
     public class Loop_NM1_161
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12004040
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Train Sheet
     /// </summary>
@@ -95,7 +95,7 @@ namespace EdiFabric.Templates.X12004040
     [Message("X12", "161")]
     public class TS161 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

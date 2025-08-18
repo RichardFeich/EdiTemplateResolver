@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(LX))]
     public class Loop_LX_283
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual List<Loop_N1_283> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -69,7 +69,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_283
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,7 +117,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(7)]
         public virtual List<Loop_PID_283> PIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -126,7 +126,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(NM1))]
     public class Loop_NM1_283
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -198,7 +198,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(11)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -207,7 +207,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(PID))]
     public class Loop_PID_283
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -237,7 +237,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Information
     /// </summary>
@@ -246,7 +246,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(TXI))]
     public class Loop_TXI_283
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -307,7 +307,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(9)]
         public virtual List<Loop_LX_283> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Tax or Fee Exemption Certification
     /// </summary>
@@ -316,7 +316,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "283")]
     public class TS283 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

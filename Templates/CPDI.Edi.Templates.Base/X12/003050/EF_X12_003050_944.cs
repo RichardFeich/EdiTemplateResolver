@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_944
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,7 +49,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Detail For Stock Receipt
     /// </summary>
@@ -58,7 +58,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(W07))]
     public class Loop_W07_944
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public virtual List<Loop_W13_944> W13Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Detail Exception
     /// </summary>
@@ -107,7 +107,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(W13))]
     public class Loop_W13_944
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -126,7 +126,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Stock Transfer Receipt Advice
     /// </summary>
@@ -135,7 +135,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "944")]
     public class TS944 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

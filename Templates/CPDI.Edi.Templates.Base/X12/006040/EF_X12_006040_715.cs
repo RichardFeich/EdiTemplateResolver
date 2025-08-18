@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(GR4))]
     public class Loop_GR4_715
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,13 +38,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(3)]
         public virtual List<Loop_N7_715> LoopN7 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N7))]
     public class Loop_N7_715
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     // Intermodal Group Loading Plan
     /// </summary>
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "715")]
     public class TS715 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

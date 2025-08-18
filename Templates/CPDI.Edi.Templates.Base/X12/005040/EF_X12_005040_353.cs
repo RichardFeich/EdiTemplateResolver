@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Customs Events Advisory Details
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005040
     [Group(typeof(M15))]
     public class Loop_M15_353
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55,7 +55,7 @@ namespace EdiFabric.Templates.X12005040
         [Pos(5)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Customs Events Advisory Details
     /// </summary>
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12005040
     [Message("X12", "353")]
     public class TS353 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

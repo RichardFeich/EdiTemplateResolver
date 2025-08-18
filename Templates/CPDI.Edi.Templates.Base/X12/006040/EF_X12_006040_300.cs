@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(H1))]
     public class Loop_H1_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34,13 +34,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<H2> H2 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LH1))]
     public class Loop_LH1_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,13 +107,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -181,13 +181,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(11)]
         public virtual List<Loop_LH1_300> LoopLH1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,13 +225,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(5)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(R4))]
     public class Loop_R4_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -250,13 +250,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(Y2))]
     public class Loop_Y2_300
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -274,7 +274,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual W09 W09 { get; set; }
     }
-    
+
     /// <summary>
     // Reservation (Booking Request) (Ocean)
     /// </summary>
@@ -283,7 +283,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "300")]
     public class TS300 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

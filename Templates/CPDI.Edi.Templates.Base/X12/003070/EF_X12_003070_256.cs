@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003070
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Informational Values
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(AM1))]
     public class Loop_AM1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(5)]
         public virtual List<Loop_AMT_256> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -66,7 +66,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(AMT))]
     public class Loop_AMT_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(4)]
         public virtual List<Loop_RPA_256> RPALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -106,7 +106,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(BLI))]
     public class Loop_BLI_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -157,7 +157,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(7)]
         public virtual List<Loop_AM1_256> AM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -166,7 +166,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(ENT))]
     public class Loop_ENT_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -242,7 +242,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(11)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -251,7 +251,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(N1))]
     public class Loop_N1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -302,7 +302,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(7)]
         public virtual List<Loop_ENT_256> ENTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -311,7 +311,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(NM1))]
     public class Loop_NM1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -350,7 +350,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -359,7 +359,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(NM1))]
     public class Loop_NM1_256_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -411,7 +411,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(7)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Amounts or Percents
     /// </summary>
@@ -420,7 +420,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(RPA))]
     public class Loop_RPA_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -439,7 +439,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(2)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Periodic Compensation
     /// </summary>
@@ -448,7 +448,7 @@ namespace EdiFabric.Templates.X12003070
     [Message("X12", "256")]
     public class TS256 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

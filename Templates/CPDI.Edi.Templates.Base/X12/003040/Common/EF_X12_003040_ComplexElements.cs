@@ -1,15 +1,13 @@
 namespace EdiFabric.Templates.X12003040
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Composite Unit of Measure
     /// </summary>
@@ -18,7 +16,7 @@ namespace EdiFabric.Templates.X12003040
     [Composite("C001")]
     public class C001 : I_C001
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,7 +137,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(15)]
         public string Multiplier_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Actions Indicated
     /// </summary>
@@ -148,7 +146,7 @@ namespace EdiFabric.Templates.X12003040
     [Composite("C002")]
     public class C002 : I_C002
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -189,7 +187,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(5)]
         public string PaperworkReportActionCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Composite Medical Procedure Identifier
     /// </summary>
@@ -198,7 +196,7 @@ namespace EdiFabric.Templates.X12003040
     [Composite("C003")]
     public class C003 : I_C003
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -260,7 +258,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Composite Diagnosis Code Pointer
     /// </summary>
@@ -269,7 +267,7 @@ namespace EdiFabric.Templates.X12003040
     [Composite("C004")]
     public class C004 : I_C004
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

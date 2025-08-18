@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,13 +71,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual List<Loop_0150_163> Loop0150 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(OID))]
     public class Loop_0150_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,13 +96,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(S5))]
     public class Loop_0300_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -171,13 +171,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(10)]
         public virtual List<Loop_0350_163> Loop0350 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(OID))]
     public class Loop_0350_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -196,7 +196,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     // Transportation Appointment Schedule Information
     /// </summary>
@@ -205,7 +205,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "163")]
     public class TS163 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

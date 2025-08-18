@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N7))]
     public class Loop_N7_324
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56,7 +56,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(5)]
         public virtual List<H1> H1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port
     /// </summary>
@@ -65,7 +65,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(R4))]
     public class Loop_R4_324
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Stow Plan (Ocean)
     /// </summary>
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "324")]
     public class TS324 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

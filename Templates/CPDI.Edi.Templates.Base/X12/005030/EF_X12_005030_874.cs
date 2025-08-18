@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contract Summary
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(CS))]
     public class Loop_CS_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +48,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(4)]
         public virtual List<Loop_SLN_874> SLNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(N1))]
     public class Loop_N1_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,7 +95,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Extended Reference Information
     /// </summary>
@@ -104,7 +104,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(N9))]
     public class Loop_N9_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(3)]
         public virtual LCD LCD { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -137,7 +137,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(SLN))]
     public class Loop_SLN_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +161,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(3)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Commodity Movement Services Response
     /// </summary>
@@ -170,7 +170,7 @@ namespace EdiFabric.Templates.X12005030
     [Message("X12", "874")]
     public class TS874 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

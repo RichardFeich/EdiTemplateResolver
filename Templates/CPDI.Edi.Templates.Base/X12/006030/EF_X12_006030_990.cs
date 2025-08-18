@@ -1,15 +1,14 @@
 namespace EdiFabric.Templates.X12006030
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Response to a Load Tender
     /// </summary>
@@ -18,7 +17,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "990")]
     public class TS990 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

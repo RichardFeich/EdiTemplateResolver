@@ -1,11 +1,10 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
-    using System.Linq;
     using Microsoft.EntityFrameworkCore;
 
     public class X12Context : DbContext
     {
-        
+
         public DbSet<AAA> AAA { get; set; }
         public DbSet<ACK> ACK { get; set; }
         public DbSet<ACT> ACT { get; set; }

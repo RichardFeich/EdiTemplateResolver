@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Load and Equipment Type
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(LET))]
     public class Loop_LET_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(7)]
         public virtual List<Loop_LX_470> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -81,7 +81,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(LX))]
     public class Loop_LX_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,7 +107,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(3)]
         public virtual List<L5> L5 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -116,7 +116,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(N1))]
     public class Loop_N1_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -152,7 +152,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Clearance
     /// </summary>
@@ -161,7 +161,7 @@ namespace EdiFabric.Templates.X12005030
     [Message("X12", "470")]
     public class TS470 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(AMT))]
     public class Loop_AMT_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(HL))]
     public class Loop_HL_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +135,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(14)]
         public virtual List<Loop_MTX_284> MTXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Event Location
     /// </summary>
@@ -144,7 +144,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LIE))]
     public class Loop_LIE_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -162,7 +162,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual MEA MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LQ))]
     public class Loop_LQ_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -243,7 +243,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(11)]
         public virtual List<Loop_AMT_284> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Text
     /// </summary>
@@ -252,7 +252,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(MTX))]
     public class Loop_MTX_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -270,7 +270,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -279,7 +279,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(NM1))]
     public class Loop_NM1_284
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -329,7 +329,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -338,7 +338,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(NM1))]
     public class Loop_NM1_284_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -418,7 +418,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(12)]
         public virtual List<Loop_LIE_284> LIELoop { get; set; }
     }
-    
+
     /// <summary>
     /// Commercial Vehicle Safety Reports
     /// </summary>
@@ -427,7 +427,7 @@ namespace EdiFabric.Templates.X12004050
     [Message("X12", "284")]
     public class TS284 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

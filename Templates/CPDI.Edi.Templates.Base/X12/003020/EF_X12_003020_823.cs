@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Batch
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(BAT))]
     public class Loop_BAT_823
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<Loop_BPS_823> BPSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Beginning Segment for Payment Order/Remittance Advice
     /// </summary>
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(BPS))]
     public class Loop_BPS_823
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -124,7 +124,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(7)]
         public virtual List<Loop_RMT_823> RMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Deposit
     /// </summary>
@@ -133,7 +133,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(DEP))]
     public class Loop_DEP_823
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -181,7 +181,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<Loop_BAT_823> BATLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -190,7 +190,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_823
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -236,7 +236,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Remittance Advice
     /// </summary>
@@ -245,7 +245,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(RMT))]
     public class Loop_RMT_823
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -283,7 +283,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(5)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Lockbox
     /// </summary>
@@ -292,7 +292,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "823")]
     public class TS823 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

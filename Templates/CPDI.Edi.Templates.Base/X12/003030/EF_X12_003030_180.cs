@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(BLI))]
     public class Loop_BLI_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(6)]
         public virtual List<Loop_N1_180> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,7 +111,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Return Merchandise Authorization and Notification
     /// </summary>
@@ -120,7 +120,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "180")]
     public class TS180 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

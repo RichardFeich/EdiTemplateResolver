@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_622
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +43,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Intermodal Ramp Activity
     /// </summary>
@@ -52,7 +52,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "622")]
     public class TS622 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

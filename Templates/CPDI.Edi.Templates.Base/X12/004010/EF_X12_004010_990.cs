@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Stop Off Details
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(S5))]
     public class Loop_S5_990
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(4)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Response to a Load Tender
     /// </summary>
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12004010
     [Message("X12", "990")]
     public class TS990 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

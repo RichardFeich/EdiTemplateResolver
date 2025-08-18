@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_1000_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -82,13 +82,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(10)]
         public virtual List<Loop_1300_214> Loop1300 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AT7))]
     public class Loop_1100_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,13 +125,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(5)]
         public virtual M7 M7 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_1200_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -175,13 +175,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(6)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(OID))]
     public class Loop_1300_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -200,7 +200,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     // Transportation Carrier Shipment Status Message
     /// </summary>
@@ -209,7 +209,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "214")]
     public class TS214 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

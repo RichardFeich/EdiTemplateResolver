@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(AMT))]
     public class Loop_AMT_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Amount with Description
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(AWD))]
     public class Loop_AWD_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(FA1))]
     public class Loop_FA1_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual List<Loop_AMT_814> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -106,7 +106,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(LIN))]
     public class Loop_LIN_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -184,7 +184,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(12)]
         public virtual List<Loop_LM_814> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -193,7 +193,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(LM))]
     public class Loop_LM_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -212,7 +212,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -271,7 +271,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -280,7 +280,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(NM1))]
     public class Loop_NM1_814
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -330,7 +330,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// General Request, Response or Confirmation
     /// </summary>
@@ -339,7 +339,7 @@ namespace EdiFabric.Templates.X12006010
     [Message("X12", "814")]
     public class TS814 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

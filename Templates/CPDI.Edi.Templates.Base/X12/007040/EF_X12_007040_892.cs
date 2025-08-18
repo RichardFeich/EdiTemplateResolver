@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CRT))]
     public class Loop_CRT_892
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,13 +95,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(12)]
         public virtual List<Loop_LSC_892> LoopLSC { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LSC))]
     public class Loop_LSC_892
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,13 +125,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_892
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -170,7 +170,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     // Trading Partner Performance Measurement
     /// </summary>
@@ -179,7 +179,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "892")]
     public class TS892 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

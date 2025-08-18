@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(LX))]
     public class Loop_LX_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,7 +52,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual List<Loop_R9_460> R9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Patron
     /// </summary>
@@ -61,7 +61,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(PT))]
     public class Loop_PT_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Junctions and Proportions
     /// </summary>
@@ -102,7 +102,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(R2B))]
     public class Loop_R2B_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(2)]
         public virtual List<R2C> R2C { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Route Code Identification
     /// </summary>
@@ -130,7 +130,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(R9))]
     public class Loop_R9_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(3)]
         public virtual List<Loop_R2B_460> R2BLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Level
     /// </summary>
@@ -165,7 +165,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(SB))]
     public class Loop_SB_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -192,7 +192,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(3)]
         public virtual List<Loop_SC_460> SCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Sub-level
     /// </summary>
@@ -201,7 +201,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(SC))]
     public class Loop_SC_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -242,7 +242,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(5)]
         public virtual List<Loop_LX_460> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Price Distribution Request or Response
     /// </summary>
@@ -251,7 +251,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "460")]
     public class TS460 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

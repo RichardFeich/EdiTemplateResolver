@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(ENT))]
     public class Loop_ENT_885
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(16)]
         public virtual List<Loop_LM_885> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -137,7 +137,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(LM))]
     public class Loop_LM_885
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -157,7 +157,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Retail Account Characteristics
     /// </summary>
@@ -166,7 +166,7 @@ namespace EdiFabric.Templates.X12004010
     [Message("X12", "885")]
     public class TS885 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

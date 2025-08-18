@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Patron
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(PT))]
     public class Loop_PT_490
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50,7 +50,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Group Definition
     /// </summary>
@@ -59,7 +59,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "490")]
     public class TS490 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

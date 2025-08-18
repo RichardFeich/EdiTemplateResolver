@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Allowance, Charge or Service
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(ITA))]
     public class Loop_ITA_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(2)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(LIN))]
     public class Loop_LIN_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -118,7 +118,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(11)]
         public virtual List<Loop_SLN_143> SLNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(N1))]
     public class Loop_N1_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -173,7 +173,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -182,7 +182,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(N1))]
     public class Loop_N1_143_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -233,7 +233,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(7)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -242,7 +242,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(N1))]
     public class Loop_N1_143_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -287,7 +287,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -296,7 +296,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(N9))]
     public class Loop_N9_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -314,7 +314,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Problem Report
     /// </summary>
@@ -323,7 +323,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(PRR))]
     public class Loop_PRR_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -366,7 +366,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(6)]
         public virtual Loop_ITA_143 ITALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Problem Report
     /// </summary>
@@ -375,7 +375,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(PRR))]
     public class Loop_PRR_143_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -412,7 +412,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(5)]
         public virtual Loop_ITA_143 ITALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Part Disposition
     /// </summary>
@@ -421,7 +421,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(PRT))]
     public class Loop_PRT_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -472,7 +472,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Repair Action
     /// </summary>
@@ -481,7 +481,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(REP))]
     public class Loop_REP_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -511,7 +511,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(4)]
         public virtual List<Loop_N9_143> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Repair Action
     /// </summary>
@@ -520,7 +520,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(REP))]
     public class Loop_REP_143_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -544,7 +544,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(3)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -553,7 +553,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(SLN))]
     public class Loop_SLN_143
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -597,7 +597,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(6)]
         public virtual List<Loop_PRR_143_2> PRRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Product Service Notification
     /// </summary>
@@ -606,7 +606,7 @@ namespace EdiFabric.Templates.X12004020
     [Message("X12", "143")]
     public class TS143 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

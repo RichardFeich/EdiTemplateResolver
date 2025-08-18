@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,13 +53,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(5)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G94))]
     public class Loop_0200_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,13 +78,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<G95> G95 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0300_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,13 +117,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(5)]
         public virtual List<Loop_0320_889> Loop0320 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G94))]
     public class Loop_0310_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,13 +139,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<Loop_0311_889> Loop0311 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G95))]
     public class Loop_0311_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -164,13 +164,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G45))]
     public class Loop_0320_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -229,7 +229,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(8)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     // Promotion Announcement
     /// </summary>
@@ -238,7 +238,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "889")]
     public class TS889 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

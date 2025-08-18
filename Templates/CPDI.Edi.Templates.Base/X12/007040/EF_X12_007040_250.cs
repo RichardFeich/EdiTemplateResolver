@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PRF))]
     public class Loop_0100_250
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,13 +64,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(7)]
         public virtual List<Loop_0110_250> Loop0110 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0110_250
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     // Purchase Order Shipment Management Document
     /// </summary>
@@ -130,7 +130,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "250")]
     public class TS250 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

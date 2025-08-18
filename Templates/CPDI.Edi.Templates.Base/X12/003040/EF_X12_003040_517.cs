@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(LM))]
     public class Loop_LM_517
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(N1))]
     public class Loop_N1_517
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(5)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -95,7 +95,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(QTY))]
     public class Loop_QTY_517
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -155,7 +155,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(8)]
         public virtual List<Loop_N1_517> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Material Obligation Validation
     /// </summary>
@@ -164,7 +164,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "517")]
     public class TS517 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

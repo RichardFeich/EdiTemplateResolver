@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(JID))]
     public class Loop_JID_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62,13 +62,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(6)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(JIL))]
     public class Loop_JIL_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -131,13 +131,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(9)]
         public virtual List<Loop_JID_819> LoopJID { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -190,13 +190,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PSA))]
     public class Loop_PSA_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -254,7 +254,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     // Joint Interest Billing and Operating Expense Statement
     /// </summary>
@@ -263,7 +263,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "819")]
     public class TS819 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_947
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +48,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Warehouse Adjustment Item Detail
     /// </summary>
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(W19))]
     public class Loop_W19_947
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -83,7 +83,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Inventory Adjustment Advice
     /// </summary>
@@ -92,7 +92,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "947")]
     public class TS947 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

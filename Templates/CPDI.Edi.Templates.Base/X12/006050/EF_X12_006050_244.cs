@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(BSF))]
     public class Loop_BSF_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,13 +37,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_PID_244> LoopPID { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67,13 +67,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_BSF_244> LoopBSF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_NM1_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,13 +97,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_N1_244> LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NX2))]
     public class Loop_NX2_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -122,13 +122,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PID))]
     public class Loop_PID_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -146,7 +146,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual CID CID { get; set; }
     }
-    
+
     /// <summary>
     // Product Source Information
     /// </summary>
@@ -155,7 +155,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "244")]
     public class TS244 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

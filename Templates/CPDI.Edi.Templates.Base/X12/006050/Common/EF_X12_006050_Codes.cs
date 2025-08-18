@@ -1,15 +1,10 @@
 namespace EdiFabric.Templates.X12006050
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
     using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     // Payee
     /// </summary>
@@ -19,7 +14,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_8
     {
     }
-    
+
     /// <summary>
     // Coverage Lack of Information
     /// </summary>
@@ -29,7 +24,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_9
     {
     }
-    
+
     /// <summary>
     // Temporarily Articulated Load
     /// </summary>
@@ -39,7 +34,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_11
     {
     }
-    
+
     /// <summary>
     // Prepaid Cash
     /// </summary>
@@ -49,7 +44,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_16
     {
     }
-    
+
     /// <summary>
     // National Association of Convenience Stores
     /// </summary>
@@ -59,7 +54,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_23
     {
     }
-    
+
     /// <summary>
     // Partial Short
     /// </summary>
@@ -69,7 +64,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_33
     {
     }
-    
+
     /// <summary>
     // Agent
     /// </summary>
@@ -79,7 +74,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_39
     {
     }
-    
+
     /// <summary>
     // 20 ft. IL Container (Open Top)
     /// </summary>
@@ -89,7 +84,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_40
     {
     }
-    
+
     /// <summary>
     // Automatic (Machine Readable)
     /// </summary>
@@ -99,7 +94,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_47
     {
     }
-    
+
     /// <summary>
     // Statement 1
     /// </summary>
@@ -109,7 +104,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_48
     {
     }
-    
+
     /// <summary>
     // Complete
     /// </summary>
@@ -119,7 +114,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_51
     {
     }
-    
+
     /// <summary>
     // G-Dest - Shipments of Commodities to Destination Not Requiring a Validated License
     /// </summary>
@@ -129,7 +124,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_52
     {
     }
-    
+
     /// <summary>
     // Risk of Loss in Transit to Destination is Buyer's
     /// </summary>
@@ -139,7 +134,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_54
     {
     }
-    
+
     /// <summary>
     // Instrument of International Trade
     /// </summary>
@@ -149,7 +144,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_56
     {
     }
-    
+
     /// <summary>
     // Petroleum Industry Exchange (PETROEX) Number
     /// </summary>
@@ -159,7 +154,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_66
     {
     }
-    
+
     /// <summary>
     // Direct Service
     /// </summary>
@@ -169,7 +164,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_72
     {
     }
-    
+
     /// <summary>
     // Agency Fees
     /// </summary>
@@ -179,7 +174,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_73
     {
     }
-    
+
     /// <summary>
     // Containers with Chassis
     /// </summary>
@@ -189,7 +184,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_78
     {
     }
-    
+
     /// <summary>
     // Middle States Association of Colleges and Schools
     /// </summary>
@@ -199,7 +194,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_83
     {
     }
-    
+
     /// <summary>
     // EAN.UCC Serial Shipping Container Code (SSCC)
     /// </summary>
@@ -210,7 +205,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_88
     {
     }
-    
+
     /// <summary>
     // Centimeters
     /// </summary>
@@ -220,7 +215,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_90
     {
     }
-    
+
     /// <summary>
     // Military Official Mail
     /// </summary>
@@ -232,7 +227,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_91
     {
     }
-    
+
     /// <summary>
     // Assortment Against Blanket
     /// </summary>
@@ -245,7 +240,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_92
     {
     }
-    
+
     /// <summary>
     // Alternate Insurer
     /// </summary>
@@ -316,7 +311,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_98
     {
     }
-    
+
     /// <summary>
     // Railroad Leased
     /// </summary>
@@ -326,7 +321,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_102
     {
     }
-    
+
     /// <summary>
     // Aluminum
     /// </summary>
@@ -336,7 +331,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_103
     {
     }
-    
+
     /// <summary>
     // Chapter 07
     /// </summary>
@@ -346,7 +341,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_104
     {
     }
-    
+
     /// <summary>
     // Graduated
     /// </summary>
@@ -357,7 +352,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_107
     {
     }
-    
+
     /// <summary>
     // Airport Terminal
     /// </summary>
@@ -368,7 +363,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_108
     {
     }
-    
+
     /// <summary>
     // Batch Accept
     /// </summary>
@@ -378,7 +373,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_110
     {
     }
-    
+
     /// <summary>
     // Final Port of Discharge (Operational)
     /// </summary>
@@ -388,7 +383,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_115
     {
     }
-    
+
     /// <summary>
     // Rail
     /// </summary>
@@ -398,7 +393,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_120
     {
     }
-    
+
     /// <summary>
     // Alternate Rating
     /// </summary>
@@ -408,7 +403,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_121
     {
     }
-    
+
     /// <summary>
     // Percent Of Amount Advanced
     /// </summary>
@@ -418,7 +413,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_122
     {
     }
-    
+
     /// <summary>
     // Note
     /// </summary>
@@ -428,7 +423,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_125
     {
     }
-    
+
     /// <summary>
     // Contracting District Number
     /// </summary>
@@ -513,7 +508,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_128
     {
     }
-    
+
     /// <summary>
     // Not Released - Billing Data Only
     /// </summary>
@@ -523,7 +518,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_132
     {
     }
-    
+
     /// <summary>
     // 1st Carrier after Origin Carrier
     /// </summary>
@@ -533,7 +528,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_133
     {
     }
-    
+
     /// <summary>
     // Cash
     /// </summary>
@@ -543,7 +538,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_139
     {
     }
-    
+
     /// <summary>
     // Insurance Plan Description
     /// </summary>
@@ -553,7 +548,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_143
     {
     }
-    
+
     /// <summary>
     // Rule 11 Shipment
     /// </summary>
@@ -564,7 +559,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_146
     {
     }
-    
+
     /// <summary>
     // Master Bill for Empty Non-Revenue Equipment
     /// </summary>
@@ -574,7 +569,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_147
     {
     }
-    
+
     /// <summary>
     // Pump Out Charge
     /// </summary>
@@ -640,7 +635,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_150
     {
     }
-    
+
     /// <summary>
     // Delivery of Fuel into Underground Storage Tank
     /// </summary>
@@ -676,7 +671,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_152
     {
     }
-    
+
     /// <summary>
     // Returned to Carrier's Terminal
     /// </summary>
@@ -686,7 +681,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_157
     {
     }
-    
+
     /// <summary>
     // Not Required
     /// </summary>
@@ -696,7 +691,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_160
     {
     }
-    
+
     /// <summary>
     // Point of Delay
     /// </summary>
@@ -706,7 +701,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_163
     {
     }
-    
+
     /// <summary>
     // Original Transaction
     /// </summary>
@@ -717,7 +712,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_176
     {
     }
-    
+
     /// <summary>
     // Shipment Greater Than Previously Reported
     /// </summary>
@@ -728,7 +723,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_181
     {
     }
-    
+
     /// <summary>
     // Barge
     /// </summary>
@@ -738,7 +733,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_184
     {
     }
-    
+
     /// <summary>
     // Consolidated Weight
     /// </summary>
@@ -749,7 +744,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_187
     {
     }
-    
+
     /// <summary>
     // Metric Ton
     /// </summary>
@@ -759,7 +754,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_188
     {
     }
-    
+
     /// <summary>
     // Accomplished
     /// </summary>
@@ -769,7 +764,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_190
     {
     }
-    
+
     /// <summary>
     // Agent for Carrier Routing
     /// </summary>
@@ -779,7 +774,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_192
     {
     }
-    
+
     /// <summary>
     // Full Cubic Capacity
     /// </summary>
@@ -789,7 +784,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_195
     {
     }
-    
+
     /// <summary>
     // Holding Mortgagee Address Change
     /// </summary>
@@ -799,7 +794,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_197
     {
     }
-    
+
     /// <summary>
     // Confidential Billing
     /// </summary>
@@ -809,7 +804,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_199
     {
     }
-    
+
     /// <summary>
     // B/L Not Received
     /// </summary>
@@ -819,7 +814,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_201
     {
     }
-    
+
     /// <summary>
     // Adjustment of Previous Freight Bill Charges
     /// </summary>
@@ -830,7 +825,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_202
     {
     }
-    
+
     /// <summary>
     // 46 Level DOT Code
     /// </summary>
@@ -840,7 +835,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_208
     {
     }
-    
+
     /// <summary>
     // Domestic
     /// </summary>
@@ -850,7 +845,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_210
     {
     }
-    
+
     /// <summary>
     // Ammo Pack
     /// </summary>
@@ -860,7 +855,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_211
     {
     }
-    
+
     /// <summary>
     // Electronic Car Movement
     /// </summary>
@@ -870,7 +865,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_214
     {
     }
-    
+
     /// <summary>
     // Metric Units
     /// </summary>
@@ -880,7 +875,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_216
     {
     }
-    
+
     /// <summary>
     // Appurtenance (Enhancements/Additions to Equipment)
     /// </summary>
@@ -892,7 +887,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_221
     {
     }
-    
+
     /// <summary>
     // Not in Effect
     /// </summary>
@@ -902,7 +897,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_226
     {
     }
-    
+
     /// <summary>
     // Additional Equipment for Manifest Billing
     /// </summary>
@@ -912,7 +907,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_231
     {
     }
-    
+
     /// <summary>
     // Credit Card
     /// </summary>
@@ -941,7 +936,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_235
     {
     }
-    
+
     /// <summary>
     // Allowed Amount - Flat
     /// </summary>
@@ -951,7 +946,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_236
     {
     }
-    
+
     /// <summary>
     // Empty car under directive CSD145
     /// </summary>
@@ -962,7 +957,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_240
     {
     }
-    
+
     /// <summary>
     // Body Ice
     /// </summary>
@@ -972,7 +967,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_241
     {
     }
-    
+
     /// <summary>
     // Standard Ventilation at "--" Degrees (Other than 32 Degrees)
     /// </summary>
@@ -982,7 +977,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_242
     {
     }
-    
+
     /// <summary>
     // Shipper's Load and Count
     /// </summary>
@@ -994,7 +989,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_246
     {
     }
-    
+
     /// <summary>
     // Allowance
     /// </summary>
@@ -1004,7 +999,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_248
     {
     }
-    
+
     /// <summary>
     // Specified Flag Required
     /// </summary>
@@ -1014,7 +1009,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_249
     {
     }
-    
+
     /// <summary>
     // All Types of Facilities
     /// </summary>
@@ -1024,7 +1019,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_253
     {
     }
-    
+
     /// <summary>
     // Intrastate - Intraplant
     /// </summary>
@@ -1034,7 +1029,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_257
     {
     }
-    
+
     /// <summary>
     // Add Rate
     /// </summary>
@@ -1044,7 +1039,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_259
     {
     }
-    
+
     /// <summary>
     // Received from Bureau
     /// </summary>
@@ -1054,7 +1049,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_261
     {
     }
-    
+
     /// <summary>
     // And
     /// </summary>
@@ -1064,7 +1059,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_262
     {
     }
-    
+
     /// <summary>
     // Not Used
     /// </summary>
@@ -1074,7 +1069,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_263
     {
     }
-    
+
     /// <summary>
     // Potentially Explosive
     /// </summary>
@@ -1084,7 +1079,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_271
     {
     }
-    
+
     /// <summary>
     // Abbreviated Hazardous Certification
     /// </summary>
@@ -1094,7 +1089,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_272
     {
     }
-    
+
     /// <summary>
     // Mailed by Date (Postmark Date)
     /// </summary>
@@ -1104,7 +1099,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_283
     {
     }
-    
+
     /// <summary>
     // Bulk Commodity Train
     /// </summary>
@@ -1117,7 +1112,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_284
     {
     }
-    
+
     /// <summary>
     // Good
     /// </summary>
@@ -1127,7 +1122,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_286
     {
     }
-    
+
     /// <summary>
     // Authorization
     /// </summary>
@@ -1137,7 +1132,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_287
     {
     }
-    
+
     /// <summary>
     // Pre-Priced Prices included and price qualifier applies
     /// </summary>
@@ -1147,7 +1142,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_288
     {
     }
-    
+
     /// <summary>
     // Price Protection Applies
     /// </summary>
@@ -1157,7 +1152,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_290
     {
     }
-    
+
     /// <summary>
     // Yes at Transaction Set Level
     /// </summary>
@@ -1167,7 +1162,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_291
     {
     }
-    
+
     /// <summary>
     // Quantity per Customer Allowed
     /// </summary>
@@ -1177,7 +1172,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_292
     {
     }
-    
+
     /// <summary>
     // "AND" Relationship Between Current and Immediately Prior Occurrences of the Same Segment
     /// </summary>
@@ -1187,7 +1182,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_293
     {
     }
-    
+
     /// <summary>
     // Air Miles
     /// </summary>
@@ -1197,7 +1192,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_295
     {
     }
-    
+
     /// <summary>
     // Complete Equipment
     /// </summary>
@@ -1208,7 +1203,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_302
     {
     }
-    
+
     /// <summary>
     // Bent
     /// </summary>
@@ -1218,7 +1213,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_303
     {
     }
-    
+
     /// <summary>
     // Requested Requirements
     /// </summary>
@@ -1228,7 +1223,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_304
     {
     }
-    
+
     /// <summary>
     // Off Invoice (Deduction from Original Invoice)
     /// </summary>
@@ -1238,7 +1233,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_305
     {
     }
-    
+
     /// <summary>
     // Authorize
     /// </summary>
@@ -1248,7 +1243,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_306
     {
     }
-    
+
     /// <summary>
     // Damage Being Reported
     /// </summary>
@@ -1258,7 +1253,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_308
     {
     }
-    
+
     /// <summary>
     // Nearest Cross Street
     /// </summary>
@@ -1268,7 +1263,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_309
     {
     }
-    
+
     /// <summary>
     // Inventory Adjustment (+)
     /// </summary>
@@ -1278,7 +1273,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_311
     {
     }
-    
+
     /// <summary>
     // In Bond
     /// </summary>
@@ -1288,7 +1283,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_312
     {
     }
-    
+
     /// <summary>
     // Billing Clerk
     /// </summary>
@@ -1298,7 +1293,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_313
     {
     }
-    
+
     /// <summary>
     // Intermodal Facility Not Available
     /// </summary>
@@ -1308,7 +1303,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_321
     {
     }
-    
+
     /// <summary>
     // Carrier's Bond Covers Merchandise and Instruments of International Trade
     /// </summary>
@@ -1318,7 +1313,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_322
     {
     }
-    
+
     /// <summary>
     // Bill Back
     /// </summary>
@@ -1328,7 +1323,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_331
     {
     }
-    
+
     /// <summary>
     // Purchase Order Date
     /// </summary>
@@ -1338,7 +1333,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_333
     {
     }
-    
+
     /// <summary>
     // Incoterms
     /// </summary>
@@ -1348,7 +1343,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_334
     {
     }
-    
+
     /// <summary>
     // Cost and Freight
     /// </summary>
@@ -1359,7 +1354,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_335
     {
     }
-    
+
     /// <summary>
     // Basic
     /// </summary>
@@ -1371,7 +1366,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_336
     {
     }
-    
+
     /// <summary>
     // Free Goods
     /// </summary>
@@ -1381,7 +1376,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_340
     {
     }
-    
+
     /// <summary>
     // More Than One Year
     /// </summary>
@@ -1393,7 +1388,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_344
     {
     }
-    
+
     /// <summary>
     // From date of PO receipt to sample ready
     /// </summary>
@@ -1404,7 +1399,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_345
     {
     }
-    
+
     /// <summary>
     // Standard or Regular Filings
     /// </summary>
@@ -1414,7 +1409,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_346
     {
     }
-    
+
     /// <summary>
     // Free-form
     /// </summary>
@@ -1424,7 +1419,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_349
     {
     }
-    
+
     /// <summary>
     // Original
     /// </summary>
@@ -1436,7 +1431,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_353
     {
     }
-    
+
     /// <summary>
     // Actual Pounds
     /// </summary>
@@ -1480,7 +1475,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_355
     {
     }
-    
+
     /// <summary>
     // Agent Details
     /// </summary>
@@ -1490,7 +1485,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_363
     {
     }
-    
+
     /// <summary>
     // International Telephone Access Code
     /// </summary>
@@ -1501,7 +1496,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_365
     {
     }
-    
+
     /// <summary>
     // Review/Repricing Contact
     /// </summary>
@@ -1511,7 +1506,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_366
     {
     }
-    
+
     /// <summary>
     // Multiple Pickup Same Destination
     /// </summary>
@@ -1521,7 +1516,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_368
     {
     }
-    
+
     /// <summary>
     // Alternate Quantity and Unit of Measure
     /// </summary>
@@ -1532,7 +1527,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_371
     {
     }
-    
+
     /// <summary>
     // Full Liability
     /// </summary>
@@ -1542,7 +1537,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_372
     {
     }
-    
+
     /// <summary>
     // Cancel After
     /// </summary>
@@ -1617,7 +1612,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_374
     {
     }
-    
+
     /// <summary>
     // Domestic Motor Van Door-to-Door Interstate
     /// </summary>
@@ -1629,7 +1624,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_375
     {
     }
-    
+
     /// <summary>
     // Production Data
     /// </summary>
@@ -1639,7 +1634,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_376
     {
     }
-    
+
     /// <summary>
     // Round Per Car Rates To the Nearest Whole Dollar. All Other Rates To Nearest Whole Cent
     /// </summary>
@@ -1649,7 +1644,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_377
     {
     }
-    
+
     /// <summary>
     // Gross
     /// </summary>
@@ -1659,7 +1654,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_378
     {
     }
-    
+
     /// <summary>
     // Alternate Bid
     /// </summary>
@@ -1669,7 +1664,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_379
     {
     }
-    
+
     /// <summary>
     // Bid
     /// </summary>
@@ -1679,7 +1674,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_381
     {
     }
-    
+
     /// <summary>
     // Carrier/port authority desires an extension of the lay order period
     /// </summary>
@@ -1689,7 +1684,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_392
     {
     }
-    
+
     /// <summary>
     // No Exchange/No Return
     /// </summary>
@@ -1699,7 +1694,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_399
     {
     }
-    
+
     /// <summary>
     // Palletized
     /// </summary>
@@ -1709,7 +1704,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_400
     {
     }
-    
+
     /// <summary>
     // Received Switching
     /// </summary>
@@ -1719,7 +1714,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_405
     {
     }
-    
+
     /// <summary>
     // Intact
     /// </summary>
@@ -1729,7 +1724,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_407
     {
     }
-    
+
     /// <summary>
     // Damaged Product or Container
     /// </summary>
@@ -1739,7 +1734,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_412
     {
     }
-    
+
     /// <summary>
     // Product Allocation
     /// </summary>
@@ -1751,7 +1746,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_422
     {
     }
-    
+
     /// <summary>
     // New
     /// </summary>
@@ -1761,7 +1756,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_423
     {
     }
-    
+
     /// <summary>
     // Automated Credit Card Transaction
     /// </summary>
@@ -1794,7 +1789,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_426
     {
     }
-    
+
     /// <summary>
     // Cancel After This Date
     /// </summary>
@@ -1804,7 +1799,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_432
     {
     }
-    
+
     /// <summary>
     // City
     /// </summary>
@@ -1814,7 +1809,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_433
     {
     }
-    
+
     /// <summary>
     // Backward Reference
     /// </summary>
@@ -1824,7 +1819,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_436
     {
     }
-    
+
     /// <summary>
     // Rate Proposer Only
     /// </summary>
@@ -1834,7 +1829,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_437
     {
     }
-    
+
     /// <summary>
     // Exempt (For Export)
     /// </summary>
@@ -1844,7 +1839,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_441
     {
     }
-    
+
     /// <summary>
     // Add Quantity to Meet Minimum Weight Requirement
     /// </summary>
@@ -1854,7 +1849,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_444
     {
     }
-    
+
     /// <summary>
     // Deferred
     /// </summary>
@@ -1864,7 +1859,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_445
     {
     }
-    
+
     /// <summary>
     // Tornado
     /// </summary>
@@ -1874,7 +1869,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_448
     {
     }
-    
+
     /// <summary>
     // Transportation Data Coordinating Committee (TDCC)
     /// </summary>
@@ -1884,7 +1879,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_455
     {
     }
-    
+
     /// <summary>
     // General
     /// </summary>
@@ -1894,7 +1889,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_456
     {
     }
-    
+
     /// <summary>
     // Shipper's Weight Agreement
     /// </summary>
@@ -1904,7 +1899,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_460
     {
     }
-    
+
     /// <summary>
     // First Prior Inbound
     /// </summary>
@@ -1914,7 +1909,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_461
     {
     }
-    
+
     /// <summary>
     // Military Standard Transportation and Movement Procedures (MILSTAMP)
     /// </summary>
@@ -1924,7 +1919,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_465
     {
     }
-    
+
     /// <summary>
     // Informational Only
     /// </summary>
@@ -1934,7 +1929,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_473
     {
     }
-    
+
     /// <summary>
     // Credit
     /// </summary>
@@ -1944,7 +1939,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_478
     {
     }
-    
+
     /// <summary>
     // Account Analysis (822)
     /// </summary>
@@ -1954,7 +1949,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_479
     {
     }
-    
+
     /// <summary>
     // ASC X12 Standards Approved by ANSI in 1983
     /// </summary>
@@ -1964,7 +1959,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_480
     {
     }
-    
+
     /// <summary>
     // Current Transaction Trace Numbers
     /// </summary>
@@ -1974,7 +1969,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_481
     {
     }
-    
+
     /// <summary>
     // Adjustment
     /// </summary>
@@ -1984,7 +1979,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_482
     {
     }
-    
+
     /// <summary>
     // Involuntary Withdrawal from Plan
     /// </summary>
@@ -1994,7 +1989,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_483
     {
     }
-    
+
     /// <summary>
     // Not Scored
     /// </summary>
@@ -2004,7 +1999,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_484
     {
     }
-    
+
     /// <summary>
     // Declined
     /// </summary>
@@ -2014,7 +2009,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_485
     {
     }
-    
+
     /// <summary>
     // Adjustment In
     /// </summary>
@@ -2024,7 +2019,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_486
     {
     }
-    
+
     /// <summary>
     // Add
     /// </summary>
@@ -2034,7 +2029,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_487
     {
     }
-    
+
     /// <summary>
     // Service
     /// </summary>
@@ -2044,7 +2039,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_491
     {
     }
-    
+
     /// <summary>
     // Proforma Entered/B13 Not Required
     /// </summary>
@@ -2054,7 +2049,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_501
     {
     }
-    
+
     /// <summary>
     // Subject to Drawback
     /// </summary>
@@ -2064,7 +2059,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_503
     {
     }
-    
+
     /// <summary>
     // ABA Transit Routing Number Including Check Digits (9 digits)
     /// </summary>
@@ -2074,7 +2069,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_506
     {
     }
-    
+
     /// <summary>
     // Plate B
     /// </summary>
@@ -2084,7 +2079,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_511
     {
     }
-    
+
     /// <summary>
     // Both Import and Export
     /// </summary>
@@ -2094,7 +2089,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_512
     {
     }
-    
+
     /// <summary>
     // Inventory Adjustment
     /// </summary>
@@ -2104,7 +2099,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_514
     {
     }
-    
+
     /// <summary>
     // Functional Group Total
     /// </summary>
@@ -2114,7 +2109,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_516
     {
     }
-    
+
     /// <summary>
     // Month
     /// </summary>
@@ -2124,7 +2119,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_519
     {
     }
-    
+
     /// <summary>
     // Demand Information Only
     /// </summary>
@@ -2136,7 +2131,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_521
     {
     }
-    
+
     /// <summary>
     // Downpayment on the Repayment Plan Amount
     /// </summary>
@@ -2218,7 +2213,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_522
     {
     }
-    
+
     /// <summary>
     // Inventory Adjustment - Decrease
     /// </summary>
@@ -2228,7 +2223,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_529
     {
     }
-    
+
     /// <summary>
     // Prior and Subsequent Water Movement
     /// </summary>
@@ -2238,7 +2233,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_533
     {
     }
-    
+
     /// <summary>
     // Carrier's Overland Common Point
     /// </summary>
@@ -2248,7 +2243,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_534
     {
     }
-    
+
     /// <summary>
     // Unemployment Application
     /// </summary>
@@ -2258,7 +2253,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_535
     {
     }
-    
+
     /// <summary>
     // Other
     /// </summary>
@@ -2268,7 +2263,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_536
     {
     }
-    
+
     /// <summary>
     // Non-Railroad
     /// </summary>
@@ -2278,7 +2273,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_537
     {
     }
-    
+
     /// <summary>
     // Discount Allowance
     /// </summary>
@@ -2288,7 +2283,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_538
     {
     }
-    
+
     /// <summary>
     // Documents Sent Separately
     /// </summary>
@@ -2298,7 +2293,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_544
     {
     }
-    
+
     /// <summary>
     // Laid Off
     /// </summary>
@@ -2308,7 +2303,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_545
     {
     }
-    
+
     /// <summary>
     // Accepted
     /// </summary>
@@ -2318,7 +2313,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_546
     {
     }
-    
+
     /// <summary>
     // Default Interest Rate
     /// </summary>
@@ -2328,7 +2323,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_547
     {
     }
-    
+
     /// <summary>
     // Declined - Loss or Damage Due to Act of God - See Correspondence
     /// </summary>
@@ -2340,7 +2335,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_548
     {
     }
-    
+
     /// <summary>
     // Reservation Accepted
     /// </summary>
@@ -2350,7 +2345,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_558
     {
     }
-    
+
     /// <summary>
     // Alabama
     /// </summary>
@@ -2360,7 +2355,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_559
     {
     }
-    
+
     /// <summary>
     // First In First Out (FIFO) Oldest Product
     /// </summary>
@@ -2370,7 +2365,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_560
     {
     }
-    
+
     /// <summary>
     // Base Coverage
     /// </summary>
@@ -2381,7 +2376,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_562
     {
     }
-    
+
     /// <summary>
     // Section (8a) Set-Aside
     /// </summary>
@@ -2392,7 +2387,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_563
     {
     }
-    
+
     /// <summary>
     // No Quantity or Unit of Measure Change Allowed
     /// </summary>
@@ -2402,7 +2397,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_566
     {
     }
-    
+
     /// <summary>
     // Abstract
     /// </summary>
@@ -2412,7 +2407,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_568
     {
     }
-    
+
     /// <summary>
     // Time Deposit
     /// </summary>
@@ -2423,7 +2418,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_569
     {
     }
-    
+
     /// <summary>
     // Private
     /// </summary>
@@ -2433,7 +2428,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_570
     {
     }
-    
+
     /// <summary>
     // Actual
     /// </summary>
@@ -2443,7 +2438,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_571
     {
     }
-    
+
     /// <summary>
     // Dunnage
     /// </summary>
@@ -2453,7 +2448,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_572
     {
     }
-    
+
     /// <summary>
     // Stop-off Point
     /// </summary>
@@ -2463,7 +2458,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_575
     {
     }
-    
+
     /// <summary>
     // Empty and Available at Pool
     /// </summary>
@@ -2473,7 +2468,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_578
     {
     }
-    
+
     /// <summary>
     // Advance Automatic Equipment Identification (AEI) Consist
     /// </summary>
@@ -2483,7 +2478,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_579
     {
     }
-    
+
     /// <summary>
     // Add a Bill of Lading
     /// </summary>
@@ -2493,7 +2488,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_580
     {
     }
-    
+
     /// <summary>
     // Substitute
     /// </summary>
@@ -2503,7 +2498,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_584
     {
     }
-    
+
     /// <summary>
     // Absent
     /// </summary>
@@ -2513,7 +2508,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_585
     {
     }
-    
+
     /// <summary>
     // Acknowledge - With Detail and Change
     /// </summary>
@@ -2523,7 +2518,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_587
     {
     }
-    
+
     /// <summary>
     // Wages Not Paid
     /// </summary>
@@ -2533,7 +2528,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_590
     {
     }
-    
+
     /// <summary>
     // Automated Clearing House (ACH)
     /// </summary>
@@ -2545,7 +2540,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_591
     {
     }
-    
+
     /// <summary>
     // Bill of Lading Description (Destination Country's Language)
     /// </summary>
@@ -2555,7 +2550,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_592
     {
     }
-    
+
     /// <summary>
     // Annualized; 12-month equivalent
     /// </summary>
@@ -2565,7 +2560,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_594
     {
     }
-    
+
     /// <summary>
     // Brake End
     /// </summary>
@@ -2575,7 +2570,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_595
     {
     }
-    
+
     /// <summary>
     // Consolidated
     /// </summary>
@@ -2585,7 +2580,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_604
     {
     }
-    
+
     /// <summary>
     // Deficiency Judgment Authorized by Mortgage Insurer but Not Obtained
     /// </summary>
@@ -2595,7 +2590,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_605
     {
     }
-    
+
     /// <summary>
     // Different Social Security Number
     /// </summary>
@@ -2605,7 +2600,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_608
     {
     }
-    
+
     /// <summary>
     // Satisfied
     /// </summary>
@@ -2615,7 +2610,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_611
     {
     }
-    
+
     /// <summary>
     // Blend
     /// </summary>
@@ -2625,7 +2620,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_612
     {
     }
-    
+
     /// <summary>
     // Chargeable Periods
     /// </summary>
@@ -2636,7 +2631,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_615
     {
     }
-    
+
     /// <summary>
     // Pull Authorized After Inspection
     /// </summary>
@@ -2647,7 +2642,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_617
     {
     }
-    
+
     /// <summary>
     // Transaction Set Not Supported
     /// </summary>
@@ -2657,7 +2652,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_618
     {
     }
-    
+
     /// <summary>
     // Unrecognized segment ID
     /// </summary>
@@ -2667,7 +2662,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_620
     {
     }
-    
+
     /// <summary>
     // Required Data Element Missing
     /// </summary>
@@ -2677,7 +2672,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_621
     {
     }
-    
+
     /// <summary>
     // Equivalent to ISO P01
     /// </summary>
@@ -2689,7 +2684,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_623
     {
     }
-    
+
     /// <summary>
     // Certified or Cashier's Check Only
     /// </summary>
@@ -2699,7 +2694,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_625
     {
     }
-    
+
     /// <summary>
     // Schedule Increase
     /// </summary>
@@ -2709,7 +2704,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_626
     {
     }
-    
+
     /// <summary>
     // Customer Plant (Receiving Location)
     /// </summary>
@@ -2719,7 +2714,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_627
     {
     }
-    
+
     /// <summary>
     // Indicates Alternation between all Lower Levels
     /// </summary>
@@ -2729,7 +2724,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_629
     {
     }
-    
+
     /// <summary>
     // Minimum Charge per Carload or Trailer
     /// </summary>
@@ -2739,7 +2734,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_632
     {
     }
-    
+
     /// <summary>
     // No rates available applicable to requested movement.
     /// </summary>
@@ -2749,7 +2744,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_635
     {
     }
-    
+
     /// <summary>
     // Bill
     /// </summary>
@@ -2759,7 +2754,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_639
     {
     }
-    
+
     /// <summary>
     // Location Address Message
     /// </summary>
@@ -2789,7 +2784,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_640
     {
     }
-    
+
     /// <summary>
     // Death of Principal Mortgagor
     /// </summary>
@@ -2820,7 +2815,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_641
     {
     }
-    
+
     /// <summary>
     // Coal Moisture Allowance
     /// </summary>
@@ -2830,7 +2825,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_644
     {
     }
-    
+
     /// <summary>
     // Transaction Between Unrelated Companies
     /// </summary>
@@ -2840,7 +2835,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_645
     {
     }
-    
+
     /// <summary>
     // Car Not in Umler
     /// </summary>
@@ -2850,7 +2845,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_647
     {
     }
-    
+
     /// <summary>
     // Allowed Multiplier - Billed
     /// </summary>
@@ -2860,7 +2855,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_648
     {
     }
-    
+
     /// <summary>
     // Charge Off
     /// </summary>
@@ -2873,7 +2868,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_650
     {
     }
-    
+
     /// <summary>
     // Fixed Amount Discount
     /// </summary>
@@ -2883,7 +2878,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_653
     {
     }
-    
+
     /// <summary>
     // Discount in Cash
     /// </summary>
@@ -2893,7 +2888,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_654
     {
     }
-    
+
     /// <summary>
     // Time Limits for Discount
     /// </summary>
@@ -2903,7 +2898,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_656
     {
     }
-    
+
     /// <summary>
     // Birth Certificate
     /// </summary>
@@ -2913,7 +2908,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_659
     {
     }
-    
+
     /// <summary>
     // Add
     /// </summary>
@@ -2923,7 +2918,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_662
     {
     }
-    
+
     /// <summary>
     // Residue Last Contained Description (Small Means of Containment)
     /// </summary>
@@ -2933,7 +2928,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_665
     {
     }
-    
+
     /// <summary>
     // Detail Level 1
     /// </summary>
@@ -2943,7 +2938,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_666
     {
     }
-    
+
     /// <summary>
     // Item Accepted - Order Forwarded to Alternate Supplier Location
     /// </summary>
@@ -2953,7 +2948,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_668
     {
     }
-    
+
     /// <summary>
     // International Monetary Fund
     /// </summary>
@@ -2963,7 +2958,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_669
     {
     }
-    
+
     /// <summary>
     // Packing Configuration
     /// </summary>
@@ -2974,7 +2969,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_670
     {
     }
-    
+
     /// <summary>
     // Finished (Labor
     /// </summary>
@@ -2984,7 +2979,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_672
     {
     }
-    
+
     /// <summary>
     // Hospital/Homebound Individuals
     /// </summary>
@@ -3036,7 +3031,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_673
     {
     }
-    
+
     /// <summary>
     // Closed
     /// </summary>
@@ -3046,7 +3041,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_674
     {
     }
-    
+
     /// <summary>
     // Authorized Delivery Based
     /// </summary>
@@ -3056,7 +3051,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_675
     {
     }
-    
+
     /// <summary>
     // Actual Discrete Quantities
     /// </summary>
@@ -3066,7 +3061,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_676
     {
     }
-    
+
     /// <summary>
     // 1st Week of the Month
     /// </summary>
@@ -3077,7 +3072,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_678
     {
     }
-    
+
     /// <summary>
     // 1st Shift (Normal Working Hours)
     /// </summary>
@@ -3087,7 +3082,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_679
     {
     }
-    
+
     /// <summary>
     // Immediate
     /// </summary>
@@ -3097,7 +3092,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_680
     {
     }
-    
+
     /// <summary>
     // Annually (Calendar Year)
     /// </summary>
@@ -3107,7 +3102,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_681
     {
     }
-    
+
     /// <summary>
     // Fabrication Authorization Quantity is Final Model Year Requirement; The Part is a Non carryover Item for the Subsequent Model Year from the Supplier
     /// </summary>
@@ -3117,7 +3112,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_682
     {
     }
-    
+
     /// <summary>
     // Customized Catalog
     /// </summary>
@@ -3127,7 +3122,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_683
     {
     }
-    
+
     /// <summary>
     // Branches
     /// </summary>
@@ -3139,7 +3134,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_687
     {
     }
-    
+
     /// <summary>
     // Paperwork
     /// </summary>
@@ -3149,7 +3144,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_688
     {
     }
-    
+
     /// <summary>
     // Vacant
     /// </summary>
@@ -3159,7 +3154,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_689
     {
     }
-    
+
     /// <summary>
     // Package Express
     /// </summary>
@@ -3169,7 +3164,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_692
     {
     }
-    
+
     /// <summary>
     // Condition Group
     /// </summary>
@@ -3179,7 +3174,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_693
     {
     }
-    
+
     /// <summary>
     // Expiration date and a carrier's factor may be changed at any time
     /// </summary>
@@ -3189,7 +3184,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_695
     {
     }
-    
+
     /// <summary>
     // Rate information is private; Intermediaries may distribute it only to participating line haul carriers
     /// </summary>
@@ -3199,7 +3194,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_698
     {
     }
-    
+
     /// <summary>
     // If one or more segments of a given segment definition contain this element indicating a '-' value
     /// </summary>
@@ -3209,7 +3204,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_699
     {
     }
-    
+
     /// <summary>
     // Shipment Method of Payment
     /// </summary>
@@ -3219,7 +3214,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_701
     {
     }
-    
+
     /// <summary>
     // Detail
     /// </summary>
@@ -3229,7 +3224,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_703
     {
     }
-    
+
     /// <summary>
     // Used to Initiate This Report
     /// </summary>
@@ -3239,7 +3234,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_704
     {
     }
-    
+
     /// <summary>
     // United Auto Workers (UAW)
     /// </summary>
@@ -3249,7 +3244,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_705
     {
     }
-    
+
     /// <summary>
     // Parent
     /// </summary>
@@ -3259,7 +3254,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_706
     {
     }
-    
+
     /// <summary>
     // Bank Account Relations
     /// </summary>
@@ -3269,7 +3264,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_707
     {
     }
-    
+
     /// <summary>
     // Discount According to Business
     /// </summary>
@@ -3279,7 +3274,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_708
     {
     }
-    
+
     /// <summary>
     // Point to Point
     /// </summary>
@@ -3289,7 +3284,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_709
     {
     }
-    
+
     /// <summary>
     // Inbound Goods and Services Tax Declaration
     /// </summary>
@@ -3299,7 +3294,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_714
     {
     }
-    
+
     /// <summary>
     // Accepted
     /// </summary>
@@ -3309,7 +3304,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_715
     {
     }
-    
+
     /// <summary>
     // Functional Group Not Supported
     /// </summary>
@@ -3319,7 +3314,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_716
     {
     }
-    
+
     /// <summary>
     // Accepted
     /// </summary>
@@ -3329,7 +3324,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_717
     {
     }
-    
+
     /// <summary>
     // Transaction Set Not Supported
     /// </summary>
@@ -3339,7 +3334,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_718
     {
     }
-    
+
     /// <summary>
     // Unrecognized segment ID
     /// </summary>
@@ -3349,7 +3344,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_720
     {
     }
-    
+
     /// <summary>
     // Mandatory data element missing
     /// </summary>
@@ -3359,7 +3354,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_723
     {
     }
-    
+
     /// <summary>
     // Damaged
     /// </summary>
@@ -3369,7 +3364,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_726
     {
     }
-    
+
     /// <summary>
     // Loaded with empty 4-block for blocking purposes
     /// </summary>
@@ -3379,7 +3374,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_728
     {
     }
-    
+
     /// <summary>
     // Buyer to Seller
     /// </summary>
@@ -3389,7 +3384,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_731
     {
     }
-    
+
     /// <summary>
     // Air Hours
     /// </summary>
@@ -3399,7 +3394,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_732
     {
     }
-    
+
     /// <summary>
     // Region
     /// </summary>
@@ -3409,7 +3404,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_735
     {
     }
-    
+
     /// <summary>
     // No Subordinate HL Segment in This Hierarchical Structure.
     /// </summary>
@@ -3419,7 +3414,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_736
     {
     }
-    
+
     /// <summary>
     // Ninth Layer
     /// </summary>
@@ -3429,7 +3424,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_737
     {
     }
-    
+
     /// <summary>
     // Control Efficiency
     /// </summary>
@@ -3493,7 +3488,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_738
     {
     }
-    
+
     /// <summary>
     // Paid By Customer
     /// </summary>
@@ -3503,7 +3498,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_743
     {
     }
-    
+
     /// <summary>
     // Container Information
     /// </summary>
@@ -3513,7 +3508,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_744
     {
     }
-    
+
     /// <summary>
     // Yes
     /// </summary>
@@ -3523,7 +3518,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_745
     {
     }
-    
+
     /// <summary>
     // Straight Rebill
     /// </summary>
@@ -3533,7 +3528,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_747
     {
     }
-    
+
     /// <summary>
     // Released From Bad Order
     /// </summary>
@@ -3543,7 +3538,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_748
     {
     }
-    
+
     /// <summary>
     // Bill of Lading Body Clause
     /// </summary>
@@ -3554,7 +3549,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_749
     {
     }
-    
+
     /// <summary>
     // Limiting Operation
     /// </summary>
@@ -3564,7 +3559,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_750
     {
     }
-    
+
     /// <summary>
     // Side One
     /// </summary>
@@ -3574,7 +3569,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_752
     {
     }
-    
+
     /// <summary>
     // Casing Type
     /// </summary>
@@ -3585,7 +3580,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_753
     {
     }
-    
+
     /// <summary>
     // Product Transfer
     /// </summary>
@@ -3615,7 +3610,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_755
     {
     }
-    
+
     /// <summary>
     // Summary Electronic Invoice
     /// </summary>
@@ -3626,7 +3621,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_756
     {
     }
-    
+
     /// <summary>
     // Reportable Quantity
     /// </summary>
@@ -3636,7 +3631,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_759
     {
     }
-    
+
     /// <summary>
     // Yes
     /// </summary>
@@ -3646,7 +3641,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_760
     {
     }
-    
+
     /// <summary>
     // Full Waybill
     /// </summary>
@@ -3656,7 +3651,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_762
     {
     }
-    
+
     /// <summary>
     // Pricing Market
     /// </summary>
@@ -3666,7 +3661,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_771
     {
     }
-    
+
     /// <summary>
     // In Effect
     /// </summary>
@@ -3676,7 +3671,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_772
     {
     }
-    
+
     /// <summary>
     // Customized Ordering Forecast
     /// </summary>
@@ -3686,7 +3681,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_783
     {
     }
-    
+
     /// <summary>
     // Company Non-Classified
     /// </summary>
@@ -3696,7 +3691,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_786
     {
     }
-    
+
     /// <summary>
     // 841 x 1189 mm *
     /// </summary>
@@ -3706,7 +3701,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_789
     {
     }
-    
+
     /// <summary>
     // Approved Version
     /// </summary>
@@ -3716,7 +3711,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_792
     {
     }
-    
+
     /// <summary>
     // Change Level
     /// </summary>
@@ -3726,7 +3721,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_795
     {
     }
-    
+
     /// <summary>
     // Authentication
     /// </summary>
@@ -3736,7 +3731,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_797
     {
     }
-    
+
     /// <summary>
     // Additional Descriptive Information Not Required by Regulation but Desired to Accompany the Movement by the Shipper
     /// </summary>
@@ -3747,7 +3742,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_808
     {
     }
-    
+
     /// <summary>
     // Auto Insurance
     /// </summary>
@@ -3757,7 +3752,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_811
     {
     }
-    
+
     /// <summary>
     // ACH Payment Acknowledgment
     /// </summary>
@@ -3769,7 +3764,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_812
     {
     }
-    
+
     /// <summary>
     // Abandoned by Carrier
     /// </summary>
@@ -3779,7 +3774,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_813
     {
     }
-    
+
     /// <summary>
     // Bottom Unit Has Full Exposure
     /// </summary>
@@ -3789,7 +3784,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_814
     {
     }
-    
+
     /// <summary>
     // Debris
     /// </summary>
@@ -3799,7 +3794,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_815
     {
     }
-    
+
     /// <summary>
     // Direct
     /// </summary>
@@ -3809,7 +3804,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_816
     {
     }
-    
+
     /// <summary>
     // Analytical Methods
     /// </summary>
@@ -3820,7 +3815,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_820
     {
     }
-    
+
     /// <summary>
     // Acute Toxicity Data
     /// </summary>
@@ -3830,7 +3825,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_821
     {
     }
-    
+
     /// <summary>
     // Gasohol
     /// </summary>
@@ -3840,7 +3835,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_829
     {
     }
-    
+
     /// <summary>
     // Origin Rail
     /// </summary>
@@ -3850,7 +3845,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_831
     {
     }
-    
+
     /// <summary>
     // Yes
     /// </summary>
@@ -3860,7 +3855,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_835
     {
     }
-    
+
     /// <summary>
     // Bottom level first position from front end.
     /// </summary>
@@ -3871,7 +3866,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_836
     {
     }
-    
+
     /// <summary>
     // Automobile
     /// </summary>
@@ -3881,7 +3876,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_837
     {
     }
-    
+
     /// <summary>
     // QC Hold
     /// </summary>
@@ -3891,7 +3886,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_844
     {
     }
-    
+
     /// <summary>
     // Eight Pin Combo
     /// </summary>
@@ -3901,7 +3896,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_845
     {
     }
-    
+
     /// <summary>
     // Address Change
     /// </summary>
@@ -3912,7 +3907,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_846
     {
     }
-    
+
     /// <summary>
     // All orders - items with changed status
     /// </summary>
@@ -3922,7 +3917,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_847
     {
     }
-    
+
     /// <summary>
     // Selected Products and Selected Date Parameters
     /// </summary>
@@ -3932,7 +3927,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_848
     {
     }
-    
+
     /// <summary>
     // Selected Supplier Location(s)
     /// </summary>
@@ -3942,7 +3937,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_849
     {
     }
-    
+
     /// <summary>
     // Response to an Order Status Inquiry (869)
     /// </summary>
@@ -3952,7 +3947,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_850
     {
     }
-    
+
     /// <summary>
     // Administrative (Place to Mail Administrative Correspondence)
     /// </summary>
@@ -3962,7 +3957,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_852
     {
     }
-    
+
     /// <summary>
     // Bulkhead Doors Not Secured
     /// </summary>
@@ -3972,7 +3967,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_853
     {
     }
-    
+
     /// <summary>
     // Barge Carrying Vessels (Lash & Seabee)
     /// </summary>
@@ -3982,7 +3977,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_854
     {
     }
-    
+
     /// <summary>
     // Measurement Taken From Bottom
     /// </summary>
@@ -3992,7 +3987,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_855
     {
     }
-    
+
     /// <summary>
     // Base
     /// </summary>
@@ -4002,7 +3997,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_856
     {
     }
-    
+
     /// <summary>
     // Quantity Stolen
     /// </summary>
@@ -4013,7 +4008,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_859
     {
     }
-    
+
     /// <summary>
     // Receiver
     /// </summary>
@@ -4023,7 +4018,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_868
     {
     }
-    
+
     /// <summary>
     // Change
     /// </summary>
@@ -4033,7 +4028,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_875
     {
     }
-    
+
     /// <summary>
     // Hard Wood
     /// </summary>
@@ -4043,7 +4038,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_883
     {
     }
-    
+
     /// <summary>
     // Closed
     /// </summary>
@@ -4053,7 +4048,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_886
     {
     }
-    
+
     /// <summary>
     // Conditional Use
     /// </summary>
@@ -4063,7 +4058,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_887
     {
     }
-    
+
     /// <summary>
     // Order
     /// </summary>
@@ -4073,7 +4068,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_888
     {
     }
-    
+
     /// <summary>
     // Please Correct and Resubmit
     /// </summary>
@@ -4083,7 +4078,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_889
     {
     }
-    
+
     /// <summary>
     // Declined Shipment
     /// </summary>
@@ -4093,7 +4088,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_890
     {
     }
-    
+
     /// <summary>
     // Inadequate Lead Time
     /// </summary>
@@ -4103,7 +4098,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_891
     {
     }
-    
+
     /// <summary>
     // Out of Stock
     /// </summary>
@@ -4113,7 +4108,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_892
     {
     }
-    
+
     /// <summary>
     // Adjustment Having Normal Effect on Inventory for Type of Transaction Set in which Code is Used
     /// </summary>
@@ -4123,7 +4118,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_893
     {
     }
-    
+
     /// <summary>
     // Regular
     /// </summary>
@@ -4133,7 +4128,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_894
     {
     }
-    
+
     /// <summary>
     // U.S. Bureau of Census
     /// </summary>
@@ -4143,7 +4138,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_897
     {
     }
-    
+
     /// <summary>
     // Price Authorization Invalid
     /// </summary>
@@ -4153,7 +4148,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_901
     {
     }
-    
+
     /// <summary>
     // Detail Area
     /// </summary>
@@ -4163,7 +4158,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_902
     {
     }
-    
+
     /// <summary>
     // Header for the Envelope
     /// </summary>
@@ -4173,7 +4168,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_903
     {
     }
-    
+
     /// <summary>
     // Conditional
     /// </summary>
@@ -4183,7 +4178,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_904
     {
     }
-    
+
     /// <summary>
     // Application Data Segment
     /// </summary>
@@ -4193,7 +4188,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_906
     {
     }
-    
+
     /// <summary>
     // Conditional
     /// </summary>
@@ -4203,7 +4198,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_912
     {
     }
-    
+
     /// <summary>
     // String
     /// </summary>
@@ -4213,7 +4208,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_913
     {
     }
-    
+
     /// <summary>
     // Home Health Aide
     /// </summary>
@@ -4223,7 +4218,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_921
     {
     }
-    
+
     /// <summary>
     // Health Level 7 (HL7)
     /// </summary>
@@ -4233,7 +4228,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_922
     {
     }
-    
+
     /// <summary>
     // Poor
     /// </summary>
@@ -4243,7 +4238,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_923
     {
     }
-    
+
     /// <summary>
     // Full Set of Tables
     /// </summary>
@@ -4253,7 +4248,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_924
     {
     }
-    
+
     /// <summary>
     // Association of American Railroads
     /// </summary>
@@ -4263,7 +4258,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_927
     {
     }
-    
+
     /// <summary>
     // Advance The Specified Number of Lines Before Print
     /// </summary>
@@ -4273,7 +4268,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_934
     {
     }
-    
+
     /// <summary>
     // Where Air = 1
     /// </summary>
@@ -4283,7 +4278,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_935
     {
     }
-    
+
     /// <summary>
     // Clear
     /// </summary>
@@ -4295,7 +4290,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_936
     {
     }
-    
+
     /// <summary>
     // Dermal
     /// </summary>
@@ -4305,7 +4300,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_937
     {
     }
-    
+
     /// <summary>
     // Animal
     /// </summary>
@@ -4315,7 +4310,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_938
     {
     }
-    
+
     /// <summary>
     // In process specimen
     /// </summary>
@@ -4325,7 +4320,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_939
     {
     }
-    
+
     /// <summary>
     // Random Selection
     /// </summary>
@@ -4335,7 +4330,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_940
     {
     }
-    
+
     /// <summary>
     // Round
     /// </summary>
@@ -4345,7 +4340,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_943
     {
     }
-    
+
     /// <summary>
     // Longitudinal
     /// </summary>
@@ -4355,7 +4350,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_944
     {
     }
-    
+
     /// <summary>
     // Bore
     /// </summary>
@@ -4366,7 +4361,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_945
     {
     }
-    
+
     /// <summary>
     // Cusum Delta
     /// </summary>
@@ -4377,7 +4372,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_950
     {
     }
-    
+
     /// <summary>
     // Adjustment
     /// </summary>
@@ -4387,7 +4382,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_951
     {
     }
-    
+
     /// <summary>
     // Float
     /// </summary>
@@ -4397,7 +4392,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_952
     {
     }
-    
+
     /// <summary>
     // Customer defined
     /// </summary>
@@ -4407,7 +4402,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_955
     {
     }
-    
+
     /// <summary>
     // Cancel an entire batch of payments.
     /// </summary>
@@ -4417,7 +4412,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_959
     {
     }
-    
+
     /// <summary>
     // Request For Quote
     /// </summary>
@@ -4427,7 +4422,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_960
     {
     }
-    
+
     /// <summary>
     // Receiving Dock Advice
     /// </summary>
@@ -4437,7 +4432,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_962
     {
     }
-    
+
     /// <summary>
     // Stadium Tax
     /// </summary>
@@ -4447,7 +4442,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_963
     {
     }
-    
+
     /// <summary>
     // Final Net Acquisition Cost
     /// </summary>
@@ -4457,7 +4452,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_964
     {
     }
-    
+
     /// <summary>
     // Base Zip
     /// </summary>
@@ -4467,7 +4462,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_969
     {
     }
-    
+
     /// <summary>
     // Restricted
     /// </summary>
@@ -4477,7 +4472,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_974
     {
     }
-    
+
     /// <summary>
     // Minimum Charge
     /// </summary>
@@ -4487,7 +4482,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_976
     {
     }
-    
+
     /// <summary>
     // Accesorial Charges
     /// </summary>
@@ -4497,7 +4492,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_980
     {
     }
-    
+
     /// <summary>
     // Advanced Charges
     /// </summary>
@@ -4507,7 +4502,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_981
     {
     }
-    
+
     /// <summary>
     // Airbill
     /// </summary>
@@ -4517,7 +4512,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_982
     {
     }
-    
+
     /// <summary>
     // Primary
     /// </summary>
@@ -4527,7 +4522,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_983
     {
     }
-    
+
     /// <summary>
     // Canadian Shipping Name
     /// </summary>
@@ -4537,7 +4532,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_984
     {
     }
-    
+
     /// <summary>
     // N.O.S. Regulatory Requirements Apply
     /// </summary>
@@ -4547,7 +4542,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_985
     {
     }
-    
+
     /// <summary>
     // Positive Indicator
     /// </summary>
@@ -4557,7 +4552,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_986
     {
     }
-    
+
     /// <summary>
     // Disconnect Service Message
     /// </summary>
@@ -4567,7 +4562,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_987
     {
     }
-    
+
     /// <summary>
     // Count
     /// </summary>
@@ -4578,7 +4573,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_988
     {
     }
-    
+
     /// <summary>
     // Authentication
     /// </summary>
@@ -4588,7 +4583,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_990
     {
     }
-    
+
     /// <summary>
     // ANSI X9.9 Authentication
     /// </summary>
@@ -4598,7 +4593,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_992
     {
     }
-    
+
     /// <summary>
     // ANSI X9.23 Cipher Block Chaining (CBC)
     /// </summary>
@@ -4608,7 +4603,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_994
     {
     }
-    
+
     /// <summary>
     // Deferment
     /// </summary>
@@ -4618,7 +4613,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_998
     {
     }
-    
+
     /// <summary>
     // Administrative Code Section
     /// </summary>
@@ -4628,7 +4623,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_999
     {
     }
-    
+
     /// <summary>
     // Detail Cycle Reporting
     /// </summary>
@@ -4638,7 +4633,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1002
     {
     }
-    
+
     /// <summary>
     // Guaranteed Interest Rate
     /// </summary>
@@ -4648,7 +4643,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1004
     {
     }
-    
+
     /// <summary>
     // Shipment
     /// </summary>
@@ -4658,7 +4653,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1005
     {
     }
-    
+
     /// <summary>
     // Regular: Current (40 Day Limit)
     /// </summary>
@@ -4668,7 +4663,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1006
     {
     }
-    
+
     /// <summary>
     // Agreed (Rated by Agreement)
     /// </summary>
@@ -4678,7 +4673,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1007
     {
     }
-    
+
     /// <summary>
     // Bankruptcy Chapter 11
     /// </summary>
@@ -4689,7 +4684,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1008
     {
     }
-    
+
     /// <summary>
     // U.S. Circuit Court of Appeals
     /// </summary>
@@ -4702,7 +4697,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1009
     {
     }
-    
+
     /// <summary>
     // Appearance
     /// </summary>
@@ -4712,7 +4707,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1012
     {
     }
-    
+
     /// <summary>
     // Case Information Statement
     /// </summary>
@@ -4722,7 +4717,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1013
     {
     }
-    
+
     /// <summary>
     // Loaded or Empty Actual Operating Miles
     /// </summary>
@@ -4732,7 +4727,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1015
     {
     }
-    
+
     /// <summary>
     // 0% (No Penalty- Current Reporting)
     /// </summary>
@@ -4742,7 +4737,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1016
     {
     }
-    
+
     /// <summary>
     // Allowed Claim
     /// </summary>
@@ -4753,7 +4748,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1017
     {
     }
-    
+
     /// <summary>
     // Invoice By Mail
     /// </summary>
@@ -4763,7 +4758,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1019
     {
     }
-    
+
     /// <summary>
     // Grade Change
     /// </summary>
@@ -4773,7 +4768,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1020
     {
     }
-    
+
     /// <summary>
     // Hazard Zone A
     /// </summary>
@@ -4783,7 +4778,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1023
     {
     }
-    
+
     /// <summary>
     // Bottom
     /// </summary>
@@ -4793,7 +4788,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1025
     {
     }
-    
+
     /// <summary>
     // Other Material
     /// </summary>
@@ -4803,7 +4798,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1026
     {
     }
-    
+
     /// <summary>
     // Processed as Primary
     /// </summary>
@@ -4814,7 +4809,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1029
     {
     }
-    
+
     /// <summary>
     // Other Gasket Type
     /// </summary>
@@ -4824,7 +4819,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1030
     {
     }
-    
+
     /// <summary>
     // Other Trailer Lining Type
     /// </summary>
@@ -4834,7 +4829,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1031
     {
     }
-    
+
     /// <summary>
     // Property Conveyance
     /// </summary>
@@ -4845,7 +4840,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1032
     {
     }
-    
+
     /// <summary>
     // Contractual Obligations
     /// </summary>
@@ -4855,7 +4850,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1033
     {
     }
-    
+
     /// <summary>
     // Air Compressor
     /// </summary>
@@ -4865,7 +4860,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1042
     {
     }
-    
+
     /// <summary>
     // Anhydrous Ammonia
     /// </summary>
@@ -4875,7 +4870,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1044
     {
     }
-    
+
     /// <summary>
     // Aluminum
     /// </summary>
@@ -4885,7 +4880,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1045
     {
     }
-    
+
     /// <summary>
     // Four Bolt Flange
     /// </summary>
@@ -4895,7 +4890,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1046
     {
     }
-    
+
     /// <summary>
     // Aerator (Dry Bulk)
     /// </summary>
@@ -4905,7 +4900,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1047
     {
     }
-    
+
     /// <summary>
     // Collection
     /// </summary>
@@ -4915,7 +4910,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1048
     {
     }
-    
+
     /// <summary>
     // London (England) Exchange - First Closing
     /// </summary>
@@ -4925,7 +4920,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1053
     {
     }
-    
+
     /// <summary>
     // Silver
     /// </summary>
@@ -4935,7 +4930,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1054
     {
     }
-    
+
     /// <summary>
     // Add Fuel
     /// </summary>
@@ -4945,7 +4940,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1062
     {
     }
-    
+
     /// <summary>
     // Person
     /// </summary>
@@ -4955,7 +4950,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1065
     {
     }
-    
+
     /// <summary>
     // U.S. Citizen
     /// </summary>
@@ -4965,7 +4960,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1066
     {
     }
-    
+
     /// <summary>
     // Common Law
     /// </summary>
@@ -4975,7 +4970,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1067
     {
     }
-    
+
     /// <summary>
     // Not Provided
     /// </summary>
@@ -4985,7 +4980,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1068
     {
     }
-    
+
     /// <summary>
     // Spouse
     /// </summary>
@@ -4995,7 +4990,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1069
     {
     }
-    
+
     /// <summary>
     // Primary Residence
     /// </summary>
@@ -5005,7 +5000,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1070
     {
     }
-    
+
     /// <summary>
     // Hazard Insurance
     /// </summary>
@@ -5017,7 +5012,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1071
     {
     }
-    
+
     /// <summary>
     // Round to Nearest (Rule of Fives)
     /// </summary>
@@ -5027,7 +5022,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1072
     {
     }
-    
+
     /// <summary>
     // No
     /// </summary>
@@ -5037,7 +5032,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1073
     {
     }
-    
+
     /// <summary>
     // Manufactured
     /// </summary>
@@ -5049,7 +5044,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1074
     {
     }
-    
+
     /// <summary>
     // For Sale
     /// </summary>
@@ -5059,7 +5054,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1075
     {
     }
-    
+
     /// <summary>
     // Deed to Secure Debt
     /// </summary>
@@ -5069,7 +5064,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1076
     {
     }
-    
+
     /// <summary>
     // Appraised Value as Determined by Agency
     /// </summary>
@@ -5079,7 +5074,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1077
     {
     }
-    
+
     /// <summary>
     // Restricted Fee (Tribal Lands)
     /// </summary>
@@ -5089,7 +5084,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1078
     {
     }
-    
+
     /// <summary>
     // Electronic Data Interchange
     /// </summary>
@@ -5099,7 +5094,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1079
     {
     }
-    
+
     /// <summary>
     // Assumption Allowed
     /// </summary>
@@ -5109,7 +5104,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1080
     {
     }
-    
+
     /// <summary>
     // Purchase Existing Home Previously Occupied
     /// </summary>
@@ -5120,7 +5115,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1081
     {
     }
-    
+
     /// <summary>
     // Cash
     /// </summary>
@@ -5130,7 +5125,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1082
     {
     }
-    
+
     /// <summary>
     // Cash-Borrowed
     /// </summary>
@@ -5141,7 +5136,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1083
     {
     }
-    
+
     /// <summary>
     // Permanent
     /// </summary>
@@ -5151,7 +5146,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1084
     {
     }
-    
+
     /// <summary>
     // Adjustable Payment Based on Index
     /// </summary>
@@ -5162,7 +5157,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1085
     {
     }
-    
+
     /// <summary>
     // Fixed
     /// </summary>
@@ -5172,7 +5167,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1086
     {
     }
-    
+
     /// <summary>
     // Treasury Bill - 1 Year
     /// </summary>
@@ -5184,7 +5179,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1089
     {
     }
-    
+
     /// <summary>
     // Completed
     /// </summary>
@@ -5194,7 +5189,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1090
     {
     }
-    
+
     /// <summary>
     // Seller
     /// </summary>
@@ -5204,7 +5199,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1091
     {
     }
-    
+
     /// <summary>
     // Conventional
     /// </summary>
@@ -5214,7 +5209,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1093
     {
     }
-    
+
     /// <summary>
     // Standard Application
     /// </summary>
@@ -5224,7 +5219,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1097
     {
     }
-    
+
     /// <summary>
     // Cash
     /// </summary>
@@ -5234,7 +5229,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1098
     {
     }
-    
+
     /// <summary>
     // Both
     /// </summary>
@@ -5244,7 +5239,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1099
     {
     }
-    
+
     /// <summary>
     // Adjusting
     /// </summary>
@@ -5254,7 +5249,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1100
     {
     }
-    
+
     /// <summary>
     // Alternative
     /// </summary>
@@ -5264,7 +5259,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1103
     {
     }
-    
+
     /// <summary>
     // Prefix
     /// </summary>
@@ -5274,7 +5269,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1104
     {
     }
-    
+
     /// <summary>
     // First (Primary)
     /// </summary>
@@ -5284,7 +5279,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1101
     {
     }
-    
+
     /// <summary>
     // Constant
     /// </summary>
@@ -5294,7 +5289,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1102
     {
     }
-    
+
     /// <summary>
     // 1 Year
     /// </summary>
@@ -5304,7 +5299,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1105
     {
     }
-    
+
     /// <summary>
     // Street Number
     /// </summary>
@@ -5314,7 +5309,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1106
     {
     }
-    
+
     /// <summary>
     // Given Name (Name at Birth)
     /// </summary>
@@ -5324,7 +5319,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1107
     {
     }
-    
+
     /// <summary>
     // January
     /// </summary>
@@ -5334,7 +5329,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1108
     {
     }
-    
+
     /// <summary>
     // Not Provided
     /// </summary>
@@ -5344,7 +5339,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1109
     {
     }
-    
+
     /// <summary>
     // Bounceback
     /// </summary>
@@ -5354,7 +5349,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1113
     {
     }
-    
+
     /// <summary>
     // Vent 25% Open
     /// </summary>
@@ -5364,7 +5359,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1122
     {
     }
-    
+
     /// <summary>
     // Age Rated
     /// </summary>
@@ -5374,7 +5369,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1123
     {
     }
-    
+
     /// <summary>
     // Carrier Initiated Revenue Waybill Cancel
     /// </summary>
@@ -5385,7 +5380,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1127
     {
     }
-    
+
     /// <summary>
     // Primary Disability - Frozen
     /// </summary>
@@ -5395,7 +5390,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1129
     {
     }
-    
+
     /// <summary>
     // Contingent
     /// </summary>
@@ -5405,7 +5400,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1130
     {
     }
-    
+
     /// <summary>
     // First grade
     /// </summary>
@@ -5415,7 +5410,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1131
     {
     }
-    
+
     /// <summary>
     // Self-contained (Regular Class)
     /// </summary>
@@ -5426,7 +5421,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1132
     {
     }
-    
+
     /// <summary>
     // Alternative Education
     /// </summary>
@@ -5439,7 +5434,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1133
     {
     }
-    
+
     /// <summary>
     // Federal
     /// </summary>
@@ -5449,7 +5444,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1134
     {
     }
-    
+
     /// <summary>
     // Academic Record
     /// </summary>
@@ -5459,7 +5454,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1135
     {
     }
-    
+
     /// <summary>
     // Employee Mobility
     /// </summary>
@@ -5469,7 +5464,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1136
     {
     }
-    
+
     /// <summary>
     // Payer Responsibility Four
     /// </summary>
@@ -5479,7 +5474,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1138
     {
     }
-    
+
     /// <summary>
     // Full year
     /// </summary>
@@ -5489,7 +5484,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1139
     {
     }
-    
+
     /// <summary>
     // Cushioned
     /// </summary>
@@ -5499,7 +5494,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1140
     {
     }
-    
+
     /// <summary>
     // Trimester Hour Credit
     /// </summary>
@@ -5509,7 +5504,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1141
     {
     }
-    
+
     /// <summary>
     // Remedial
     /// </summary>
@@ -5520,7 +5515,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1142
     {
     }
-    
+
     /// <summary>
     // Coordination of Benefits
     /// </summary>
@@ -5530,7 +5525,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1143
     {
     }
-    
+
     /// <summary>
     // Short Term Disability
     /// </summary>
@@ -5540,7 +5535,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1146
     {
     }
-    
+
     /// <summary>
     // Non-Credit Participation
     /// </summary>
@@ -5550,7 +5545,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1147
     {
     }
-    
+
     /// <summary>
     // Repeated
     /// </summary>
@@ -5560,7 +5555,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1150
     {
     }
-    
+
     /// <summary>
     // Institutional Agreement
     /// </summary>
@@ -5570,7 +5565,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1152
     {
     }
-    
+
     /// <summary>
     // Course
     /// </summary>
@@ -5580,7 +5575,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1153
     {
     }
-    
+
     /// <summary>
     // Heavy
     /// </summary>
@@ -5590,7 +5585,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1154
     {
     }
-    
+
     /// <summary>
     // National Probability Sample
     /// </summary>
@@ -5600,7 +5595,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1156
     {
     }
-    
+
     /// <summary>
     // Fall
     /// </summary>
@@ -5610,7 +5605,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1157
     {
     }
-    
+
     /// <summary>
     // Special Circumstances (Something unusual occurred during testing that may have affected how the student performed)
     /// </summary>
@@ -5620,7 +5615,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1159
     {
     }
-    
+
     /// <summary>
     // Scaled Score
     /// </summary>
@@ -5630,7 +5625,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1160
     {
     }
-    
+
     /// <summary>
     // Pretax
     /// </summary>
@@ -5640,7 +5635,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1161
     {
     }
-    
+
     /// <summary>
     // Evening
     /// </summary>
@@ -5650,7 +5645,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1162
     {
     }
-    
+
     /// <summary>
     // Adult
     /// </summary>
@@ -5660,7 +5655,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1163
     {
     }
-    
+
     /// <summary>
     // Logic Network Arrow Diagramming Method
     /// </summary>
@@ -5670,7 +5665,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1164
     {
     }
-    
+
     /// <summary>
     // Other Restrictions
     /// </summary>
@@ -5680,7 +5675,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1165
     {
     }
-    
+
     /// <summary>
     // Diagnosis Related Group (DRG)
     /// </summary>
@@ -5691,7 +5686,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1166
     {
     }
-    
+
     /// <summary>
     // (Boxcar) Sliding Door
     /// </summary>
@@ -5701,7 +5696,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1168
     {
     }
-    
+
     /// <summary>
     // Inappropriate Standard Repair Time Used
     /// </summary>
@@ -5711,7 +5706,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1172
     {
     }
-    
+
     /// <summary>
     // Beginning Activity
     /// </summary>
@@ -5721,7 +5716,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1173
     {
     }
-    
+
     /// <summary>
     // Union
     /// </summary>
@@ -5733,7 +5728,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1176
     {
     }
-    
+
     /// <summary>
     // Consumption Entry
     /// </summary>
@@ -5743,7 +5738,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1179
     {
     }
-    
+
     /// <summary>
     // Consumable
     /// </summary>
@@ -5753,7 +5748,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1181
     {
     }
-    
+
     /// <summary>
     // Foreclosure
     /// </summary>
@@ -5763,7 +5758,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1185
     {
     }
-    
+
     /// <summary>
     // Monthly Clothing Income
     /// </summary>
@@ -5773,7 +5768,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1186
     {
     }
-    
+
     /// <summary>
     // Sole (Individual)
     /// </summary>
@@ -5784,7 +5779,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1187
     {
     }
-    
+
     /// <summary>
     // Vehicle
     /// </summary>
@@ -5794,7 +5789,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1188
     {
     }
-    
+
     /// <summary>
     // Credit Line
     /// </summary>
@@ -5804,7 +5799,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1189
     {
     }
-    
+
     /// <summary>
     // Research
     /// </summary>
@@ -5815,7 +5810,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1193
     {
     }
-    
+
     /// <summary>
     // Labor
     /// </summary>
@@ -5825,7 +5820,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1196
     {
     }
-    
+
     /// <summary>
     // Adjustment
     /// </summary>
@@ -5835,7 +5830,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1197
     {
     }
-    
+
     /// <summary>
     // Multi-Year Procurement
     /// </summary>
@@ -5845,7 +5840,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1198
     {
     }
-    
+
     /// <summary>
     // Research
     /// </summary>
@@ -5855,7 +5850,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1199
     {
     }
-    
+
     /// <summary>
     // Partial
     /// </summary>
@@ -5865,7 +5860,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1201
     {
     }
-    
+
     /// <summary>
     // Dependent Care
     /// </summary>
@@ -5875,7 +5870,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1202
     {
     }
-    
+
     /// <summary>
     // Divorce
     /// </summary>
@@ -5885,7 +5880,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1203
     {
     }
-    
+
     /// <summary>
     // 403(B) Tax Sheltered Annuity
     /// </summary>
@@ -5897,7 +5892,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1205
     {
     }
-    
+
     /// <summary>
     // Children Only
     /// </summary>
@@ -5908,7 +5903,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1207
     {
     }
-    
+
     /// <summary>
     // Approved
     /// </summary>
@@ -5918,7 +5913,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1209
     {
     }
-    
+
     /// <summary>
     // Americas
     /// </summary>
@@ -5928,7 +5923,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1211
     {
     }
-    
+
     /// <summary>
     // Obesity
     /// </summary>
@@ -5938,7 +5933,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1212
     {
     }
-    
+
     /// <summary>
     // Acute
     /// </summary>
@@ -5948,7 +5943,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1213
     {
     }
-    
+
     /// <summary>
     // Dental Insurance
     /// </summary>
@@ -5958,7 +5953,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1215
     {
     }
-    
+
     /// <summary>
     // Active
     /// </summary>
@@ -5968,7 +5963,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1216
     {
     }
-    
+
     /// <summary>
     // Medicare Part A
     /// </summary>
@@ -5978,7 +5973,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1218
     {
     }
-    
+
     /// <summary>
     // Termination of Employment
     /// </summary>
@@ -5988,7 +5983,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1219
     {
     }
-    
+
     /// <summary>
     // Full-time
     /// </summary>
@@ -5998,7 +5993,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1220
     {
     }
-    
+
     /// <summary>
     // Admitting
     /// </summary>
@@ -6008,7 +6003,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1221
     {
     }
-    
+
     /// <summary>
     // Denturist
     /// </summary>
@@ -6018,7 +6013,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1222
     {
     }
-    
+
     /// <summary>
     // Single Practice
     /// </summary>
@@ -6028,7 +6023,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1223
     {
     }
-    
+
     /// <summary>
     // All Categories of Contribution
     /// </summary>
@@ -6039,7 +6034,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1224
     {
     }
-    
+
     /// <summary>
     // Exchange
     /// </summary>
@@ -6049,7 +6044,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1225
     {
     }
-    
+
     /// <summary>
     // Align
     /// </summary>
@@ -6059,7 +6054,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1226
     {
     }
-    
+
     /// <summary>
     // Difficult Access Part
     /// </summary>
@@ -6069,7 +6064,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1227
     {
     }
-    
+
     /// <summary>
     // Broken
     /// </summary>
@@ -6079,7 +6074,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1229
     {
     }
-    
+
     /// <summary>
     // Authorized Field Change
     /// </summary>
@@ -6091,7 +6086,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1230
     {
     }
-    
+
     /// <summary>
     // Commercial
     /// </summary>
@@ -6101,7 +6096,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1231
     {
     }
-    
+
     /// <summary>
     // Architect and Engineering
     /// </summary>
@@ -6111,7 +6106,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1232
     {
     }
-    
+
     /// <summary>
     // Design Defect
     /// </summary>
@@ -6121,7 +6116,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1233
     {
     }
-    
+
     /// <summary>
     // Urgent - Requires Immediate Attention
     /// </summary>
@@ -6131,7 +6126,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1234
     {
     }
-    
+
     /// <summary>
     // Balance Due Payment Advice
     /// </summary>
@@ -6141,7 +6136,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1236
     {
     }
-    
+
     /// <summary>
     // Final Delivery
     /// </summary>
@@ -6151,7 +6146,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1237
     {
     }
-    
+
     /// <summary>
     // Standard Bay - Perpendicular
     /// </summary>
@@ -6161,7 +6156,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1238
     {
     }
-    
+
     /// <summary>
     // Number of Vehicles Tightly Spaced - Available
     /// </summary>
@@ -6171,7 +6166,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1239
     {
     }
-    
+
     /// <summary>
     // One Gate
     /// </summary>
@@ -6181,7 +6176,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1240
     {
     }
-    
+
     /// <summary>
     // Highway Access (United States or Interstate)
     /// </summary>
@@ -6191,7 +6186,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1241
     {
     }
-    
+
     /// <summary>
     // Backhaul
     /// </summary>
@@ -6201,7 +6196,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1246
     {
     }
-    
+
     /// <summary>
     // First Two Digits of Year Expressed in Format CCYY
     /// </summary>
@@ -6212,7 +6207,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1250
     {
     }
-    
+
     /// <summary>
     // First Inoculation
     /// </summary>
@@ -6222,7 +6217,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1254
     {
     }
-    
+
     /// <summary>
     // Learning Disabled
     /// </summary>
@@ -6232,7 +6227,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1257
     {
     }
-    
+
     /// <summary>
     // Subsidized Federal Stafford
     /// </summary>
@@ -6244,7 +6239,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1262
     {
     }
-    
+
     /// <summary>
     // Full-Time Student
     /// </summary>
@@ -6255,7 +6250,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1264
     {
     }
-    
+
     /// <summary>
     // In-school Interest Paid Monthly by Borrower
     /// </summary>
@@ -6265,7 +6260,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1265
     {
     }
-    
+
     /// <summary>
     // Agriculture
     /// </summary>
@@ -6275,7 +6270,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1266
     {
     }
-    
+
     /// <summary>
     // Dependent Undergraduate
     /// </summary>
@@ -6285,7 +6280,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1267
     {
     }
-    
+
     /// <summary>
     // Student
     /// </summary>
@@ -6295,7 +6290,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1268
     {
     }
-    
+
     /// <summary>
     // Document Identification Code
     /// </summary>
@@ -6349,7 +6344,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1270
     {
     }
-    
+
     /// <summary>
     // Backward
     /// </summary>
@@ -6359,7 +6354,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1273
     {
     }
-    
+
     /// <summary>
     // Both Fumigated and Cleaned
     /// </summary>
@@ -6369,7 +6364,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1275
     {
     }
-    
+
     /// <summary>
     // Board Grain
     /// </summary>
@@ -6379,7 +6374,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1277
     {
     }
-    
+
     /// <summary>
     // Consigned
     /// </summary>
@@ -6389,7 +6384,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1278
     {
     }
-    
+
     /// <summary>
     // Northeast
     /// </summary>
@@ -6399,7 +6394,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1280
     {
     }
-    
+
     /// <summary>
     // Consumer Return to Vendor
     /// </summary>
@@ -6409,7 +6404,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1292
     {
     }
-    
+
     /// <summary>
     // Beyond Code Date
     /// </summary>
@@ -6420,7 +6415,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1293
     {
     }
-    
+
     /// <summary>
     // Excessive Wear and Tear
     /// </summary>
@@ -6430,7 +6425,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1294
     {
     }
-    
+
     /// <summary>
     // Active
     /// </summary>
@@ -6440,7 +6435,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1295
     {
     }
-    
+
     /// <summary>
     // Closed
     /// </summary>
@@ -6450,7 +6445,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1297
     {
     }
-    
+
     /// <summary>
     // Absolute Minimum Charge
     /// </summary>
@@ -6528,7 +6523,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1300
     {
     }
-    
+
     /// <summary>
     // Language of Instruction
     /// </summary>
@@ -6538,7 +6533,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1303
     {
     }
-    
+
     /// <summary>
     // School Mark
     /// </summary>
@@ -6548,7 +6543,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1304
     {
     }
-    
+
     /// <summary>
     // Guaranteed
     /// </summary>
@@ -6558,7 +6553,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1307
     {
     }
-    
+
     /// <summary>
     // Existing Contract
     /// </summary>
@@ -6568,7 +6563,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1308
     {
     }
-    
+
     /// <summary>
     // Government Property Required
     /// </summary>
@@ -6578,7 +6573,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1309
     {
     }
-    
+
     /// <summary>
     // Advance Payment
     /// </summary>
@@ -6588,7 +6583,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1310
     {
     }
-    
+
     /// <summary>
     // Add
     /// </summary>
@@ -6598,7 +6593,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1311
     {
     }
-    
+
     /// <summary>
     // Final Test Measurement or Readpoint (Cumulative)
     /// </summary>
@@ -6608,7 +6603,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1312
     {
     }
-    
+
     /// <summary>
     // Initial Trip
     /// </summary>
@@ -6618,7 +6613,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1316
     {
     }
-    
+
     /// <summary>
     // Patient was transported to nearest facility for care of symptoms
     /// </summary>
@@ -6628,7 +6623,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1317
     {
     }
-    
+
     /// <summary>
     // Not specified
     /// </summary>
@@ -6638,7 +6633,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1319
     {
     }
-    
+
     /// <summary>
     // Not Specified
     /// </summary>
@@ -6648,7 +6643,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1320
     {
     }
-    
+
     /// <summary>
     // Requested
     /// </summary>
@@ -6709,7 +6704,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1321
     {
     }
-    
+
     /// <summary>
     // Appeal - Immediate
     /// </summary>
@@ -6719,7 +6714,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1322
     {
     }
-    
+
     /// <summary>
     // Copay exempt
     /// </summary>
@@ -6729,7 +6724,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1327
     {
     }
-    
+
     /// <summary>
     // Not Dispense As Written (DAW)
     /// </summary>
@@ -6739,7 +6734,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1329
     {
     }
-    
+
     /// <summary>
     // Combination Forms
     /// </summary>
@@ -6751,7 +6746,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1330
     {
     }
-    
+
     /// <summary>
     // Uniform Billing Claim Form Bill Type
     /// </summary>
@@ -6761,7 +6756,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1332
     {
     }
-    
+
     /// <summary>
     // Content
     /// </summary>
@@ -6771,7 +6766,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1333
     {
     }
-    
+
     /// <summary>
     // Widely fluctuating blood sugars
     /// </summary>
@@ -6781,7 +6776,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1335
     {
     }
-    
+
     /// <summary>
     // Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan
     /// </summary>
@@ -6793,7 +6788,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1336
     {
     }
-    
+
     /// <summary>
     // Skilled Nursing Facility (SNF)
     /// </summary>
@@ -6803,7 +6798,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1337
     {
     }
-    
+
     /// <summary>
     // Not specified
     /// </summary>
@@ -6813,7 +6808,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1338
     {
     }
-    
+
     /// <summary>
     // Non-Multiple Procedure
     /// </summary>
@@ -6823,7 +6818,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1340
     {
     }
-    
+
     /// <summary>
     // Acute Condition
     /// </summary>
@@ -6833,7 +6828,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1342
     {
     }
-    
+
     /// <summary>
     // Anesthesia
     /// </summary>
@@ -6844,7 +6839,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1343
     {
     }
-    
+
     /// <summary>
     // Lab or Clinical Reports
     /// </summary>
@@ -6854,7 +6849,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1344
     {
     }
-    
+
     /// <summary>
     // Transferred to Intermediate Care Facility - Mentally Retarded (ICF-MR)
     /// </summary>
@@ -6864,7 +6859,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1345
     {
     }
-    
+
     /// <summary>
     // Gravity
     /// </summary>
@@ -6874,7 +6869,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1346
     {
     }
-    
+
     /// <summary>
     // Gastrostomy
     /// </summary>
@@ -6884,7 +6879,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1347
     {
     }
-    
+
     /// <summary>
     // Concentrator
     /// </summary>
@@ -6894,7 +6889,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1348
     {
     }
-    
+
     /// <summary>
     // Exercising
     /// </summary>
@@ -6904,7 +6899,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1349
     {
     }
-    
+
     /// <summary>
     // Dependent edema suggesting congestive heart failure
     /// </summary>
@@ -6914,7 +6909,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1350
     {
     }
-    
+
     /// <summary>
     // Signed signature authorization form or forms for both HCFA-1500 Claim Form block 12 and block 13 are on file
     /// </summary>
@@ -6924,7 +6919,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1351
     {
     }
-    
+
     /// <summary>
     // Not specified
     /// </summary>
@@ -6934,7 +6929,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1355
     {
     }
-    
+
     /// <summary>
     // Not Specified
     /// </summary>
@@ -6944,7 +6939,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1356
     {
     }
-    
+
     /// <summary>
     // Not Specified
     /// </summary>
@@ -6954,7 +6949,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1357
     {
     }
-    
+
     /// <summary>
     // Initial Placement
     /// </summary>
@@ -6964,7 +6959,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1358
     {
     }
-    
+
     /// <summary>
     // Assigned
     /// </summary>
@@ -6974,7 +6969,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1359
     {
     }
-    
+
     /// <summary>
     // Managed Dental Care Program
     /// </summary>
@@ -6984,7 +6979,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1360
     {
     }
-    
+
     /// <summary>
     // Auto Accident
     /// </summary>
@@ -6994,7 +6989,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1362
     {
     }
-    
+
     /// <summary>
     // Appropriate Release of Information on File at Health Care Service Provider or at Utilization Review Organization
     /// </summary>
@@ -7004,7 +6999,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1363
     {
     }
-    
+
     /// <summary>
     // Case Turned Over to a Consultant
     /// </summary>
@@ -7014,7 +7009,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1364
     {
     }
-    
+
     /// <summary>
     // Medical Care
     /// </summary>
@@ -7024,7 +7019,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1365
     {
     }
-    
+
     /// <summary>
     // Early & Periodic Screening
     /// </summary>
@@ -7034,7 +7029,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1366
     {
     }
-    
+
     /// <summary>
     // Cervical 1
     /// </summary>
@@ -7045,7 +7040,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1367
     {
     }
-    
+
     /// <summary>
     // To Be Extracted
     /// </summary>
@@ -7055,7 +7050,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1368
     {
     }
-    
+
     /// <summary>
     // Buccal
     /// </summary>
@@ -7065,7 +7060,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1369
     {
     }
-    
+
     /// <summary>
     // Not Specified
     /// </summary>
@@ -7075,7 +7070,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1370
     {
     }
-    
+
     /// <summary>
     // Bellows Meter
     /// </summary>
@@ -7085,7 +7080,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1373
     {
     }
-    
+
     /// <summary>
     // No Special Accounting Action
     /// </summary>
@@ -7096,7 +7091,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1376
     {
     }
-    
+
     /// <summary>
     // Mixed Shipment Waybill
     /// </summary>
@@ -7106,7 +7101,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1378
     {
     }
-    
+
     /// <summary>
     // Match on Loan
     /// </summary>
@@ -7116,7 +7111,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1379
     {
     }
-    
+
     /// <summary>
     // Nasal Cannula
     /// </summary>
@@ -7126,7 +7121,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1382
     {
     }
-    
+
     /// <summary>
     // Original
     /// </summary>
@@ -7136,7 +7131,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1383
     {
     }
-    
+
     /// <summary>
     // Acute Care Facility
     /// </summary>
@@ -7146,7 +7141,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1384
     {
     }
-    
+
     /// <summary>
     // Reserve Requirement Rate - Demand Deposit Account (DDA)
     /// </summary>
@@ -7157,7 +7152,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1387
     {
     }
-    
+
     /// <summary>
     // Active Coverage
     /// </summary>
@@ -7168,7 +7163,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1390
     {
     }
-    
+
     /// <summary>
     // Miscellaneous
     /// </summary>
@@ -7178,7 +7173,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1393
     {
     }
-    
+
     /// <summary>
     // Horizontal
     /// </summary>
@@ -7188,7 +7183,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1395
     {
     }
-    
+
     /// <summary>
     // Customer-Controlled Car
     /// </summary>
@@ -7198,7 +7193,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1396
     {
     }
-    
+
     /// <summary>
     // Include Summary Totals
     /// </summary>
@@ -7209,7 +7204,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1398
     {
     }
-    
+
     /// <summary>
     // Actual Amount
     /// </summary>
@@ -7219,7 +7214,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1401
     {
     }
-    
+
     /// <summary>
     // Atmosphere Controlled
     /// </summary>
@@ -7230,7 +7225,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1402
     {
     }
-    
+
     /// <summary>
     // Pulse Generator
     /// </summary>
@@ -7240,7 +7235,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1403
     {
     }
-    
+
     /// <summary>
     // Implanted
     /// </summary>
@@ -7250,7 +7245,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1404
     {
     }
-    
+
     /// <summary>
     // Whole Mortgage
     /// </summary>
@@ -7260,7 +7255,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1407
     {
     }
-    
+
     /// <summary>
     // Actual Principal Actual Interest Remittance
     /// </summary>
@@ -7270,7 +7265,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1408
     {
     }
-    
+
     /// <summary>
     // Attribute
     /// </summary>
@@ -7280,7 +7275,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1413
     {
     }
-    
+
     /// <summary>
     // American Land Title Association (ALTA) Policy
     /// </summary>
@@ -7290,7 +7285,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1420
     {
     }
-    
+
     /// <summary>
     // New
     /// </summary>
@@ -7300,7 +7295,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1422
     {
     }
-    
+
     /// <summary>
     // Ambulance
     /// </summary>
@@ -7312,7 +7307,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1423
     {
     }
-    
+
     /// <summary>
     // No Apparent Damage
     /// </summary>
@@ -7322,7 +7317,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1425
     {
     }
-    
+
     /// <summary>
     // Condition Unknown
     /// </summary>
@@ -7332,7 +7327,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1426
     {
     }
-    
+
     /// <summary>
     // Conventional
     /// </summary>
@@ -7342,7 +7337,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1428
     {
     }
-    
+
     /// <summary>
     // Adobe
     /// </summary>
@@ -7353,7 +7348,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1429
     {
     }
-    
+
     /// <summary>
     // 1st Preference
     /// </summary>
@@ -7363,7 +7358,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1431
     {
     }
-    
+
     /// <summary>
     // Authorization Signature Appropriate to this Document
     /// </summary>
@@ -7374,7 +7369,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1432
     {
     }
-    
+
     /// <summary>
     // Body Only
     /// </summary>
@@ -7384,7 +7379,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1434
     {
     }
-    
+
     /// <summary>
     // Certification Authority ID
     /// </summary>
@@ -7394,7 +7389,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1439
     {
     }
-    
+
     /// <summary>
     // Above
     /// </summary>
@@ -7404,7 +7399,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1465
     {
     }
-    
+
     /// <summary>
     // Positional Coordinates Location
     /// </summary>
@@ -7414,7 +7409,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1466
     {
     }
-    
+
     /// <summary>
     // Vacation
     /// </summary>
@@ -7425,7 +7420,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1468
     {
     }
-    
+
     /// <summary>
     // Single Family
     /// </summary>
@@ -7435,7 +7430,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1469
     {
     }
-    
+
     /// <summary>
     // Zero Pricing (Not Covered Under Contract)
     /// </summary>
@@ -7445,7 +7440,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1473
     {
     }
-    
+
     /// <summary>
     // English Only
     /// </summary>
@@ -7455,7 +7450,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1476
     {
     }
-    
+
     /// <summary>
     // Expedited service for problem previously reported
     /// </summary>
@@ -7465,7 +7460,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1484
     {
     }
-    
+
     /// <summary>
     // Customer Commitment
     /// </summary>
@@ -7475,7 +7470,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1485
     {
     }
-    
+
     /// <summary>
     // Car Reported Bad Order
     /// </summary>
@@ -7486,7 +7481,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1487
     {
     }
-    
+
     /// <summary>
     // Body; Including Floors
     /// </summary>
@@ -7496,7 +7491,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1488
     {
     }
-    
+
     /// <summary>
     // Customs
     /// </summary>
@@ -7506,7 +7501,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1489
     {
     }
-    
+
     /// <summary>
     // Immediate Notification of Events
     /// </summary>
@@ -7516,7 +7511,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1491
     {
     }
-    
+
     /// <summary>
     // Basic Waybill Trace
     /// </summary>
@@ -7526,7 +7521,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1492
     {
     }
-    
+
     /// <summary>
     // Interchange Only
     /// </summary>
@@ -7536,7 +7531,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1493
     {
     }
-    
+
     /// <summary>
     // Map Cover & Sublot Number
     /// </summary>
@@ -7548,7 +7543,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1496
     {
     }
-    
+
     /// <summary>
     // Destination
     /// </summary>
@@ -7558,7 +7553,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1499
     {
     }
-    
+
     /// <summary>
     // Child Support
     /// </summary>
@@ -7568,7 +7563,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1511
     {
     }
-    
+
     /// <summary>
     // Proof of Eligibility Unknown or Unavailable
     /// </summary>
@@ -7578,7 +7573,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1514
     {
     }
-    
+
     /// <summary>
     // End Cap - Front End
     /// </summary>
@@ -7588,7 +7583,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1520
     {
     }
-    
+
     /// <summary>
     // Checkout Coupons
     /// </summary>
@@ -7598,7 +7593,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1521
     {
     }
-    
+
     /// <summary>
     // Checkout
     /// </summary>
@@ -7608,7 +7603,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1522
     {
     }
-    
+
     /// <summary>
     // Shelf Maintenance
     /// </summary>
@@ -7618,7 +7613,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1523
     {
     }
-    
+
     /// <summary>
     // Admission Review
     /// </summary>
@@ -7628,7 +7623,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1525
     {
     }
-    
+
     /// <summary>
     // Procedure Followed (Compliance)
     /// </summary>
@@ -7638,7 +7633,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1526
     {
     }
-    
+
     /// <summary>
     // Non-Network Professional Provider in Network Hospital
     /// </summary>
@@ -7648,7 +7643,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1527
     {
     }
-    
+
     /// <summary>
     // Net Cost Formula 1
     /// </summary>
@@ -7658,7 +7653,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1540
     {
     }
-    
+
     /// <summary>
     // Opposite End of Car from Brake
     /// </summary>
@@ -7668,7 +7663,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1543
     {
     }
-    
+
     /// <summary>
     // Wholly Obtained
     /// </summary>
@@ -7678,7 +7673,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1546
     {
     }
-    
+
     /// <summary>
     // Adjustable to Fixed
     /// </summary>
@@ -7688,7 +7683,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1549
     {
     }
-    
+
     /// <summary>
     // Matrix Start - Absolute Reference
     /// </summary>
@@ -7698,7 +7693,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1550
     {
     }
-    
+
     /// <summary>
     // Assumability
     /// </summary>
@@ -7708,7 +7703,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1552
     {
     }
-    
+
     /// <summary>
     // Airline Transport Pilot
     /// </summary>
@@ -7718,7 +7713,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1553
     {
     }
-    
+
     /// <summary>
     // Axle Error
     /// </summary>
@@ -7728,7 +7723,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1554
     {
     }
-    
+
     /// <summary>
     // Axle Patterns are Questionable
     /// </summary>
@@ -7738,7 +7733,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1555
     {
     }
-    
+
     /// <summary>
     // Normal
     /// </summary>
@@ -7748,7 +7743,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1556
     {
     }
-    
+
     /// <summary>
     // Through Movement Over Five Miles per Hour
     /// </summary>
@@ -7758,7 +7753,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1557
     {
     }
-    
+
     /// <summary>
     // Self-reported
     /// </summary>
@@ -7768,7 +7763,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1558
     {
     }
-    
+
     /// <summary>
     // Antenna Warning
     /// </summary>
@@ -7778,7 +7773,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1559
     {
     }
-    
+
     /// <summary>
     // Trackage Rights or Haulage Agreement
     /// </summary>
@@ -7788,7 +7783,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1560
     {
     }
-    
+
     /// <summary>
     // Handling Carrier
     /// </summary>
@@ -7798,7 +7793,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1561
     {
     }
-    
+
     /// <summary>
     // Triple Data Encryption Algorithm
     /// </summary>
@@ -7808,7 +7803,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1564
     {
     }
-    
+
     /// <summary>
     // Advanced Encryption Standard (AES) with a 128-bit Key
     /// </summary>
@@ -7818,7 +7813,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1568
     {
     }
-    
+
     /// <summary>
     // Cipher Block Chaining
     /// </summary>
@@ -7828,7 +7823,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1569
     {
     }
-    
+
     /// <summary>
     // ASCII-Baudot Filter
     /// </summary>
@@ -7838,7 +7833,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1570
     {
     }
-    
+
     /// <summary>
     // Deflate Compressed Data Format with LZ77 (Lempel-Ziv 1977) and Huffman Coding
     /// </summary>
@@ -7848,7 +7843,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1571
     {
     }
-    
+
     /// <summary>
     // Assurance Token
     /// </summary>
@@ -7858,7 +7853,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1572
     {
     }
-    
+
     /// <summary>
     // Digital Signature Standard
     /// </summary>
@@ -7868,7 +7863,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1574
     {
     }
-    
+
     /// <summary>
     // MD2
     /// </summary>
@@ -7878,7 +7873,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1575
     {
     }
-    
+
     /// <summary>
     // Both Inspected and Weighed
     /// </summary>
@@ -7888,7 +7883,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1576
     {
     }
-    
+
     /// <summary>
     // No Exception
     /// </summary>
@@ -7898,7 +7893,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1577
     {
     }
-    
+
     /// <summary>
     // Stated
     /// </summary>
@@ -7908,7 +7903,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1579
     {
     }
-    
+
     /// <summary>
     // Cone
     /// </summary>
@@ -7918,7 +7913,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1585
     {
     }
-    
+
     /// <summary>
     // American
     /// </summary>
@@ -7928,7 +7923,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1588
     {
     }
-    
+
     /// <summary>
     // Accounting Services
     /// </summary>
@@ -7938,7 +7933,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1590
     {
     }
-    
+
     /// <summary>
     // 24-hour Endurance Snowmobile
     /// </summary>
@@ -7948,7 +7943,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1591
     {
     }
-    
+
     /// <summary>
     // Amateur
     /// </summary>
@@ -7959,7 +7954,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1592
     {
     }
-    
+
     /// <summary>
     // Alcohol
     /// </summary>
@@ -7970,7 +7965,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1594
     {
     }
-    
+
     /// <summary>
     // Foreign Army
     /// </summary>
@@ -7980,7 +7975,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1595
     {
     }
-    
+
     /// <summary>
     // Admiral
     /// </summary>
@@ -7992,7 +7987,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1596
     {
     }
-    
+
     /// <summary>
     // Aerial Application
     /// </summary>
@@ -8002,7 +7997,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1599
     {
     }
-    
+
     /// <summary>
     // Per Hundred Weight
     /// </summary>
@@ -8012,7 +8007,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1600
     {
     }
-    
+
     /// <summary>
     // As Weight
     /// </summary>
@@ -8022,7 +8017,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1601
     {
     }
-    
+
     /// <summary>
     // Advance Fee
     /// </summary>
@@ -8033,7 +8028,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1602
     {
     }
-    
+
     /// <summary>
     // Cannibalized
     /// </summary>
@@ -8043,7 +8038,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1606
     {
     }
-    
+
     /// <summary>
     // Body Weight
     /// </summary>
@@ -8053,7 +8048,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1607
     {
     }
-    
+
     /// <summary>
     // Price List
     /// </summary>
@@ -8063,7 +8058,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1609
     {
     }
-    
+
     /// <summary>
     // Documents
     /// </summary>
@@ -8073,7 +8068,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1610
     {
     }
-    
+
     /// <summary>
     // Histopath
     /// </summary>
@@ -8083,7 +8078,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1611
     {
     }
-    
+
     /// <summary>
     // Abnormal
     /// </summary>
@@ -8093,7 +8088,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1612
     {
     }
-    
+
     /// <summary>
     // Benign
     /// </summary>
@@ -8103,7 +8098,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1617
     {
     }
-    
+
     /// <summary>
     // Aborted
     /// </summary>
@@ -8113,7 +8108,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1619
     {
     }
-    
+
     /// <summary>
     // Total Offspring
     /// </summary>
@@ -8123,7 +8118,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1620
     {
     }
-    
+
     /// <summary>
     // Standards Approved for Publication by ASC X12 Procedures Review Board through October 1997
     /// </summary>
@@ -8133,7 +8128,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1621
     {
     }
-    
+
     /// <summary>
     // Live
     /// </summary>
@@ -8143,7 +8138,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1622
     {
     }
-    
+
     /// <summary>
     // Simple
     /// </summary>
@@ -8153,7 +8148,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1626
     {
     }
-    
+
     /// <summary>
     // Automated
     /// </summary>
@@ -8163,7 +8158,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1627
     {
     }
-    
+
     /// <summary>
     // Absent
     /// </summary>
@@ -8173,7 +8168,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1629
     {
     }
-    
+
     /// <summary>
     // One Way
     /// </summary>
@@ -8183,7 +8178,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1630
     {
     }
-    
+
     /// <summary>
     // Alley
     /// </summary>
@@ -8193,7 +8188,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1631
     {
     }
-    
+
     /// <summary>
     // Balkans
     /// </summary>
@@ -8205,7 +8200,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1632
     {
     }
-    
+
     /// <summary>
     // European Economic Community National 20
     /// </summary>
@@ -8215,7 +8210,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1633
     {
     }
-    
+
     /// <summary>
     // Accountant
     /// </summary>
@@ -8225,7 +8220,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1634
     {
     }
-    
+
     /// <summary>
     // All
     /// </summary>
@@ -8235,7 +8230,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1635
     {
     }
-    
+
     /// <summary>
     // Checking Account
     /// </summary>
@@ -8245,7 +8240,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1636
     {
     }
-    
+
     /// <summary>
     // Gross
     /// </summary>
@@ -8255,7 +8250,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1637
     {
     }
-    
+
     /// <summary>
     // Additional
     /// </summary>
@@ -8265,7 +8260,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1638
     {
     }
-    
+
     /// <summary>
     // X509 Certificate Compromised
     /// </summary>
@@ -8275,7 +8270,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1642
     {
     }
-    
+
     /// <summary>
     // Carrier Turn Down
     /// </summary>
@@ -8285,7 +8280,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1644
     {
     }
-    
+
     /// <summary>
     // Estimated to Arrive for Pick-up
     /// </summary>
@@ -8297,7 +8292,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1650
     {
     }
-    
+
     /// <summary>
     // Missed Delivery
     /// </summary>
@@ -8307,7 +8302,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1651
     {
     }
-    
+
     /// <summary>
     // Pickup Appointment Date and/or Time
     /// </summary>
@@ -8317,7 +8312,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1652
     {
     }
-    
+
     /// <summary>
     // Back Loaded
     /// </summary>
@@ -8327,7 +8322,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1656
     {
     }
-    
+
     /// <summary>
     // Borrower
     /// </summary>
@@ -8337,7 +8332,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1657
     {
     }
-    
+
     /// <summary>
     // Capacity Type
     /// </summary>
@@ -8347,7 +8342,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1658
     {
     }
-    
+
     /// <summary>
     // X509 Issuer Distinguished Name
     /// </summary>
@@ -8357,7 +8352,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1675
     {
     }
-    
+
     /// <summary>
     // City Government
     /// </summary>
@@ -8367,7 +8362,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1678
     {
     }
-    
+
     /// <summary>
     // Borrower and Lender Paid
     /// </summary>
@@ -8377,7 +8372,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1679
     {
     }
-    
+
     /// <summary>
     // Cash Out
     /// </summary>
@@ -8387,7 +8382,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1680
     {
     }
-    
+
     /// <summary>
     // Wall Street Journal
     /// </summary>
@@ -8397,7 +8392,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1681
     {
     }
-    
+
     /// <summary>
     // Post-tax Status
     /// </summary>
@@ -8407,7 +8402,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1685
     {
     }
-    
+
     /// <summary>
     // Computer Environment Type
     /// </summary>
@@ -8418,7 +8413,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1691
     {
     }
-    
+
     /// <summary>
     // Full Settlement
     /// </summary>
@@ -8428,7 +8423,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1698
     {
     }
-    
+
     /// <summary>
     // Mixed Pallet (Multi-sku Pallet with Pre-assigned U.P.C.)
     /// </summary>
@@ -8438,7 +8433,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1699
     {
     }
-    
+
     /// <summary>
     // Age
     /// </summary>
@@ -8448,7 +8443,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1701
     {
     }
-    
+
     /// <summary>
     // Foodstuff
     /// </summary>
@@ -8458,7 +8453,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1703
     {
     }
-    
+
     /// <summary>
     // Down Payment
     /// </summary>
@@ -8468,7 +8463,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1706
     {
     }
-    
+
     /// <summary>
     // No Reduction Made; Requested Loan Amount Equals School Certified Amount
     /// </summary>
@@ -8478,7 +8473,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1713
     {
     }
-    
+
     /// <summary>
     // Certificate unknown
     /// </summary>
@@ -8488,7 +8483,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1714
     {
     }
-    
+
     /// <summary>
     // Even Period and Even Dollar
     /// </summary>
@@ -8498,7 +8493,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1719
     {
     }
-    
+
     /// <summary>
     // Cannot Identify Loan
     /// </summary>
@@ -8508,7 +8503,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1720
     {
     }
-    
+
     /// <summary>
     // County
     /// </summary>
@@ -8519,7 +8514,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1721
     {
     }
-    
+
     /// <summary>
     // Additional Bill
     /// </summary>
@@ -8529,7 +8524,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1722
     {
     }
-    
+
     /// <summary>
     // For Military Distribution Only
     /// </summary>
@@ -8539,7 +8534,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1727
     {
     }
-    
+
     /// <summary>
     // Certification
     /// </summary>
@@ -8549,7 +8544,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1729
     {
     }
-    
+
     /// <summary>
     // Education
     /// </summary>
@@ -8559,7 +8554,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1730
     {
     }
-    
+
     /// <summary>
     // Alternative
     /// </summary>
@@ -8569,7 +8564,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1731
     {
     }
-    
+
     /// <summary>
     // Air Connection (Gladhand)
     /// </summary>
@@ -8579,7 +8574,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1741
     {
     }
-    
+
     /// <summary>
     // Deliver Date
     /// </summary>
@@ -8589,7 +8584,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1762
     {
     }
-    
+
     /// <summary>
     // Trade Show - Corporate
     /// </summary>
@@ -8599,7 +8594,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1763
     {
     }
-    
+
     /// <summary>
     // Billback
     /// </summary>
@@ -8609,7 +8604,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1764
     {
     }
-    
+
     /// <summary>
     // Sales
     /// </summary>
@@ -8619,7 +8614,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1765
     {
     }
-    
+
     /// <summary>
     // Free-goods
     /// </summary>
@@ -8629,7 +8624,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1770
     {
     }
-    
+
     /// <summary>
     // Headquarters
     /// </summary>
@@ -8639,7 +8634,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1771
     {
     }
-    
+
     /// <summary>
     // Annual
     /// </summary>
@@ -8649,7 +8644,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_1772
     {
     }
-    
+
     /// <summary>
     // No Authorization Information Present (No Meaningful Information in I02)
     /// </summary>
@@ -8659,7 +8654,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I01
     {
     }
-    
+
     /// <summary>
     // No Security Information Present (No Meaningful Information in I04)
     /// </summary>
@@ -8669,7 +8664,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I03
     {
     }
-    
+
     /// <summary>
     // Duns (Dun & Bradstreet)
     /// </summary>
@@ -8680,7 +8675,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I05
     {
     }
-    
+
     /// <summary>
     // ASC X12 Standards Issued by ANSI in 1987
     /// </summary>
@@ -8692,7 +8687,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I11
     {
     }
-    
+
     /// <summary>
     // No Interchange Acknowledgment Requested
     /// </summary>
@@ -8702,7 +8697,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I13
     {
     }
-    
+
     /// <summary>
     // Information
     /// </summary>
@@ -8712,7 +8707,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I14
     {
     }
-    
+
     /// <summary>
     // The Transmitted Interchange Control Structure Header and Trailer Have Been Received and Have No Errors.
     /// </summary>
@@ -8722,7 +8717,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I17
     {
     }
-    
+
     /// <summary>
     // No error
     /// </summary>
@@ -8733,7 +8728,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I18
     {
     }
-    
+
     /// <summary>
     // Draft Standards for Trial Use Approved by ASC X12 June 1991
     /// </summary>
@@ -8743,7 +8738,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I19
     {
     }
-    
+
     /// <summary>
     // DUNS (Dun and Bradstreet)
     /// </summary>
@@ -8753,7 +8748,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I22
     {
     }
-    
+
     /// <summary>
     // Equivalent to ISO P01
     /// </summary>
@@ -8764,7 +8759,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I27
     {
     }
-    
+
     /// <summary>
     // Production Data
     /// </summary>
@@ -8774,7 +8769,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I29
     {
     }
-    
+
     /// <summary>
     // Accept; the Interconnect Mailbag Containing at Least One Interchange is Received in Full
     /// </summary>
@@ -8784,7 +8779,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I32
     {
     }
-    
+
     /// <summary>
     // The Interconnect Mailbag Acknowledgment Count is Not Equal to the Actual Interconnect Mailbag Acknowledgment Count
     /// </summary>
@@ -8794,7 +8789,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I33
     {
     }
-    
+
     /// <summary>
     // Normal
     /// </summary>
@@ -8804,7 +8799,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I34
     {
     }
-    
+
     /// <summary>
     // Equivalent to ISO P01
     /// </summary>
@@ -8815,7 +8810,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I37
     {
     }
-    
+
     /// <summary>
     // Transfer to the Next Service Request Handler has been Acknowledged
     /// </summary>
@@ -8825,7 +8820,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I40
     {
     }
-    
+
     /// <summary>
     // No Errors
     /// </summary>
@@ -8836,7 +8831,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I43
     {
     }
-    
+
     /// <summary>
     // Mailbag Control Number
     /// </summary>
@@ -8846,7 +8841,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I56
     {
     }
-    
+
     /// <summary>
     // Comprehensive
     /// </summary>
@@ -8856,7 +8851,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I58
     {
     }
-    
+
     /// <summary>
     // Incremental
     /// </summary>
@@ -8866,7 +8861,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I60
     {
     }
-    
+
     /// <summary>
     // Sent
     /// </summary>
@@ -8876,7 +8871,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I61
     {
     }
-    
+
     /// <summary>
     // Latest Status Only
     /// </summary>
@@ -8886,7 +8881,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I62
     {
     }
-    
+
     /// <summary>
     // Interchanges Only
     /// </summary>
@@ -8896,7 +8891,7 @@ namespace EdiFabric.Templates.X12006050
     public class X12_ID_I63
     {
     }
-    
+
     /// <summary>
     // American National Standards Institute (ANSI) Accredited Standards Committee (ASC) X12
     /// </summary>

@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(GRI))]
     public class Loop_GRI_152
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,13 +52,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(5)]
         public virtual List<Loop_N1_152_2> LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_152
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,13 +111,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_152_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -168,7 +168,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(7)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     // Statistical Government Information
     /// </summary>
@@ -177,7 +177,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "152")]
     public class TS152 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

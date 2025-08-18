@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(DAD))]
     public class Loop_DAD_828
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67,7 +67,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     // Debit Authorization
     /// </summary>
@@ -76,7 +76,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "828")]
     public class TS828 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

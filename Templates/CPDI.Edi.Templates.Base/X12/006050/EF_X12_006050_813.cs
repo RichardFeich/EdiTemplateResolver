@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FGS))]
     public class Loop_FGS_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,13 +49,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(5)]
         public virtual List<Loop_TIA_813> LoopTIA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,13 +101,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_813_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -146,13 +146,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TFS))]
     public class Loop_TFS_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -197,13 +197,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(7)]
         public virtual List<Loop_FGS_813> LoopFGS { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TIA))]
     public class Loop_TIA_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -229,7 +229,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     // Electronic Filing of Tax Return Data
     /// </summary>
@@ -238,7 +238,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "813")]
     public class TS813 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

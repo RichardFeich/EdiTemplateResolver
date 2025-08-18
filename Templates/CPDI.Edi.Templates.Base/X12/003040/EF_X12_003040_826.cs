@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(N1))]
     public class Loop_N1_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(2)]
         public virtual N2 N2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Form
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(TFS))]
     public class Loop_TFS_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(6)]
         public virtual List<TIA> TIA { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Information Reporting
     /// </summary>
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "826")]
     public class TS826 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

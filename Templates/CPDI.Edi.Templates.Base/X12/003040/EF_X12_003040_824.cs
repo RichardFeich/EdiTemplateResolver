@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(LM))]
     public class Loop_LM_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(N1))]
     public class Loop_N1_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Original Transaction Identification
     /// </summary>
@@ -102,7 +102,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(OTI))]
     public class Loop_OTI_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -167,7 +167,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(9)]
         public virtual List<Loop_LM_824> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Technical Error Description
     /// </summary>
@@ -176,7 +176,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(TED))]
     public class Loop_TED_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -195,7 +195,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(2)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Application Advice
     /// </summary>
@@ -204,7 +204,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "824")]
     public class TS824 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

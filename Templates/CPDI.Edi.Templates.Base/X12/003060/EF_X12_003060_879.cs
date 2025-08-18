@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item Numbers
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(G28))]
     public class Loop_G28_879
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -91,7 +91,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(10)]
         public virtual List<Loop_G40_879> G40Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Bracket Price
     /// </summary>
@@ -100,7 +100,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(G40))]
     public class Loop_G40_879
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -119,7 +119,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual List<G46> G46 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(N1))]
     public class Loop_N1_879
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -159,7 +159,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Information
     /// </summary>
@@ -168,7 +168,7 @@ namespace EdiFabric.Templates.X12003060
     [Message("X12", "879")]
     public class TS879 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

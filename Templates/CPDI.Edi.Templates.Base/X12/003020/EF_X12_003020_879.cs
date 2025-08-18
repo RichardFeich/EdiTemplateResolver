@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item Numbers
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(G28))]
     public class Loop_G28_879
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58,7 +58,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(5)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -67,7 +67,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_879
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Change
     /// </summary>
@@ -107,7 +107,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "879")]
     public class TS879 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

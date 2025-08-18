@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Credit/Debit Adjustment Detail
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(CDD))]
     public class Loop_CDD_812
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(5)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_812
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -109,7 +109,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Credit/Debit Adjustment
     /// </summary>
@@ -118,7 +118,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "812")]
     public class TS812 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

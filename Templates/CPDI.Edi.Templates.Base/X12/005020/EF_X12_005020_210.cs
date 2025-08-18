@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Carton (Package) Detail
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(CD3))]
     public class Loop_CD3_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual G62 G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(LX))]
     public class Loop_LX_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +161,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(12)]
         public virtual List<Loop_N1_210_3> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -170,7 +170,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -208,7 +208,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(5)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -217,7 +217,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_210_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -262,7 +262,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual List<Loop_N7_210> N7Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -271,7 +271,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_210_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -323,7 +323,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(7)]
         public virtual List<Loop_OID_210> OIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -332,7 +332,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N7))]
     public class Loop_N7_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -351,7 +351,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(2)]
         public virtual List<M7> M7 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Order Information Detail
     /// </summary>
@@ -360,7 +360,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(OID))]
     public class Loop_OID_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -379,7 +379,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Details
     /// </summary>
@@ -388,7 +388,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(S5))]
     public class Loop_S5_210
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -435,7 +435,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual List<Loop_N1_210_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Freight Details and Invoice
     /// </summary>
@@ -444,7 +444,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "210")]
     public class TS210 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

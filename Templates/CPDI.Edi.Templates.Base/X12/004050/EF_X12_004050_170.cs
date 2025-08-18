@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(DTM))]
     public class Loop_DTM_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<BOX> BOX { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LX))]
     public class Loop_LX_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +75,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(3)]
         public virtual List<Loop_DTM_170> DTMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Screen Theater Identification
     /// </summary>
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(THE))]
     public class Loop_THE_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -104,7 +104,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<Loop_LX_170> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Revenue Receipts Statement
     /// </summary>
@@ -113,7 +113,7 @@ namespace EdiFabric.Templates.X12004050
     [Message("X12", "170")]
     public class TS170 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

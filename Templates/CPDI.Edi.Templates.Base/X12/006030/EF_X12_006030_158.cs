@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date or Time or Period
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(DTP))]
     public class Loop_DTP_158
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<Loop_LX_158> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LX))]
     public class Loop_LX_158
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -83,7 +83,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(5)]
         public virtual ASI ASI { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Jurisdiction Sourcing
     /// </summary>
@@ -92,7 +92,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "158")]
     public class TS158 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,13 @@
 namespace EdiFabric.Templates.X12003050
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Composite Unit of Measure
     /// </summary>
@@ -18,7 +16,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C001")]
     public class C001 : I_C001
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,7 +137,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(15)]
         public string Multiplier_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Actions Indicated
     /// </summary>
@@ -148,7 +146,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C002")]
     public class C002 : I_C002
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -189,7 +187,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public string PaperworkReportActionCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Composite Medical Procedure Identifier
     /// </summary>
@@ -198,7 +196,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C003")]
     public class C003 : I_C003
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -260,7 +258,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Composite Diagnosis Code Pointer
     /// </summary>
@@ -269,7 +267,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C004")]
     public class C004 : I_C004
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -307,7 +305,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public string DiagnosisCodePointer_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tooth Surface
     /// </summary>
@@ -316,7 +314,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C005")]
     public class C005 : I_C005
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -357,7 +355,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public string ToothSurfaceCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Oral Cavity Designation
     /// </summary>
@@ -366,7 +364,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C006")]
     public class C006 : I_C006
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -407,7 +405,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public string OralCavityDesignationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Code Information
     /// </summary>
@@ -416,7 +414,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C022")]
     public class C022 : I_C022
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -470,7 +468,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(6)]
         public string Quantity_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Service Location Information
     /// </summary>
@@ -479,7 +477,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C023")]
     public class C023 : I_C023
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -508,7 +506,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public string ClaimFrequencyTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Related Causes Information
     /// </summary>
@@ -517,7 +515,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C024")]
     public class C024 : I_C024
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -560,7 +558,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public string CountryCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Position in Segment
     /// </summary>
@@ -569,7 +567,7 @@ namespace EdiFabric.Templates.X12003050
     [Composite("C030")]
     public class C030 : I_C030
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

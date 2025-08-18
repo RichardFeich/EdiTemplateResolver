@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date or Time or Period
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(DTP))]
     public class Loop_DTP_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +48,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual List<Loop_N9_159> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period
     /// </summary>
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(G63))]
     public class Loop_G63_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -88,7 +88,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual List<Loop_N9_159> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LX))]
     public class Loop_LX_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -124,7 +124,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(3)]
         public virtual List<Loop_THE_159> THELoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -133,7 +133,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(N9))]
     public class Loop_N9_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -169,7 +169,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Screen Theater Identification
     /// </summary>
@@ -178,7 +178,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(THE))]
     public class Loop_THE_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -246,7 +246,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(10)]
         public virtual List<Loop_G63_159> G63Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Motion Picture Booking Confirmation
     /// </summary>
@@ -255,7 +255,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "159")]
     public class TS159 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

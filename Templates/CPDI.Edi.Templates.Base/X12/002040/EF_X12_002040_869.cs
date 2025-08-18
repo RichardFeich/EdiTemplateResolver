@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(HL))]
     public class Loop_HL_869
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +73,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(8)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -86,7 +82,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_869
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -131,7 +127,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Order Status Inquiry
     /// </summary>
@@ -140,7 +136,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "869")]
     public class TS869 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

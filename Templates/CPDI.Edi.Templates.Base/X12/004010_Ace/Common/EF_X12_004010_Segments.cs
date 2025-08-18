@@ -1,15 +1,13 @@
 namespace EdiFabric.Templates.X12004010_Ace
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Request Validation
     /// </summary>
@@ -18,7 +16,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AAA")]
     public class AAA : I_AAA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,7 +50,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FollowupActionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Account Description
     /// </summary>
@@ -61,7 +59,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ACD")]
     public class ACD : I_ACD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,7 +85,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string LoanTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Acknowledgment
     /// </summary>
@@ -96,7 +94,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ACK")]
     public class ACK : I_ACK
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -334,7 +332,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(29)]
         public string IndustryCode_29 { get; set; }
     }
-    
+
     /// <summary>
     /// Ancillary Charges
     /// </summary>
@@ -343,7 +341,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ACS")]
     public class ACS : I_ACS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -380,7 +378,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ShipmentMethodofPayment_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Account Identification
     /// </summary>
@@ -389,7 +387,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ACT")]
     public class ACT : I_ACT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -466,7 +464,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string BenefitStatusCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Adjustment Amount
     /// </summary>
@@ -475,7 +473,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AD1")]
     public class AD1 : I_AD1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -517,7 +515,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string LateReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Disposition
     /// </summary>
@@ -526,7 +524,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ADI")]
     public class ADI : I_ADI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -564,7 +562,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string UnitofTimePeriodorInterval_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Adjustments to Balances or Services
     /// </summary>
@@ -573,7 +571,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ADJ")]
     public class ADJ : I_ADJ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -730,7 +728,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string ReferenceIdentification_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Parturition Status
     /// </summary>
@@ -739,7 +737,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ADT")]
     public class ADT : I_ADT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -824,7 +822,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string UnitofTimePeriodorInterval_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Advertising Demographic Information
     /// </summary>
@@ -833,7 +831,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ADV")]
     public class ADV : I_ADV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -896,7 +894,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string MeasurementValue_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Adjustment
     /// </summary>
@@ -905,7 +903,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ADX")]
     public class ADX : I_ADX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -943,7 +941,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Information Summary
     /// </summary>
@@ -952,7 +950,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AEI")]
     public class AEI : I_AEI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -982,7 +980,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string YesNoConditionorResponseCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Automatic Equipment Identification Site Information
     /// </summary>
@@ -991,7 +989,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AES")]
     public class AES : I_AES
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1036,7 +1034,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string IndustryCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Income
     /// </summary>
@@ -1045,7 +1043,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AIN")]
     public class AIN : I_AIN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1144,7 +1142,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string IndustryCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Functional Group Response Header
     /// </summary>
@@ -1153,7 +1151,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK1")]
     public class AK1 : I_AK1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1175,7 +1173,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string GroupControlNumber_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Set Response Header
     /// </summary>
@@ -1184,7 +1182,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK2")]
     public class AK2 : I_AK2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1206,7 +1204,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string TransactionSetControlNumber_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Segment Note
     /// </summary>
@@ -1215,7 +1213,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK3")]
     public class AK3 : I_AK3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1253,7 +1251,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string SegmentSyntaxErrorCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Element Note
     /// </summary>
@@ -1262,7 +1260,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK4")]
     public class AK4 : I_AK4<C030>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1298,7 +1296,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CopyofBadDataElement_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Set Response Trailer
     /// </summary>
@@ -1307,7 +1305,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK5")]
     public class AK5 : I_AK5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1355,7 +1353,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TransactionSetSyntaxErrorCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Functional Group Response Trailer
     /// </summary>
@@ -1364,7 +1362,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AK9")]
     public class AK9 : I_AK9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1439,7 +1437,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string FunctionalGroupSyntaxErrorCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Informational Values
     /// </summary>
@@ -1448,7 +1446,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AM1")]
     public class AM1 : I_AM1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1502,7 +1500,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Percent_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Monetary Amount
     /// </summary>
@@ -1511,7 +1509,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AMT")]
     public class AMT : I_AMT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1540,7 +1538,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CreditDebitFlagCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Identification
     /// </summary>
@@ -1549,7 +1547,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ANI")]
     public class ANI : I_ANI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1629,7 +1627,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Offspring Counts
     /// </summary>
@@ -1638,7 +1636,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AOC")]
     public class AOC : I_AOC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1685,7 +1683,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string UnitofTimePeriodorInterval_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Offspring/Fetus Identification
     /// </summary>
@@ -1694,7 +1692,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AOI")]
     public class AOI : I_AOI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1804,7 +1802,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string UnitofTimePeriodorInterval_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Observation Location
     /// </summary>
@@ -1813,7 +1811,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AOL")]
     public class AOL : I_AOL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1880,7 +1878,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string SurfaceLayerPositionCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Observation Result
     /// </summary>
@@ -1889,7 +1887,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AOR")]
     public class AOR : I_AOR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1995,7 +1993,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string UnitofTimePeriodorInterval_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Alternate Parts
     /// </summary>
@@ -2004,7 +2002,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AP1")]
     public class AP1 : I_AP1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2112,7 +2110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string Description_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Activity or Process Information
     /// </summary>
@@ -2121,7 +2119,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("API")]
     public class API : I_API
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2183,7 +2181,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string InformationStatusCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Association of American Railroads Pool Code Restrictions
     /// </summary>
@@ -2192,7 +2190,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("APR")]
     public class APR : I_APR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2222,7 +2220,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AssociationofAmericanRailroadsAARPoolCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Results Counts
     /// </summary>
@@ -2231,7 +2229,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ARC")]
     public class ARC : I_ARC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2261,7 +2259,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ObservationTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Applicant Residence Specifics
     /// </summary>
@@ -2270,7 +2268,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ARS")]
     public class ARS : I_ARS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2314,7 +2312,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ReferenceIdentification_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Action or Status Indicator
     /// </summary>
@@ -2323,7 +2321,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ASI")]
     public class ASI : I_ASI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2351,7 +2349,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string StatusReasonCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Asset Liability
     /// </summary>
@@ -2360,7 +2358,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ASL")]
     public class ASL : I_ASL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2396,7 +2394,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FrequencyCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Amount and Settlement Method
     /// </summary>
@@ -2405,7 +2403,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ASM")]
     public class ASM : I_ASM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2433,7 +2431,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AmountQualifierCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Asset Ownership
     /// </summary>
@@ -2442,7 +2440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ASO")]
     public class ASO : I_ASO<C007>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2531,7 +2529,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ReferenceIdentification_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Reproductive Status
     /// </summary>
@@ -2540,7 +2538,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AST")]
     public class AST : I_AST
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2633,7 +2631,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string UnitofTimePeriodorInterval_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading Line Item Number
     /// </summary>
@@ -2642,7 +2640,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT1")]
     public class AT1 : I_AT1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2656,7 +2654,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string LadingLineItemNumber_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading Line Item Detail
     /// </summary>
@@ -2665,7 +2663,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT2")]
     public class AT2 : I_AT2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2751,7 +2749,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string FreightClassCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading Rates and Charges
     /// </summary>
@@ -2760,7 +2758,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT3")]
     public class AT3 : I_AT3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2824,7 +2822,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Percent_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading Description
     /// </summary>
@@ -2833,7 +2831,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT4")]
     public class AT4 : I_AT4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2847,7 +2845,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string LadingDescription_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading Handling Requirements
     /// </summary>
@@ -2856,7 +2854,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT5")]
     public class AT5 : I_AT5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2885,7 +2883,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string SpecialHandlingDescription_03 { get; set; }
     }
-    
+
     /// <summary>
     /// International Manifest Information
     /// </summary>
@@ -2894,7 +2892,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT6")]
     public class AT6 : I_AT6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2922,7 +2920,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string TransportationTermsCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Status Details
     /// </summary>
@@ -2931,7 +2929,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT7")]
     public class AT7 : I_AT7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -2992,7 +2990,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string TimeCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Weight, Packaging and Quantity Data
     /// </summary>
@@ -3001,7 +2999,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT8")]
     public class AT8 : I_AT8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3061,7 +3059,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Volume_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Trailer or Container Dimension and Weight
     /// </summary>
@@ -3070,7 +3068,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AT9")]
     public class AT9 : I_AT9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3138,7 +3136,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Volume_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Motor Carrier Delivery Trailer Manifest
     /// </summary>
@@ -3147,7 +3145,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ATA")]
     public class ATA : I_ATA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3178,7 +3176,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Date_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Resource Authorization
     /// </summary>
@@ -3187,7 +3185,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ATH")]
     public class ATH : I_ATH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3235,7 +3233,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Date_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Attendance
     /// </summary>
@@ -3244,7 +3242,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ATN")]
     public class ATN : I_ATN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3295,7 +3293,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Description_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Animal Test Result
     /// </summary>
@@ -3304,7 +3302,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ATR")]
     public class ATR : I_ATR<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3388,7 +3386,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Time_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Student Activities and Awards
     /// </summary>
@@ -3397,7 +3395,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ATV")]
     public class ATV : I_ATV<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3477,7 +3475,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string YesNoConditionorResponseCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Funds Availability
     /// </summary>
@@ -3486,7 +3484,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AVA")]
     public class AVA : I_AVA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3509,7 +3507,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Availability_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Amount with Description
     /// </summary>
@@ -3518,7 +3516,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AWD")]
     public class AWD : I_AWD<C007>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3556,7 +3554,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CurrencyCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Axle Measurements
     /// </summary>
@@ -3565,7 +3563,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("AXL")]
     public class AXL : I_AXL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3636,7 +3634,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Booking or Pick-up/Delivery
     /// </summary>
@@ -3645,7 +3643,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B1")]
     public class B1 : I_B1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3682,7 +3680,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReservationActionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Transportation Carrier Shipment Status Message
     /// </summary>
@@ -3691,7 +3689,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B10")]
     public class B10 : I_B10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3754,7 +3752,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Shipment Status Inquiry
     /// </summary>
@@ -3763,7 +3761,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B11")]
     public class B11 : I_B11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3855,7 +3853,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ReportTransmissionCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Consolidation of Goods In Container
     /// </summary>
@@ -3864,7 +3862,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B12")]
     public class B12 : I_B12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3896,7 +3894,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string EquipmentType_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Appointment Schedule
     /// </summary>
@@ -3905,7 +3903,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B13")]
     public class B13 : I_B13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -3927,7 +3925,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string StandardCarrierAlphaCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Shipment Information Transaction
     /// </summary>
@@ -3936,7 +3934,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B2")]
     public class B2 : I_B2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4030,7 +4028,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string PaymentMethodCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Set Purpose
     /// </summary>
@@ -4039,7 +4037,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B2A")]
     public class B2A : I_B2A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4059,7 +4057,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string ApplicationType_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Carrier's Invoice
     /// </summary>
@@ -4068,7 +4066,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B3")]
     public class B3 : I_B3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4184,7 +4182,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string TransportationTermsCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Invoice Type
     /// </summary>
@@ -4193,7 +4191,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B3A")]
     public class B3A : I_B3A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4214,7 +4212,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string NumberofShipments_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Carrier's Invoice
     /// </summary>
@@ -4223,7 +4221,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B3B")]
     public class B3B : I_B3B
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4318,7 +4316,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string CurrencyCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Inquiry or Reply
     /// </summary>
@@ -4327,7 +4325,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B4")]
     public class B4 : I_B4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4434,7 +4432,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string EquipmentNumberCheckDigit_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Logistics Services
     /// </summary>
@@ -4443,7 +4441,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B9")]
     public class B9 : I_B9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4472,7 +4470,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ShipmentMethodofPayment_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Request
     /// </summary>
@@ -4481,7 +4479,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("B9A")]
     public class B9A : I_B9A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4494,7 +4492,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string ServiceRequestCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Export Shipment Identifying Information
     /// </summary>
@@ -4503,7 +4501,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BA1")]
     public class BA1 : I_BA1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4607,7 +4605,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string VesselName_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Cargo Terminal Information
     /// </summary>
@@ -4616,7 +4614,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BA2")]
     public class BA2 : I_BA2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4714,7 +4712,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string VesselCodeQualifier_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Product Transfer Account Adjustment
     /// </summary>
@@ -4723,7 +4721,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAA")]
     public class BAA : I_BAA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4777,7 +4775,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Time_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Purchase Order Acknowledgment
     /// </summary>
@@ -4786,7 +4784,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAK")]
     public class BAK : I_BAK
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4872,7 +4870,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TransactionTypeCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Balance Detail
     /// </summary>
@@ -4881,7 +4879,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAL")]
     public class BAL : I_BAL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4911,7 +4909,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string MonetaryAmount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Batch
     /// </summary>
@@ -4920,7 +4918,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAT")]
     public class BAT : I_BAT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -4957,7 +4955,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string BatchTypeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for the Debit Authorization
     /// </summary>
@@ -4966,7 +4964,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAU")]
     public class BAU : I_BAU
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5022,7 +5020,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Name_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Advance Consist and Transportation Automatic Equipment ID
     /// </summary>
@@ -5031,7 +5029,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BAX")]
     public class BAX : I_BAX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5149,7 +5147,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ServiceLevelCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Legal Claims
     /// </summary>
@@ -5158,7 +5156,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BBC")]
     public class BBC : I_BBC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5179,7 +5177,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Contract Completion Status
     /// </summary>
@@ -5188,7 +5186,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BC")]
     public class BC : I_BC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5247,7 +5245,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ActionCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Purchase Order Change Acknowledgment
     /// </summary>
@@ -5256,7 +5254,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCA")]
     public class BCA : I_BCA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5379,7 +5377,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string TransactionTypeCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Credit/Debit Adjustment
     /// </summary>
@@ -5388,7 +5386,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCD")]
     public class BCD : I_BCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5514,7 +5512,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string ActionCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Purchase Order Change
     /// </summary>
@@ -5523,7 +5521,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCH")]
     public class BCH : I_BCH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5653,7 +5651,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string PurchaseCategory_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Basic Claim Information
     /// </summary>
@@ -5662,7 +5660,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCI")]
     public class BCI : I_BCI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5729,7 +5727,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string CurrencyCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Contractor Cost Data Reporting
     /// </summary>
@@ -5738,7 +5736,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCM")]
     public class BCM : I_BCM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5837,7 +5835,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string CurrencyCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Procurement Notices
     /// </summary>
@@ -5846,7 +5844,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCO")]
     public class BCO : I_BCO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -5943,7 +5941,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ActionCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Contract Pricing Proposal
     /// </summary>
@@ -5952,7 +5950,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCP")]
     public class BCP : I_BCP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6060,7 +6058,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string Description_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Shipper's Car Order
     /// </summary>
@@ -6069,7 +6067,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCQ")]
     public class BCQ : I_BCQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6124,7 +6122,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string StandardCarrierAlphaCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Project Cost Reporting
     /// </summary>
@@ -6133,7 +6131,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCS")]
     public class BCS : I_BCS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6232,7 +6230,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public virtual C001 CompositeUnitofMeasure_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Price/Sales Catalog
     /// </summary>
@@ -6241,7 +6239,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCT")]
     public class BCT : I_BCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6324,7 +6322,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TransactionSetPurposeCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Legal Claim Updates
     /// </summary>
@@ -6333,7 +6331,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BCU")]
     public class BCU : I_BCU
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6389,7 +6387,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Date_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Shipment Delivery Discrepancy Information
     /// </summary>
@@ -6398,7 +6396,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BDD")]
     public class BDD : I_BDD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6429,7 +6427,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ShipmentIdentificationNumber_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Purchase Order
     /// </summary>
@@ -6438,7 +6436,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BEG")]
     public class BEG : I_BEG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6535,7 +6533,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string TransactionTypeCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beneficiary or Owner Information
     /// </summary>
@@ -6544,7 +6542,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BEN")]
     public class BEN : I_BEN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6592,7 +6590,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TypeofAccountCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Borrower Education Program
     /// </summary>
@@ -6601,7 +6599,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BEP")]
     public class BEP : I_BEP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6622,7 +6620,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string InstructionalSettingCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Planning Schedule
     /// </summary>
@@ -6631,7 +6629,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BFR")]
     public class BFR : I_BFR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6741,7 +6739,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string ActionCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Borrower Financial Summary
     /// </summary>
@@ -6750,7 +6748,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BFS")]
     public class BFS : I_BFS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6835,7 +6833,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string YesNoConditionorResponseCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for File Transfer Information
     /// </summary>
@@ -6844,7 +6842,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BGF")]
     public class BGF : I_BGF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6873,7 +6871,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ReferenceIdentification_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment
     /// </summary>
@@ -6882,7 +6880,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BGN")]
     public class BGN : I_BGN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -6958,7 +6956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string SecurityLevelCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Problem Log Inquiry or Advice
     /// </summary>
@@ -6967,7 +6965,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BGP")]
     public class BGP : I_BGP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7044,7 +7042,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string InterchangeTrainIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning of Hierarchical Transaction
     /// </summary>
@@ -7053,7 +7051,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BHT")]
     public class BHT : I_BHT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7105,7 +7103,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TransactionTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Inventory Inquiry/Advice
     /// </summary>
@@ -7114,7 +7112,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BIA")]
     public class BIA : I_BIA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7168,7 +7166,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ActionCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Invoice
     /// </summary>
@@ -7177,7 +7175,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BIG")]
     public class BIG : I_BIG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7261,7 +7259,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string InvoiceNumber_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Binary Data
     /// </summary>
@@ -7270,7 +7268,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BIN")]
     public class BIN : I_BIN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7293,7 +7291,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string BinaryData_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Automotive Inspection
     /// </summary>
@@ -7302,7 +7300,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BIX")]
     public class BIX : I_BIX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7395,7 +7393,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string IdentificationCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment Railroad Junctions and Interchanges Update Activity
     /// </summary>
@@ -7404,7 +7402,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BJF")]
     public class BJF : I_BJF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7469,7 +7467,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string CountryCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Billing Information
     /// </summary>
@@ -7478,7 +7476,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BL")]
     public class BL : I_BL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7625,7 +7623,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string StandardCarrierAlphaCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Baseline Item Data
     /// </summary>
@@ -7634,7 +7632,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BLI")]
     public class BLI : I_BLI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7778,7 +7776,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string FrequencyCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Balance Information
     /// </summary>
@@ -7787,7 +7785,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BLN")]
     public class BLN : I_BLN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7842,7 +7840,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TimeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Carrier Identification
     /// </summary>
@@ -7851,7 +7849,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BLR")]
     public class BLR : I_BLR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7873,7 +7871,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Date_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Asset Schedule
     /// </summary>
@@ -7882,7 +7880,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BLS")]
     public class BLS : I_BLS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -7936,7 +7934,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AcknowledgmentType_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Market Development Fund Allocation
     /// </summary>
@@ -7945,7 +7943,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BMA")]
     public class BMA : I_BMA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8017,7 +8015,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Description_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment For Text Message
     /// </summary>
@@ -8026,7 +8024,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BMG")]
     public class BMG : I_BMG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8054,7 +8052,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string TransactionTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Multilevel Railcar Load Details Transaction
     /// </summary>
@@ -8063,7 +8061,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BMM")]
     public class BMM : I_BMM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8151,7 +8149,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TransactionSetPurposeCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Market Development Fund Settlement
     /// </summary>
@@ -8160,7 +8158,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BMP")]
     public class BMP : I_BMP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8197,7 +8195,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment For Material Safety Data Sheet
     /// </summary>
@@ -8206,7 +8204,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BMS")]
     public class BMS : I_BMS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8284,7 +8282,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string CountryCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment For Nonconformance Report
     /// </summary>
@@ -8293,7 +8291,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BNR")]
     public class BNR : I_BNR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8346,7 +8344,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TransactionTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Shipment Information
     /// </summary>
@@ -8355,7 +8353,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BNX")]
     public class BNX : I_BNX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8390,7 +8388,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string RepetitivePatternNumber_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for the Motor Carrier Bill of Lading
     /// </summary>
@@ -8399,7 +8397,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BOL")]
     public class BOL : I_BOL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8491,7 +8489,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string CurrencyCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning of Report
     /// </summary>
@@ -8500,7 +8498,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BOR")]
     public class BOR : I_BOR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8582,7 +8580,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string LanguageCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for the Operating Expense Statement
     /// </summary>
@@ -8591,7 +8589,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BOS")]
     public class BOS : I_BOS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8644,7 +8642,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Date_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Box Office Detail
     /// </summary>
@@ -8653,7 +8651,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BOX")]
     public class BOX : I_BOX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8779,7 +8777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string ReferenceIdentification_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Price Authorization Acknowledgment/Status
     /// </summary>
@@ -8788,7 +8786,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BPA")]
     public class BPA : I_BPA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8834,7 +8832,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Time_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Project Schedule Reporting
     /// </summary>
@@ -8843,7 +8841,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BPP")]
     public class BPP : I_BPP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -8960,7 +8958,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string VersionIdentifier_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Payment Order/Remittance Advice
     /// </summary>
@@ -8969,7 +8967,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BPR")]
     public class BPR : I_BPR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9141,7 +9139,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string AccountNumber_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Product Transfer and Resale
     /// </summary>
@@ -9150,7 +9148,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BPT")]
     public class BPT : I_BPT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9233,7 +9231,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string SecurityLevelCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Response to Request for Quotation
     /// </summary>
@@ -9242,7 +9240,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BQR")]
     public class BQR : I_BQR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9311,7 +9309,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ChangeOrderSequenceNumber_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Request for Quotation
     /// </summary>
@@ -9320,7 +9318,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BQT")]
     public class BQT : I_BQT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9410,7 +9408,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ChangeOrderSequenceNumber_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Material Management
     /// </summary>
@@ -9419,7 +9417,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BR")]
     public class BR : I_BR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9512,7 +9510,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ReferenceIdentification_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Receiving Advice or Acceptance Certificate
     /// </summary>
@@ -9521,7 +9519,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BRA")]
     public class BRA : I_BRA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9582,7 +9580,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ActionCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Response to Product Transfer Account Adjustment
     /// </summary>
@@ -9591,7 +9589,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BRC")]
     public class BRC : I_BRC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9637,7 +9635,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Time_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Railroad Mark Register Update Activity
     /// </summary>
@@ -9646,7 +9644,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BRR")]
     public class BRR : I_BRR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9699,7 +9697,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Commission Sales Report
     /// </summary>
@@ -9708,7 +9706,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSC")]
     public class BSC : I_BSC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9748,7 +9746,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Breakdown Structure Description
     /// </summary>
@@ -9757,7 +9755,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSD")]
     public class BSD : I_BSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9825,7 +9823,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string SecurityLevelCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Business Function
     /// </summary>
@@ -9834,7 +9832,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSF")]
     public class BSF : I_BSF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9864,7 +9862,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string IndustryCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Order Status Inquiry
     /// </summary>
@@ -9873,7 +9871,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSI")]
     public class BSI : I_BSI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -9947,7 +9945,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ActionCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Ship Notice
     /// </summary>
@@ -9956,7 +9954,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSN")]
     public class BSN : I_BSN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10018,7 +10016,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string StatusReasonCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Order Status Report
     /// </summary>
@@ -10027,7 +10025,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSR")]
     public class BSR : I_BSR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10126,7 +10124,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ActionCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Shipping Schedule/Production Sequence
     /// </summary>
@@ -10135,7 +10133,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BSS")]
     public class BSS : I_BSS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10232,7 +10230,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ScheduleQuantityQualifier_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Batch Totals
     /// </summary>
@@ -10241,7 +10239,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BT1")]
     public class BT1 : I_BT1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10336,7 +10334,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Total_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Tax Acknowledgment
     /// </summary>
@@ -10345,7 +10343,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTA")]
     public class BTA : I_BTA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10382,7 +10380,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string MonetaryAmount_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Parameter Trace Registration
     /// </summary>
@@ -10391,7 +10389,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTC")]
     public class BTC : I_BTC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10490,7 +10488,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string IndustryCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Tax Information
     /// </summary>
@@ -10499,7 +10497,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTI")]
     public class BTI : I_BTI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10616,7 +10614,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string TransactionTypeCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment For Trading Partner Profile
     /// </summary>
@@ -10625,7 +10623,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTP")]
     public class BTP : I_BTP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10713,7 +10711,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string PaymentMethodCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Test Results
     /// </summary>
@@ -10722,7 +10720,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTR")]
     public class BTR : I_BTR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10782,7 +10780,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string SecurityLevelCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Train Sheets
     /// </summary>
@@ -10791,7 +10789,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BTS")]
     public class BTS : I_BTS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10897,7 +10895,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string YesNoConditionorResponseCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Buydown
     /// </summary>
@@ -10906,7 +10904,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BUY")]
     public class BUY : I_BUY
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -10951,7 +10949,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Percent_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Vehicle Advice
     /// </summary>
@@ -10960,7 +10958,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BVA")]
     public class BVA : I_BVA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11165,7 +11163,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(25)]
         public string TransactionSetPurposeCode_25 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Vehicle Baying Order
     /// </summary>
@@ -11174,7 +11172,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BVB")]
     public class BVB : I_BVB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11235,7 +11233,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string TransactionSetPurposeCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Vehicle Shipping Order
     /// </summary>
@@ -11244,7 +11242,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BVP")]
     public class BVP : I_BVP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11338,7 +11336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string TransactionSetPurposeCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Vehicle Service
     /// </summary>
@@ -11347,7 +11345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BVS")]
     public class BVS : I_BVS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11449,7 +11447,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ReferenceIdentification_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Weight Message Set
     /// </summary>
@@ -11458,7 +11456,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BW")]
     public class BW : I_BW
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11488,7 +11486,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string WeightUnitCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// General Shipment Information
     /// </summary>
@@ -11497,7 +11495,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("BX")]
     public class BX : I_BX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11605,7 +11603,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ApplicationType_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Bank ID
     /// </summary>
@@ -11614,7 +11612,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("C2")]
     public class C2 : I_C2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11675,7 +11673,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Date_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Currency
     /// </summary>
@@ -11684,7 +11682,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("C3")]
     public class C3 : I_C3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11722,7 +11720,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CurrencyCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Alternate Amount Due
     /// </summary>
@@ -11731,7 +11729,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("C4")]
     public class C4 : I_C4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11754,7 +11752,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string NetAmountDue_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Certifications and Clauses
     /// </summary>
@@ -11763,7 +11761,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("C8")]
     public class C8 : I_C8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11800,7 +11798,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ShippersExportDeclarationRequirements_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Certifications Clauses Continuation
     /// </summary>
@@ -11809,7 +11807,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("C8C")]
     public class C8C : I_C8C
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11839,7 +11837,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CertificationClauseText_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Request Identifier
     /// </summary>
@@ -11848,7 +11846,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CA1")]
     public class CA1 : I_CA1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11870,7 +11868,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string RateResponseSuffix_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Detail
     /// </summary>
@@ -11879,7 +11877,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CAD")]
     public class CAD : I_CAD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -11954,7 +11952,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ServiceLevelCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Civil Action Income
     /// </summary>
@@ -11963,7 +11961,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CAI")]
     public class CAI : I_CAI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12023,7 +12021,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ReferenceIdentification_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Calendar
     /// </summary>
@@ -12032,7 +12030,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CAL")]
     public class CAL : I_CAL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12159,7 +12157,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string FreeformDescription_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Claims Adjustment
     /// </summary>
@@ -12168,7 +12166,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CAS")]
     public class CAS : I_CAS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12342,7 +12340,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(19)]
         public string Quantity_19 { get; set; }
     }
-    
+
     /// <summary>
     /// Category of Patient Information Service
     /// </summary>
@@ -12351,7 +12349,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CAT")]
     public class CAT : I_CAT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12413,7 +12411,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string VersionIdentifier_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Contract and Cost Accounting Standards Data
     /// </summary>
@@ -12422,7 +12420,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CB1")]
     public class CB1 : I_CB1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12442,7 +12440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FinancingTypeCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Cost Breakdown Structure
     /// </summary>
@@ -12451,7 +12449,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CBS")]
     public class CBS : I_CBS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12481,7 +12479,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual C001 CompositeUnitofMeasure_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit Counseling Information
     /// </summary>
@@ -12490,7 +12488,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CCI")]
     public class CCI : I_CCI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12580,7 +12578,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string CounselingStatusCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Conditions
     /// </summary>
@@ -12589,7 +12587,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CD")]
     public class CD : I_CD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12687,7 +12685,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string GroupTitle_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Cargo Detail
     /// </summary>
@@ -12696,7 +12694,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CD1")]
     public class CD1 : I_CD1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -12950,7 +12948,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(31)]
         public string ReferenceIdentification_31 { get; set; }
     }
-    
+
     /// <summary>
     /// Multi-Valued Characteristics
     /// </summary>
@@ -12959,7 +12957,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CD2")]
     public class CD2 : I_CD2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13029,7 +13027,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string MedicalCodeValue_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Carton (Package) Detail
     /// </summary>
@@ -13038,7 +13036,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CD3")]
     public class CD3 : I_CD3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13153,7 +13151,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string CountryCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Consumer Credit Account
     /// </summary>
@@ -13162,7 +13160,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CDA")]
     public class CDA : I_CDA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13329,7 +13327,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string ReferenceIdentification_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit/Debit Adjustment Detail
     /// </summary>
@@ -13338,7 +13336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CDD")]
     public class CDD : I_CDD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13448,7 +13446,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string UnitPrice_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Change Detail Information
     /// </summary>
@@ -13457,7 +13455,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CDI")]
     public class CDI : I_CDI<C045>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13544,7 +13542,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Description_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Case Description
     /// </summary>
@@ -13553,7 +13551,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CDS")]
     public class CDS : I_CDS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13646,7 +13644,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string IdentificationCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Administration of Justice Event Description
     /// </summary>
@@ -13655,7 +13653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CED")]
     public class CED : I_CED
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13697,7 +13695,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Summary Freight Bill Manifest
     /// </summary>
@@ -13706,7 +13704,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CF1")]
     public class CF1 : I_CF1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13761,7 +13759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Date_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Summary Freight Bill Detail
     /// </summary>
@@ -13770,7 +13768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CF2")]
     public class CF2 : I_CF2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13856,7 +13854,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TransactionTypeCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Cost Reporting Format Type
     /// </summary>
@@ -13865,7 +13863,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CFT")]
     public class CFT : I_CFT<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13938,7 +13936,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Description_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Charge
     /// </summary>
@@ -13947,7 +13945,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CGS")]
     public class CGS : I_CGS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -13992,7 +13990,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string SpecialChargeorAllowanceCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Chargeback Information
     /// </summary>
@@ -14001,7 +13999,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CHB")]
     public class CHB : I_CHB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14072,7 +14070,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string AllowanceorChargeIndicator_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Hire Rates
     /// </summary>
@@ -14081,7 +14079,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CHR")]
     public class CHR : I_CHR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14110,7 +14108,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Multiplier_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Interchange Agreement
     /// </summary>
@@ -14119,7 +14117,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CI")]
     public class CI : I_CI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14235,7 +14233,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ReferenceIdentification_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Information Control
     /// </summary>
@@ -14244,7 +14242,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CIC")]
     public class CIC : I_CIC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14290,7 +14288,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string MechanicalCarCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Characteristic/Class ID
     /// </summary>
@@ -14299,7 +14297,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CID")]
     public class CID : I_CID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14360,7 +14358,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Civil Action Liability
     /// </summary>
@@ -14369,7 +14367,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CIV")]
     public class CIV : I_CIV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14517,7 +14515,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string ReferenceIdentification_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Class
     /// </summary>
@@ -14526,7 +14524,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CL")]
     public class CL : I_CL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14540,7 +14538,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string FreightClassCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Codes
     /// </summary>
@@ -14549,7 +14547,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CL1")]
     public class CL1 : I_CL1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14585,7 +14583,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string NursingHomeResidentialStatusCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Load Detail
     /// </summary>
@@ -14594,7 +14592,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CLD")]
     public class CLD : I_CLD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14641,7 +14639,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string UnitorBasisforMeasurementCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Cost Line Item
     /// </summary>
@@ -14650,7 +14648,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CLI")]
     public class CLI : I_CLI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14700,7 +14698,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ContractTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Claim
     /// </summary>
@@ -14709,7 +14707,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CLM")]
     public class CLM : I_CLM<C023, C024>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14855,7 +14853,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string DelayReasonCode_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Level Data
     /// </summary>
@@ -14864,7 +14862,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CLP")]
     public class CLP : I_CLP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -14975,7 +14973,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string Percent_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Location Routing Request
     /// </summary>
@@ -14984,7 +14982,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CLR")]
     public class CLR : I_CLR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15022,7 +15020,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Cargo Manifest
     /// </summary>
@@ -15031,7 +15029,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CM")]
     public class CM : I_CM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15170,7 +15168,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string TransportationMethodTypeCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Cooperative Market Agreement
     /// </summary>
@@ -15179,7 +15177,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CMA")]
     public class CMA : I_CMA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15274,7 +15272,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string TransactionSetPurposeCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Information
     /// </summary>
@@ -15283,7 +15281,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CN1")]
     public class CN1 : I_CN1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15336,7 +15334,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string VersionIdentifier_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Coordination of Benefits
     /// </summary>
@@ -15345,7 +15343,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("COB")]
     public class COB : I_COB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15372,7 +15370,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CoordinationofBenefitsCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Communication Contact Information
     /// </summary>
@@ -15381,7 +15379,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("COM")]
     public class COM : I_COM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15403,7 +15401,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string CommunicationNumber_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Number Detail
     /// </summary>
@@ -15412,7 +15410,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CON")]
     public class CON : I_CON
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15442,7 +15440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ContractStatusCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Commodity Price Reference
     /// </summary>
@@ -15451,7 +15449,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CPR")]
     public class CPR : I_CPR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15497,7 +15495,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Ambulance Certification
     /// </summary>
@@ -15506,7 +15504,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR1")]
     public class CR1 : I_CR1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15589,7 +15587,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Description_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Chiropractic Certification
     /// </summary>
@@ -15598,7 +15596,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR2")]
     public class CR2 : I_CR2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15696,7 +15694,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string YesNoConditionorResponseCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Durable Medical Equipment Certification
     /// </summary>
@@ -15705,7 +15703,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR3")]
     public class CR3 : I_CR3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15748,7 +15746,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Enteral or Parenteral Therapy Certification
     /// </summary>
@@ -15757,7 +15755,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR4")]
     public class CR4 : I_CR4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -15990,7 +15988,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(29)]
         public string Description_29 { get; set; }
     }
-    
+
     /// <summary>
     /// Oxygen Therapy Certification
     /// </summary>
@@ -15999,7 +15997,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR5")]
     public class CR5 : I_CR5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16139,7 +16137,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string OxygenEquipmentTypeCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Home Health Care Certification
     /// </summary>
@@ -16148,7 +16146,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR6")]
     public class CR6 : I_CR6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16320,7 +16318,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string Date_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Home Health Treatment Plan Certification
     /// </summary>
@@ -16329,7 +16327,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR7")]
     public class CR7 : I_CR7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16360,7 +16358,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Number_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Pacemaker Certification
     /// </summary>
@@ -16369,7 +16367,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CR8")]
     public class CR8 : I_CR8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16451,7 +16449,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Conditions Indicator
     /// </summary>
@@ -16460,7 +16458,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRC")]
     public class CRC : I_CRC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16517,7 +16515,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ConditionIndicator_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Content Reporting Detail
     /// </summary>
@@ -16526,7 +16524,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRD")]
     public class CRD : I_CRD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16565,7 +16563,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Percent_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Report Information
     /// </summary>
@@ -16574,7 +16572,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRI")]
     public class CRI : I_CRI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16654,7 +16652,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string LateReasonCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit Report Order Details
     /// </summary>
@@ -16663,7 +16661,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRO")]
     public class CRO : I_CRO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16717,7 +16715,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CreditReportMergeTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Course Record
     /// </summary>
@@ -16726,7 +16724,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRS")]
     public class CRS : I_CRS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16886,7 +16884,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string OverrideAcademicCourseSourceCode_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Contractor Report Type
     /// </summary>
@@ -16895,7 +16893,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRT")]
     public class CRT : I_CRT<C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -16970,7 +16968,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string SecurityLevelCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Origin Reference
     /// </summary>
@@ -16979,7 +16977,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CRV")]
     public class CRV : I_CRV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17037,7 +17035,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PreferentialDutyCriteriaCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Summary
     /// </summary>
@@ -17046,7 +17044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CS")]
     public class CS : I_CS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17187,7 +17185,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string YesNoConditionorResponseCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Cryptographic Service Message Body
     /// </summary>
@@ -17196,7 +17194,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSB")]
     public class CSB : I_CSB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17217,7 +17215,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string CryptographicServiceMessageCSMFieldContents_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Cryptographic Service Message Certificates and Keys
     /// </summary>
@@ -17226,7 +17224,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSC")]
     public class CSC : I_CSC<C050, C040, C033>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17297,7 +17295,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public virtual C033 SecurityValue_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Consolidated Shipment Invoice Data
     /// </summary>
@@ -17306,7 +17304,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSD")]
     public class CSD : I_CSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17387,7 +17385,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Educational Course Information
     /// </summary>
@@ -17396,7 +17394,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSE")]
     public class CSE : I_CSE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17493,7 +17491,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string YesNoConditionorResponseCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Conditional Sampling Frequency
     /// </summary>
@@ -17502,7 +17500,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSF")]
     public class CSF : I_CSF<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17531,7 +17529,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string SampleFrequencyValueperUnitofMeasurementCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Sales Requirements
     /// </summary>
@@ -17540,7 +17538,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSH")]
     public class CSH : I_CSH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17622,7 +17620,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string PercentQualifier_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Status Information
     /// </summary>
@@ -17631,7 +17629,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSI")]
     public class CSI : I_CSI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17669,7 +17667,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string DateTimePeriod_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Cryptographic Service Message Header
     /// </summary>
@@ -17678,7 +17676,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSM")]
     public class CSM : I_CSM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17707,7 +17705,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string SecurityRecipientName_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Conditional Sampling Sequence
     /// </summary>
@@ -17716,7 +17714,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSS")]
     public class CSS : I_CSS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17777,7 +17775,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string SamplingSequenceValue_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Cost Analysis
     /// </summary>
@@ -17786,7 +17784,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CST")]
     public class CST : I_CST<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17822,7 +17820,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Quantity_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Supplemental Course Data
     /// </summary>
@@ -17831,7 +17829,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CSU")]
     public class CSU : I_CSU<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17913,7 +17911,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public virtual C001 CompositeUnitofMeasure_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Type
     /// </summary>
@@ -17922,7 +17920,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CT")]
     public class CT : I_CT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -17952,7 +17950,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CarTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Restrictions/Conditions
     /// </summary>
@@ -17961,7 +17959,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CTB")]
     public class CTB : I_CTB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18015,7 +18013,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Amount_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Hire Transaction Control
     /// </summary>
@@ -18024,7 +18022,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CTC")]
     public class CTC : I_CTC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18112,7 +18110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string AccountDescriptionCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing Information
     /// </summary>
@@ -18121,7 +18119,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CTP")]
     public class CTP : I_CTP<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18213,7 +18211,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string MultiplePriceQuantity_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Totals
     /// </summary>
@@ -18222,7 +18220,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CTT")]
     public class CTT : I_CTT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18284,7 +18282,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Currency
     /// </summary>
@@ -18293,7 +18291,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CUR")]
     public class CUR : I_CUR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18474,7 +18472,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string Time_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Cycle/Summary Value
     /// </summary>
@@ -18483,7 +18481,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CV")]
     public class CV : I_CV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18597,7 +18595,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string PenaltyCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Hire Cycle
     /// </summary>
@@ -18606,7 +18604,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("CYC")]
     public class CYC : I_CYC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18663,7 +18661,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AssociationofAmericanRailroadsAARPoolCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Destination Station
     /// </summary>
@@ -18672,7 +18670,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("D9")]
     public class D9 : I_D9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18775,7 +18773,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string CountryCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Debit Authorization Detail
     /// </summary>
@@ -18784,7 +18782,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DAD")]
     public class DAD : I_DAD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18910,7 +18908,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string FrequencyCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Appendix Information
     /// </summary>
@@ -18919,7 +18917,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DAI")]
     public class DAI : I_DAI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -18949,7 +18947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string NoteIdentificationNumber_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Damage Information
     /// </summary>
@@ -18958,7 +18956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DAM")]
     public class DAM : I_DAM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19091,7 +19089,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string Amount_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Disbursement Information
     /// </summary>
@@ -19100,7 +19098,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DB")]
     public class DB : I_DB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19154,7 +19152,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Demand Detail
     /// </summary>
@@ -19163,7 +19161,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DD")]
     public class DD : I_DD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19247,7 +19245,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string CodeListQualifierCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Description
     /// </summary>
@@ -19256,7 +19254,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DDI")]
     public class DDI : I_DDI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19270,7 +19268,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string Description_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Deductions
     /// </summary>
@@ -19279,7 +19277,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DED")]
     public class DED : I_DED
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19359,7 +19357,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Delayed Repayment
     /// </summary>
@@ -19368,7 +19366,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DEF")]
     public class DEF : I_DEF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19413,7 +19411,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string InterestPaymentCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Degree Record
     /// </summary>
@@ -19422,7 +19420,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DEG")]
     public class DEG : I_DEG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19467,7 +19465,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string StatusReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery
     /// </summary>
@@ -19476,7 +19474,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DEL")]
     public class DEL : I_DEL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19522,7 +19520,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string MoveTypeCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Deposit
     /// </summary>
@@ -19531,7 +19529,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DEP")]
     public class DEP : I_DEP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19603,7 +19601,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string AccountNumber_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery Execution Information
     /// </summary>
@@ -19612,7 +19610,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DEX")]
     public class DEX : I_DEX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19662,7 +19660,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string IndustryCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Default Information
     /// </summary>
@@ -19671,7 +19669,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DFI")]
     public class DFI : I_DFI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19704,7 +19702,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Dealer Hours
     /// </summary>
@@ -19713,7 +19711,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DH")]
     public class DH : I_DH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19744,7 +19742,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Time_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Discount Detail
     /// </summary>
@@ -19753,7 +19751,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DIS")]
     public class DIS : I_DIS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19808,7 +19806,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string DiscountControlLimit_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Docket Header
     /// </summary>
@@ -19817,7 +19815,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DK")]
     public class DK : I_DK
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -19903,7 +19901,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string GroupTitle_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Auto Claim Detail - Labor
     /// </summary>
@@ -19912,7 +19910,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DL")]
     public class DL : I_DL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20000,7 +19998,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string YesNoConditionorResponseCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Deliverable Information
     /// </summary>
@@ -20009,7 +20007,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DLV")]
     public class DLV : I_DLV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20054,7 +20052,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Demurrage/Detention/ Storage Rate
     /// </summary>
@@ -20063,7 +20061,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DM")]
     public class DM : I_DM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20237,7 +20235,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string Rate_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Demographic Information
     /// </summary>
@@ -20246,7 +20244,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DMA")]
     public class DMA : I_DMA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20324,7 +20322,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string StatusCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Demographic Information
     /// </summary>
@@ -20333,7 +20331,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DMG")]
     public class DMG : I_DMG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20405,7 +20403,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Quantity_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Maintenance Information
     /// </summary>
@@ -20414,7 +20412,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DMI")]
     public class DMI : I_DMI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20516,7 +20514,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string NoteIdentificationNumber_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Dealer Effectivity
     /// </summary>
@@ -20525,7 +20523,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DN")]
     public class DN : I_DN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20563,7 +20561,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FinancialStatus_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Orthodontic Information
     /// </summary>
@@ -20572,7 +20570,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DN1")]
     public class DN1 : I_DN1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20608,7 +20606,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tooth Summary
     /// </summary>
@@ -20617,7 +20615,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DN2")]
     public class DN2 : I_DN2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20663,7 +20661,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string DateTimePeriod_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Definition of Share
     /// </summary>
@@ -20672,7 +20670,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DOS")]
     public class DOS : I_DOS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20732,7 +20730,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Auto Claim Detail - Parts
     /// </summary>
@@ -20741,7 +20739,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DP")]
     public class DP : I_DP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20868,7 +20866,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string YesNoConditionorResponseCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Dependent Information
     /// </summary>
@@ -20877,7 +20875,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DPN")]
     public class DPN : I_DPN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20913,7 +20911,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Number_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Docket Range
     /// </summary>
@@ -20922,7 +20920,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DR")]
     public class DR : I_DR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -20981,7 +20979,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string DocketIdentification_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Deprescription Rate Detail
     /// </summary>
@@ -20990,7 +20988,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DRT")]
     public class DRT : I_DRT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21042,7 +21040,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Disability Information
     /// </summary>
@@ -21051,7 +21049,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DSB")]
     public class DSB : I_DSB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21118,7 +21116,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string MedicalCodeValue_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Date/Time Reference
     /// </summary>
@@ -21127,7 +21125,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DTM")]
     public class DTM : I_DTM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21181,7 +21179,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string DateTimePeriod_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Date or Time or Period
     /// </summary>
@@ -21190,7 +21188,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DTP")]
     public class DTP : I_DTP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21220,7 +21218,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string DateTimePeriod_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Dynamic Vehicle Information
     /// </summary>
@@ -21229,7 +21227,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("DVI")]
     public class DVI : I_DVI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21336,7 +21334,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string YesNoConditionorResponseCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Electronic Form Main Heading
     /// </summary>
@@ -21345,7 +21343,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E01")]
     public class E01 : I_E01
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21383,7 +21381,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FullorPartialIndicator_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Interchange Order of Segments
     /// </summary>
@@ -21392,7 +21390,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E03")]
     public class E03 : I_E03
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21455,7 +21453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string NoteIdentificationNumber_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Empty Car Disposition - Pended Destination Consignee
     /// </summary>
@@ -21464,7 +21462,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E1")]
     public class E1 : I_E1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21494,7 +21492,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string IdentificationCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Set Grouping
     /// </summary>
@@ -21503,7 +21501,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E10")]
     public class E10 : I_E10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21549,7 +21547,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string NoteIdentificationNumber_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Segment Order in Transaction Set
     /// </summary>
@@ -21558,7 +21556,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E13")]
     public class E13 : I_E13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21642,7 +21640,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string NoteIdentificationNumber_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Segment Header Information
     /// </summary>
@@ -21651,7 +21649,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E20")]
     public class E20 : I_E20
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21689,7 +21687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string NoteIdentificationNumber_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Element Relationships in a Segment
     /// </summary>
@@ -21698,7 +21696,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E22")]
     public class E22 : I_E22
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21800,7 +21798,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string PositioninSegment_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Element Sequence in a Segment
     /// </summary>
@@ -21809,7 +21807,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E24")]
     public class E24 : I_E24
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21863,7 +21861,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string NoteIdentificationNumber_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Element Sequence in Composite
     /// </summary>
@@ -21872,7 +21870,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E26")]
     public class E26 : I_E26
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -21926,7 +21924,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string NoteIdentificationNumber_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Data Element Attributes
     /// </summary>
@@ -21935,7 +21933,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E30")]
     public class E30 : I_E30
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22016,7 +22014,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string CodeListReference_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Code List Values for a Data Element
     /// </summary>
@@ -22025,7 +22023,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E34")]
     public class E34 : I_E34
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22064,7 +22062,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Empty Car Disposition - Pended Destination City
     /// </summary>
@@ -22073,7 +22071,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E4")]
     public class E4 : I_E4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22112,7 +22110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CountryCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// EDI Standards Note Reference
     /// </summary>
@@ -22121,7 +22119,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E40")]
     public class E40 : I_E40
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22159,7 +22157,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string AssignedIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Empty Car Disposition - Pended Destination Route
     /// </summary>
@@ -22168,7 +22166,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E5")]
     public class E5 : I_E5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22206,7 +22204,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string StandardPointLocationCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Advance Car Disposition
     /// </summary>
@@ -22215,7 +22213,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E6")]
     public class E6 : I_E6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22296,7 +22294,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string EquipmentStatusCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Blocking and Response Information
     /// </summary>
@@ -22305,7 +22303,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("E8")]
     public class E8 : I_E8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22325,7 +22323,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string MovementAuthorityCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Attributes
     /// </summary>
@@ -22334,7 +22332,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EA")]
     public class EA : I_EA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22361,7 +22359,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Quantity_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Eligibility or Benefit Information
     /// </summary>
@@ -22370,7 +22368,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EB")]
     public class EB : I_EB<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22471,7 +22469,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public virtual C003 CompositeMedicalProcedureIdentifier_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Employment Class
     /// </summary>
@@ -22480,7 +22478,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EC")]
     public class EC : I_EC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22529,7 +22527,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string OccupationCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Description
     /// </summary>
@@ -22538,7 +22536,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ED")]
     public class ED : I_ED
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22608,7 +22606,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Date_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Electronic Format Identification
     /// </summary>
@@ -22617,7 +22615,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EFI")]
     public class EFI : I_EFI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22752,7 +22750,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string FilterIDCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Automatic Equipment Identification
     /// </summary>
@@ -22761,7 +22759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EI")]
     public class EI : I_EI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22813,7 +22811,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TagStatusCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Equipment Inquiry or Advice
     /// </summary>
@@ -22822,7 +22820,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EIA")]
     public class EIA : I_EIA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22873,7 +22871,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ReferenceIdentification_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Characteristics
     /// </summary>
@@ -22882,7 +22880,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EM")]
     public class EM : I_EM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -22942,7 +22940,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Date_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Employer
     /// </summary>
@@ -22951,7 +22949,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EMP")]
     public class EMP : I_EMP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23034,7 +23032,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string ReferenceIdentification_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Employment Position
     /// </summary>
@@ -23043,7 +23041,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EMS")]
     public class EMS : I_EMS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23102,7 +23100,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ReferenceIdentification_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Employment
     /// </summary>
@@ -23111,7 +23109,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EMT")]
     public class EMT : I_EMT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23177,7 +23175,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string YesNoConditionorResponseCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Electronic Systems Environment
     /// </summary>
@@ -23186,7 +23184,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ENE")]
     public class ENE : I_ENE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23232,7 +23230,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string IdentificationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// School Enrollment Information
     /// </summary>
@@ -23241,7 +23239,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ENR")]
     public class ENR : I_ENR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23399,7 +23397,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string YesNoConditionorResponseCode_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Entity
     /// </summary>
@@ -23408,7 +23406,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ENT")]
     public class ENT : I_ENT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23483,7 +23481,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Eligibility or Benefit Inquiry
     /// </summary>
@@ -23492,7 +23490,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EQ")]
     public class EQ : I_EQ<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23525,7 +23523,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string InsuranceTypeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Event Reporting
     /// </summary>
@@ -23534,7 +23532,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ER")]
     public class ER : I_ER
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23630,7 +23628,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string LoadEmptyStatusCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Entity Relationship
     /// </summary>
@@ -23639,7 +23637,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ERI")]
     public class ERI : I_ERI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23715,7 +23713,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string HierarchyCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Educational Record Purpose
     /// </summary>
@@ -23724,7 +23722,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ERP")]
     public class ERP : I_ERP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23751,7 +23749,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ActionCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Status
     /// </summary>
@@ -23760,7 +23758,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ES")]
     public class ES : I_ES
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23810,7 +23808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string SwitchTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Employment Status Information
     /// </summary>
@@ -23819,7 +23817,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ESI")]
     public class ESI : I_ESI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23883,7 +23881,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReasonStoppedWorkCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Excess Transportation Detail
     /// </summary>
@@ -23892,7 +23890,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ETD")]
     public class ETD : I_ETD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -23936,7 +23934,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ReturnableContainerFreightPaymentResponsibilityCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Excavation Ticket Information
     /// </summary>
@@ -23945,7 +23943,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("EXI")]
     public class EXI : I_EXI<C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24015,7 +24013,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ActionCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Identification of Claim (Claimant Originated)
     /// </summary>
@@ -24024,7 +24022,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F01")]
     public class F01 : I_F01
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24105,7 +24103,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string IdentificationCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Identification of Shipment
     /// </summary>
@@ -24114,7 +24112,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F02")]
     public class F02 : I_F02
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24191,7 +24189,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string VesselName_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Weight/Volume Loss
     /// </summary>
@@ -24200,7 +24198,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F04")]
     public class F04 : I_F04
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24285,7 +24283,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string VolumeUnitQualifier_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Allowance/Charge (Claim)
     /// </summary>
@@ -24294,7 +24292,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F05")]
     public class F05 : I_F05
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24324,7 +24322,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CreditDebitFlagCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Auto Claim Detail
     /// </summary>
@@ -24333,7 +24331,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F07")]
     public class F07 : I_F07
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24519,7 +24517,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public string ChargeAllowanceQualifier_22 { get; set; }
     }
-    
+
     /// <summary>
     /// Detail - Supporting Evidence for Claim
     /// </summary>
@@ -24528,7 +24526,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F09")]
     public class F09 : I_F09
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24632,7 +24630,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string LadingLineItemNumber_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Identification of Claim (Tracer)
     /// </summary>
@@ -24641,7 +24639,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F10")]
     public class F10 : I_F10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24680,7 +24678,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentificationQualifier_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Status
     /// </summary>
@@ -24689,7 +24687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F11")]
     public class F11 : I_F11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24778,7 +24776,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string ReferenceIdentificationQualifier_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Basic Claim Information - Automotive
     /// </summary>
@@ -24787,7 +24785,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F12")]
     public class F12 : I_F12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24862,7 +24860,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string DamageCodeQualifier_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Information
     /// </summary>
@@ -24871,7 +24869,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F13")]
     public class F13 : I_F13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24928,7 +24926,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CurrencyCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Reject
     /// </summary>
@@ -24937,7 +24935,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F14")]
     public class F14 : I_F14
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -24959,7 +24957,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string DeclineAmendReasonCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Identification (Automotive)
     /// </summary>
@@ -24968,7 +24966,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F6X")]
     public class F6X : I_F6X
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25042,7 +25040,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Date_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Origin Station
     /// </summary>
@@ -25051,7 +25049,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("F9")]
     public class F9 : I_F9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25154,7 +25152,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string CountryCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Type of Financial Accounting Data
     /// </summary>
@@ -25163,7 +25161,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FA1")]
     public class FA1 : I_FA1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25190,7 +25188,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AllowanceorChargeIndicator_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Accounting Data
     /// </summary>
@@ -25199,7 +25197,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FA2")]
     public class FA2 : I_FA2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25221,7 +25219,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FinancialInformationCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Asset Account
     /// </summary>
@@ -25230,7 +25228,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FAA")]
     public class FAA : I_FAA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25344,7 +25342,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ReferenceIdentification_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Facing Direction
     /// </summary>
@@ -25353,7 +25351,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FAC")]
     public class FAC : I_FAC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25404,7 +25402,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Foreign and Industry Business
     /// </summary>
@@ -25413,7 +25411,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FBB")]
     public class FBB : I_FBB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25477,7 +25475,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Percent_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Contribution
     /// </summary>
@@ -25486,7 +25484,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FC")]
     public class FC : I_FC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25530,7 +25528,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Foreclosure
     /// </summary>
@@ -25539,7 +25537,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FCL")]
     public class FCL : I_FCL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25581,7 +25579,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string AdjustmentReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Facility Description
     /// </summary>
@@ -25590,7 +25588,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FDA")]
     public class FDA : I_FDA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25667,7 +25665,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Description_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Form Group
     /// </summary>
@@ -25676,7 +25674,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FGS")]
     public class FGS : I_FGS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25706,7 +25704,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ReferenceIdentification_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Family History
     /// </summary>
@@ -25715,7 +25713,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FH")]
     public class FH : I_FH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25751,7 +25749,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CurrentHealthConditionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Information
     /// </summary>
@@ -25760,7 +25758,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FIR")]
     public class FIR : I_FIR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25862,7 +25860,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string MonetaryAmount_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Loan Fiscal Data
     /// </summary>
@@ -25871,7 +25869,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FIS")]
     public class FIS : I_FIS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -25908,7 +25906,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string MonetaryAmount_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Factor
     /// </summary>
@@ -25917,7 +25915,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FK")]
     public class FK : I_FK
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26037,7 +26035,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string FactorAmount_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Status Information
     /// </summary>
@@ -26046,7 +26044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FNA")]
     public class FNA : I_FNA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26096,7 +26094,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// F.O.B. Related Instructions
     /// </summary>
@@ -26105,7 +26103,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FOB")]
     public class FOB : I_FOB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26181,7 +26179,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Description_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Field of Study
     /// </summary>
@@ -26190,7 +26188,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FOS")]
     public class FOS : I_FOS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26252,7 +26250,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Quantity_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Participation
     /// </summary>
@@ -26261,7 +26259,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FPT")]
     public class FPT : I_FPT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26282,7 +26280,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Percent_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Flexible Spending Account
     /// </summary>
@@ -26291,7 +26289,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FSA")]
     public class FSA : I_FSA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26362,7 +26360,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ProductOptionCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Forecast Schedule
     /// </summary>
@@ -26371,7 +26369,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FST")]
     public class FST : I_FST
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26457,7 +26455,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string PlanningScheduleTypeCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// First Time Home Buyer
     /// </summary>
@@ -26466,7 +26464,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("FTH")]
     public class FTH : I_FTH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26500,7 +26498,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string TypeofAccountCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Invoice Identification
     /// </summary>
@@ -26509,7 +26507,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G01")]
     public class G01 : I_G01
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26580,7 +26578,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string TransactionTypeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Shipment Information
     /// </summary>
@@ -26589,7 +26587,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G05")]
     public class G05 : I_G05
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26659,7 +26657,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string UnitorBasisforMeasurementCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Information
     /// </summary>
@@ -26668,7 +26666,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G07")]
     public class G07 : I_G07
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26720,7 +26718,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Temperature_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Pallet Information
     /// </summary>
@@ -26729,7 +26727,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G08")]
     public class G08 : I_G08
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26766,7 +26764,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReceivingConditionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Type Information
     /// </summary>
@@ -26775,7 +26773,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G1")]
     public class G1 : I_G1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26802,7 +26800,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string SpecialIndicatorCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Coupon Reporting Specifications
     /// </summary>
@@ -26811,7 +26809,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G11")]
     public class G11 : I_G11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26897,7 +26895,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string FreeformDescription_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Coupon Physical Characteristics
     /// </summary>
@@ -26906,7 +26904,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G12")]
     public class G12 : I_G12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -26965,7 +26963,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PositionCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Store Size Attributes
     /// </summary>
@@ -26974,7 +26972,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G13")]
     public class G13 : I_G13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27027,7 +27025,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AmountQualifierCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Coupon Special Processing
     /// </summary>
@@ -27036,7 +27034,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G14")]
     public class G14 : I_G14
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27056,7 +27054,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string ServicePromotionAllowanceorChargeCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Coupon Distribution
     /// </summary>
@@ -27065,7 +27063,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G15")]
     public class G15 : I_G15
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27102,7 +27100,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail - Invoice
     /// </summary>
@@ -27111,7 +27109,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G17")]
     public class G17 : I_G17
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27231,7 +27229,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string MonetaryAmount_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Store Category Size
     /// </summary>
@@ -27240,7 +27238,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G18")]
     public class G18 : I_G18
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27277,7 +27275,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string UnitorBasisforMeasurementCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Quantity/Unit of Measure/Price Differences
     /// </summary>
@@ -27286,7 +27284,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G19")]
     public class G19 : I_G19
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27361,7 +27359,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ProductServiceID_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beyond Routing
     /// </summary>
@@ -27370,7 +27368,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G2")]
     public class G2 : I_G2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27391,7 +27389,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Packing Detail
     /// </summary>
@@ -27400,7 +27398,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G20")]
     public class G20 : I_G20
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27477,7 +27475,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string InnerPack_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Information
     /// </summary>
@@ -27486,7 +27484,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G21")]
     public class G21 : I_G21
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27565,7 +27563,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string InnerPack_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing Information
     /// </summary>
@@ -27574,7 +27572,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G22")]
     public class G22 : I_G22
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27619,7 +27617,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Date_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Terms of Sale
     /// </summary>
@@ -27628,7 +27626,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G23")]
     public class G23 : I_G23
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27761,7 +27759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string InstallmentGroupIndicator_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion Reference
     /// </summary>
@@ -27770,7 +27768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G24")]
     public class G24 : I_G24
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27784,7 +27782,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string AllowanceorChargeNumber_01 { get; set; }
     }
-    
+
     /// <summary>
     /// F.O.B. Information
     /// </summary>
@@ -27793,7 +27791,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G25")]
     public class G25 : I_G25
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27822,7 +27820,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string FOBPoint_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing Conditions
     /// </summary>
@@ -27831,7 +27829,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G26")]
     public class G26 : I_G26
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27883,7 +27881,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string UnitorBasisforMeasurementCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Detail
     /// </summary>
@@ -27892,7 +27890,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G27")]
     public class G27 : I_G27
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -27945,7 +27943,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ShipmentOrderStatusCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Numbers
     /// </summary>
@@ -27954,7 +27952,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G28")]
     public class G28 : I_G28
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28008,7 +28006,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ProductServiceID_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Store Display Information
     /// </summary>
@@ -28017,7 +28015,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G29")]
     public class G29 : I_G29
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28046,7 +28044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string UnitorBasisforMeasurementCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Compensation Information
     /// </summary>
@@ -28055,7 +28053,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G3")]
     public class G3 : I_G3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28107,7 +28105,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CompensationQualifier_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Retail Account Marketing Types
     /// </summary>
@@ -28116,7 +28114,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G30")]
     public class G30 : I_G30
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28137,7 +28135,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Number_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Invoice Quantity
     /// </summary>
@@ -28146,7 +28144,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G31")]
     public class G31 : I_G31
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28240,7 +28238,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Weight_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Survey Question Response
     /// </summary>
@@ -28249,7 +28247,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G32")]
     public class G32 : I_G32
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28287,7 +28285,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Dollars Summary
     /// </summary>
@@ -28296,7 +28294,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G33")]
     public class G33 : I_G33
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28310,7 +28308,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string Amount_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Advertising Feature Information
     /// </summary>
@@ -28319,7 +28317,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G35")]
     public class G35 : I_G35
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28347,7 +28345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string MonetaryAmount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Price List Reference
     /// </summary>
@@ -28356,7 +28354,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G36")]
     public class G36 : I_G36
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28394,7 +28392,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string PriceConditionAppliesCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Labor Activity
     /// </summary>
@@ -28403,7 +28401,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G37")]
     public class G37 : I_G37
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28433,7 +28431,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Time_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Payment Information
     /// </summary>
@@ -28442,7 +28440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G38")]
     public class G38 : I_G38
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28470,7 +28468,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ReturnsDispositionCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Characteristics - Vendor's Selling Unit
     /// </summary>
@@ -28479,7 +28477,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G39")]
     public class G39 : I_G39
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28708,7 +28706,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(28)]
         public string PackagingCode_28 { get; set; }
     }
-    
+
     /// <summary>
     /// Scale Identification
     /// </summary>
@@ -28717,7 +28715,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G4")]
     public class G4 : I_G4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28772,7 +28770,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ScaleTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Bracket Price
     /// </summary>
@@ -28781,7 +28779,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G40")]
     public class G40 : I_G40
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28857,7 +28855,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Number_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion Announcement Identification
     /// </summary>
@@ -28866,7 +28864,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G42")]
     public class G42 : I_G42
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28895,7 +28893,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string TransactionTypeCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion/Price List Area
     /// </summary>
@@ -28904,7 +28902,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G43")]
     public class G43 : I_G43
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -28940,7 +28938,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ClassofTradeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Promotion
     /// </summary>
@@ -28949,7 +28947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G45")]
     public class G45 : I_G45
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29059,7 +29057,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string AllowanceorChargeRate_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion Allowance/Charge
     /// </summary>
@@ -29068,7 +29066,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G46")]
     public class G46 : I_G46
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29169,7 +29167,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string Number_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Statement Identification
     /// </summary>
@@ -29178,7 +29176,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G47")]
     public class G47 : I_G47
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29201,7 +29199,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string StatementNumber_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Statement/Invoice Identification
     /// </summary>
@@ -29210,7 +29208,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G48")]
     public class G48 : I_G48
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29289,7 +29287,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Date_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Statement Total
     /// </summary>
@@ -29298,7 +29296,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G49")]
     public class G49 : I_G49
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29328,7 +29326,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Amount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Weight Information
     /// </summary>
@@ -29337,7 +29335,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G5")]
     public class G5 : I_G5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29482,7 +29480,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string Date_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Order Identification
     /// </summary>
@@ -29491,7 +29489,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G50")]
     public class G50 : I_G50
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29553,7 +29551,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PurchaseOrderTypeCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Free Goods/Product Condition
     /// </summary>
@@ -29562,7 +29560,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G51")]
     public class G51 : I_G51
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29632,7 +29630,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ProductServiceID_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Maintenance Type
     /// </summary>
@@ -29641,7 +29639,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G53")]
     public class G53 : I_G53
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29654,7 +29652,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string MaintenanceTypeCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Module Description
     /// </summary>
@@ -29663,7 +29661,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G54")]
     public class G54 : I_G54
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29718,7 +29716,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string FreeformDescription_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Characteristics - Consumer Unit
     /// </summary>
@@ -29727,7 +29725,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G55")]
     public class G55 : I_G55
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -29994,7 +29992,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(33)]
         public string PackagingCode_33 { get; set; }
     }
-    
+
     /// <summary>
     /// Contact
     /// </summary>
@@ -30003,7 +30001,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G61")]
     public class G61 : I_G61
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30049,7 +30047,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ContactInquiryReference_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Date/Time
     /// </summary>
@@ -30058,7 +30056,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G62")]
     public class G62 : I_G62
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30103,7 +30101,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string TimeCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Period
     /// </summary>
@@ -30112,7 +30110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G63")]
     public class G63 : I_G63
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30149,7 +30147,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Instructions
     /// </summary>
@@ -30158,7 +30156,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G66")]
     public class G66 : I_G66
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30214,7 +30212,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string FOBPoint_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Product
     /// </summary>
@@ -30223,7 +30221,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G68")]
     public class G68 : I_G68
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30350,7 +30348,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string RetailPrePrice_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Description
     /// </summary>
@@ -30359,7 +30357,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G69")]
     public class G69 : I_G69
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30373,7 +30371,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string FreeformDescription_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Miscellaneous
     /// </summary>
@@ -30382,7 +30380,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G70")]
     public class G70 : I_G70
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30463,7 +30461,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string InnerPack_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Allowance or Charge
     /// </summary>
@@ -30472,7 +30470,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G72")]
     public class G72 : I_G72
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30569,7 +30567,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string OptionNumber_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Allowance or Charge Description
     /// </summary>
@@ -30578,7 +30576,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G73")]
     public class G73 : I_G73
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30592,7 +30590,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string FreeformDescription_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Purchase Order
     /// </summary>
@@ -30601,7 +30599,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G76")]
     public class G76 : I_G76
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30687,7 +30685,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string PaymentMethodCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Return Base Record Identifier
     /// </summary>
@@ -30696,7 +30694,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G82")]
     public class G82 : I_G82
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30801,7 +30799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string CODMethodofPaymentCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail/Direct Store Delivery
     /// </summary>
@@ -30810,7 +30808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G83")]
     public class G83 : I_G83
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30923,7 +30921,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string InnerPack_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Return Record of Totals
     /// </summary>
@@ -30932,7 +30930,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G84")]
     public class G84 : I_G84
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30962,7 +30960,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string TotalDepositDollarAmount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Record Integrity Check
     /// </summary>
@@ -30971,7 +30969,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G85")]
     public class G85 : I_G85
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -30985,7 +30983,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string IntegrityCheckValue_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Signature
     /// </summary>
@@ -30994,7 +30992,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G86")]
     public class G86 : I_G86
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31015,7 +31013,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Name_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Return Adjustment Identification
     /// </summary>
@@ -31024,7 +31022,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G87")]
     public class G87 : I_G87
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31080,7 +31078,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ReceiverDeliveryReturnNumber_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Return Identification Adjustment
     /// </summary>
@@ -31089,7 +31087,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G88")]
     public class G88 : I_G88
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31134,7 +31132,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ReceiversLocationNumber_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Line-Item Detail Adjustment
     /// </summary>
@@ -31143,7 +31141,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G89")]
     public class G89 : I_G89
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31227,7 +31225,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string InnerPack_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Change Status
     /// </summary>
@@ -31236,7 +31234,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G91")]
     public class G91 : I_G91
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31249,7 +31247,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string ChangeTypeCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Order Change Type
     /// </summary>
@@ -31258,7 +31256,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G92")]
     public class G92 : I_G92
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31289,7 +31287,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string PurchaseOrderNumber_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Bracket Identification
     /// </summary>
@@ -31298,7 +31296,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G93")]
     public class G93 : I_G93
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31363,7 +31361,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string YesNoConditionorResponseCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion Conditions
     /// </summary>
@@ -31372,7 +31370,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G94")]
     public class G94 : I_G94
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31393,7 +31391,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string OptionNumber_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Performance Requirements
     /// </summary>
@@ -31402,7 +31400,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("G95")]
     public class G95 : I_G95
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31462,7 +31460,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Number_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Canadian Grain Information
     /// </summary>
@@ -31471,7 +31469,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GA")]
     public class GA : I_GA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31607,7 +31605,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string Percent_17 { get; set; }
     }
-    
+
     /// <summary>
     /// General Dosing Parameters
     /// </summary>
@@ -31616,7 +31614,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GDP")]
     public class GDP : I_GDP<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31677,7 +31675,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string UnitofTimePeriodorInterval_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Furnished Goods and Services
     /// </summary>
@@ -31686,7 +31684,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GF")]
     public class GF : I_GF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31763,7 +31761,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Group Header
     /// </summary>
@@ -31772,7 +31770,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GH")]
     public class GH : I_GH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31809,7 +31807,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string RevisionNumber_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Group Identification
     /// </summary>
@@ -31818,7 +31816,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GID")]
     public class GID : I_GID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31848,7 +31846,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Name_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Guarantee Result Detail
     /// </summary>
@@ -31857,7 +31855,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GR")]
     public class GR : I_GR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32029,7 +32027,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string YesNoConditionorResponseCode_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Train Data
     /// </summary>
@@ -32038,7 +32036,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GR2")]
     public class GR2 : I_GR2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32142,7 +32140,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string InterchangeTrainIdentification_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Loading Cluster
     /// </summary>
@@ -32151,7 +32149,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GR4")]
     public class GR4 : I_GR4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32249,7 +32247,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string CountryCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Loading Details
     /// </summary>
@@ -32258,7 +32256,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GR5")]
     public class GR5 : I_GR5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32302,7 +32300,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string StatusReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Statistical Government Information
     /// </summary>
@@ -32311,7 +32309,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GRI")]
     public class GRI : I_GRI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32406,7 +32404,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Description_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Group Dosage Parameters
     /// </summary>
@@ -32415,7 +32413,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GRP")]
     public class GRP : I_GRP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32455,7 +32453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Geography
     /// </summary>
@@ -32464,7 +32462,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("GY")]
     public class GY : I_GY
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32590,7 +32588,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string YesNoConditionorResponseCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Material
     /// </summary>
@@ -32599,7 +32597,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("H1")]
     public class H1 : I_H1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32676,7 +32674,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string PackingGroupCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Hazardous Material Description
     /// </summary>
@@ -32685,7 +32683,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("H2")]
     public class H2 : I_H2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32707,7 +32705,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string HazardousMaterialClassification_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Special Handling Instructions
     /// </summary>
@@ -32716,7 +32714,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("H3")]
     public class H3 : I_H3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32758,7 +32756,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string TariffApplicationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Car Service Order
     /// </summary>
@@ -32767,7 +32765,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("H5")]
     public class H5 : I_H5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32796,7 +32794,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string StateorProvinceCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Special Services
     /// </summary>
@@ -32805,7 +32803,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("H6")]
     public class H6 : I_H6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32863,7 +32861,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PickuporDeliveryCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Condition
     /// </summary>
@@ -32872,7 +32870,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HC")]
     public class HC : I_HC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32917,7 +32915,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Pricing
     /// </summary>
@@ -32926,7 +32924,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HCP")]
     public class HCP : I_HCP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33048,7 +33046,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string ExceptionCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Services Review
     /// </summary>
@@ -33057,7 +33055,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HCR")]
     public class HCR : I_HCR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33092,7 +33090,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Coverage
     /// </summary>
@@ -33101,7 +33099,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HD")]
     public class HD : I_HD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33187,7 +33185,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string YesNoConditionorResponseCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Information Codes
     /// </summary>
@@ -33196,7 +33194,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HI")]
     public class HI : I_HI<C022, C022, C022, C022, C022, C022, C022, C022, C022, C022, C022, C022>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33274,7 +33272,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public virtual C022 HealthCareCodeInformation_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Hierarchical Level
     /// </summary>
@@ -33283,7 +33281,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HL")]
     public class HL : I_HL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33320,7 +33318,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string HierarchicalChildCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Information
     /// </summary>
@@ -33329,7 +33327,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HLH")]
     public class HLH : I_HLH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33388,7 +33386,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Screening
     /// </summary>
@@ -33397,7 +33395,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HS")]
     public class HS : I_HS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33434,7 +33432,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string StatusReasonCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Services Delivery
     /// </summary>
@@ -33443,7 +33441,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("HSD")]
     public class HSD : I_HSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33509,7 +33507,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ShipDeliveryPatternTimeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Intermodal Chassis Equipment
     /// </summary>
@@ -33518,7 +33516,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IC")]
     public class IC : I_IC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33588,7 +33586,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ChassisType_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual Characteristics
     /// </summary>
@@ -33597,7 +33595,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ICH")]
     public class ICH : I_ICH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33695,7 +33693,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string PoliticalPartyAffiliationCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual Income
     /// </summary>
@@ -33704,7 +33702,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ICM")]
     public class ICM : I_ICM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33758,7 +33756,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CurrencyCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Inspection Detail Segment
     /// </summary>
@@ -33767,7 +33765,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ID")]
     public class ID : I_ID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33799,7 +33797,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string DamageSeverityCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail Dimensions
     /// </summary>
@@ -33808,7 +33806,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ID1")]
     public class ID1 : I_ID1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34094,7 +34092,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(34)]
         public string YPeg_34 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Image Detail
     /// </summary>
@@ -34103,7 +34101,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ID2")]
     public class ID2 : I_ID2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34174,7 +34172,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Dimensions Detail
     /// </summary>
@@ -34183,7 +34181,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ID3")]
     public class ID3 : I_ID3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34357,7 +34355,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string UnitorBasisforMeasurementCode_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Load Details
     /// </summary>
@@ -34366,7 +34364,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ID4")]
     public class ID4 : I_ID4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34440,7 +34438,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Indebtedness for Student Loans
     /// </summary>
@@ -34449,7 +34447,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IDB")]
     public class IDB : I_IDB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34495,7 +34493,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string LoanRateTypeCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Identification Card
     /// </summary>
@@ -34504,7 +34502,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IDC")]
     public class IDC : I_IDC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34541,7 +34539,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ActionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Insurer or Guarantor Information
     /// </summary>
@@ -34550,7 +34548,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IGI")]
     public class IGI : I_IGI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34600,7 +34598,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string PayerResponsibilitySequenceNumberCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Information
     /// </summary>
@@ -34609,7 +34607,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("III")]
     public class III : I_III<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34681,7 +34679,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string SurfaceLayerPositionCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Interchange Identification Segment
     /// </summary>
@@ -34690,7 +34688,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IIS")]
     public class IIS : I_IIS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34806,7 +34804,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ReportedGrouporTransactionIdentifierI_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Intermodal Movement Information
     /// </summary>
@@ -34815,7 +34813,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IM")]
     public class IM : I_IM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34841,7 +34839,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string InlandTransportationCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Interchange Move Authority
     /// </summary>
@@ -34850,7 +34848,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IMA")]
     public class IMA : I_IMA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34893,7 +34891,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string TariffApplicationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Immunization Status Code
     /// </summary>
@@ -34902,7 +34900,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IMM")]
     public class IMM : I_IMM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34947,7 +34945,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ReportTypeCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Impairment Detail
     /// </summary>
@@ -34956,7 +34954,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IMP")]
     public class IMP : I_IMP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34978,7 +34976,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Percent_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual Identification
     /// </summary>
@@ -34987,7 +34985,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IN1")]
     public class IN1 : I_IN1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35045,7 +35043,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string LevelofIndividualTestorCourseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual Name Structure Components
     /// </summary>
@@ -35054,7 +35052,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IN2")]
     public class IN2 : I_IN2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35076,7 +35074,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Name_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Installment Information
     /// </summary>
@@ -35085,7 +35083,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INC")]
     public class INC : I_INC<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35131,7 +35129,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string MonetaryAmount_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Individual Demographic Information
     /// </summary>
@@ -35140,7 +35138,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IND")]
     public class IND : I_IND
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35240,7 +35238,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string IdentificationCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit Inquiry Details
     /// </summary>
@@ -35249,7 +35247,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INQ")]
     public class INQ : I_INQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35269,7 +35267,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string TypeofAccountCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Information Request
     /// </summary>
@@ -35278,7 +35276,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INR")]
     public class INR : I_INR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35306,7 +35304,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string InformationStatusCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Insured Benefit
     /// </summary>
@@ -35315,7 +35313,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INS")]
     public class INS : I_INS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35447,7 +35445,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string Number_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Interest
     /// </summary>
@@ -35456,7 +35454,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INT")]
     public class INT : I_INT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35501,7 +35499,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Quantity_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Investment Vehicle Selection
     /// </summary>
@@ -35510,7 +35508,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INV")]
     public class INV : I_INV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35573,7 +35571,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string MonetaryAmount_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Index Detail
     /// </summary>
@@ -35582,7 +35580,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("INX")]
     public class INX : I_INX<C036>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35602,7 +35600,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual C036 IndexIdentification_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Investor Reporting Action Code
     /// </summary>
@@ -35611,7 +35609,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IRA")]
     public class IRA : I_IRA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35640,7 +35638,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string DateTimePeriod_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Report Selection Segment
     /// </summary>
@@ -35649,7 +35647,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IRP")]
     public class IRP : I_IRP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35705,7 +35703,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ShipDeliveryorCalendarPatternCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Estimated Time of Arrival and Car Scheduling
     /// </summary>
@@ -35714,7 +35712,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IS1")]
     public class IS1 : I_IS1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35776,7 +35774,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string IndustryCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Scheduled Events
     /// </summary>
@@ -35785,7 +35783,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IS2")]
     public class IS2 : I_IS2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -35930,7 +35928,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string StateorProvinceCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Interline Service Commitment Detail
     /// </summary>
@@ -35939,7 +35937,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ISC")]
     public class ISC : I_ISC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36026,7 +36024,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string BlockIdentification_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Interline Service Definition Detail
     /// </summary>
@@ -36035,7 +36033,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ISD")]
     public class ISD : I_ISD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36075,7 +36073,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Time_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Status Report
     /// </summary>
@@ -36084,7 +36082,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ISR")]
     public class ISR : I_ISR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36112,7 +36110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string StatusReasonCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Invoice Shipment Summary
     /// </summary>
@@ -36121,7 +36119,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ISS")]
     public class ISS : I_ISS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36191,7 +36189,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Weight_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Baseline Item Data (Invoice)
     /// </summary>
@@ -36200,7 +36198,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IT1")]
     public class IT1 : I_IT1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36404,7 +36402,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(25)]
         public string ProductServiceID_25 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Item Data
     /// </summary>
@@ -36413,7 +36411,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IT3")]
     public class IT3 : I_IT3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36457,7 +36455,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ChangeReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Conditions of Sale
     /// </summary>
@@ -36466,7 +36464,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IT8")]
     public class IT8 : I_IT8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36684,7 +36682,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(27)]
         public string ProductServiceID_27 { get; set; }
     }
-    
+
     /// <summary>
     /// Allowance, Charge or Service
     /// </summary>
@@ -36693,7 +36691,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ITA")]
     public class ITA : I_ITA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36832,7 +36830,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string UnitorBasisforMeasurementCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Information Type and Comment Results
     /// </summary>
@@ -36841,7 +36839,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ITC")]
     public class ITC : I_ITC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36942,7 +36940,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string SourceofDisclosureCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Terms of Sale/Deferred Terms of Sale
     /// </summary>
@@ -36951,7 +36949,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ITD")]
     public class ITD : I_ITD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37076,7 +37074,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string Percent_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Lane Estimates
     /// </summary>
@@ -37085,7 +37083,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("IV1")]
     public class IV1 : I_IV1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37129,7 +37127,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string UnitofTimePeriodorInterval_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Junction Information
     /// </summary>
@@ -37138,7 +37136,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JCT")]
     public class JCT : I_JCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37221,7 +37219,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Detail
     /// </summary>
@@ -37230,7 +37228,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JID")]
     public class JID : I_JID<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37281,7 +37279,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string MonetaryAmount_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail for the Operating Expense Statement
     /// </summary>
@@ -37290,7 +37288,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JIL")]
     public class JIL : I_JIL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37352,7 +37350,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string AmountQualifierCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Just-In-Time Schedule
     /// </summary>
@@ -37361,7 +37359,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JIT")]
     public class JIT : I_JIT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37384,7 +37382,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Time_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Journal Identification
     /// </summary>
@@ -37393,7 +37391,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JL")]
     public class JL : I_JL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37433,7 +37431,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string NameCharacterFormat_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Junction Settlement Role Information
     /// </summary>
@@ -37442,7 +37440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("JS")]
     public class JS : I_JS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37481,7 +37479,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string RailJunctionSettlementRoleCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Remarks
     /// </summary>
@@ -37490,7 +37488,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("K1")]
     public class K1 : I_K1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37512,7 +37510,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FreeFormMessage_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Administrative Message
     /// </summary>
@@ -37521,7 +37519,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("K2")]
     public class K2 : I_K2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37535,7 +37533,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string Description_01 { get; set; }
     }
-    
+
     /// <summary>
     /// File Information
     /// </summary>
@@ -37544,7 +37542,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("K3")]
     public class K3 : I_K3<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37571,7 +37569,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual C001 CompositeUnitofMeasure_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item - Quantity and Weight
     /// </summary>
@@ -37580,7 +37578,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L0")]
     public class L0 : I_L0
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37703,7 +37701,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string YesNoConditionorResponseCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate and Charges
     /// </summary>
@@ -37712,7 +37710,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L1")]
     public class L1 : I_L1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37880,7 +37878,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string Amount_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Weight
     /// </summary>
@@ -37889,7 +37887,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L10")]
     public class L10 : I_L10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37918,7 +37916,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string WeightUnitCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Business Instructions and Reference Number
     /// </summary>
@@ -37927,7 +37925,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L11")]
     public class L11 : I_L11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37957,7 +37955,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Description_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Alternate Lading Description
     /// </summary>
@@ -37966,7 +37964,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L12")]
     public class L12 : I_L12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37986,7 +37984,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Commodity Details
     /// </summary>
@@ -37995,7 +37993,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L13")]
     public class L13 : I_L13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38131,7 +38129,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string Amount_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Billing Identification
     /// </summary>
@@ -38140,7 +38138,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L1A")]
     public class L1A : I_L1A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38161,7 +38159,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string StandardCarrierAlphaCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Weight and Charges
     /// </summary>
@@ -38170,7 +38168,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L3")]
     public class L3 : I_L3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38294,7 +38292,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string RateValueQualifier_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Measurement
     /// </summary>
@@ -38303,7 +38301,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L4")]
     public class L4 : I_L4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38359,7 +38357,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string IndustryCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Description, Marks and Numbers
     /// </summary>
@@ -38368,7 +38366,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L5")]
     public class L5 : I_L5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38452,7 +38450,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string CompartmentIDCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Reference
     /// </summary>
@@ -38461,7 +38459,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L7")]
     public class L7 : I_L7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38593,7 +38591,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string StateorProvinceCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Reference Identifier
     /// </summary>
@@ -38602,7 +38600,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L7A")]
     public class L7A : I_L7A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38670,7 +38668,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Date_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Subtotal
     /// </summary>
@@ -38679,7 +38677,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L8")]
     public class L8 : I_L8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38770,7 +38768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ChargeMethodofPayment_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Charge Detail
     /// </summary>
@@ -38779,7 +38777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("L9")]
     public class L9 : I_L9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38801,7 +38799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string MonetaryAmount_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Lading Detail
     /// </summary>
@@ -38810,7 +38808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LAD")]
     public class LAD : I_LAD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38919,7 +38917,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string LadingDescription_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Life Coverage
     /// </summary>
@@ -38928,7 +38926,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LC")]
     public class LC : I_LC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38985,7 +38983,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Lane Commitments
     /// </summary>
@@ -38994,7 +38992,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LC1")]
     public class LC1 : I_LC1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39094,7 +39092,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string YesNoConditionorResponseCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Place/Location Description
     /// </summary>
@@ -39103,7 +39101,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LCD")]
     public class LCD : I_LCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39155,7 +39153,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string IdentificationCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Logistics Container Tracking Information
     /// </summary>
@@ -39164,7 +39162,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LCT")]
     public class LCT : I_LCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39268,7 +39266,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string PalletExchangeCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Lead Time
     /// </summary>
@@ -39277,7 +39275,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LDT")]
     public class LDT : I_LDT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39315,7 +39313,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop Trailer
     /// </summary>
@@ -39324,7 +39322,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LE")]
     public class LE : I_LE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39338,7 +39336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string LoopIdentifierCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// EPA Required Data
     /// </summary>
@@ -39347,7 +39345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LEP")]
     public class LEP : I_LEP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39385,7 +39383,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Leased Equipment Information
     /// </summary>
@@ -39394,7 +39392,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LEQ")]
     public class LEQ : I_LEQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39476,7 +39474,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ExchangeRate_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Load and Equipment Type
     /// </summary>
@@ -39485,7 +39483,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LET")]
     public class LET : I_LET
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39520,7 +39518,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string CarTypeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Information, Finished Goods
     /// </summary>
@@ -39529,7 +39527,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LFG")]
     public class LFG : I_LFG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39585,7 +39583,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string HazardousMaterialRegulationsExceptionCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Freeform Hazardous Material Information
     /// </summary>
@@ -39594,7 +39592,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LFH")]
     public class LFH : I_LFH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39655,7 +39653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Quantity_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Locomotive Information
     /// </summary>
@@ -39664,7 +39662,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LFI")]
     public class LFI : I_LFI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39737,7 +39735,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string InterchangeTrainIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Mixed Hazardous Commodities
     /// </summary>
@@ -39746,7 +39744,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH")]
     public class LH : I_LH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39800,7 +39798,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string LimitedQuantityIndicationCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Identification Information
     /// </summary>
@@ -39809,7 +39807,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH1")]
     public class LH1 : I_LH1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -39900,7 +39898,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string InterimHazardousMaterialRegulatoryNumber_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Classification Information
     /// </summary>
@@ -39909,7 +39907,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH2")]
     public class LH2 : I_LH2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40000,7 +39998,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Temperature_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Material Shipping Name
     /// </summary>
@@ -40009,7 +40007,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH3")]
     public class LH3 : I_LH3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40044,7 +40042,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Canadian Dangerous Requirements
     /// </summary>
@@ -40053,7 +40051,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH4")]
     public class LH4 : I_LH4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40152,7 +40150,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string UnitorBasisforMeasurementCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Certification
     /// </summary>
@@ -40161,7 +40159,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LH6")]
     public class LH6 : I_LH6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40198,7 +40196,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string HazardousCertificationDeclaration_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Empty Equipment Hazardous Material Information
     /// </summary>
@@ -40207,7 +40205,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LHE")]
     public class LHE : I_LHE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40254,7 +40252,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ReportableQuantityCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Hazardous Material Identifying Reference Numbers
     /// </summary>
@@ -40263,7 +40261,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LHR")]
     public class LHR : I_LHR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40293,7 +40291,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Date_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Transborder Hazardous Requirements
     /// </summary>
@@ -40302,7 +40300,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LHT")]
     public class LHT : I_LHT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40331,7 +40329,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string HazardousEndorsement_03 { get; set; }
     }
-    
+
     /// <summary>
     /// License Information
     /// </summary>
@@ -40340,7 +40338,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LIC")]
     public class LIC : I_LIC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40412,7 +40410,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Loss Information Description
     /// </summary>
@@ -40421,7 +40419,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LID")]
     public class LID : I_LID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40489,7 +40487,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Description_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual or Event Location
     /// </summary>
@@ -40498,7 +40496,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LIE")]
     public class LIE : I_LIE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40533,7 +40531,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string EntityIdentifierCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Identification
     /// </summary>
@@ -40542,7 +40540,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LIN")]
     public class LIN : I_LIN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40796,7 +40794,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(31)]
         public string ProductServiceID_31 { get; set; }
     }
-    
+
     /// <summary>
     /// Code Source Information
     /// </summary>
@@ -40805,7 +40803,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LM")]
     public class LM : I_LM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40826,7 +40824,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string SourceSubqualifier_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Information
     /// </summary>
@@ -40835,7 +40833,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LN")]
     public class LN : I_LN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40926,7 +40924,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string LoanRateTypeCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Specific Data
     /// </summary>
@@ -40935,7 +40933,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LN1")]
     public class LN1 : I_LN1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41126,7 +41124,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(23)]
         public string MonetaryAmount_23 { get; set; }
     }
-    
+
     /// <summary>
     /// Existing Real Estate Loan Specific Data
     /// </summary>
@@ -41135,7 +41133,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LN2")]
     public class LN2 : I_LN2<C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41232,7 +41230,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string Quantity_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Location
     /// </summary>
@@ -41241,7 +41239,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LOC")]
     public class LOC : I_LOC<C001, C001, C001, C001, C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41427,7 +41425,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(24)]
         public string Description_24 { get; set; }
     }
-    
+
     /// <summary>
     /// Location Description
     /// </summary>
@@ -41436,7 +41434,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LOD")]
     public class LOD : I_LOD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41490,7 +41488,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string FreeFormMessage_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Load Planning
     /// </summary>
@@ -41499,7 +41497,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LP")]
     public class LP : I_LP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41559,7 +41557,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Number_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Industry Code
     /// </summary>
@@ -41568,7 +41566,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LQ")]
     public class LQ : I_LQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41589,7 +41587,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string IndustryCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Characteristics Requested
     /// </summary>
@@ -41598,7 +41596,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LRQ")]
     public class LRQ : I_LRQ<C048>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41755,7 +41753,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string Description_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop Header
     /// </summary>
@@ -41764,7 +41762,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LS")]
     public class LS : I_LS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41778,7 +41776,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string LoopIdentifierCode_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Asset Item Identification
     /// </summary>
@@ -41787,7 +41785,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LS1")]
     public class LS1 : I_LS1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41848,7 +41846,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ProductServiceID_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Letter of Recommendation
     /// </summary>
@@ -41857,7 +41855,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LT")]
     public class LT : I_LT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41894,7 +41892,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Letter of Recommendation Evaluation
     /// </summary>
@@ -41903,7 +41901,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LTE")]
     public class LTE : I_LTE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41940,7 +41938,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string RatingSummaryValueCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Laboratory Test Results
     /// </summary>
@@ -41949,7 +41947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LTR")]
     public class LTR : I_LTR<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42050,7 +42048,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string RangeMaximum_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Underwriting
     /// </summary>
@@ -42059,7 +42057,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LUC")]
     public class LUC : I_LUC<C048>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42093,7 +42091,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string RiskofLossCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Language Use
     /// </summary>
@@ -42102,7 +42100,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LUI")]
     public class LUI : I_LUI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42146,7 +42144,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string LanguageProficiencyIndicator_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Verification
     /// </summary>
@@ -42155,7 +42153,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LV")]
     public class LV : I_LV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42177,7 +42175,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string LoanVerificationCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Assigned Number
     /// </summary>
@@ -42186,7 +42184,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("LX")]
     public class LX : I_LX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42200,7 +42198,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string AssignedNumber_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Letter of Credit Reference
     /// </summary>
@@ -42209,7 +42207,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M0")]
     public class M0 : I_M0
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42247,7 +42245,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Insurance
     /// </summary>
@@ -42256,7 +42254,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M1")]
     public class M1 : I_M1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42356,7 +42354,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string Percent_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Manifest Identifying Information
     /// </summary>
@@ -42365,7 +42363,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M10")]
     public class M10 : I_M10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42469,7 +42467,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ReferenceIdentification_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Manifest Bill of Lading Details
     /// </summary>
@@ -42478,7 +42476,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M11")]
     public class M11 : I_M11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42642,7 +42640,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(19)]
         public string StandardCarrierAlphaCode_19 { get; set; }
     }
-    
+
     /// <summary>
     /// In-bond Identifying Information
     /// </summary>
@@ -42651,7 +42649,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M12")]
     public class M12 : I_M12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42747,7 +42745,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string VesselName_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Manifest Amendment Details
     /// </summary>
@@ -42756,7 +42754,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M13")]
     public class M13 : I_M13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42843,7 +42841,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string StandardCarrierAlphaCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// General Order Status Information
     /// </summary>
@@ -42852,7 +42850,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M14")]
     public class M14 : I_M14
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42949,7 +42947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string LocationIdentifier_11 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Events Advisory Details
     /// </summary>
@@ -42958,7 +42956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M15")]
     public class M15 : I_M15
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43064,7 +43062,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string YesNoConditionorResponseCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Sales/Delivery Terms
     /// </summary>
@@ -43073,7 +43071,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M2")]
     public class M2 : I_M2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43141,7 +43139,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string LocationIdentifier_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Permit to Transfer Request Details
     /// </summary>
@@ -43150,7 +43148,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M20")]
     public class M20 : I_M20
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43233,7 +43231,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string FreeformDescription_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Supplementary In-Bond Information
     /// </summary>
@@ -43242,7 +43240,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M21")]
     public class M21 : I_M21
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43356,7 +43354,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string Quantity_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Release
     /// </summary>
@@ -43365,7 +43363,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M3")]
     public class M3 : I_M3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43403,7 +43401,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string TimeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Seal Numbers
     /// </summary>
@@ -43412,7 +43410,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M7")]
     public class M7 : I_M7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43457,7 +43455,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string EntityIdentifierCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Seal Number Replacement
     /// </summary>
@@ -43466,7 +43464,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("M7A")]
     public class M7A : I_M7A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43521,7 +43519,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Description_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Marks and Numbers
     /// </summary>
@@ -43530,7 +43528,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MAN")]
     public class MAN : I_MAN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43585,7 +43583,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string MarksandNumbers_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Bill of Lading
     /// </summary>
@@ -43594,7 +43592,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MBL")]
     public class MBL : I_MBL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43638,7 +43636,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string TypeofServiceCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Miscellaneous and Accessorial Charges
     /// </summary>
@@ -43647,7 +43645,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MC")]
     public class MC : I_MC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43693,7 +43691,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string AssignedNumber_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Closing Data
     /// </summary>
@@ -43702,7 +43700,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MCD")]
     public class MCD : I_MCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43741,7 +43739,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Name_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Accessorial Charges
     /// </summary>
@@ -43750,7 +43748,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MCT")]
     public class MCT : I_MCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43817,7 +43815,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string SpecialChargeDescription_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Measurements
     /// </summary>
@@ -43826,7 +43824,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MEA")]
     public class MEA : I_MEA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43908,7 +43906,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string MeasurementMethodorDevice_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Media Information
     /// </summary>
@@ -43917,7 +43915,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MI")]
     public class MI : I_MI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43962,7 +43960,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Mileage Source
     /// </summary>
@@ -43971,7 +43969,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MI1")]
     public class MI1 : I_MI1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44001,7 +43999,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Number_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Medicare Inpatient Adjudication
     /// </summary>
@@ -44010,7 +44008,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIA")]
     public class MIA : I_MIA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44208,7 +44206,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(24)]
         public string MonetaryAmount_24 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Insurance Coverage
     /// </summary>
@@ -44217,7 +44215,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIC")]
     public class MIC : I_MIC<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44345,7 +44343,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string YesNoConditionorResponseCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Minimum Detail
     /// </summary>
@@ -44354,7 +44352,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIN")]
     public class MIN : I_MIN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44488,7 +44486,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string LoadingRestriction_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Insurance Response
     /// </summary>
@@ -44497,7 +44495,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIR")]
     public class MIR : I_MIR<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44594,7 +44592,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string Date_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgagee Information Status
     /// </summary>
@@ -44603,7 +44601,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIS")]
     public class MIS : I_MIS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44646,7 +44644,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string JurisdictionCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Message Identification
     /// </summary>
@@ -44655,7 +44653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MIT")]
     public class MIT : I_MIT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44693,7 +44691,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string PageLengthLines_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Marks Awarded
     /// </summary>
@@ -44702,7 +44700,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MKS")]
     public class MKS : I_MKS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44731,7 +44729,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AcademicGrade_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Milestone
     /// </summary>
@@ -44740,7 +44738,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MLS")]
     public class MLS : I_MLS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44776,7 +44774,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ActionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Note Characteristics
     /// </summary>
@@ -44785,7 +44783,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MNC")]
     public class MNC : I_MNC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44916,7 +44914,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string RealEstateLoanSecurityInstrumentCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Medicare Outpatient Adjudication
     /// </summary>
@@ -44925,7 +44923,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MOA")]
     public class MOA : I_MOA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45002,7 +45000,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string MonetaryAmount_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Military Personnel Information
     /// </summary>
@@ -45011,7 +45009,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MPI")]
     public class MPI : I_MPI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45071,7 +45069,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string DateTimePeriod_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Pool Program
     /// </summary>
@@ -45080,7 +45078,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MPP")]
     public class MPP : I_MPP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45146,7 +45144,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string CertificationTypeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgagor Response Characteristics
     /// </summary>
@@ -45155,7 +45153,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MRC")]
     public class MRC : I_MRC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45234,7 +45232,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Quantity_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Miscellaneous Services
     /// </summary>
@@ -45243,7 +45241,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS")]
     public class MS : I_MS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45296,7 +45294,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AssignedNumber_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment, Shipment, or Real Property Location
     /// </summary>
@@ -45305,7 +45303,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS1")]
     public class MS1 : I_MS1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45371,7 +45369,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string DirectionIdentifierCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment or Container Owner and Type
     /// </summary>
@@ -45380,7 +45378,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS2")]
     public class MS2 : I_MS2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45418,7 +45416,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string EquipmentNumberCheckDigit_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Interline Information
     /// </summary>
@@ -45427,7 +45425,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS3")]
     public class MS3 : I_MS3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45473,7 +45471,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string StateorProvinceCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment or Package Dimensions
     /// </summary>
@@ -45482,7 +45480,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS4")]
     public class MS4 : I_MS4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45522,7 +45520,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Width_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Rates and Charges
     /// </summary>
@@ -45531,7 +45529,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS5")]
     public class MS5 : I_MS5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45577,7 +45575,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string CurrencyCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Quantity and Weight
     /// </summary>
@@ -45586,7 +45584,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MS6")]
     public class MS6 : I_MS6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45616,7 +45614,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Weight_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Message Text
     /// </summary>
@@ -45625,7 +45623,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MSG")]
     public class MSG : I_MSG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45655,7 +45653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Number_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Material Safety Data Sheet Section Information
     /// </summary>
@@ -45664,7 +45662,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MSS")]
     public class MSS : I_MSS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45724,7 +45722,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string SafetyCharacteristicHazardCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Text
     /// </summary>
@@ -45733,7 +45731,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("MTX")]
     public class MTX : I_MTX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45770,7 +45768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string PrinterCarriageControlCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Name
     /// </summary>
@@ -45779,7 +45777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N1")]
     public class N1 : I_N1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45831,7 +45829,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string EntityIdentifierCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Quantity and Description
     /// </summary>
@@ -45840,7 +45838,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N10")]
     public class N10 : I_N10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45949,7 +45947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string CurrencyCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Store Number
     /// </summary>
@@ -45958,7 +45956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N11")]
     public class N11 : I_N11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45988,7 +45986,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string ReferenceIdentification_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Environment
     /// </summary>
@@ -45997,7 +45995,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N12")]
     public class N12 : I_N12<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46017,7 +46015,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual C001 CompositeUnitofMeasure_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Name Information
     /// </summary>
@@ -46026,7 +46024,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N2")]
     public class N2 : I_N2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46048,7 +46046,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Name_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Address Information
     /// </summary>
@@ -46057,7 +46055,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N3")]
     public class N3 : I_N3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46079,7 +46077,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string AddressInformation_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Geographic Location
     /// </summary>
@@ -46088,7 +46086,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N4")]
     public class N4 : I_N4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46141,7 +46139,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string LocationIdentifier_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Ordered
     /// </summary>
@@ -46150,7 +46148,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N5")]
     public class N5 : I_N5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46225,7 +46223,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string EquipmentDescriptionCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Details
     /// </summary>
@@ -46234,7 +46232,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N7")]
     public class N7 : I_N7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46428,7 +46426,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(24)]
         public string CarTypeCode_24 { get; set; }
     }
-    
+
     /// <summary>
     /// Accessorial Equipment Details
     /// </summary>
@@ -46437,7 +46435,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N7A")]
     public class N7A : I_N7A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46509,7 +46507,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string MiscellaneousEquipmentCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Equipment Details
     /// </summary>
@@ -46518,7 +46516,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N7B")]
     public class N7B : I_N7B
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46567,7 +46565,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ReferenceIdentification_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Waybill Reference
     /// </summary>
@@ -46576,7 +46574,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N8")]
     public class N8 : I_N8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46674,7 +46672,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string FreightStationAccountingCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Reference Information
     /// </summary>
@@ -46683,7 +46681,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N8A")]
     public class N8A : I_N8A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46767,7 +46765,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string EquipmentNumber_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Reference Identification
     /// </summary>
@@ -46776,7 +46774,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("N9")]
     public class N9 : I_N9<C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46836,7 +46834,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public virtual C040 ReferenceIdentifier_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Cross-Reference Equipment
     /// </summary>
@@ -46845,7 +46843,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NA")]
     public class NA : I_NA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46937,7 +46935,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string YesNoConditionorResponseCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Nonconformance Action
     /// </summary>
@@ -46946,7 +46944,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NCA")]
     public class NCA : I_NCA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46990,7 +46988,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public virtual C001 CompositeUnitofMeasure_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Nonconformance Description
     /// </summary>
@@ -46999,7 +46997,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NCD")]
     public class NCD : I_NCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47057,7 +47055,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Individual or Organizational Name
     /// </summary>
@@ -47066,7 +47064,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NM1")]
     public class NM1 : I_NM1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47158,7 +47156,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string EntityIdentifierCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Note/Special Instruction
     /// </summary>
@@ -47167,7 +47165,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NTE")]
     public class NTE : I_NTE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47188,7 +47186,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Property or Entity Identification
     /// </summary>
@@ -47197,7 +47195,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NX1")]
     public class NX1 : I_NX1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47238,7 +47236,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string EntityIdentifierCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Location ID Component
     /// </summary>
@@ -47247,7 +47245,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("NX2")]
     public class NX2 : I_NX2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47277,7 +47275,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CountyDesignator_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Obligation Information
     /// </summary>
@@ -47286,7 +47284,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OBI")]
     public class OBI : I_OBI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47338,7 +47336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Quantity_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Origin and Destination
     /// </summary>
@@ -47347,7 +47345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OD")]
     public class OD : I_OD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47386,7 +47384,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string StandardCarrierAlphaCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Other Health Insurance Information
     /// </summary>
@@ -47395,7 +47393,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OI")]
     public class OI : I_OI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47442,7 +47440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ReleaseofInformationCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Order Identification Detail
     /// </summary>
@@ -47451,7 +47449,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OID")]
     public class OID : I_OID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47530,7 +47528,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Volume_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Program Subject Area and Eligibility
     /// </summary>
@@ -47539,7 +47537,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OPS")]
     public class OPS : I_OPS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47588,7 +47586,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Quantity_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Placement Criteria
     /// </summary>
@@ -47597,7 +47595,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OPX")]
     public class OPX : I_OPX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47624,7 +47622,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string StatusReasonCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Order Quantity Sequence
     /// </summary>
@@ -47633,7 +47631,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OQS")]
     public class OQS : I_OQS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47656,7 +47654,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string QuantityOrdered_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Original Transaction Identification
     /// </summary>
@@ -47665,7 +47663,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("OTI")]
     public class OTI : I_OTI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47801,7 +47799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string StatusReasonCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Pick-up
     /// </summary>
@@ -47810,7 +47808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("P1")]
     public class P1 : I_P1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47871,7 +47869,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string NumberofShipments_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery
     /// </summary>
@@ -47880,7 +47878,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("P2")]
     public class P2 : I_P2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47909,7 +47907,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string DateTimeQualifier_03 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Port Information
     /// </summary>
@@ -47918,7 +47916,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("P4")]
     public class P4 : I_P4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -47965,7 +47963,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Time_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Port Information
     /// </summary>
@@ -47974,7 +47972,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("P5")]
     public class P5 : I_P5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48004,7 +48002,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string LocationIdentifier_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Adjustment Detail
     /// </summary>
@@ -48013,7 +48011,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAD")]
     public class PAD : I_PAD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48057,7 +48055,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Multiplier_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Print Advertisement Information
     /// </summary>
@@ -48066,7 +48064,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAI")]
     public class PAI : I_PAI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48111,7 +48109,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Amount_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Pallet Information
     /// </summary>
@@ -48120,7 +48118,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAL")]
     public class PAL : I_PAL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48254,7 +48252,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string InnerPack_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Period Amount
     /// </summary>
@@ -48263,7 +48261,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAM")]
     public class PAM : I_PAM<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48390,7 +48388,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string YesNoConditionorResponseCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Appraisal Summary
     /// </summary>
@@ -48399,7 +48397,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAS")]
     public class PAS : I_PAS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48460,7 +48458,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Patient Information
     /// </summary>
@@ -48469,7 +48467,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAT")]
     public class PAT : I_PAT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48541,7 +48539,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Adjustable Payment Description
     /// </summary>
@@ -48550,7 +48548,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PAY")]
     public class PAY : I_PAY<C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48723,7 +48721,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public string YesNoConditionorResponseCode_22 { get; set; }
     }
-    
+
     /// <summary>
     /// Problem Identification
     /// </summary>
@@ -48732,7 +48730,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PBI")]
     public class PBI : I_PBI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48803,7 +48801,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string FixedFormatInformation_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Previous College
     /// </summary>
@@ -48812,7 +48810,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PCL")]
     public class PCL : I_PCL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48875,7 +48873,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Cancellation Request
     /// </summary>
@@ -48884,7 +48882,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PCR")]
     public class PCR : I_PCR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48906,7 +48904,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string MonetaryAmount_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Claim Status
     /// </summary>
@@ -48915,7 +48913,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PCS")]
     public class PCS : I_PCS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49008,7 +49006,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string AuthorizationIdentification_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Percent Amounts
     /// </summary>
@@ -49017,7 +49015,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PCT")]
     public class PCT : I_PCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49039,7 +49037,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Percent_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing Data
     /// </summary>
@@ -49048,7 +49046,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PD")]
     public class PD : I_PD<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49133,7 +49131,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string ProposalDataDetailIdentifierCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing Data Detail
     /// </summary>
@@ -49142,7 +49140,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDD")]
     public class PDD : I_PDD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49188,7 +49186,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ProposalDataDetailIdentifierCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Metes and Bounds Description
     /// </summary>
@@ -49197,7 +49195,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDE")]
     public class PDE : I_PDE<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49231,7 +49229,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string MeasurementValue_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Details
     /// </summary>
@@ -49240,7 +49238,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDL")]
     public class PDL : I_PDL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49340,7 +49338,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string DateTimePeriod_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Description - Personal
     /// </summary>
@@ -49349,7 +49347,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDP")]
     public class PDP : I_PDP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49378,7 +49376,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CommodityCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Description - Real
     /// </summary>
@@ -49387,7 +49385,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDR")]
     public class PDR : I_PDR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49423,7 +49421,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string OccupancyCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Description/Legal Description
     /// </summary>
@@ -49432,7 +49430,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PDS")]
     public class PDS : I_PDS<C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49459,7 +49457,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual C040 ReferenceIdentifier_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Pension Information
     /// </summary>
@@ -49468,7 +49466,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PEN")]
     public class PEN : I_PEN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49543,7 +49541,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string MaintenanceTypeCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Administrative Communications Contact
     /// </summary>
@@ -49552,7 +49550,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PER")]
     public class PER : I_PER
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49629,7 +49627,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ContactInquiryReference_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Property or Housing Expense
     /// </summary>
@@ -49638,7 +49636,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PEX")]
     public class PEX : I_PEX<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49701,7 +49699,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public virtual C001 CompositeUnitofMeasure_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Authority Identification
     /// </summary>
@@ -49710,7 +49708,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PI")]
     public class PI : I_PI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49835,7 +49833,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string AlternationPrecedenceCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Product/Item Description
     /// </summary>
@@ -49844,7 +49842,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PID")]
     public class PID : I_PID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49922,7 +49920,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string LanguageCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Previous Incident
     /// </summary>
@@ -49931,7 +49929,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PIN")]
     public class PIN : I_PIN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49992,7 +49990,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string IndustryCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Packaging Description
     /// </summary>
@@ -50001,7 +49999,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PKD")]
     public class PKD : I_PKD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50046,7 +50044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string OwnershipCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Marking, Packaging, Loading
     /// </summary>
@@ -50055,7 +50053,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PKG")]
     public class PKG : I_PKG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50107,7 +50105,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string UnitLoadOptionCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Multi-Pack Configuration
     /// </summary>
@@ -50116,7 +50114,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PKL")]
     public class PKL : I_PKL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50229,7 +50227,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string YesNoConditionorResponseCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Proposal Cost Logic
     /// </summary>
@@ -50238,7 +50236,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PL")]
     public class PL : I_PL<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50292,7 +50290,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Count_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Place or Location
     /// </summary>
@@ -50301,7 +50299,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PLA")]
     public class PLA : I_PLA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50346,7 +50344,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string MaintenanceReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Provider Level Adjustment
     /// </summary>
@@ -50355,7 +50353,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PLB")]
     public class PLB : I_PLB<C042, C042, C042, C042, C042, C042>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50464,7 +50462,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string MonetaryAmount_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Placement Information
     /// </summary>
@@ -50473,7 +50471,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PLC")]
     public class PLC : I_PLC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50495,7 +50493,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string ReferenceIdentification_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Pallet Information
     /// </summary>
@@ -50504,7 +50502,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PLD")]
     public class PLD : I_PLD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50541,7 +50539,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Weight_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Previous Loan Information
     /// </summary>
@@ -50550,7 +50548,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PLI")]
     public class PLI : I_PLI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50627,7 +50625,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string LoanRateTypeCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Electronic Funds Transfer Information
     /// </summary>
@@ -50636,7 +50634,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PM")]
     public class PM : I_PM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50689,7 +50687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string DFIIDNumberQualifier_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Baseline Item Data
     /// </summary>
@@ -50698,7 +50696,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PO1")]
     public class PO1 : I_PO1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50903,7 +50901,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(25)]
         public string ProductServiceID_25 { get; set; }
     }
-    
+
     /// <summary>
     /// Additional Item Detail
     /// </summary>
@@ -50912,7 +50910,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PO3")]
     public class PO3 : I_PO3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50981,7 +50979,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Description_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Physical Details
     /// </summary>
@@ -50990,7 +50988,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PO4")]
     public class PO4 : I_PO4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51143,7 +51141,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string Number_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Change
     /// </summary>
@@ -51152,7 +51150,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("POC")]
     public class POC : I_POC<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51372,7 +51370,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(27)]
         public string ProductServiceID_27 { get; set; }
     }
-    
+
     /// <summary>
     /// Proof of Delivery
     /// </summary>
@@ -51381,7 +51379,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("POD")]
     public class POD : I_POD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51412,7 +51410,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Name_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Location
     /// </summary>
@@ -51421,7 +51419,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PPA")]
     public class PPA : I_PPA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51475,7 +51473,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string DirectionIdentifierCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Pattern Details
     /// </summary>
@@ -51484,7 +51482,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PPD")]
     public class PPD : I_PPD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51591,7 +51589,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string Number_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Support Data
     /// </summary>
@@ -51600,7 +51598,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PPL")]
     public class PPL : I_PPL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51643,7 +51641,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ProposalDataDetailIdentifierCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Personal Property Description
     /// </summary>
@@ -51652,7 +51650,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PPY")]
     public class PPY : I_PPY
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51722,7 +51720,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Product (Commodity)
     /// </summary>
@@ -51731,7 +51729,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PR")]
     public class PR : I_PR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51809,7 +51807,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string GroupTitle_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Request Parameter List 1
     /// </summary>
@@ -51818,7 +51816,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PR1")]
     public class PR1 : I_PR1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51932,7 +51930,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string StandardCarrierAlphaCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Price Request Parameter List 2
     /// </summary>
@@ -51941,7 +51939,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PR2")]
     public class PR2 : I_PR2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52017,7 +52015,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Rate Change
     /// </summary>
@@ -52026,7 +52024,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRC")]
     public class PRC : I_PRC<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52126,7 +52124,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public virtual C001 CompositeUnitofMeasure_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Loan Product Description
     /// </summary>
@@ -52135,7 +52133,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRD")]
     public class PRD : I_PRD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52224,7 +52222,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string MonetaryAmount_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Order Reference
     /// </summary>
@@ -52233,7 +52231,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRF")]
     public class PRF : I_PRF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52294,7 +52292,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PurchaseOrderTypeCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// External Reference Identifier
     /// </summary>
@@ -52303,7 +52301,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRI")]
     public class PRI : I_PRI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52423,7 +52421,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string GroupTitle_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Multifamily Housing Project
     /// </summary>
@@ -52432,7 +52430,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRJ")]
     public class PRJ : I_PRJ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52470,7 +52468,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Basic Trace Parameters
     /// </summary>
@@ -52479,7 +52477,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRM")]
     public class PRM : I_PRM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52588,7 +52586,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string IntermodalServiceCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Problem Report
     /// </summary>
@@ -52597,7 +52595,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRR")]
     public class PRR : I_PRR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52694,7 +52692,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string SeverityConditionCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Part Release Status
     /// </summary>
@@ -52703,7 +52701,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRS")]
     public class PRS : I_PRS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52724,7 +52722,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Part Disposition
     /// </summary>
@@ -52733,7 +52731,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRT")]
     public class PRT : I_PRT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52770,7 +52768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Provider Information
     /// </summary>
@@ -52779,7 +52777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PRV")]
     public class PRV : I_PRV<C035>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52830,7 +52828,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ProviderOrganizationCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Protective Service Instructions
     /// </summary>
@@ -52839,7 +52837,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PS")]
     public class PS : I_PS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52955,7 +52953,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string Temperature_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Service
     /// </summary>
@@ -52964,7 +52962,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PS1")]
     public class PS1 : I_PS1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52995,7 +52993,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string StateorProvinceCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Partner Share Accounting
     /// </summary>
@@ -53004,7 +53002,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PSA")]
     public class PSA : I_PSA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53051,7 +53049,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string AmountQualifierCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Service Contract
     /// </summary>
@@ -53060,7 +53058,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PSC")]
     public class PSC : I_PSC<C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53260,7 +53258,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(25)]
         public string ContactMethodCode_25 { get; set; }
     }
-    
+
     /// <summary>
     /// Physical Sample Description
     /// </summary>
@@ -53269,7 +53267,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PSD")]
     public class PSD : I_PSD<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53341,7 +53339,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string SampleSelectionModulus_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Patron
     /// </summary>
@@ -53350,7 +53348,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PT")]
     public class PT : I_PT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53446,7 +53444,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string EntityRelationshipCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Transfer and Resale Detail
     /// </summary>
@@ -53455,7 +53453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PTD")]
     public class PTD : I_PTD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53507,7 +53505,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ProductTransferMovementTypeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Property Transaction Financials
     /// </summary>
@@ -53516,7 +53514,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PTF")]
     public class PTF : I_PTF<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53572,7 +53570,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string TaxExemptCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Motor Carrier Pick-up Notification
     /// </summary>
@@ -53581,7 +53579,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PUN")]
     public class PUN : I_PUN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53620,7 +53618,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Paperwork
     /// </summary>
@@ -53629,7 +53627,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PWK")]
     public class PWK : I_PWK<C002>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53701,7 +53699,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string RequestCategoryCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Payroll Deduction
     /// </summary>
@@ -53710,7 +53708,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PYD")]
     public class PYD : I_PYD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53754,7 +53752,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Manner and Percentage
     /// </summary>
@@ -53763,7 +53761,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PYM")]
     public class PYM : I_PYM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53825,7 +53823,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Percent_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Historical Payment Terms
     /// </summary>
@@ -53834,7 +53832,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("PYT")]
     public class PYT : I_PYT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53906,7 +53904,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string TermsDiscountDaysDue_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Status Details (Ocean)
     /// </summary>
@@ -53915,7 +53913,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Q2")]
     public class Q2 : I_Q2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54046,7 +54044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string WeightUnitCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Arrival Details
     /// </summary>
@@ -54055,7 +54053,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Q3")]
     public class Q3 : I_Q3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54077,7 +54075,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string ShipmentMethodofPayment_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Status Details
     /// </summary>
@@ -54086,7 +54084,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Q5")]
     public class Q5 : I_Q5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54233,7 +54231,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string PickuporDeliveryCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Lading Exception Code
     /// </summary>
@@ -54242,7 +54240,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Q7")]
     public class Q7 : I_Q7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54271,7 +54269,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string LadingQuantity_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Detail Delivery Exception Information
     /// </summary>
@@ -54280,7 +54278,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Q8")]
     public class Q8 : I_Q8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54363,7 +54361,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Description_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Quantity
     /// </summary>
@@ -54372,7 +54370,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("QTY")]
     public class QTY : I_QTY<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54409,7 +54407,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FreeFormMessage_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Information (Air)
     /// </summary>
@@ -54418,7 +54416,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R1")]
     public class R1 : I_R1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54534,7 +54532,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string AirportCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Information
     /// </summary>
@@ -54543,7 +54541,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R2")]
     public class R2 : I_R2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54652,7 +54650,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string RouteDescription_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Information with Preference
     /// </summary>
@@ -54661,7 +54659,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R2A")]
     public class R2A : I_R2A
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54743,7 +54741,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string EntityIdentifierCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Junctions and Proportions
     /// </summary>
@@ -54752,7 +54750,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R2B")]
     public class R2B : I_R2B
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54782,7 +54780,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Amount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Division Basis
     /// </summary>
@@ -54791,7 +54789,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R2C")]
     public class R2C : I_R2C
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54819,7 +54817,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string FactorAmount_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Miscellaneous Charge
     /// </summary>
@@ -54828,7 +54826,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R2D")]
     public class R2D : I_R2D
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54850,7 +54848,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Amount_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Information - Motor
     /// </summary>
@@ -54859,7 +54857,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R3")]
     public class R3 : I_R3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54959,7 +54957,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ServiceLevelCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Port or Terminal
     /// </summary>
@@ -54968,7 +54966,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R4")]
     public class R4 : I_R4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55037,7 +55035,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string StateorProvinceCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Code
     /// </summary>
@@ -55046,7 +55044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("R9")]
     public class R9 : I_R9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55112,7 +55110,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string YesNoConditionorResponseCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Header
     /// </summary>
@@ -55121,7 +55119,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RA")]
     public class RA : I_RA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55205,7 +55203,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Date_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate or Minimum Qualifiers
     /// </summary>
@@ -55214,7 +55212,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RAB")]
     public class RAB : I_RAB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55297,7 +55295,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string AssignedNumber_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Requirement, Attribute, and Proficiency
     /// </summary>
@@ -55306,7 +55304,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RAP")]
     public class RAP : I_RAP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55366,7 +55364,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string DateTimePeriod_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Adjustable Rate Description
     /// </summary>
@@ -55375,7 +55373,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RAT")]
     public class RAT : I_RAT<C001, C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55516,7 +55514,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string Percent_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate/Minimum Detail
     /// </summary>
@@ -55525,7 +55523,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RB")]
     public class RB : I_RB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55596,7 +55594,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ChangeTypeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Root Cause
     /// </summary>
@@ -55605,7 +55603,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RC")]
     public class RC : I_RC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55683,7 +55681,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Receiving Conditions
     /// </summary>
@@ -55692,7 +55690,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RCD")]
     public class RCD : I_RCD<C001, C001, C001, C001, C001, C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55854,7 +55852,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string Quantity_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Data
     /// </summary>
@@ -55863,7 +55861,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RD")]
     public class RD : I_RD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55902,7 +55900,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ChangeTypeCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Description Detail
     /// </summary>
@@ -55911,7 +55909,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RDD")]
     public class RDD : I_RDD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55958,7 +55956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string AssignedNumber_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Retail Account Demographic Information
     /// </summary>
@@ -55967,7 +55965,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RDI")]
     public class RDI : I_RDI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56012,7 +56010,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Remittance Delivery Method
     /// </summary>
@@ -56021,7 +56019,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RDM")]
     public class RDM : I_RDM<C040, C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56062,7 +56060,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public virtual C040 ReferenceIdentifier_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Return Disposition Reason
     /// </summary>
@@ -56071,7 +56069,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RDR")]
     public class RDR : I_RDR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56113,7 +56111,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Revision Date/Time
     /// </summary>
@@ -56122,7 +56120,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RDT")]
     public class RDT : I_RDT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56175,7 +56173,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TimeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Property Information
     /// </summary>
@@ -56184,7 +56182,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REA")]
     public class REA : I_REA<C047, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56286,7 +56284,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string TypeofResidenceCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Condition
     /// </summary>
@@ -56295,7 +56293,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REC")]
     public class REC : I_REC<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56399,7 +56397,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string FreeFormMessage_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Related Data
     /// </summary>
@@ -56408,7 +56406,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RED")]
     public class RED : I_RED
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56463,7 +56461,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string IndustryCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Reference Identification
     /// </summary>
@@ -56472,7 +56470,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REF")]
     public class REF : I_REF<C040>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56508,7 +56506,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public virtual C040 ReferenceIdentifier_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Relationship
     /// </summary>
@@ -56517,7 +56515,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REL")]
     public class REL : I_REL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56538,7 +56536,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Number_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Request Information
     /// </summary>
@@ -56547,7 +56545,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REN")]
     public class REN : I_REN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56607,7 +56605,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Repair Action
     /// </summary>
@@ -56616,7 +56614,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REP")]
     public class REP : I_REP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56787,7 +56785,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string AuthorizationIdentification_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Request Information
     /// </summary>
@@ -56796,7 +56794,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("REQ")]
     public class REQ : I_REQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56816,7 +56814,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string InquirySelectionCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Transaction
     /// </summary>
@@ -56825,7 +56823,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RET")]
     public class RET : I_RET
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56865,7 +56863,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ContractTypeCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Personal Property Rate
     /// </summary>
@@ -56874,7 +56872,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RH")]
     public class RH : I_RH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56902,7 +56900,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string FreightRate_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Return
     /// </summary>
@@ -56911,7 +56909,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RIC")]
     public class RIC : I_RIC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57037,7 +57035,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string DFIIdentificationNumber_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Down Payment Data
     /// </summary>
@@ -57046,7 +57044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RLD")]
     public class RLD : I_RLD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57082,7 +57080,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string AmountQualifierCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Loan Type
     /// </summary>
@@ -57091,7 +57089,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RLT")]
     public class RLT : I_RLT<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57188,7 +57186,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ProgramTypeCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Remittance Advice Accounts Receivable Open Item Reference
     /// </summary>
@@ -57197,7 +57195,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RMR")]
     public class RMR : I_RMR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57265,7 +57263,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string MonetaryAmount_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Remittance Advice
     /// </summary>
@@ -57274,7 +57272,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RMT")]
     public class RMT : I_RMT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57359,7 +57357,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Description_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Public Record or Obligation
     /// </summary>
@@ -57368,7 +57366,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RO")]
     public class RO : I_RO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57443,7 +57441,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string TypeofAccountCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Retirement Product
     /// </summary>
@@ -57452,7 +57450,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RP")]
     public class RP : I_RP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57525,7 +57523,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string PlanCoverageDescription_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Amounts or Percents
     /// </summary>
@@ -57534,7 +57532,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RPA")]
     public class RPA : I_RPA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57578,7 +57576,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Percent_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Request for Information
     /// </summary>
@@ -57587,7 +57585,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RQS")]
     public class RQS : I_RQS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57632,7 +57630,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Description_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Required Response
     /// </summary>
@@ -57641,7 +57639,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RRA")]
     public class RRA : I_RRA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57662,7 +57660,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string ReferenceIdentification_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Subset
     /// </summary>
@@ -57671,7 +57669,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RS")]
     public class RS : I_RS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57726,7 +57724,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Date_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Resource
     /// </summary>
@@ -57735,7 +57733,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RSC")]
     public class RSC : I_RSC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57771,7 +57769,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ActionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Residency Information
     /// </summary>
@@ -57780,7 +57778,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RSD")]
     public class RSD : I_RSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57808,7 +57806,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string IndividualRelationshipCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Restriction
     /// </summary>
@@ -57817,7 +57815,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RST")]
     public class RST : I_RST
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57839,7 +57837,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Destination
     /// </summary>
@@ -57848,7 +57846,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RT")]
     public class RT : I_RT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57948,7 +57946,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string IdentificationCodeQualifier_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Detail
     /// </summary>
@@ -57957,7 +57955,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RT1")]
     public class RT1 : I_RT1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58024,7 +58022,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string SpecialRateCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Information
     /// </summary>
@@ -58033,7 +58031,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RTE")]
     public class RTE : I_RTE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58079,7 +58077,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Number_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Rates
     /// </summary>
@@ -58088,7 +58086,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RTS")]
     public class RTS : I_RTS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58221,7 +58219,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string FreightRate_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Freight Rate
     /// </summary>
@@ -58230,7 +58228,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RTT")]
     public class RTT : I_RTT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58252,7 +58250,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FreightRate_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Retirement Board Detail
     /// </summary>
@@ -58261,7 +58259,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RU1")]
     public class RU1 : I_RU1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58338,7 +58336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ClaimProfile_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Employing Carrier Response
     /// </summary>
@@ -58347,7 +58345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RU2")]
     public class RU2 : I_RU2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58417,7 +58415,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Date_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Employing Carrier Claim Profile
     /// </summary>
@@ -58426,7 +58424,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RU3")]
     public class RU3 : I_RU3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58650,7 +58648,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(29)]
         public string WagesPaidCode_29 { get; set; }
     }
-    
+
     /// <summary>
     /// Royalty Payment
     /// </summary>
@@ -58659,7 +58657,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("RYL")]
     public class RYL : I_RYL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58697,7 +58695,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string IdentificationCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Stop-off Name
     /// </summary>
@@ -58706,7 +58704,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("S1")]
     public class S1 : I_S1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58761,7 +58759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AccomplishCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Stop-off Address
     /// </summary>
@@ -58770,7 +58768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("S2")]
     public class S2 : I_S2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58801,7 +58799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AddressInformation_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Stop Off Details
     /// </summary>
@@ -58810,7 +58808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("S5")]
     public class S5 : I_S5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58903,7 +58901,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string AccomplishCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Stop-off Station
     /// </summary>
@@ -58912,7 +58910,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("S9")]
     public class S9 : I_S9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58984,7 +58982,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string LocationIdentifier_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Status Action
     /// </summary>
@@ -58993,7 +58991,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SA")]
     public class SA : I_SA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59040,7 +59038,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Date_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Service, Promotion, Allowance, or Charge Information
     /// </summary>
@@ -59049,7 +59047,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SAC")]
     public class SAC : I_SAC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59185,7 +59183,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string LanguageCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Salary Information
     /// </summary>
@@ -59194,7 +59192,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SAL")]
     public class SAL : I_SAL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59255,7 +59253,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Date_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Docket Level
     /// </summary>
@@ -59264,7 +59262,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SB")]
     public class SB : I_SB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59278,7 +59276,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string Level_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Subscriber Information
     /// </summary>
@@ -59287,7 +59285,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SBR")]
     public class SBR : I_SBR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59358,7 +59356,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ClaimFilingIndicatorCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Subtest
     /// </summary>
@@ -59367,7 +59365,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SBT")]
     public class SBT : I_SBT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59396,7 +59394,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string TestScoreInterpretationCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Docket Sub-level
     /// </summary>
@@ -59405,7 +59403,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SC")]
     public class SC : I_SC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59428,7 +59426,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string SubLevel_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Statistical Category Analysis
     /// </summary>
@@ -59437,7 +59435,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCA")]
     public class SCA : I_SCA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59500,7 +59498,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string RangeMaximum_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Sales Commission Employee Detail
     /// </summary>
@@ -59509,7 +59507,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCD")]
     public class SCD : I_SCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59569,7 +59567,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string GenderCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Schedule
     /// </summary>
@@ -59578,7 +59576,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCH")]
     public class SCH : I_SCH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59683,7 +59681,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string AssignedIdentification_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Basis/Scales
     /// </summary>
@@ -59692,7 +59690,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCL")]
     public class SCL : I_SCL
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59780,7 +59778,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TariffClassAdjustmentReference_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit Score Model
     /// </summary>
@@ -59789,7 +59787,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCM")]
     public class SCM : I_SCM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59825,7 +59823,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string FreeFormMessage_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Cartage Work Assignment
     /// </summary>
@@ -59834,7 +59832,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCN")]
     public class SCN : I_SCN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59881,7 +59879,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Amount_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipper's Car Ordered
     /// </summary>
@@ -59890,7 +59888,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCO")]
     public class SCO : I_SCO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60038,7 +60036,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string CarTypeCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for a Cartage Work Assignment Response
     /// </summary>
@@ -60047,7 +60045,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCP")]
     public class SCP : I_SCP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60085,7 +60083,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ShipmentorWorkAssignmentDeclineReasonCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit Score
     /// </summary>
@@ -60094,7 +60092,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCS")]
     public class SCS : I_SCS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60115,7 +60113,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FreeFormMessageText_02 { get; set; }
     }
-    
+
     /// <summary>
     /// School Type
     /// </summary>
@@ -60124,7 +60122,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SCT")]
     public class SCT : I_SCT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60167,7 +60165,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string DateTimePeriod_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Safety Data
     /// </summary>
@@ -60176,7 +60174,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SD1")]
     public class SD1 : I_SD1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60247,7 +60245,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string CountryCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Ship/Delivery Pattern
     /// </summary>
@@ -60256,7 +60254,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SDP")]
     public class SDP : I_SDP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60319,7 +60317,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ShipDeliveryPatternTimeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Destination Quantity
     /// </summary>
@@ -60328,7 +60326,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SDQ")]
     public class SDQ : I_SDQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60527,7 +60525,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(23)]
         public string LocationIdentifier_23 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Charges
     /// </summary>
@@ -60536,7 +60534,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SER")]
     public class SER : I_SER
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60629,7 +60627,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ReferenceIdentification_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Academic Session Header
     /// </summary>
@@ -60638,7 +60636,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SES")]
     public class SES : I_SES
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60753,7 +60751,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string StatusReasonCode_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Storage Facility Characteristics
     /// </summary>
@@ -60762,7 +60760,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SFC")]
     public class SFC : I_SFC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60783,7 +60781,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FacilityCharacteristicCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Status
     /// </summary>
@@ -60792,7 +60790,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SG")]
     public class SG : I_SG
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60844,7 +60842,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string TimeCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Detail
     /// </summary>
@@ -60853,7 +60851,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SHD")]
     public class SHD : I_SHD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60970,7 +60968,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(14)]
         public string ReferenceIdentification_14 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipped/Received Information
     /// </summary>
@@ -60979,7 +60977,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SHP")]
     public class SHP : I_SHP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61042,7 +61040,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Time_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Interline Service Special Handling Restrictions
     /// </summary>
@@ -61051,7 +61049,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SHR")]
     public class SHR : I_SHR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61071,7 +61069,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string SpecialHandlingCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Characteristic Identification
     /// </summary>
@@ -61080,7 +61078,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SI")]
     public class SI : I_SI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61264,7 +61262,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string ProductServiceID_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Standard Transportation Commodity Code Identification
     /// </summary>
@@ -61273,7 +61271,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SID")]
     public class SID : I_SID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61324,7 +61322,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Sales Item Information
     /// </summary>
@@ -61333,7 +61331,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SII")]
     public class SII : I_SII<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61395,7 +61393,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string MonetaryAmount_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Substance Use
     /// </summary>
@@ -61404,7 +61402,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SIN")]
     public class SIN : I_SIN<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61455,7 +61453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public virtual C001 CompositeUnitofMeasure_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Reference
     /// </summary>
@@ -61464,7 +61462,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SL1")]
     public class SL1 : I_SL1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61538,7 +61536,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string InternationalDomesticCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Specific Loan Information
     /// </summary>
@@ -61547,7 +61545,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SLI")]
     public class SLI : I_SLI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61728,7 +61726,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public string PaymentMethodCode_22 { get; set; }
     }
-    
+
     /// <summary>
     /// Subline Item Detail
     /// </summary>
@@ -61737,7 +61735,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SLN")]
     public class SLN : I_SLN<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61966,7 +61964,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(28)]
         public string ProductServiceID_28 { get; set; }
     }
-    
+
     /// <summary>
     /// Station Address
     /// </summary>
@@ -61975,7 +61973,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMA")]
     public class SMA : I_SMA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62024,7 +62022,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string PostalCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Railroad Station Master File
     /// </summary>
@@ -62033,7 +62031,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMB")]
     public class SMB : I_SMB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62106,7 +62104,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string StationTypeCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Consolidated Shipment Manifest Data
     /// </summary>
@@ -62115,7 +62113,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMD")]
     public class SMD : I_SMD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62143,7 +62141,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string PickuporDeliveryCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Operational Services
     /// </summary>
@@ -62152,7 +62150,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMO")]
     public class SMO : I_SMO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62207,7 +62205,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ImportExportCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Cross Reference
     /// </summary>
@@ -62216,7 +62214,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMR")]
     public class SMR : I_SMR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62255,7 +62253,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string StateorProvinceCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Station Codes Segment
     /// </summary>
@@ -62264,7 +62262,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SMS")]
     public class SMS : I_SMS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62356,7 +62354,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string YesNoConditionorResponseCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail (Shipment)
     /// </summary>
@@ -62365,7 +62363,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SN1")]
     public class SN1 : I_SN1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62433,7 +62431,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string LineItemStatusCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Source of Income
     /// </summary>
@@ -62442,7 +62440,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SOI")]
     public class SOI : I_SOI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62486,7 +62484,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Status of Mortgage
     /// </summary>
@@ -62495,7 +62493,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SOM")]
     public class SOM : I_SOM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62601,7 +62599,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string DateTimePeriod_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Special Program
     /// </summary>
@@ -62610,7 +62608,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SP")]
     public class SP : I_SP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62653,7 +62651,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Name_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Status of Product or Activity
     /// </summary>
@@ -62662,7 +62660,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPA")]
     public class SPA : I_SPA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62752,7 +62750,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string SourceSubqualifier_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Specification Identifier
     /// </summary>
@@ -62761,7 +62759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPI")]
     public class SPI : I_SPI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62878,7 +62876,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string HierarchicalStructureCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Specimen Kit Information
     /// </summary>
@@ -62887,7 +62885,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPK")]
     public class SPK : I_SPK
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62932,7 +62930,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string IdentificationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Purchase Order Detail
     /// </summary>
@@ -62941,7 +62939,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPO")]
     public class SPO : I_SPO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63010,7 +63008,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Supplier Rating
     /// </summary>
@@ -63019,7 +63017,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPR")]
     public class SPR : I_SPR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63080,7 +63078,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string MeasurementValue_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Sampling Parameters for Summary Statistics
     /// </summary>
@@ -63089,7 +63087,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPS")]
     public class SPS : I_SPS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63140,7 +63138,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string SampleFrequencyValueperUnitofMeasurementCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Scope of Power of Attorney
     /// </summary>
@@ -63149,7 +63147,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SPY")]
     public class SPY : I_SPY
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63177,7 +63175,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Description_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Requested Service Schedule
     /// </summary>
@@ -63186,7 +63184,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SR")]
     public class SR : I_SR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63281,7 +63279,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ProductServiceID_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Traffic Evaluation Factors
     /// </summary>
@@ -63290,7 +63288,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SRA")]
     public class SRA : I_SRA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63312,7 +63310,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string MeasurementValue_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Scale Rate Detail
     /// </summary>
@@ -63321,7 +63319,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SRD")]
     public class SRD : I_SRD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63487,7 +63485,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string FreightRate_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Test Scores
     /// </summary>
@@ -63496,7 +63494,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SRE")]
     public class SRE : I_SRE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63518,7 +63516,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Description_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Scale Rates
     /// </summary>
@@ -63527,7 +63525,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SRM")]
     public class SRM : I_SRM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63660,7 +63658,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string FreightRate_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Scale Rate Header
     /// </summary>
@@ -63669,7 +63667,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SRT")]
     public class SRT : I_SRT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63775,7 +63773,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string SpecialChargeDescription_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Docket Control Status
     /// </summary>
@@ -63784,7 +63782,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SS")]
     public class SS : I_SS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63860,7 +63858,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string RateMaintenanceAuthorityCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment for Service Commitment Advice
     /// </summary>
@@ -63869,7 +63867,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SSC")]
     public class SSC : I_SSC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63941,7 +63939,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string Percent_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Sort Segregate Data
     /// </summary>
@@ -63950,7 +63948,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SSD")]
     public class SSD : I_SSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63987,7 +63985,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ApplicationErrorConditionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Entry and Exit Information
     /// </summary>
@@ -63996,7 +63994,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SSE")]
     public class SSE : I_SSE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64032,7 +64030,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Number_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Special Services
     /// </summary>
@@ -64041,7 +64039,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SSS")]
     public class SSS : I_SSS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64118,7 +64116,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string SourceSubqualifier_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Student Academic Status
     /// </summary>
@@ -64127,7 +64125,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SST")]
     public class SST : I_SST
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64199,7 +64197,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string YesNoConditionorResponseCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Statistics
     /// </summary>
@@ -64208,7 +64206,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("STA")]
     public class STA : I_STA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64273,7 +64271,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string MeasurementSignificanceCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Status Information
     /// </summary>
@@ -64282,7 +64280,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("STC")]
     public class STC : I_STC<C043, C043, C043>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64376,7 +64374,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string FreeFormMessageText_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Study Parameters
     /// </summary>
@@ -64385,7 +64383,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("STP")]
     public class STP : I_STP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64469,7 +64467,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ReferenceIdentification_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Interchange Status Segment
     /// </summary>
@@ -64478,7 +64476,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("STS")]
     public class STS : I_STS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64523,7 +64521,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string ErrorReasonCodeI_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Academic Summary
     /// </summary>
@@ -64532,7 +64530,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SUM")]
     public class SUM : I_SUM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64680,7 +64678,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string AcademicSummarySource_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Supplementary Information
     /// </summary>
@@ -64689,7 +64687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SUP")]
     public class SUP : I_SUP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64724,7 +64722,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string PrintOptionCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Description
     /// </summary>
@@ -64733,7 +64731,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV")]
     public class SV : I_SV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64770,7 +64768,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string TypeofServiceOfferedCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Professional Service
     /// </summary>
@@ -64779,7 +64777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV1")]
     public class SV1 : I_SV1<C003, C004>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64940,7 +64938,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(21)]
         public string ProviderAgreementCode_21 { get; set; }
     }
-    
+
     /// <summary>
     /// Institutional Service
     /// </summary>
@@ -64949,7 +64947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV2")]
     public class SV2 : I_SV2<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65030,7 +65028,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string LevelofCareCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Dental Service
     /// </summary>
@@ -65039,7 +65037,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV3")]
     public class SV3 : I_SV3<C003, C006, C004>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65123,7 +65121,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public virtual C004 CompositeDiagnosisCodePointer_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Drug Service
     /// </summary>
@@ -65132,7 +65130,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV4")]
     public class SV4 : I_SV4<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65266,7 +65264,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string PriorAuthorizationTypeCode_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Durable Medical Equipment Service
     /// </summary>
@@ -65275,7 +65273,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV5")]
     public class SV5 : I_SV5<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65336,7 +65334,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string PrognosisCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Anesthesia Service
     /// </summary>
@@ -65345,7 +65343,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV6")]
     public class SV6 : I_SV6<C003, C004>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65402,7 +65400,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string YesNoConditionorResponseCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Drug Adjudication
     /// </summary>
@@ -65411,7 +65409,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SV7")]
     public class SV7 : I_SV7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65462,7 +65460,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string YesNoConditionorResponseCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Information
     /// </summary>
@@ -65471,7 +65469,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SVC")]
     public class SVC : I_SVC<C003, C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65530,7 +65528,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Quantity_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Service Line Adjudication
     /// </summary>
@@ -65539,7 +65537,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SVD")]
     public class SVD : I_SVD<C003>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65592,7 +65590,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string AssignedNumber_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Switching Charges
     /// </summary>
@@ -65601,7 +65599,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("SW")]
     public class SW : I_SW
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65680,7 +65678,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string AssignedNumber_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Transit Inbound Origin
     /// </summary>
@@ -65689,7 +65687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("T1")]
     public class T1 : I_T1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65767,7 +65765,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string TransitLevelCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Transit Inbound Lading
     /// </summary>
@@ -65776,7 +65774,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("T2")]
     public class T2 : I_T2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65877,7 +65875,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string PaidInSurchargePercent_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Transit Inbound Route
     /// </summary>
@@ -65886,7 +65884,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("T3")]
     public class T3 : I_T3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65949,7 +65947,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string EquipmentNumber_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Transit Inbound Rates
     /// </summary>
@@ -65958,7 +65956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("T6")]
     public class T6 : I_T6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66020,7 +66018,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string CityName_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Free-form Transit Data
     /// </summary>
@@ -66029,7 +66027,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("T8")]
     public class T8 : I_T8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66052,7 +66050,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FreeformTransitData_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Reference
     /// </summary>
@@ -66061,7 +66059,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TAX")]
     public class TAX : I_TAX
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66169,7 +66167,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string CustomsEntryTypeGroupCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Temporary Buydown Adjustment
     /// </summary>
@@ -66178,7 +66176,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TBA")]
     public class TBA : I_TBA<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66205,7 +66203,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Percent_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Trade Line Bureau Identifier
     /// </summary>
@@ -66214,7 +66212,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TBI")]
     public class TBI : I_TBI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66283,7 +66281,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string ReferenceIdentification_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Commodity
     /// </summary>
@@ -66292,7 +66290,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TC2")]
     public class TC2 : I_TC2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66314,7 +66312,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string CommodityCode_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Itemized Call Detail
     /// </summary>
@@ -66323,7 +66321,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TCD")]
     public class TCD : I_TCD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66455,7 +66453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string RelationshipCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Details (Quantity and Weight)
     /// </summary>
@@ -66464,7 +66462,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TD1")]
     public class TD1 : I_TD1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66550,7 +66548,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string UnitorBasisforMeasurementCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Details (Equipment)
     /// </summary>
@@ -66559,7 +66557,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TD3")]
     public class TD3 : I_TD3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66643,7 +66641,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string EquipmentType_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Details (Special Handling, or Hazardous Materials, or Both)
     /// </summary>
@@ -66652,7 +66650,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TD4")]
     public class TD4 : I_TD4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66696,7 +66694,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string YesNoConditionorResponseCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Details (Routing Sequence/Transit Time)
     /// </summary>
@@ -66705,7 +66703,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TD5")]
     public class TD5 : I_TD5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66827,7 +66825,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string CountryCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Monetary Value Summary
     /// </summary>
@@ -66836,7 +66834,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TDS")]
     public class TDS : I_TDS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66874,7 +66872,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Amount_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Technical Error Description
     /// </summary>
@@ -66883,7 +66881,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TED")]
     public class TED : I_TED
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66952,7 +66950,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string DataElementNewContent_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Pick-up Totals
     /// </summary>
@@ -66961,7 +66959,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TEM")]
     public class TEM : I_TEM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66999,7 +66997,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Weight_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Territory
     /// </summary>
@@ -67008,7 +67006,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TER")]
     public class TER : I_TER
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67054,7 +67052,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Percent_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Information
     /// </summary>
@@ -67063,7 +67061,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TF")]
     public class TF : I_TF
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67102,7 +67100,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string TariffSupplementIdentifier_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Adjustments
     /// </summary>
@@ -67111,7 +67109,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TFA")]
     public class TFA : I_TFA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67252,7 +67250,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string TariffAdjustmentValueAmount_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Adjustments Minimum Charge
     /// </summary>
@@ -67261,7 +67259,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TFD")]
     public class TFD : I_TFD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67283,7 +67281,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string TariffAdjustmentValueAmount_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Minimum Rates
     /// </summary>
@@ -67292,7 +67290,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TFM")]
     public class TFM : I_TFM
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67306,7 +67304,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string FreightRate_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Restrictions
     /// </summary>
@@ -67315,7 +67313,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TFR")]
     public class TFR : I_TFR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67352,7 +67350,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string TariffRestrictionValue_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Form
     /// </summary>
@@ -67361,7 +67359,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TFS")]
     public class TFS : I_TFS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67431,7 +67429,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string NameControlIdentifier_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Screen Theater Identification
     /// </summary>
@@ -67440,7 +67438,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("THE")]
     public class THE : I_THE
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67488,7 +67486,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Quantity_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Transport Information
     /// </summary>
@@ -67497,7 +67495,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TI")]
     public class TI : I_TI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67557,7 +67555,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string CarTypeCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Information and Amount
     /// </summary>
@@ -67566,7 +67564,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TIA")]
     public class TIA : I_TIA<C037, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67626,7 +67624,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string MonetaryAmount_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Task Identification
     /// </summary>
@@ -67635,7 +67633,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TID")]
     public class TID : I_TID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67710,7 +67708,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Level_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Title Insurance Services
     /// </summary>
@@ -67719,7 +67717,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TIS")]
     public class TIS : I_TIS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67756,7 +67754,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ProductServiceID_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tradeline
     /// </summary>
@@ -67765,7 +67763,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TLN")]
     public class TLN : I_TLN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67935,7 +67933,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public string Description_22 { get; set; }
     }
-    
+
     /// <summary>
     /// Test Method
     /// </summary>
@@ -67944,7 +67942,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TMD")]
     public class TMD : I_TMD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68019,7 +68017,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string SourceSubqualifier_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Type of Activity
     /// </summary>
@@ -68028,7 +68026,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TOA")]
     public class TOA : I_TOA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68070,7 +68068,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string TypeofRatingCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Tooth Identification
     /// </summary>
@@ -68079,7 +68077,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TOO")]
     public class TOO : I_TOO<C005>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68106,7 +68104,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual C005 ToothSurface_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Use Information
     /// </summary>
@@ -68115,7 +68113,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TOV")]
     public class TOV : I_TOV
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68167,7 +68165,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Quantity_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Business Professional Title
     /// </summary>
@@ -68176,7 +68174,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TPB")]
     public class TPB : I_TPB
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68214,7 +68212,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string SourceSubqualifier_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Trading Partner Detail
     /// </summary>
@@ -68223,7 +68221,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TPD")]
     public class TPD : I_TPD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68260,7 +68258,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Description_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Rating Factors
     /// </summary>
@@ -68269,7 +68267,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TRF")]
     public class TRF : I_TRF<C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68314,7 +68312,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Quantity_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Trace
     /// </summary>
@@ -68323,7 +68321,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TRN")]
     public class TRN : I_TRN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68361,7 +68359,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Rate
     /// </summary>
@@ -68370,7 +68368,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TRS")]
     public class TRS : I_TRS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68413,7 +68411,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string RateApplicationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Section
     /// </summary>
@@ -68422,7 +68420,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TS")]
     public class TS : I_TS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68480,7 +68478,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Description_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Supplemental Statistics
     /// </summary>
@@ -68489,7 +68487,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TS2")]
     public class TS2 : I_TS2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68646,7 +68644,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(19)]
         public string MonetaryAmount_19 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Statistics
     /// </summary>
@@ -68655,7 +68653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TS3")]
     public class TS3 : I_TS3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68857,7 +68855,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(24)]
         public string MonetaryAmount_24 { get; set; }
     }
-    
+
     /// <summary>
     /// Trailer Shipment Details
     /// </summary>
@@ -68866,7 +68864,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TSD")]
     public class TSD : I_TSD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68887,7 +68885,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Position_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Automatic Equipment Tag Status Information
     /// </summary>
@@ -68896,7 +68894,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TSI")]
     public class TSI : I_TSI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68932,7 +68930,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Quantity_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Test Period or Interval
     /// </summary>
@@ -68941,7 +68939,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TSP")]
     public class TSP : I_TSP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68978,7 +68976,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string UnitofTimePeriodorInterval_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Test Score Record
     /// </summary>
@@ -68987,7 +68985,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TST")]
     public class TST : I_TST
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69107,7 +69105,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string YesNoConditionorResponseCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Summary
     /// </summary>
@@ -69116,7 +69114,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TSU")]
     public class TSU : I_TSU
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69187,7 +69185,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string TimeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Term Text
     /// </summary>
@@ -69196,7 +69194,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TT")]
     public class TT : I_TT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69219,7 +69217,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FixedFormatInformation_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Trade Union Data
     /// </summary>
@@ -69228,7 +69226,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TUD")]
     public class TUD : I_TUD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69257,7 +69255,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string IdentificationCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Information
     /// </summary>
@@ -69266,7 +69264,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TXI")]
     public class TXI : I_TXI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69351,7 +69349,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string AssignedIdentification_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Capabilities
     /// </summary>
@@ -69360,7 +69358,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TXN")]
     public class TXN : I_TXN
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69438,7 +69436,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Time_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Payment
     /// </summary>
@@ -69447,7 +69445,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("TXP")]
     public class TXP : I_TXP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69539,7 +69537,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TaxpayerVerification_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Category
     /// </summary>
@@ -69548,7 +69546,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UC")]
     public class UC : I_UC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69585,7 +69583,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Considerations
     /// </summary>
@@ -69594,7 +69592,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UCS")]
     public class UCS : I_UCS<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69661,7 +69659,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public virtual C001 CompositeUnitofMeasure_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Status
     /// </summary>
@@ -69670,7 +69668,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UD")]
     public class UD : I_UD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69808,7 +69806,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string CountryCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Condition
     /// </summary>
@@ -69817,7 +69815,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UDA")]
     public class UDA : I_UDA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69879,7 +69877,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string Percent_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Unit Detail
     /// </summary>
@@ -69888,7 +69886,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UIT")]
     public class UIT : I_UIT<C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69916,7 +69914,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string BasisofUnitPriceCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Services Review Information
     /// </summary>
@@ -69925,7 +69923,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UM")]
     public class UM : I_UM<C023, C024>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69999,7 +69997,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string DelayReasonCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Question
     /// </summary>
@@ -70008,7 +70006,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UQS")]
     public class UQS : I_UQS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70045,7 +70043,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string YesNoConditionorResponseCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Peer Review Organization or Utilization Review
     /// </summary>
@@ -70054,7 +70052,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UR")]
     public class UR : I_UR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70076,7 +70074,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string Quantity_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Usage-Sensitive Detail
     /// </summary>
@@ -70085,7 +70083,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("USD")]
     public class USD : I_USD<C001, C001>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70188,7 +70186,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string RangeMaximum_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Information
     /// </summary>
@@ -70197,7 +70195,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("UWI")]
     public class UWI : I_UWI
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70233,7 +70231,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string ReferenceIdentification_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Identification
     /// </summary>
@@ -70242,7 +70240,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V1")]
     public class V1 : I_V1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70317,7 +70315,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string TransportationMethodTypeCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Information
     /// </summary>
@@ -70326,7 +70324,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V2")]
     public class V2 : I_V2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70466,7 +70464,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string Quantity_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Schedule
     /// </summary>
@@ -70475,7 +70473,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V3")]
     public class V3 : I_V3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70514,7 +70512,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string Date_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Cargo Location Reference
     /// </summary>
@@ -70523,7 +70521,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V4")]
     public class V4 : I_V4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70537,7 +70535,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string VesselStowageLocation_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Code
     /// </summary>
@@ -70546,7 +70544,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V5")]
     public class V5 : I_V5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70577,7 +70575,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string CountryCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Event Detail
     /// </summary>
@@ -70586,7 +70584,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("V9")]
     public class V9 : I_V9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70752,7 +70750,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(20)]
         public string Length_20 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Advice Detail
     /// </summary>
@@ -70761,7 +70759,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VAD")]
     public class VAD : I_VAD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70852,7 +70850,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string Date_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Credit File Variation
     /// </summary>
@@ -70861,7 +70859,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VAR")]
     public class VAR : I_VAR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70918,7 +70916,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string CreditFileVariationCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Attribute
     /// </summary>
@@ -70927,7 +70925,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VAT")]
     public class VAT : I_VAT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71020,7 +71018,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string UnitorBasisforMeasurementCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Vehicle Control
     /// </summary>
@@ -71029,7 +71027,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VC")]
     public class VC : I_VC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71119,7 +71117,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string VesselStowageLocation_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Detail
     /// </summary>
@@ -71128,7 +71126,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VC1")]
     public class VC1 : I_VC1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71251,7 +71249,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string LocationIdentifier_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Value Description or Information
     /// </summary>
@@ -71260,7 +71258,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VDI")]
     public class VDI : I_VDI<C046>
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71384,7 +71382,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string LoanPaymentTypeCode_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Information
     /// </summary>
@@ -71393,7 +71391,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VEH")]
     public class VEH : I_VEH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71526,7 +71524,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string ActionCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Conveyance Identification
     /// </summary>
@@ -71535,7 +71533,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VID")]
     public class VID : I_VID
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71643,7 +71641,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string StandardCarrierAlphaCode_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Rate Origin
     /// </summary>
@@ -71652,7 +71650,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VR")]
     public class VR : I_VR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71733,7 +71731,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string ExParte_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Recovery
     /// </summary>
@@ -71742,7 +71740,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("VRC")]
     public class VRC : I_VRC
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71785,7 +71783,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string RecoveryClassificationCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Line Item Detail - Warehouse
     /// </summary>
@@ -71794,7 +71792,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W01")]
     public class W01 : I_W01
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71927,7 +71925,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string ProductServiceID_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Shipment Information
     /// </summary>
@@ -71936,7 +71934,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W03")]
     public class W03 : I_W03
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71998,7 +71996,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string UnitorBasisforMeasurementCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail Total
     /// </summary>
@@ -72007,7 +72005,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W04")]
     public class W04 : I_W04
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72132,7 +72130,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public string ProductServiceID_15 { get; set; }
     }
-    
+
     /// <summary>
     /// Shipping Order Identification
     /// </summary>
@@ -72141,7 +72139,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W05")]
     public class W05 : I_W05
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72202,7 +72200,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string ActionCode_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Shipment Identification
     /// </summary>
@@ -72211,7 +72209,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W06")]
     public class W06 : I_W06
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72309,7 +72307,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(12)]
         public string ActionCode_12 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail For Stock Receipt
     /// </summary>
@@ -72318,7 +72316,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W07")]
     public class W07 : I_W07
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72412,7 +72410,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string ProductServiceID_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Receipt Carrier Information
     /// </summary>
@@ -72421,7 +72419,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W08")]
     public class W08 : I_W08
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72498,7 +72496,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string UnitLoadOptionCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment and Temperature
     /// </summary>
@@ -72507,7 +72505,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W09")]
     public class W09 : I_W09
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72583,7 +72581,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string Quantity_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Block Identification
     /// </summary>
@@ -72592,7 +72590,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W1")]
     public class W1 : I_W1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72606,7 +72604,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string BlockIdentification_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Additional Carrier Information
     /// </summary>
@@ -72615,7 +72613,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W10")]
     public class W10 : I_W10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72690,7 +72688,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string UnitorBasisforMeasurementCode_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Item Detail
     /// </summary>
@@ -72699,7 +72697,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W12")]
     public class W12 : I_W12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72876,7 +72874,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public string ProductServiceID_22 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Detail Exception
     /// </summary>
@@ -72885,7 +72883,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W13")]
     public class W13 : I_W13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72930,7 +72928,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string DamageReasonCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Receipt Information
     /// </summary>
@@ -72939,7 +72937,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W14")]
     public class W14 : I_W14
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72985,7 +72983,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string LadingQuantity_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Adjustment Identification
     /// </summary>
@@ -72994,7 +72992,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W15")]
     public class W15 : I_W15
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73046,7 +73044,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string ActionCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Receipt Identification
     /// </summary>
@@ -73055,7 +73053,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W17")]
     public class W17 : I_W17
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73135,7 +73133,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string LinkSequenceNumber_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Probe Temperatures
     /// </summary>
@@ -73144,7 +73142,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W18")]
     public class W18 : I_W18
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73173,7 +73171,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string UnitorBasisforMeasurementCode_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Adjustment Item Detail
     /// </summary>
@@ -73182,7 +73180,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W19")]
     public class W19 : I_W19
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73330,7 +73328,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(18)]
         public string ProductServiceID_18 { get; set; }
     }
-    
+
     /// <summary>
     /// Equipment Identification
     /// </summary>
@@ -73339,7 +73337,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W2")]
     public class W2 : I_W2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73474,7 +73472,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string YesNoConditionorResponseCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Line-Item Detail - Miscellaneous
     /// </summary>
@@ -73483,7 +73481,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W20")]
     public class W20 : I_W20
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73567,7 +73565,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Color_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Detail
     /// </summary>
@@ -73576,7 +73574,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W27")]
     public class W27 : I_W27
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73657,7 +73655,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string CarrierRouteChangeReasonCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Consolidation Information
     /// </summary>
@@ -73666,7 +73664,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W28")]
     public class W28 : I_W28
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73734,7 +73732,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string BillofLadingWaybillNumber_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Consignee Information
     /// </summary>
@@ -73743,7 +73741,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W3")]
     public class W3 : I_W3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73795,7 +73793,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CityNameQualifierCode_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Consignor Information
     /// </summary>
@@ -73804,7 +73802,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W4")]
     public class W4 : I_W4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73852,7 +73850,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string StateorProvinceCode_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Route Information
     /// </summary>
@@ -73861,7 +73859,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W5")]
     public class W5 : I_W5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73915,7 +73913,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string CityName_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Special Handling Information
     /// </summary>
@@ -73924,7 +73922,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W6")]
     public class W6 : I_W6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73958,7 +73956,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string SpecialHandlingCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Carrier Information
     /// </summary>
@@ -73967,7 +73965,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W66")]
     public class W66 : I_W66
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74049,7 +74047,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string StandardCarrierAlphaCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Total Shipping Order
     /// </summary>
@@ -74058,7 +74056,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("W76")]
     public class W76 : I_W76
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74113,7 +74111,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string OrderSizingFactor_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Tariff Weight Group
     /// </summary>
@@ -74122,7 +74120,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("WGP")]
     public class WGP : I_WGP
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74255,7 +74253,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string Weight_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Work Schedule
     /// </summary>
@@ -74264,7 +74262,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("WS")]
     public class WS : I_WS
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74293,7 +74291,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Time_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Automated Manifest Archive Status Details
     /// </summary>
@@ -74302,7 +74300,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X01")]
     public class X01 : I_X01
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74388,7 +74386,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string Quantity_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Automated Manifest Bills Eligible/Overdue Archive Details
     /// </summary>
@@ -74397,7 +74395,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X02")]
     public class X02 : I_X02
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74446,7 +74444,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string BillofLadingWaybillNumber_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Export License
     /// </summary>
@@ -74455,7 +74453,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X1")]
     public class X1 : I_X1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74581,7 +74579,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(16)]
         public string IdentificationCode_16 { get; set; }
     }
-    
+
     /// <summary>
     /// Import License
     /// </summary>
@@ -74590,7 +74588,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X2")]
     public class X2 : I_X2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74646,7 +74644,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public string Date_06 { get; set; }
     }
-    
+
     /// <summary>
     /// Customs Release Information
     /// </summary>
@@ -74655,7 +74653,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X4")]
     public class X4 : I_X4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74801,7 +74799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(17)]
         public string TimeCode_17 { get; set; }
     }
-    
+
     /// <summary>
     /// Customs Information
     /// </summary>
@@ -74810,7 +74808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("X7")]
     public class X7 : I_X7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74832,7 +74830,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public string FreeFormMessage_02 { get; set; }
     }
-    
+
     /// <summary>
     /// Placement/Pull Data
     /// </summary>
@@ -74841,7 +74839,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("XD")]
     public class XD : I_XD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74908,7 +74906,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string RejectReasonCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Pro Forma - B13 Information
     /// </summary>
@@ -74917,7 +74915,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("XH")]
     public class XH : I_XH
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74976,7 +74974,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public string UnitPrice_07 { get; set; }
     }
-    
+
     /// <summary>
     /// Preassigned Purchase Order Numbers
     /// </summary>
@@ -74985,7 +74983,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("XPO")]
     public class XPO : I_XPO
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75023,7 +75021,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public string IdentificationCode_04 { get; set; }
     }
-    
+
     /// <summary>
     /// Reporting Date/Action
     /// </summary>
@@ -75032,7 +75030,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("XQ")]
     public class XQ : I_XQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75062,7 +75060,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string Date_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Space Reservation Request
     /// </summary>
@@ -75071,7 +75069,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y1")]
     public class Y1 : I_Y1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75145,7 +75143,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public string DateTimeQualifier_09 { get; set; }
     }
-    
+
     /// <summary>
     /// Container Details
     /// </summary>
@@ -75154,7 +75152,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y2")]
     public class Y2 : I_Y2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75237,7 +75235,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TotalStopoffs_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Space Confirmation
     /// </summary>
@@ -75246,7 +75244,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y3")]
     public class Y3 : I_Y3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75338,7 +75336,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(11)]
         public string TimeCode_11 { get; set; }
     }
-    
+
     /// <summary>
     /// Container Release
     /// </summary>
@@ -75347,7 +75345,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y4")]
     public class Y4 : I_Y4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75431,7 +75429,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string TypeofServiceCode_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Space Booking Cancellation
     /// </summary>
@@ -75440,7 +75438,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y5")]
     public class Y5 : I_Y5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75454,7 +75452,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(1)]
         public string BookingNumber_01 { get; set; }
     }
-    
+
     /// <summary>
     /// Authentication
     /// </summary>
@@ -75463,7 +75461,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y6")]
     public class Y6 : I_Y6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75493,7 +75491,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public string AuthorizationDate_03 { get; set; }
     }
-    
+
     /// <summary>
     /// Priority
     /// </summary>
@@ -75502,7 +75500,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("Y7")]
     public class Y7 : I_Y7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75548,7 +75546,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public string Date_05 { get; set; }
     }
-    
+
     /// <summary>
     /// Yes/No Question
     /// </summary>
@@ -75557,7 +75555,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("YNQ")]
     public class YNQ : I_YNQ
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75642,7 +75640,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(10)]
         public string FreeFormMessageText_10 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Activity Reporting
     /// </summary>
@@ -75651,7 +75649,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ZA")]
     public class ZA : I_ZA
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75719,7 +75717,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string YesNoConditionorResponseCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Beginning Segment For Data Correction Or Change
     /// </summary>
@@ -75728,7 +75726,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ZC1")]
     public class ZC1 : I_ZC1
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75801,7 +75799,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string TransportationMethodTypeCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Transaction Set Deletion - ID, Reason, and Source
     /// </summary>
@@ -75810,7 +75808,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ZD")]
     public class ZD : I_ZD
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75881,7 +75879,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(8)]
         public string StandardCarrierAlphaCode_08 { get; set; }
     }
-    
+
     /// <summary>
     /// Waybill Reference Identification
     /// </summary>
@@ -75890,7 +75888,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ZR")]
     public class ZR : I_ZR
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75998,7 +75996,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(13)]
         public string CorrectionIndicator_13 { get; set; }
     }
-    
+
     /// <summary>
     /// Waybill Request Information
     /// </summary>
@@ -76007,7 +76005,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Segment("ZT")]
     public class ZT : I_ZT
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

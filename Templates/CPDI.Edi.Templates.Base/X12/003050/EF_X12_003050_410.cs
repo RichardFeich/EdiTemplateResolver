@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LS))]
     public class Loop_LS_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LX))]
     public class Loop_LX_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -88,7 +88,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public virtual List<PI> PI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LX))]
     public class Loop_LX_410_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -132,7 +132,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public virtual List<L1> L1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -186,7 +186,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(6)]
         public virtual BL BL { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -195,7 +195,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N7))]
     public class Loop_N7_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -251,7 +251,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(8)]
         public virtual M12 M12 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Name
     /// </summary>
@@ -260,7 +260,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(S1))]
     public class Loop_S1_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -284,7 +284,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public virtual S9 S9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transit Inbound Origin
     /// </summary>
@@ -293,7 +293,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(T1))]
     public class Loop_T1_410
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -332,7 +332,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public virtual List<T8> T8 { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Carrier Freight Details and Invoice
     /// </summary>
@@ -341,7 +341,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "410")]
     public class TS410 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

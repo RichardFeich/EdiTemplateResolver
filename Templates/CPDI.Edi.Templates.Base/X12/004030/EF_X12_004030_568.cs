@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Balance Detail
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(BAL))]
     public class Loop_BAL_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(3)]
         public virtual List<RTE> RTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Contract Summary
     /// </summary>
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(CS))]
     public class Loop_CS_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(5)]
         public virtual List<Loop_REF_568> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(FA1))]
     public class Loop_FA1_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,7 +117,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -126,7 +126,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(LM))]
     public class Loop_LM_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -146,7 +146,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -155,7 +155,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(LX))]
     public class Loop_LX_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -199,7 +199,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(6)]
         public virtual Loop_N1_568_2 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -208,7 +208,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(N1))]
     public class Loop_N1_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -246,7 +246,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -255,7 +255,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(N1))]
     public class Loop_N1_568_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -294,7 +294,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(5)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -303,7 +303,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(REF))]
     public class Loop_REF_568
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -327,7 +327,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(3)]
         public virtual List<Loop_FA1_568> FA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Payment Management Report
     /// </summary>
@@ -336,7 +336,7 @@ namespace EdiFabric.Templates.X12004030
     [Message("X12", "568")]
     public class TS568 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

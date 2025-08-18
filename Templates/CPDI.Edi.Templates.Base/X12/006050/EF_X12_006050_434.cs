@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_434
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,7 +52,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     // Railroad Mark Register Update Activity
     /// </summary>
@@ -61,7 +61,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "434")]
     public class TS434 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

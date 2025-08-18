@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(DK))]
     public class Loop_DK_463
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31,13 +31,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<Loop_LQ_463> LoopLQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LQ))]
     public class Loop_LQ_463
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56,7 +56,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     // Rail Rate Reply
     /// </summary>
@@ -65,7 +65,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "463")]
     public class TS463 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

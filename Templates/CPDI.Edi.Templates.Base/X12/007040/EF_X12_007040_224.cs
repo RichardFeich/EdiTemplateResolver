@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CF2))]
     public class Loop_0100_224
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34,7 +34,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     /// <summary>
     // Motor Carrier Summary Freight Bill Manifest
     /// </summary>
@@ -43,7 +43,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "224")]
     public class TS224 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

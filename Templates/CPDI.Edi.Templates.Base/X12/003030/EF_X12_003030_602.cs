@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product (Commodity)
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(PR))]
     public class Loop_PR_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -99,7 +99,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<CD> CD { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Header
     /// </summary>
@@ -108,7 +108,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(RA))]
     public class Loop_RA_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -134,7 +134,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<FK> FK { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Personal Property Rate
     /// </summary>
@@ -143,7 +143,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(RH))]
     public class Loop_RH_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -162,7 +162,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Level
     /// </summary>
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SB))]
     public class Loop_SB_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -204,7 +204,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<Loop_SRT_602> SRTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Sub-level
     /// </summary>
@@ -213,7 +213,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SC))]
     public class Loop_SC_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -253,7 +253,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual List<Loop_RH_602> RHLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Route/Minimum Weight Detail
     /// </summary>
@@ -262,7 +262,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SRT))]
     public class Loop_SRT_602
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -302,7 +302,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Services Tender
     /// </summary>
@@ -311,7 +311,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "602")]
     public class TS602 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

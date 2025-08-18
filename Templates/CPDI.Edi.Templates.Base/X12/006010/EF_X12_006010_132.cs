@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Credentials and Qualifications
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(CQ))]
     public class Loop_CQ_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -81,7 +81,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(9)]
         public virtual List<Loop_N1_132_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Course Record
     /// </summary>
@@ -90,7 +90,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(CRS))]
     public class Loop_CRS_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -108,7 +108,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual CSU CSU { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Degree Record
     /// </summary>
@@ -117,7 +117,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(DEG))]
     public class Loop_DEG_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +142,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Employment Position
     /// </summary>
@@ -151,7 +151,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(EMS))]
     public class Loop_EMS_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -249,7 +249,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(15)]
         public virtual List<Loop_SES_132> SESLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -258,7 +258,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(HL))]
     public class Loop_HL_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -331,7 +331,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(11)]
         public virtual List<Loop_EMS_132> EMSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -340,7 +340,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -384,7 +384,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(6)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -393,7 +393,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_132_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -431,7 +431,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(5)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -440,7 +440,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_132_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -458,7 +458,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Location
     /// </summary>
@@ -467,7 +467,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N3))]
     public class Loop_N3_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -491,7 +491,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Extended Reference Information
     /// </summary>
@@ -500,7 +500,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N9))]
     public class Loop_N9_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -518,7 +518,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(2)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -527,7 +527,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(NM1))]
     public class Loop_NM1_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -553,7 +553,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual List<Loop_N3_132> N3Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Academic Session Header
     /// </summary>
@@ -562,7 +562,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(SES))]
     public class Loop_SES_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -586,7 +586,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual List<Loop_WLD_132> WLDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Workload Detail
     /// </summary>
@@ -595,7 +595,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(WLD))]
     public class Loop_WLD_132
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -643,7 +643,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(7)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Human Resource Information
     /// </summary>
@@ -652,7 +652,7 @@ namespace EdiFabric.Templates.X12006010
     [Message("X12", "132")]
     public class TS132 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

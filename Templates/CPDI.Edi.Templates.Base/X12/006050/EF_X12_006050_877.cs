@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ENT))]
     public class Loop_0100_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -32,13 +32,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<Loop_0110_877> Loop0110 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LIN))]
     public class Loop_0110_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,13 +54,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<Loop_0111_877> Loop0111 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G28))]
     public class Loop_0111_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,7 +78,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual G69 G69 { get; set; }
     }
-    
+
     /// <summary>
     // Manufacturer Coupon Family Code Structure
     /// </summary>
@@ -87,7 +87,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "877")]
     public class TS877 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

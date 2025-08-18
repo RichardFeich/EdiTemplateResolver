@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(EFI))]
     public class Loop_EFI_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Business Instructions and Reference Number
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(L11))]
     public class Loop_L11_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70,7 +70,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(3)]
         public virtual Loop_LS_240 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -79,7 +79,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(LS))]
     public class Loop_LS_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -104,7 +104,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -113,7 +113,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(LX))]
     public class Loop_LX_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -144,7 +144,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(4)]
         public virtual List<Loop_L11_240> L11Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Marks and Numbers
     /// </summary>
@@ -153,7 +153,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(MAN))]
     public class Loop_MAN_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -189,7 +189,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(5)]
         public virtual List<Q7> Q7 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -198,7 +198,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(N1))]
     public class Loop_N1_240
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -230,7 +230,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -239,7 +239,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(N1))]
     public class Loop_N1_240_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -283,7 +283,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(6)]
         public virtual NTE NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Package Status
     /// </summary>
@@ -292,7 +292,7 @@ namespace EdiFabric.Templates.X12004030
     [Message("X12", "240")]
     public class TS240 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

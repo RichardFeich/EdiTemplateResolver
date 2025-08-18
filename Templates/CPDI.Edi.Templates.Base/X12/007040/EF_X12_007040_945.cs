@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,13 +53,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LM))]
     public class Loop_0200_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -79,13 +79,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0300_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,13 +121,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<Loop_0310_945> Loop0310 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(W12))]
     public class Loop_0310_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -215,13 +215,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(14)]
         public virtual List<Loop_0360_945> Loop0360 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0320_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -257,13 +257,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LM))]
     public class Loop_0330_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -283,13 +283,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0340_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -325,13 +325,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<Loop_0350_945> Loop0350 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LM))]
     public class Loop_0350_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -351,13 +351,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FA1))]
     public class Loop_0360_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -377,13 +377,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LS))]
     public class Loop_LS_945
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -406,7 +406,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     // Warehouse Shipping Advice
     /// </summary>
@@ -415,7 +415,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "945")]
     public class TS945 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

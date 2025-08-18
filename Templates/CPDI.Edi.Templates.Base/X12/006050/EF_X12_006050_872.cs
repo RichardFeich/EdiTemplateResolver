@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CDI))]
     public class Loop_CDI_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31,13 +31,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<Loop_LX_872> LoopLX { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(IN1))]
     public class Loop_IN1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,13 +96,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(9)]
         public virtual List<Loop_NX1_872_2> LoopNX1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LRQ))]
     public class Loop_LRQ_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,13 +187,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(15)]
         public virtual Loop_PRJ_872 LoopPRJ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -253,13 +253,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(8)]
         public virtual BUY BUY { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(MCD))]
     public class Loop_MCD_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -278,13 +278,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_NM1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -308,13 +308,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_LRQ_872> LoopLRQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NX1))]
     public class Loop_NX1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -339,13 +339,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_PAS_872> LoopPAS { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NX1))]
     public class Loop_NX1_872_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -371,13 +371,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual N10 N10 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PAS))]
     public class Loop_PAS_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -407,13 +407,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual List<Loop_REF_872> LoopREF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PRJ))]
     public class Loop_PRJ_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -432,13 +432,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(REA))]
     public class Loop_REA_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -457,13 +457,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(REF))]
     public class Loop_REF_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -482,13 +482,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SCM))]
     public class Loop_SCM_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -513,7 +513,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     // Residential Mortgage Insurance Application
     /// </summary>
@@ -522,7 +522,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "872")]
     public class TS872 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

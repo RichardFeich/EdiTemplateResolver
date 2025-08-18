@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LET))]
     public class Loop_LET_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,13 +54,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(6)]
         public virtual List<Loop_LX_470> LoopLX { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,13 +86,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(3)]
         public virtual List<L5> L5 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(MEA))]
     public class Loop_MEA_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,13 +111,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<L4> L4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -153,7 +153,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     // Railroad Clearance
     /// </summary>
@@ -162,7 +162,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "470")]
     public class TS470 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

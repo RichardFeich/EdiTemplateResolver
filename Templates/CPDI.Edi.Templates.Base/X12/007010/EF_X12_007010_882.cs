@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_882
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -46,13 +46,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G48))]
     public class Loop_0200_882
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -94,13 +94,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(6)]
         public virtual G33 G33 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G72))]
     public class Loop_0210_882
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -119,7 +119,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<G73> G73 { get; set; }
     }
-    
+
     /// <summary>
     // Direct Store Delivery Summary Information
     /// </summary>
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "882")]
     public class TS882 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

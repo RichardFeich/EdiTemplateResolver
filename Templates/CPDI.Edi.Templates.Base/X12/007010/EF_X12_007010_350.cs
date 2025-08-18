@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(BA1))]
     public class Loop_BA1_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -31,13 +31,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<Loop_X4_350> LoopX4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(P4))]
     public class Loop_P4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -85,13 +85,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(7)]
         public virtual List<Loop_X4_350_2> LoopX4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(VID))]
     public class Loop_VID_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,13 +117,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual List<M7A> M7A { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(X4))]
     public class Loop_X4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,13 +142,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(X4))]
     public class Loop_X4_350_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -181,7 +181,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(4)]
         public virtual List<N7> N7 { get; set; }
     }
-    
+
     /// <summary>
     // Customs Status Information
     /// </summary>
@@ -190,7 +190,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "350")]
     public class TS350 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

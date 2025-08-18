@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Commodity Classification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(CMC))]
     public class Loop_CMC_753
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual AT8 AT8 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_753
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -76,7 +76,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -85,7 +85,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_753_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -154,7 +154,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(10)]
         public virtual List<Loop_OID_753> OIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Order Information Detail
     /// </summary>
@@ -163,7 +163,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(OID))]
     public class Loop_OID_753
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,7 +187,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual YNQ YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Request for Routing Instructions
     /// </summary>
@@ -196,7 +196,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "753")]
     public class TS753 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

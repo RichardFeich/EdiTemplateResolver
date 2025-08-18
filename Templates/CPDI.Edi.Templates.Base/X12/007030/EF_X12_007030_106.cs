@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0200_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,13 +53,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0400_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -115,13 +115,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(9)]
         public virtual List<Loop_0430_106> Loop0430 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CA1))]
     public class Loop_0430_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -184,13 +184,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(10)]
         public virtual Loop_TF_106_2 LoopTF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(RTT))]
     public class Loop_0434_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -209,13 +209,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(2)]
         public virtual List<TFR> TFR { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(MS2))]
     public class Loop_MS2_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -233,13 +233,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TF))]
     public class Loop_TF_106
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -257,13 +257,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(2)]
         public virtual TS TS { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TF))]
     public class Loop_TF_106_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -288,7 +288,7 @@ namespace EdiFabric.Templates.X12007030
         [Pos(3)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     // Motor Carrier Rate Proposal
     /// </summary>
@@ -297,7 +297,7 @@ namespace EdiFabric.Templates.X12007030
     [Message("X12", "106")]
     public class TS106 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

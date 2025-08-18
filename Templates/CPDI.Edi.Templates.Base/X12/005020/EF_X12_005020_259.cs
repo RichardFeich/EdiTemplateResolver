@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Amount with Description
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(AWD))]
     public class Loop_AWD_259
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(3)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(DTM))]
     public class Loop_DTM_259
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(5)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Loan Fiscal Data
     /// </summary>
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(FIS))]
     public class Loop_FIS_259
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -122,7 +122,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(3)]
         public virtual List<Loop_AWD_259> AWDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -131,7 +131,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_259
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -173,7 +173,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -182,7 +182,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_259_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -212,7 +212,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Extended Reference Information
     /// </summary>
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N9))]
     public class Loop_N9_259
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -297,7 +297,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(11)]
         public virtual List<Loop_FIS_259> FISLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Mortgage Insurance Explanation of Benefits
     /// </summary>
@@ -306,7 +306,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "259")]
     public class TS259 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,13 @@
 namespace EdiFabric.Templates.X12003030
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Composite Unit of Measure
     /// </summary>
@@ -18,7 +16,7 @@ namespace EdiFabric.Templates.X12003030
     [Composite("C001")]
     public class C001 : I_C001
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

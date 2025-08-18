@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contract Number Detail
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(CON))]
     public class Loop_CON_844
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(6)]
         public virtual List<Loop_PAD_844> PADLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -72,7 +72,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(N1))]
     public class Loop_N1_844
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -118,7 +118,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(N1))]
     public class Loop_N1_844_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -179,7 +179,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(7)]
         public virtual List<Loop_SII_844> SIILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Adjustment Detail
     /// </summary>
@@ -188,7 +188,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(PAD))]
     public class Loop_PAD_844
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -273,7 +273,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(12)]
         public virtual SSS SSS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Sales Item Information
     /// </summary>
@@ -282,7 +282,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(SII))]
     public class Loop_SII_844
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -300,7 +300,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(2)]
         public virtual N9 N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Transfer Account Adjustment
     /// </summary>
@@ -309,7 +309,7 @@ namespace EdiFabric.Templates.X12005010
     [Message("X12", "844")]
     public class TS844 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

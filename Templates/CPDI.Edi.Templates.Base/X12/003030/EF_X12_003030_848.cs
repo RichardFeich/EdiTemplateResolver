@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Characteristic/Class ID
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(CID))]
     public class Loop_CID_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(6)]
         public virtual List<Loop_SD1_848> SD1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -69,7 +69,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LIN))]
     public class Loop_LIN_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<Loop_MSS_848> MSSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -102,7 +102,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LX))]
     public class Loop_LX_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Material Safety Data Sheet Section Information
     /// </summary>
@@ -137,7 +137,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(MSS))]
     public class Loop_MSS_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -173,7 +173,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual List<Loop_CID_848> CIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -182,7 +182,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -224,7 +224,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Safety Data
     /// </summary>
@@ -233,7 +233,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SD1))]
     public class Loop_SD1_848
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -263,7 +263,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<Loop_LX_848> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Material Safety Data Sheet
     /// </summary>
@@ -272,7 +272,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "848")]
     public class TS848 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

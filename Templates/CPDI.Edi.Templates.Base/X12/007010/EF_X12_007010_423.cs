@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LH1))]
     public class Loop_LH1_423
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,13 +87,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(10)]
         public virtual List<Loop_N1_423_2> LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_423
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -115,13 +115,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual List<Loop_N7_423> LoopN7 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_423
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -157,13 +157,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_423_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -195,13 +195,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N7))]
     public class Loop_N7_423
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -310,7 +310,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(16)]
         public virtual List<Loop_LH1_423> LoopLH1 { get; set; }
     }
-    
+
     /// <summary>
     // Rail Industrial Switch List
     /// </summary>
@@ -319,7 +319,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "423")]
     public class TS423 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

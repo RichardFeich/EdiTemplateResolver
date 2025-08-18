@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(ENT))]
     public class Loop_ENT_885
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -110,7 +110,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(13)]
         public virtual List<G30> G30 { get; set; }
     }
-    
+
     /// <summary>
     /// Store Characteristics
     /// </summary>
@@ -119,7 +119,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "885")]
     public class TS885 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

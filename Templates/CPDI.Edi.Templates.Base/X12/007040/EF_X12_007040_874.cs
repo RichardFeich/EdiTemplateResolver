@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,13 +54,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N9))]
     public class Loop_N9_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,13 +107,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(7)]
         public virtual List<Loop_SLN_874> LoopSLN { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SLN))]
     public class Loop_SLN_874
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,7 +139,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(3)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     // Commodity Movement Services Response
     /// </summary>
@@ -148,7 +148,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "874")]
     public class TS874 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

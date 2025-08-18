@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contact
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(G61))]
     public class Loop_G61_196
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(HL))]
     public class Loop_HL_196
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(15)]
         public virtual List<Loop_PD_196> PDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -150,7 +150,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(N1))]
     public class Loop_N1_196
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -188,7 +188,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<Loop_G61_196> G61Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Pricing Data
     /// </summary>
@@ -197,7 +197,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(PD))]
     public class Loop_PD_196
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -227,7 +227,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Contractor Cost Data Reporting
     /// </summary>
@@ -236,7 +236,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "196")]
     public class TS196 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

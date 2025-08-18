@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AK2))]
     public class Loop_AK2_999
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,13 +38,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual IK5 IK5 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(IK3))]
     public class Loop_IK3_999
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67,13 +67,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual List<Loop_IK4_999> LoopIK4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(IK4))]
     public class Loop_IK4_999
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -92,7 +92,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<CTX> CTX { get; set; }
     }
-    
+
     /// <summary>
     // Implementation Acknowledgment
     /// </summary>
@@ -101,7 +101,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "999")]
     public class TS999 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

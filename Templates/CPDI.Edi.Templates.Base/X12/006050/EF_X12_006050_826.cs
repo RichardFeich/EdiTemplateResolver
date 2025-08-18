@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FGS))]
     public class Loop_FGS_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -59,13 +59,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual List<Loop_N1_826> LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,13 +111,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TFS))]
     public class Loop_TFS_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -165,7 +165,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(7)]
         public virtual List<Loop_FGS_826> LoopFGS { get; set; }
     }
-    
+
     /// <summary>
     // Tax Information Exchange
     /// </summary>
@@ -174,7 +174,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "826")]
     public class TS826 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

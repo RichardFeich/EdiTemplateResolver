@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(L0))]
     public class Loop_L0_322
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,13 +44,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(4)]
         public virtual List<Loop_LH1_322> LoopLH1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LH1))]
     public class Loop_LH1_322
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -118,13 +118,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_322
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -149,13 +149,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N7))]
     public class Loop_N7_322
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -266,13 +266,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(17)]
         public virtual List<L3> L3 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(R4))]
     public class Loop_R4_322
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -291,7 +291,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     // Terminal Operations and Intermodal Ramp Activity
     /// </summary>
@@ -300,7 +300,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "322")]
     public class TS322 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(N1))]
     public class Loop_N1_836
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62,7 +62,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Purchase Order Baseline Item Data
     /// </summary>
@@ -71,7 +71,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(PO1))]
     public class Loop_PO1_836
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -137,7 +137,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(10)]
         public virtual List<Loop_N1_836> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -146,7 +146,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(SLN))]
     public class Loop_SLN_836
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -164,7 +164,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(2)]
         public virtual List<PID> PID { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Award
     /// </summary>
@@ -173,7 +173,7 @@ namespace EdiFabric.Templates.X12003010
     [Message("X12", "836")]
     public class TS836 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

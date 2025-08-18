@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,13 +53,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AT1))]
     public class Loop_0200_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -102,13 +102,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(7)]
         public virtual List<Loop_0230_211> Loop0230 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0220_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -134,13 +134,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(3)]
         public virtual List<OID> OID { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G61))]
     public class Loop_0230_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -171,13 +171,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(4)]
         public virtual List<Loop_0231_211> Loop0231 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LH1))]
     public class Loop_0231_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -237,13 +237,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(8)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AT2))]
     public class Loop_AT2_211
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -275,7 +275,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(4)]
         public virtual L4 L4 { get; set; }
     }
-    
+
     /// <summary>
     // Motor Carrier Bill of Lading
     /// </summary>
@@ -284,7 +284,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "211")]
     public class TS211 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

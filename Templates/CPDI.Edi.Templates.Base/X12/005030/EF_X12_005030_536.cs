@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(HL))]
     public class Loop_HL_536
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +142,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(18)]
         public virtual List<Loop_N1_536> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -151,7 +151,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(LM))]
     public class Loop_LM_536
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -180,7 +180,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(N1))]
     public class Loop_N1_536
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -219,7 +219,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(5)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Logistics Reassignment
     /// </summary>
@@ -228,7 +228,7 @@ namespace EdiFabric.Templates.X12005030
     [Message("X12", "536")]
     public class TS536 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

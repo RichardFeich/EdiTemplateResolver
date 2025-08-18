@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Carrier Interchange Agreement
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004020
     [Group(typeof(CI))]
     public class Loop_CI_361
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004020
         [Pos(2)]
         public virtual K1 K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Carrier Interchange Agreement (Ocean)
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004020
     [Message("X12", "361")]
     public class TS361 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

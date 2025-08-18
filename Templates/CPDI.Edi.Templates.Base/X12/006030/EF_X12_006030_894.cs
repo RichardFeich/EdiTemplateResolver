@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item Detail/Direct Store Delivery
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(G83))]
     public class Loop_G83_894
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +77,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(8)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LS))]
     public class Loop_LS_894
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,7 +112,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Return Base Record
     /// </summary>
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "894")]
     public class TS894 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

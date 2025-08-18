@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(LIN))]
     public class Loop_LIN_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(6)]
         public virtual List<Loop_ZA_852> ZALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(N1))]
     public class Loop_N1_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +135,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Activity Reporting
     /// </summary>
@@ -144,7 +144,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(ZA))]
     public class Loop_ZA_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -169,7 +169,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(3)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Product Activity Data
     /// </summary>
@@ -178,7 +178,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "852")]
     public class TS852 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(HL))]
     public class Loop_HL_816
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(2)]
         public virtual List<Loop_N1_816_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_816
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -92,7 +92,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -101,7 +101,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_816_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -172,7 +172,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(10)]
         public virtual ASI ASI { get; set; }
     }
-    
+
     /// <summary>
     /// Organizational Relationships
     /// </summary>
@@ -181,7 +181,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "816")]
     public class TS816 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

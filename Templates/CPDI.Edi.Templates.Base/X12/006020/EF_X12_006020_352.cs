@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for General Order Status Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(M14))]
     public class Loop_M14_352
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(2)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port Information
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(P4))]
     public class Loop_P4_352
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -66,7 +66,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(2)]
         public virtual List<Loop_M14_352> M14Loop { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Carrier General Order Status
     /// </summary>
@@ -75,7 +75,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "352")]
     public class TS352 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

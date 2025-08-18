@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Empty Car Disposition - Pended Destination Consignee
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(E1))]
     public class Loop_E1_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(4)]
         public virtual PI PI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item - Quantity and Weight
     /// </summary>
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(L0))]
     public class Loop_L0_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(4)]
         public virtual List<Loop_PI_417> PILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item - Quantity and Weight
     /// </summary>
@@ -102,7 +102,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(L0))]
     public class Loop_L0_417_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual List<Loop_PI_417> PILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -137,7 +137,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LH1))]
     public class Loop_LH1_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -212,7 +212,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(10)]
         public virtual List<Loop_N1_417_4> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LS))]
     public class Loop_LS_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -247,7 +247,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -256,7 +256,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LX))]
     public class Loop_LX_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -297,7 +297,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(5)]
         public virtual List<Loop_T1_417> T1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -306,7 +306,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -337,7 +337,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(4)]
         public virtual H3 H3 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -346,7 +346,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_417_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -384,7 +384,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(5)]
         public virtual List<BL> BL { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -393,7 +393,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_417_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -446,7 +446,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(7)]
         public virtual List<BL> BL { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -455,7 +455,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_417_4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -487,7 +487,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -496,7 +496,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N7))]
     public class Loop_N7_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -593,7 +593,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(14)]
         public virtual List<IMA> IMA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Price Authority Identification
     /// </summary>
@@ -602,7 +602,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(PI))]
     public class Loop_PI_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -621,7 +621,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<CD> CD { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Information
     /// </summary>
@@ -630,7 +630,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(REF))]
     public class Loop_REF_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -683,7 +683,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(7)]
         public virtual List<Loop_N1_417_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Name
     /// </summary>
@@ -692,7 +692,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(S1))]
     public class Loop_S1_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -747,7 +747,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(8)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transit Inbound Origin
     /// </summary>
@@ -756,7 +756,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(T1))]
     public class Loop_T1_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -795,7 +795,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(5)]
         public virtual List<T8> T8 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Motor Vehicle Control
     /// </summary>
@@ -804,7 +804,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(VC))]
     public class Loop_VC_417
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -823,7 +823,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<Loop_N1_417> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Carrier Waybill Interchange
     /// </summary>
@@ -832,7 +832,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "417")]
     public class TS417 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

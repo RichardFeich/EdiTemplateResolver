@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(DTM))]
     public class Loop_DTM_101
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +44,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(3)]
         public virtual List<Loop_LX_101> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -53,7 +53,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LX))]
     public class Loop_LX_101
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(6)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Name and Address Lists
     /// </summary>
@@ -106,7 +106,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "101")]
     public class TS101 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

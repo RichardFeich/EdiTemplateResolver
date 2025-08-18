@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Amount and Settlement Method
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(ASM))]
     public class Loop_ASM_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual REF REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LM))]
     public class Loop_LM_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LM))]
     public class Loop_LM_185_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -91,7 +91,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -100,7 +100,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LQ))]
     public class Loop_LQ_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -124,7 +124,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(3)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -133,7 +133,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LS))]
     public class Loop_LS_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -158,7 +158,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -167,7 +167,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LX))]
     public class Loop_LX_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -233,7 +233,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(10)]
         public virtual List<Loop_PID_185> PIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -242,7 +242,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(N1))]
     public class Loop_N1_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -287,7 +287,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -296,7 +296,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(PID))]
     public class Loop_PID_185
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -338,7 +338,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(6)]
         public virtual List<Loop_LQ_185> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Royalty Regulatory Report
     /// </summary>
@@ -347,7 +347,7 @@ namespace EdiFabric.Templates.X12004050
     [Message("X12", "185")]
     public class TS185 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Bill of Lading
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(MBL))]
     public class Loop_MBL_358
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<VID> VID { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port of Discharge Information
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(P4))]
     public class Loop_P4_358
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public virtual List<Loop_MBL_358> MBLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Consist Information
     /// </summary>
@@ -82,7 +82,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "358")]
     public class TS358 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

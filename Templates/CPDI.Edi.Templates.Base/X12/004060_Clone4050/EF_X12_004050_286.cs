@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(HL))]
     public class Loop_HL_286
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(2)]
         public virtual List<Loop_LM_286> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(LM))]
     public class Loop_LM_286
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,7 +65,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(2)]
         public virtual List<Loop_LQ_286> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -74,7 +74,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(LQ))]
     public class Loop_LQ_286
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -170,7 +170,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(15)]
         public virtual List<Loop_NM1_286_2> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -179,7 +179,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(NM1))]
     public class Loop_NM1_286
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -229,7 +229,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -238,7 +238,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(NM1))]
     public class Loop_NM1_286_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -318,7 +318,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(12)]
         public virtual List<TD5> TD5 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Specification Identifier
     /// </summary>
@@ -327,7 +327,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(SPI))]
     public class Loop_SPI_286
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -346,7 +346,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(2)]
         public virtual List<Loop_HL_286> HLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Commercial Vehicle Credentials
     /// </summary>
@@ -355,7 +355,7 @@ namespace EdiFabric.Templates.X12004060
     [Message("X12", "286")]
     public class TS286 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

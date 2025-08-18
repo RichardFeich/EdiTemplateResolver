@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Period
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(G63))]
     public class Loop_G63_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(2)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(LX))]
     public class Loop_LX_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,7 +71,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(3)]
         public virtual List<Loop_REF_263> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Numbers
     /// </summary>
@@ -80,7 +80,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(REF))]
     public class Loop_REF_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -119,7 +119,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(5)]
         public virtual List<Loop_G63_263> G63Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Mortgage Insurance Application Response
     /// </summary>
@@ -128,7 +128,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "263")]
     public class TS263 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

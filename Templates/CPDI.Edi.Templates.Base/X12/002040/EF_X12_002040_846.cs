@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(LIN))]
     public class Loop_LIN_846
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +123,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(15)]
         public virtual MAN MAN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -136,7 +132,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_846
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -182,7 +178,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -191,7 +187,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(QTY))]
     public class Loop_QTY_846
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -224,7 +220,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(4)]
         public virtual List<LDT> LDT { get; set; }
     }
-    
+
     /// <summary>
     /// Inventory Inquiry/Advice
     /// </summary>
@@ -233,7 +229,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "846")]
     public class TS846 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

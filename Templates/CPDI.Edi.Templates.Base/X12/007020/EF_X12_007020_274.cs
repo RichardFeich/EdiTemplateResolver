@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(HL))]
     public class Loop_2000_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,13 +44,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(4)]
         public virtual List<Loop_2100_274> Loop2100 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_2100_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -213,13 +213,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(26)]
         public virtual List<Loop_2160_274> Loop2160 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NX1))]
     public class Loop_2110_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -262,13 +262,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LQ))]
     public class Loop_2120_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -320,13 +320,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(7)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(HPL))]
     public class Loop_2130_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -351,13 +351,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(3)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(REF))]
     public class Loop_2140_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -382,13 +382,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(3)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(EMS))]
     public class Loop_2150_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -407,13 +407,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_2160_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -461,7 +461,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(7)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     /// <summary>
     // Healthcare Provider Information
     /// </summary>
@@ -470,7 +470,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "274")]
     public class TS274 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

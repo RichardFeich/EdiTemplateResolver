@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Characteristics - Vendor's Selling Unit
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(G39))]
     public class Loop_G39_893
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(5)]
         public virtual List<G43> G43 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(N1))]
     public class Loop_N1_893
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,7 +95,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual List<N4> N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Item Information Request
     /// </summary>
@@ -104,7 +104,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "893")]
     public class TS893 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

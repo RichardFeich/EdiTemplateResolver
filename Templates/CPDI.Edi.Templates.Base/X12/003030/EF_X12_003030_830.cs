@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Forecast Schedule
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(FST))]
     public class Loop_FST_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LIN))]
     public class Loop_LIN_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -269,7 +269,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(32)]
         public virtual List<MAN> MAN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -278,7 +278,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -330,7 +330,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Ship/Delivery Pattern
     /// </summary>
@@ -339,7 +339,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SDP))]
     public class Loop_SDP_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -358,7 +358,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<FST> FST { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Shipped/Received Information
     /// </summary>
@@ -367,7 +367,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SHP))]
     public class Loop_SHP_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -386,7 +386,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -395,7 +395,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SLN))]
     public class Loop_SLN_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -414,7 +414,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<PID> PID { get; set; }
     }
-    
+
     /// <summary>
     /// Planning Schedule with Release Capability
     /// </summary>
@@ -423,7 +423,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "830")]
     public class TS830 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

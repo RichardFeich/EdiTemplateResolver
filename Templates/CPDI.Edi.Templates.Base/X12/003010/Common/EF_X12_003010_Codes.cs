@@ -1,14 +1,9 @@
 namespace EdiFabric.Templates.X12003010
 {
     using System;
-    using System.Collections.Generic;
     using System.Runtime.Serialization;
     using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
+
     /// <summary>
     /// Ownership Code
     /// </summary>
@@ -18,7 +13,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_102
     {
     }
-    
+
     /// <summary>
     /// Payment Method Code
     /// </summary>
@@ -28,7 +23,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_107
     {
     }
-    
+
     /// <summary>
     /// Pick-up or Delivery Code
     /// </summary>
@@ -38,7 +33,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_108
     {
     }
-    
+
     /// <summary>
     /// Billing Code
     /// </summary>
@@ -48,7 +43,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_11
     {
     }
-    
+
     /// <summary>
     /// Application Acknowledgment Code
     /// </summary>
@@ -58,7 +53,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_110
     {
     }
-    
+
     /// <summary>
     /// Port Function Code
     /// </summary>
@@ -68,7 +63,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_115
     {
     }
-    
+
     /// <summary>
     /// Rate Combination Point Code
     /// </summary>
@@ -78,7 +73,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_120
     {
     }
-    
+
     /// <summary>
     /// Rate Class Code
     /// </summary>
@@ -88,7 +83,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_121
     {
     }
-    
+
     /// <summary>
     /// Rate/Value Qualifier
     /// </summary>
@@ -98,7 +93,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_122
     {
     }
-    
+
     /// <summary>
     /// Reference Number Qualifier
     /// </summary>
@@ -108,7 +103,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_128
     {
     }
-    
+
     /// <summary>
     /// Release Code
     /// </summary>
@@ -118,7 +113,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_132
     {
     }
-    
+
     /// <summary>
     /// Routing Sequence Code
     /// </summary>
@@ -128,7 +123,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_133
     {
     }
-    
+
     /// <summary>
     /// Sales Terms Code
     /// </summary>
@@ -138,7 +133,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_139
     {
     }
-    
+
     /// <summary>
     /// Transaction Set Identifier Code
     /// </summary>
@@ -148,7 +143,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_143
     {
     }
-    
+
     /// <summary>
     /// Shipment Method of Payment
     /// </summary>
@@ -158,7 +153,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_146
     {
     }
-    
+
     /// <summary>
     /// Shipment Qualifier
     /// </summary>
@@ -168,7 +163,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_147
     {
     }
-    
+
     /// <summary>
     /// Special Charge Code
     /// </summary>
@@ -212,7 +207,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_150
     {
     }
-    
+
     /// <summary>
     /// Special Handling Code
     /// </summary>
@@ -222,7 +217,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_152
     {
     }
-    
+
     /// <summary>
     /// Charge Method of Payment
     /// </summary>
@@ -232,7 +227,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_16
     {
     }
-    
+
     /// <summary>
     /// Status Report Request Code
     /// </summary>
@@ -242,7 +237,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_160
     {
     }
-    
+
     /// <summary>
     /// Stop Reason Code
     /// </summary>
@@ -252,7 +247,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_163
     {
     }
-    
+
     /// <summary>
     /// Time Qualifier
     /// </summary>
@@ -262,7 +257,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_176
     {
     }
-    
+
     /// <summary>
     /// TOFC/Intermodal Code Qualifier
     /// </summary>
@@ -272,7 +267,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_177
     {
     }
-    
+
     /// <summary>
     /// Volume Unit Qualifier
     /// </summary>
@@ -282,7 +277,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_184
     {
     }
-    
+
     /// <summary>
     /// Weight Qualifier
     /// </summary>
@@ -293,7 +288,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_187
     {
     }
-    
+
     /// <summary>
     /// Weight Unit Qualifier
     /// </summary>
@@ -303,7 +298,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_188
     {
     }
-    
+
     /// <summary>
     /// Accomplish Code
     /// </summary>
@@ -313,7 +308,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_190
     {
     }
-    
+
     /// <summary>
     /// Agent/Shipper Routing Code
     /// </summary>
@@ -323,7 +318,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_192
     {
     }
-    
+
     /// <summary>
     /// Capacity Load Code
     /// </summary>
@@ -333,7 +328,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_195
     {
     }
-    
+
     /// <summary>
     /// Confidential Billing Request Code
     /// </summary>
@@ -343,7 +338,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_199
     {
     }
-    
+
     /// <summary>
     /// Correction Indicator
     /// </summary>
@@ -353,7 +348,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_202
     {
     }
-    
+
     /// <summary>
     /// Hazardous Material Code Qualifier
     /// </summary>
@@ -363,7 +358,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_208
     {
     }
-    
+
     /// <summary>
     /// International/Domestic Code
     /// </summary>
@@ -373,7 +368,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_210
     {
     }
-    
+
     /// <summary>
     /// Metric Qualifier
     /// </summary>
@@ -383,7 +378,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_216
     {
     }
-    
+
     /// <summary>
     /// Billed/Rated-as Qualifier
     /// </summary>
@@ -394,7 +389,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_221
     {
     }
-    
+
     /// <summary>
     /// Section Seven Code
     /// </summary>
@@ -404,7 +399,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_226
     {
     }
-    
+
     /// <summary>
     /// Commodity Code Qualifier
     /// </summary>
@@ -414,7 +409,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_23
     {
     }
-    
+
     /// <summary>
     /// Cross Reference Type Code
     /// </summary>
@@ -424,7 +419,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_231
     {
     }
-    
+
     /// <summary>
     /// Product/Service ID Qualifier
     /// </summary>
@@ -434,7 +429,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_235
     {
     }
-    
+
     /// <summary>
     /// Price Qualifier
     /// </summary>
@@ -446,7 +441,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_236
     {
     }
-    
+
     /// <summary>
     /// Protective Service Code
     /// </summary>
@@ -456,7 +451,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_241
     {
     }
-    
+
     /// <summary>
     /// Vent Instruction Code
     /// </summary>
@@ -466,7 +461,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_242
     {
     }
-    
+
     /// <summary>
     /// Allowance or Charge Indicator
     /// </summary>
@@ -476,7 +471,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_248
     {
     }
-    
+
     /// <summary>
     /// Tariff Application Code
     /// </summary>
@@ -486,7 +481,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_257
     {
     }
-    
+
     /// <summary>
     /// Subsidiary Risk Indicator
     /// </summary>
@@ -496,7 +491,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_271
     {
     }
-    
+
     /// <summary>
     /// Hazardous Certification Code
     /// </summary>
@@ -506,7 +501,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_272
     {
     }
-    
+
     /// <summary>
     /// Service Level Code
     /// </summary>
@@ -517,7 +512,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_284
     {
     }
-    
+
     /// <summary>
     /// Product/Service Condition Code
     /// </summary>
@@ -527,7 +522,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_286
     {
     }
-    
+
     /// <summary>
     /// Distance Qualifier
     /// </summary>
@@ -537,7 +532,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_295
     {
     }
-    
+
     /// <summary>
     /// Event Code
     /// </summary>
@@ -547,7 +542,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_304
     {
     }
-    
+
     /// <summary>
     /// Transaction Handling Code
     /// </summary>
@@ -557,7 +552,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_305
     {
     }
-    
+
     /// <summary>
     /// Damage Exception Indicator
     /// </summary>
@@ -567,7 +562,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_308
     {
     }
-    
+
     /// <summary>
     /// Location Qualifier
     /// </summary>
@@ -578,7 +573,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_309
     {
     }
-    
+
     /// <summary>
     /// Authority Identifier Code
     /// </summary>
@@ -588,7 +583,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_313
     {
     }
-    
+
     /// <summary>
     /// Allowance or Charge Method of Handling Code
     /// </summary>
@@ -598,7 +593,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_331
     {
     }
-    
+
     /// <summary>
     /// Terms Basis Date Code
     /// </summary>
@@ -608,7 +603,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_333
     {
     }
-    
+
     /// <summary>
     /// Transportation Terms Qualifier Code
     /// </summary>
@@ -618,7 +613,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_334
     {
     }
-    
+
     /// <summary>
     /// Transportation Terms Code
     /// </summary>
@@ -628,7 +623,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_335
     {
     }
-    
+
     /// <summary>
     /// Terms Type Code
     /// </summary>
@@ -638,7 +633,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_336
     {
     }
-    
+
     /// <summary>
     /// Unit of Time Period Code
     /// </summary>
@@ -648,7 +643,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_344
     {
     }
-    
+
     /// <summary>
     /// Lead Time Code
     /// </summary>
@@ -658,7 +653,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_345
     {
     }
-    
+
     /// <summary>
     /// Item Description Type
     /// </summary>
@@ -668,7 +663,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_349
     {
     }
-    
+
     /// <summary>
     /// Transaction Set Purpose Code
     /// </summary>
@@ -678,7 +673,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_353
     {
     }
-    
+
     /// <summary>
     /// Unit of Measurement Code
     /// </summary>
@@ -688,7 +683,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_355
     {
     }
-    
+
     /// <summary>
     /// Note Reference Code
     /// </summary>
@@ -699,7 +694,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_363
     {
     }
-    
+
     /// <summary>
     /// Communication Number Qualifier
     /// </summary>
@@ -709,7 +704,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_365
     {
     }
-    
+
     /// <summary>
     /// Contact Function Code
     /// </summary>
@@ -721,7 +716,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_366
     {
     }
-    
+
     /// <summary>
     /// Shipment/Order Status Code
     /// </summary>
@@ -733,7 +728,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_368
     {
     }
-    
+
     /// <summary>
     /// Change Reason Code
     /// </summary>
@@ -743,7 +738,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_371
     {
     }
-    
+
     /// <summary>
     /// Lading Liability Code
     /// </summary>
@@ -753,7 +748,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_372
     {
     }
-    
+
     /// <summary>
     /// Date/Time Qualifier
     /// </summary>
@@ -763,7 +758,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_374
     {
     }
-    
+
     /// <summary>
     /// Allowance/ Charge Percent Qualifier
     /// </summary>
@@ -773,7 +768,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_378
     {
     }
-    
+
     /// <summary>
     /// Bid Type Response Code
     /// </summary>
@@ -783,7 +778,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_379
     {
     }
-    
+
     /// <summary>
     /// Entitlement Code
     /// </summary>
@@ -793,7 +788,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_39
     {
     }
-    
+
     /// <summary>
     /// Pallet Exchange Code
     /// </summary>
@@ -803,7 +798,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_399
     {
     }
-    
+
     /// <summary>
     /// Equipment Description Code
     /// </summary>
@@ -813,7 +808,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_40
     {
     }
-    
+
     /// <summary>
     /// Receiving Condition Code
     /// </summary>
@@ -823,7 +818,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_412
     {
     }
-    
+
     /// <summary>
     /// Adjustment Reason Code
     /// </summary>
@@ -835,7 +830,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_426
     {
     }
-    
+
     /// <summary>
     /// Date Qualifier
     /// </summary>
@@ -845,7 +840,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_432
     {
     }
-    
+
     /// <summary>
     /// Tax Exempt Code
     /// </summary>
@@ -855,7 +850,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_441
     {
     }
-    
+
     /// <summary>
     /// Shipment Weight Code
     /// </summary>
@@ -865,7 +860,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_460
     {
     }
-    
+
     /// <summary>
     /// Export Filing Key Code
     /// </summary>
@@ -875,7 +870,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_47
     {
     }
-    
+
     /// <summary>
     /// Credit/Debit Flag Code
     /// </summary>
@@ -885,7 +880,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_478
     {
     }
-    
+
     /// <summary>
     /// Functional Identifier Code
     /// </summary>
@@ -895,7 +890,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_479
     {
     }
-    
+
     /// <summary>
     /// Export License Control Code
     /// </summary>
@@ -905,7 +900,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_48
     {
     }
-    
+
     /// <summary>
     /// Version / Release / Industry Identifier Code
     /// </summary>
@@ -916,7 +911,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_480
     {
     }
-    
+
     /// <summary>
     /// Trace Type Code
     /// </summary>
@@ -926,7 +921,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_481
     {
     }
-    
+
     /// <summary>
     /// Product Transfer Movement Type Code
     /// </summary>
@@ -936,7 +931,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_486
     {
     }
-    
+
     /// <summary>
     /// Maintenance Operation Code
     /// </summary>
@@ -946,7 +941,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_487
     {
     }
-    
+
     /// <summary>
     /// Data Element Type
     /// </summary>
@@ -956,7 +951,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_491
     {
     }
-    
+
     /// <summary>
     /// Customs Documentation Handling Code
     /// </summary>
@@ -966,7 +961,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_501
     {
     }
-    
+
     /// <summary>
     /// Block 20 Code
     /// </summary>
@@ -976,7 +971,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_503
     {
     }
-    
+
     /// <summary>
     /// (DFI) ID Number Qualifier
     /// </summary>
@@ -986,7 +981,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_506
     {
     }
-    
+
     /// <summary>
     /// Export License Status Code
     /// </summary>
@@ -996,7 +991,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_51
     {
     }
-    
+
     /// <summary>
     /// Export License Symbol Code
     /// </summary>
@@ -1006,7 +1001,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_52
     {
     }
-    
+
     /// <summary>
     /// Product Transfer Type Code
     /// </summary>
@@ -1016,7 +1011,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_521
     {
     }
-    
+
     /// <summary>
     /// Amount Qualifier Code
     /// </summary>
@@ -1027,7 +1022,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_522
     {
     }
-    
+
     /// <summary>
     /// Risk of Loss Qualifier
     /// </summary>
@@ -1037,7 +1032,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_54
     {
     }
-    
+
     /// <summary>
     /// Association Qualifier Code
     /// </summary>
@@ -1048,7 +1043,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_559
     {
     }
-    
+
     /// <summary>
     /// Type of Service Code
     /// </summary>
@@ -1058,7 +1053,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_56
     {
     }
-    
+
     /// <summary>
     /// Special Services Code
     /// </summary>
@@ -1068,7 +1063,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_560
     {
     }
-    
+
     /// <summary>
     /// Sales Requirement Code
     /// </summary>
@@ -1078,7 +1073,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_563
     {
     }
-    
+
     /// <summary>
     /// Do-Not-Exceed Action Code
     /// </summary>
@@ -1088,7 +1083,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_564
     {
     }
-    
+
     /// <summary>
     /// Product/Service Substitution Code
     /// </summary>
@@ -1098,7 +1093,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_566
     {
     }
-    
+
     /// <summary>
     /// Electronic Form Note Reference Code
     /// </summary>
@@ -1108,7 +1103,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_568
     {
     }
-    
+
     /// <summary>
     /// Account Number Qualifier
     /// </summary>
@@ -1118,7 +1113,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_569
     {
     }
-    
+
     /// <summary>
     /// Scale Type Code
     /// </summary>
@@ -1128,7 +1123,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_570
     {
     }
-    
+
     /// <summary>
     /// Tare Qualifier Code
     /// </summary>
@@ -1138,7 +1133,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_571
     {
     }
-    
+
     /// <summary>
     /// Acknowledgment Type
     /// </summary>
@@ -1148,7 +1143,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_587
     {
     }
-    
+
     /// <summary>
     /// Payment Method Code
     /// </summary>
@@ -1159,7 +1154,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_591
     {
     }
-    
+
     /// <summary>
     /// Compartment ID Code
     /// </summary>
@@ -1169,7 +1164,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_595
     {
     }
-    
+
     /// <summary>
     /// Time Code
     /// </summary>
@@ -1180,7 +1175,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_623
     {
     }
-    
+
     /// <summary>
     /// Excess Transportation Reason Code
     /// </summary>
@@ -1190,7 +1185,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_626
     {
     }
-    
+
     /// <summary>
     /// Excess Transportation Responsibility Code
     /// </summary>
@@ -1200,7 +1195,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_627
     {
     }
-    
+
     /// <summary>
     /// Basis of Unit Price Code
     /// </summary>
@@ -1212,7 +1207,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_639
     {
     }
-    
+
     /// <summary>
     /// Transaction Type Code
     /// </summary>
@@ -1223,7 +1218,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_640
     {
     }
-    
+
     /// <summary>
     /// Status Reason Code
     /// </summary>
@@ -1233,7 +1228,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_641
     {
     }
-    
+
     /// <summary>
     /// Lading Percent Qualifier
     /// </summary>
@@ -1243,7 +1238,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_644
     {
     }
-    
+
     /// <summary>
     /// Related Company Indication Code
     /// </summary>
@@ -1253,7 +1248,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_645
     {
     }
-    
+
     /// <summary>
     /// Application Error Condition Code
     /// </summary>
@@ -1263,7 +1258,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_647
     {
     }
-    
+
     /// <summary>
     /// Price Multiplier Qualifier
     /// </summary>
@@ -1273,7 +1268,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_648
     {
     }
-    
+
     /// <summary>
     /// Discount Terms Type Code
     /// </summary>
@@ -1283,7 +1278,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_653
     {
     }
-    
+
     /// <summary>
     /// Discount Base Qualifier
     /// </summary>
@@ -1293,7 +1288,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_654
     {
     }
-    
+
     /// <summary>
     /// Discount Control Limit Qualifier
     /// </summary>
@@ -1303,7 +1298,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_656
     {
     }
-    
+
     /// <summary>
     /// Identification Code Qualifier
     /// </summary>
@@ -1314,7 +1309,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_66
     {
     }
-    
+
     /// <summary>
     /// Configuration Code
     /// </summary>
@@ -1324,7 +1319,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_661
     {
     }
-    
+
     /// <summary>
     /// Subline Price Change Code ID
     /// </summary>
@@ -1334,7 +1329,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_662
     {
     }
-    
+
     /// <summary>
     /// Residue Indicator Code
     /// </summary>
@@ -1344,7 +1339,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_665
     {
     }
-    
+
     /// <summary>
     /// Line Item Status Code
     /// </summary>
@@ -1354,7 +1349,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_668
     {
     }
-    
+
     /// <summary>
     /// Currency Market/Exchange Code
     /// </summary>
@@ -1364,7 +1359,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_669
     {
     }
-    
+
     /// <summary>
     /// Change or Response Type Code
     /// </summary>
@@ -1375,7 +1370,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_670
     {
     }
-    
+
     /// <summary>
     /// Resource Authorization Code
     /// </summary>
@@ -1385,7 +1380,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_672
     {
     }
-    
+
     /// <summary>
     /// Quantity Qualifier
     /// </summary>
@@ -1398,7 +1393,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_673
     {
     }
-    
+
     /// <summary>
     /// Schedule Type Qualifier
     /// </summary>
@@ -1408,7 +1403,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_675
     {
     }
-    
+
     /// <summary>
     /// Schedule Quantity Qualifier
     /// </summary>
@@ -1418,7 +1413,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_676
     {
     }
-    
+
     /// <summary>
     /// Ship/Delivery Pattern Code
     /// </summary>
@@ -1429,7 +1424,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_678
     {
     }
-    
+
     /// <summary>
     /// Ship/Delivery Pattern Time Code
     /// </summary>
@@ -1439,7 +1434,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_679
     {
     }
-    
+
     /// <summary>
     /// Forecast Qualifier
     /// </summary>
@@ -1449,7 +1444,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_680
     {
     }
-    
+
     /// <summary>
     /// Forecast Timing Qualifier
     /// </summary>
@@ -1459,7 +1454,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_681
     {
     }
-    
+
     /// <summary>
     /// Part Release Status Code
     /// </summary>
@@ -1469,7 +1464,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_682
     {
     }
-    
+
     /// <summary>
     /// Catalog Purpose Code
     /// </summary>
@@ -1479,7 +1474,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_683
     {
     }
-    
+
     /// <summary>
     /// Class of Trade Code
     /// </summary>
@@ -1489,7 +1484,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_687
     {
     }
-    
+
     /// <summary>
     /// Restrictions/Conditions Qualifier
     /// </summary>
@@ -1499,7 +1494,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_688
     {
     }
-    
+
     /// <summary>
     /// Information Type
     /// </summary>
@@ -1509,7 +1504,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_701
     {
     }
-    
+
     /// <summary>
     /// Financial Information Type Code
     /// </summary>
@@ -1519,7 +1514,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_703
     {
     }
-    
+
     /// <summary>
     /// Paperwork/Report Action Code
     /// </summary>
@@ -1529,7 +1524,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_704
     {
     }
-    
+
     /// <summary>
     /// Functional Group Acknowledge Code
     /// </summary>
@@ -1539,7 +1534,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_715
     {
     }
-    
+
     /// <summary>
     /// Functional Group Syntax Error Code
     /// </summary>
@@ -1549,7 +1544,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_716
     {
     }
-    
+
     /// <summary>
     /// Transaction Set Acknowledgment Code
     /// </summary>
@@ -1559,7 +1554,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_717
     {
     }
-    
+
     /// <summary>
     /// Transaction Set Syntax Error Code
     /// </summary>
@@ -1569,7 +1564,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_718
     {
     }
-    
+
     /// <summary>
     /// Segment Syntax Error Code
     /// </summary>
@@ -1579,7 +1574,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_720
     {
     }
-    
+
     /// <summary>
     /// Data Element Syntax Error Code
     /// </summary>
@@ -1589,7 +1584,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_723
     {
     }
-    
+
     /// <summary>
     /// Returnable Container Load Make-Up Code
     /// </summary>
@@ -1599,7 +1594,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_728
     {
     }
-    
+
     /// <summary>
     /// Transit Direction Code
     /// </summary>
@@ -1609,7 +1604,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_731
     {
     }
-    
+
     /// <summary>
     /// Transit Time Direction Qualifier
     /// </summary>
@@ -1619,7 +1614,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_732
     {
     }
-    
+
     /// <summary>
     /// Hierarchical Level Code
     /// </summary>
@@ -1629,7 +1624,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_735
     {
     }
-    
+
     /// <summary>
     /// Hierarchical Child Code
     /// </summary>
@@ -1639,7 +1634,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_736
     {
     }
-    
+
     /// <summary>
     /// Measurement Reference ID Code
     /// </summary>
@@ -1651,7 +1646,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_737
     {
     }
-    
+
     /// <summary>
     /// Measurement Qualifier
     /// </summary>
@@ -1661,7 +1656,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_738
     {
     }
-    
+
     /// <summary>
     /// Returnable Container Freight Payment Responsibility Code
     /// </summary>
@@ -1671,7 +1666,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_743
     {
     }
-    
+
     /// <summary>
     /// Pre-Cooled (Rule 710) Code
     /// </summary>
@@ -1681,7 +1676,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_745
     {
     }
-    
+
     /// <summary>
     /// Product/Process Characteristic Code
     /// </summary>
@@ -1691,7 +1686,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_750
     {
     }
-    
+
     /// <summary>
     /// Surface/Layer/Position Code
     /// </summary>
@@ -1703,7 +1698,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_752
     {
     }
-    
+
     /// <summary>
     /// Packaging Characteristic Code
     /// </summary>
@@ -1713,7 +1708,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_753
     {
     }
-    
+
     /// <summary>
     /// Report Type Code
     /// </summary>
@@ -1723,7 +1718,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_755
     {
     }
-    
+
     /// <summary>
     /// Report Transmission Code
     /// </summary>
@@ -1733,7 +1728,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_756
     {
     }
-    
+
     /// <summary>
     /// Hazardous Mnemonic Code
     /// </summary>
@@ -1743,7 +1738,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_758
     {
     }
-    
+
     /// <summary>
     /// Reportable Quantity Code
     /// </summary>
@@ -1753,7 +1748,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_759
     {
     }
-    
+
     /// <summary>
     /// Limited Quantity Indication Code
     /// </summary>
@@ -1763,7 +1758,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_760
     {
     }
-    
+
     /// <summary>
     /// Planning Schedule Type Code
     /// </summary>
@@ -1773,7 +1768,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_783
     {
     }
-    
+
     /// <summary>
     /// Security Level Code
     /// </summary>
@@ -1783,7 +1778,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_786
     {
     }
-    
+
     /// <summary>
     /// Drawing Sheet Size Code
     /// </summary>
@@ -1793,7 +1788,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_789
     {
     }
-    
+
     /// <summary>
     /// Entity Status Code
     /// </summary>
@@ -1803,7 +1798,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_792
     {
     }
-    
+
     /// <summary>
     /// Revision Level Code
     /// </summary>
@@ -1813,7 +1808,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_795
     {
     }
-    
+
     /// <summary>
     /// Security Technique Code
     /// </summary>
@@ -1823,7 +1818,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_797
     {
     }
-    
+
     /// <summary>
     /// Licensing Agency Code
     /// </summary>
@@ -1833,7 +1828,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_83
     {
     }
-    
+
     /// <summary>
     /// Supplemental Inspection Code
     /// </summary>
@@ -1843,7 +1838,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_835
     {
     }
-    
+
     /// <summary>
     /// Vehicle Deck Position Code
     /// </summary>
@@ -1853,7 +1848,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_836
     {
     }
-    
+
     /// <summary>
     /// Vehicle Type Code
     /// </summary>
@@ -1863,7 +1858,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_837
     {
     }
-    
+
     /// <summary>
     /// Chassis Type
     /// </summary>
@@ -1873,7 +1868,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_845
     {
     }
-    
+
     /// <summary>
     /// Contract Status Code
     /// </summary>
@@ -1883,7 +1878,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_846
     {
     }
-    
+
     /// <summary>
     /// Order/Item Code
     /// </summary>
@@ -1893,7 +1888,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_847
     {
     }
-    
+
     /// <summary>
     /// Product/Date Code
     /// </summary>
@@ -1903,7 +1898,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_848
     {
     }
-    
+
     /// <summary>
     /// Location Code
     /// </summary>
@@ -1913,7 +1908,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_849
     {
     }
-    
+
     /// <summary>
     /// Status Report Code
     /// </summary>
@@ -1923,7 +1918,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_850
     {
     }
-    
+
     /// <summary>
     /// Activity Code
     /// </summary>
@@ -1933,7 +1928,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_859
     {
     }
-    
+
     /// <summary>
     /// Marks and Numbers Qualifier
     /// </summary>
@@ -1943,7 +1938,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_88
     {
     }
-    
+
     /// <summary>
     /// Nonconformance Report Status Code
     /// </summary>
@@ -1953,7 +1948,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_886
     {
     }
-    
+
     /// <summary>
     /// Nonconformance Resultant Response Code
     /// </summary>
@@ -1963,7 +1958,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_887
     {
     }
-    
+
     /// <summary>
     /// Nonconformance Determination Code
     /// </summary>
@@ -1973,7 +1968,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_888
     {
     }
-    
+
     /// <summary>
     /// Follow-up Action Code
     /// </summary>
@@ -1983,7 +1978,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_889
     {
     }
-    
+
     /// <summary>
     /// Batch Type Code
     /// </summary>
@@ -1993,7 +1988,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_894
     {
     }
-    
+
     /// <summary>
     /// Account Number Qualifier Code
     /// </summary>
@@ -2003,7 +1998,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_896
     {
     }
-    
+
     /// <summary>
     /// Incentive Grain Rate Indicator
     /// </summary>
@@ -2013,7 +2008,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_898
     {
     }
-    
+
     /// <summary>
     /// Validity Code
     /// </summary>
@@ -2023,7 +2018,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_900
     {
     }
-    
+
     /// <summary>
     /// Reject Reason Code
     /// </summary>
@@ -2034,7 +2029,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_901
     {
     }
-    
+
     /// <summary>
     /// Section Designator
     /// </summary>
@@ -2044,7 +2039,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_902
     {
     }
-    
+
     /// <summary>
     /// Envelope Indicator
     /// </summary>
@@ -2054,7 +2049,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_903
     {
     }
-    
+
     /// <summary>
     /// Requirement Designator
     /// </summary>
@@ -2064,7 +2059,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_904
     {
     }
-    
+
     /// <summary>
     /// Level Number
     /// </summary>
@@ -2074,7 +2069,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_906
     {
     }
-    
+
     /// <summary>
     /// Transportation Method/Type Code
     /// </summary>
@@ -2085,7 +2080,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_91
     {
     }
-    
+
     /// <summary>
     /// Relation Code
     /// </summary>
@@ -2095,7 +2090,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_912
     {
     }
-    
+
     /// <summary>
     /// Data Element Type
     /// </summary>
@@ -2105,7 +2100,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_913
     {
     }
-    
+
     /// <summary>
     /// Purchase Order Type Code
     /// </summary>
@@ -2116,7 +2111,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_92
     {
     }
-    
+
     /// <summary>
     /// Electronic Form Standards Type Code
     /// </summary>
@@ -2126,7 +2121,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_922
     {
     }
-    
+
     /// <summary>
     /// Full or Partial Indicator
     /// </summary>
@@ -2136,7 +2131,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_924
     {
     }
-    
+
     /// <summary>
     /// Printer Carriage Control Code
     /// </summary>
@@ -2146,7 +2141,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_934
     {
     }
-    
+
     /// <summary>
     /// Measurement Significance Code
     /// </summary>
@@ -2156,7 +2151,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_935
     {
     }
-    
+
     /// <summary>
     /// Measurement Attribute Code
     /// </summary>
@@ -2167,7 +2162,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_936
     {
     }
-    
+
     /// <summary>
     /// Test Administration Method Code
     /// </summary>
@@ -2177,7 +2172,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_937
     {
     }
-    
+
     /// <summary>
     /// Test Medium Code
     /// </summary>
@@ -2187,7 +2182,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_938
     {
     }
-    
+
     /// <summary>
     /// Sample Process Status Code
     /// </summary>
@@ -2197,7 +2192,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_939
     {
     }
-    
+
     /// <summary>
     /// Sample Selection Method Code
     /// </summary>
@@ -2207,7 +2202,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_940
     {
     }
-    
+
     /// <summary>
     /// Sample Description Code
     /// </summary>
@@ -2217,7 +2212,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_943
     {
     }
-    
+
     /// <summary>
     /// Sample Direction Code
     /// </summary>
@@ -2227,7 +2222,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_944
     {
     }
-    
+
     /// <summary>
     /// Sample Location Code
     /// </summary>
@@ -2237,7 +2232,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_945
     {
     }
-    
+
     /// <summary>
     /// Statistic Code
     /// </summary>
@@ -2248,7 +2243,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_950
     {
     }
-    
+
     /// <summary>
     /// Balance Type Code
     /// </summary>
@@ -2258,7 +2253,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_951
     {
     }
-    
+
     /// <summary>
     /// Adjustment Application Code
     /// </summary>
@@ -2268,7 +2263,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_952
     {
     }
-    
+
     /// <summary>
     /// Tax Jurisdiction Code Qualifier
     /// </summary>
@@ -2278,7 +2273,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_955
     {
     }
-    
+
     /// <summary>
     /// Payment Cancellation Type
     /// </summary>
@@ -2288,7 +2283,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_959
     {
     }
-    
+
     /// <summary>
     /// Request for Quote Type Code
     /// </summary>
@@ -2298,7 +2293,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_960
     {
     }
-    
+
     /// <summary>
     /// Receiving Advice Type Code
     /// </summary>
@@ -2308,7 +2303,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_962
     {
     }
-    
+
     /// <summary>
     /// Tax Type Code
     /// </summary>
@@ -2318,7 +2313,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_963
     {
     }
-    
+
     /// <summary>
     /// Cost Code
     /// </summary>
@@ -2328,7 +2323,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_964
     {
     }
-    
+
     /// <summary>
     /// Entity Identifier Code
     /// </summary>
@@ -2338,7 +2333,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_98
     {
     }
-    
+
     /// <summary>
     /// Data Source Code
     /// </summary>
@@ -2348,7 +2343,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_982
     {
     }
-    
+
     /// <summary>
     /// Hazardous Class Qualifier
     /// </summary>
@@ -2358,7 +2353,7 @@ namespace EdiFabric.Templates.X12003010
     public class X12_ID_983
     {
     }
-    
+
     /// <summary>
     /// Special Commodity Indicator Code
     /// </summary>

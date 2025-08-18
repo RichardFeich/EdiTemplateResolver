@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,13 +53,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_0200_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -116,13 +116,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(9)]
         public virtual List<Loop_0230_107> Loop0230 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CA1))]
     public class Loop_0230_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,13 +187,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(10)]
         public virtual Loop_N1_107 LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(MS2))]
     public class Loop_MS2_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -211,13 +211,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -255,7 +255,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     // Request for Motor Carrier Rate Proposal
     /// </summary>
@@ -264,7 +264,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "107")]
     public class TS107 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

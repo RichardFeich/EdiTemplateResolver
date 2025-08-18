@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003070
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Rate Destination
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(RT))]
     public class Loop_RT_129
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(2)]
         public virtual List<RT1> RT1 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Carrier Rate Update
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12003070
     [Message("X12", "129")]
     public class TS129 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Payment Cancellation Request
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005050
     [Message("X12", "829")]
     public class TS829 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(N1))]
     public class Loop_N1_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +77,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(8)]
         public virtual List<Loop_SPO_163> SPOLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop Off Details
     /// </summary>
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(S5))]
     public class Loop_S5_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -151,7 +151,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(9)]
         public virtual List<Loop_SPO_163> SPOLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Shipment Purchase Order Detail
     /// </summary>
@@ -160,7 +160,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(SPO))]
     public class Loop_SPO_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -179,7 +179,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Appointment Schedule Information
     /// </summary>
@@ -188,7 +188,7 @@ namespace EdiFabric.Templates.X12003060
     [Message("X12", "163")]
     public class TS163 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

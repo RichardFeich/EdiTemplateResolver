@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(AMT))]
     public class Loop_AMT_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(3)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(HL))]
     public class Loop_HL_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(14)]
         public virtual List<Loop_AMT_245> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -150,7 +150,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(NM1))]
     public class Loop_NM1_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -192,7 +192,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -201,7 +201,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(NX1))]
     public class Loop_NX1_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -243,7 +243,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -252,7 +252,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(REF))]
     public class Loop_REF_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -270,7 +270,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(2)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Delinquency Status
     /// </summary>
@@ -279,7 +279,7 @@ namespace EdiFabric.Templates.X12004030
     [Group(typeof(TDT))]
     public class Loop_TDT_245
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -297,7 +297,7 @@ namespace EdiFabric.Templates.X12004030
         [Pos(2)]
         public virtual List<Loop_REF_245> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Tax Service Response
     /// </summary>
@@ -306,7 +306,7 @@ namespace EdiFabric.Templates.X12004030
     [Message("X12", "245")]
     public class TS245 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

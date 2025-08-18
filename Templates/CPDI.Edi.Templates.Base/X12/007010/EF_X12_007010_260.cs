@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0100_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57,13 +57,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CSI))]
     public class Loop_0200_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -155,13 +155,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(14)]
         public virtual List<Loop_0230_260> Loop0230 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FIS))]
     public class Loop_0230_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -185,13 +185,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual MSG MSG { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(DFI))]
     public class Loop_DFI_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -219,13 +219,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FCL))]
     public class Loop_FCL_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -244,13 +244,13 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(REC))]
     public class Loop_REC_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -279,7 +279,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(4)]
         public virtual Loop_FCL_260 LoopFCL { get; set; }
     }
-    
+
     /// <summary>
     // Application for Mortgage Insurance Benefits
     /// </summary>
@@ -288,7 +288,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "260")]
     public class TS260 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

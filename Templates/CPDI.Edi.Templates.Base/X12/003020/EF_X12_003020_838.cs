@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Electronic Systems Environment
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(ENE))]
     public class Loop_ENE_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual List<Loop_TXN_838> TXNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -149,7 +149,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(15)]
         public virtual List<Loop_TXN_838> TXNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -158,7 +158,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_838_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -214,7 +214,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(8)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period Amount
     /// </summary>
@@ -223,7 +223,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(PAM))]
     public class Loop_PAM_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -253,7 +253,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(4)]
         public virtual List<CUR> CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Place or Location
     /// </summary>
@@ -262,7 +262,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(PLA))]
     public class Loop_PLA_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -299,7 +299,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(5)]
         public virtual List<Loop_ENE_838> ENELoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Supplier Rating
     /// </summary>
@@ -308,7 +308,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(SPR))]
     public class Loop_SPR_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -332,7 +332,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trading Partner Detail
     /// </summary>
@@ -341,7 +341,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(TPD))]
     public class Loop_TPD_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -383,7 +383,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<Loop_SPR_838> SPRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trade Union Data
     /// </summary>
@@ -392,7 +392,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(TUD))]
     public class Loop_TUD_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -442,7 +442,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Capabilities
     /// </summary>
@@ -451,7 +451,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(TXN))]
     public class Loop_TXN_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -475,7 +475,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Trading Partner Profile
     /// </summary>
@@ -484,7 +484,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "838")]
     public class TS838 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

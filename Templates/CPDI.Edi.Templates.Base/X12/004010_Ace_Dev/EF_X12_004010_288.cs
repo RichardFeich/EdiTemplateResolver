@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(DTM))]
     public class Loop_DTM_288
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +48,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LM))]
     public class Loop_LM_288
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -81,7 +81,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(3)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -90,7 +90,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LM))]
     public class Loop_LM_288_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LX))]
     public class Loop_LX_288
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -172,7 +172,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<Loop_LM_288_2> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -181,7 +181,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(N1))]
     public class Loop_N1_288
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,7 +225,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -234,7 +234,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(N1))]
     public class Loop_N1_288_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -266,7 +266,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Wage Determination
     /// </summary>
@@ -275,7 +275,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "288")]
     public class TS288 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

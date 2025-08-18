@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LX))]
     public class Loop_LX_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +77,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(8)]
         public virtual Q6 Q6 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_214
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Carrier Shipment Status Message
     /// </summary>
@@ -145,7 +145,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "214")]
     public class TS214 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

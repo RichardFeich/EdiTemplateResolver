@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Port or Terminal
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(R4))]
     public class Loop_R4_323
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual List<V9> V9 { get; set; }
     }
-    
+
     /// <summary>
     /// Vessel Schedule and Itinerary (Ocean)
     /// </summary>
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "323")]
     public class TS323 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

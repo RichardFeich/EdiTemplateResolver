@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(E6))]
     public class Loop_E6_420
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34,7 +34,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(2)]
         public virtual E8 E8 { get; set; }
     }
-    
+
     /// <summary>
     // Car Handling Information
     /// </summary>
@@ -43,7 +43,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "420")]
     public class TS420 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

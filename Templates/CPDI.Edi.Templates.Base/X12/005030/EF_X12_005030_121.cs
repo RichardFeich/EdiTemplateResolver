@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Motor Vehicle Control
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(VC))]
     public class Loop_VC_121
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55,7 +55,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(5)]
         public virtual REF REF { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Service
     /// </summary>
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12005030
     [Message("X12", "121")]
     public class TS121 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

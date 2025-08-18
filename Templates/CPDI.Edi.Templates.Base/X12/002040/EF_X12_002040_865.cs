@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item Acknowledgment
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(ACK))]
     public class Loop_ACK_865
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(2)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -45,7 +41,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_865
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -132,7 +128,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(12)]
         public virtual List<PKG> PKG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Number
     /// </summary>
@@ -141,7 +137,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N9))]
     public class Loop_N9_865
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -160,7 +156,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Change
     /// </summary>
@@ -169,7 +165,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(POC))]
     public class Loop_POC_865
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -392,7 +388,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(32)]
         public virtual List<Loop_N1_865> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -401,7 +397,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(SLN))]
     public class Loop_SLN_865
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -434,7 +430,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(4)]
         public virtual List<ACK> ACK { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Order Change Acknowledgment
     /// </summary>
@@ -443,7 +439,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "865")]
     public class TS865 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

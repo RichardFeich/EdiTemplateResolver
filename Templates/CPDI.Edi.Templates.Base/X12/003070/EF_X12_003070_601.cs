@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003070
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Export Shipment Identifying Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(BA1))]
     public class Loop_BA1_601
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -94,7 +94,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(10)]
         public virtual List<Loop_L13_601> L13Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Commodity Details
     /// </summary>
@@ -103,7 +103,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(L13))]
     public class Loop_L13_601
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(5)]
         public virtual List<Loop_N1_601_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -150,7 +150,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(N1))]
     public class Loop_N1_601
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -182,7 +182,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -191,7 +191,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(N1))]
     public class Loop_N1_601_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -216,7 +216,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Export Shipment Information
     /// </summary>
@@ -225,7 +225,7 @@ namespace EdiFabric.Templates.X12003070
     [Message("X12", "601")]
     public class TS601 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

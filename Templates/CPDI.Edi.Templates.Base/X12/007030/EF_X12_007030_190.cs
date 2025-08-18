@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AMT))]
     public class Loop_AMT_190
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33,13 +33,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(2)]
         public virtual LQ LQ { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(DEG))]
     public class Loop_DEG_190
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,13 +65,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(3)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ENT))]
     public class Loop_ENT_190
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -109,13 +109,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_190
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -152,13 +152,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SES))]
     public class Loop_SES_190
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -197,7 +197,7 @@ namespace EdiFabric.Templates.X12007030
         [Pos(5)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     // Student Enrollment Verification
     /// </summary>
@@ -206,7 +206,7 @@ namespace EdiFabric.Templates.X12007030
     [Message("X12", "190")]
     public class TS190 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

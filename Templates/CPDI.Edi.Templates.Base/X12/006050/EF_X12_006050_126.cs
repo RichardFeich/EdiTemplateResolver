@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(BVA))]
     public class Loop_BVA_126
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45,13 +45,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual List<Loop_VAD_126> LoopVAD { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(VAD))]
     public class Loop_VAD_126
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70,7 +70,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<L7> L7 { get; set; }
     }
-    
+
     /// <summary>
     // Vehicle Application Advice
     /// </summary>
@@ -79,7 +79,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "126")]
     public class TS126 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

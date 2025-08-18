@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(ACT))]
     public class Loop_ACT_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,7 +96,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(11)]
         public virtual List<Loop_MSG_273> MSGLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Beneficiary or Owner Information
     /// </summary>
@@ -105,7 +105,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(BEN))]
     public class Loop_BEN_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +147,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(6)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Basic Baseline Item Data
     /// </summary>
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(BLI))]
     public class Loop_BLI_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,7 +225,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(10)]
         public virtual List<Loop_BEN_273> BENLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -234,7 +234,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(ENT))]
     public class Loop_ENT_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -349,7 +349,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(17)]
         public virtual List<Loop_BLI_273> BLILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -358,7 +358,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(LQ))]
     public class Loop_LQ_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -402,7 +402,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(6)]
         public virtual List<Loop_NM1_273_2> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -411,7 +411,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(LX))]
     public class Loop_LX_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -480,7 +480,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(10)]
         public virtual List<Loop_ENT_273> ENTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Message Text
     /// </summary>
@@ -489,7 +489,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(MSG))]
     public class Loop_MSG_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -513,7 +513,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual NM1 NM1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -522,7 +522,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(NM1))]
     public class Loop_NM1_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -561,7 +561,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -570,7 +570,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(NM1))]
     public class Loop_NM1_273_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -602,7 +602,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Insurance/Annuity Application Status
     /// </summary>
@@ -611,7 +611,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "273")]
     public class TS273 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

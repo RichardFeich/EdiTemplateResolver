@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Claim Level Data
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(CLP))]
     public class Loop_CLP_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +105,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(12)]
         public virtual List<Loop_SVC_835> SVCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -114,7 +114,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(LX))]
     public class Loop_LX_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -145,7 +145,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(4)]
         public virtual List<Loop_CLP_835> CLPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -154,7 +154,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -208,7 +208,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(8)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service Information
     /// </summary>
@@ -217,7 +217,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(SVC))]
     public class Loop_SVC_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -278,7 +278,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(8)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Claim Payment/Advice
     /// </summary>
@@ -287,7 +287,7 @@ namespace EdiFabric.Templates.X12006010
     [Message("X12", "835")]
     public class TS835 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

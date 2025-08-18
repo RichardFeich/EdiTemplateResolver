@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Pricing Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(CTP))]
     public class Loop_CTP_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69,7 +69,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -78,7 +78,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LIN))]
     public class Loop_LIN_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -212,7 +212,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(19)]
         public virtual List<Loop_N1_832> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -274,7 +274,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Multi-Pack Configuration
     /// </summary>
@@ -283,7 +283,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(PKL))]
     public class Loop_PKL_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -301,7 +301,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual CTP CTP { get; set; }
     }
-    
+
     /// <summary>
     /// Price/Sales Catalog
     /// </summary>
@@ -310,7 +310,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "832")]
     public class TS832 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

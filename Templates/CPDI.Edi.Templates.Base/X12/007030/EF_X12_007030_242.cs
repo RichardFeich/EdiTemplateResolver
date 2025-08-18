@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(HL))]
     public class Loop_HL_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57,13 +57,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(6)]
         public virtual List<Loop_STS_242> LoopSTS { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(STS))]
     public class Loop_STS_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,7 +95,7 @@ namespace EdiFabric.Templates.X12007030
         [Pos(4)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     // Data Status Tracking
     /// </summary>
@@ -104,7 +104,7 @@ namespace EdiFabric.Templates.X12007030
     [Message("X12", "242")]
     public class TS242 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

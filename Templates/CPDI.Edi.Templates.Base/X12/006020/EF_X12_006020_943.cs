@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(N1))]
     public class Loop_N1_943
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56,7 +56,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Detail Total
     /// </summary>
@@ -65,7 +65,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(W04))]
     public class Loop_W04_943
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual List<W20> W20 { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Stock Transfer Shipment Advice
     /// </summary>
@@ -106,7 +106,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "943")]
     public class TS943 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

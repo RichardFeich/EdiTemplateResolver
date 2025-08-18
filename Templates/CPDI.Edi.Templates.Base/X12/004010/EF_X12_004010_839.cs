@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Breakdown Structure Description
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(BSD))]
     public class Loop_BSD_839
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(10)]
         public virtual List<Loop_CLI_839> CLILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Cost Reporting Format Type
     /// </summary>
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(CFT))]
     public class Loop_CFT_839
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -123,7 +123,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(4)]
         public virtual List<Loop_BSD_839> BSDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Cost Line Item
     /// </summary>
@@ -132,7 +132,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(CLI))]
     public class Loop_CLI_839
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -186,7 +186,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(8)]
         public virtual List<RPA> RPA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -195,7 +195,7 @@ namespace EdiFabric.Templates.X12004010
     [Group(typeof(N1))]
     public class Loop_N1_839
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -245,7 +245,7 @@ namespace EdiFabric.Templates.X12004010
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Project Cost Reporting
     /// </summary>
@@ -254,7 +254,7 @@ namespace EdiFabric.Templates.X12004010
     [Message("X12", "839")]
     public class TS839 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

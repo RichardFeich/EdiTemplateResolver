@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Shipment Conditions
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(CD))]
     public class Loop_CD_433
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public virtual List<N4> N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Station Codes Segment
     /// </summary>
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(SMS))]
     public class Loop_SMS_433
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -98,7 +98,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public virtual List<Loop_CD_433> CDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Reciprocal Switch File
     /// </summary>
@@ -107,7 +107,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "433")]
     public class TS433 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

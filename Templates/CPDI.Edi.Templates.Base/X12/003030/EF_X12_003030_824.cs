@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Original Transaction Identification
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(OTI))]
     public class Loop_OTI_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<Loop_TED_824> TEDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Technical Error Description
     /// </summary>
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(TED))]
     public class Loop_TED_824
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -155,7 +155,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Application Advice
     /// </summary>
@@ -164,7 +164,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "824")]
     public class TS824 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

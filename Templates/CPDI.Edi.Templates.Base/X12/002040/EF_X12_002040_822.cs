@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(ACT))]
     public class Loop_ACT_822
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58,7 +54,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(5)]
         public virtual List<RTE> RTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Adjustments to balances or services.
     /// </summary>
@@ -67,7 +63,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(ADJ))]
     public class Loop_ADJ_822
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,7 +82,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(2)]
         public virtual List<PID> PID { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Balance Detail
     /// </summary>
@@ -95,7 +91,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(BAL))]
     public class Loop_BAL_822
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,7 +117,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -130,7 +126,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_822
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -203,7 +199,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(10)]
         public virtual List<Loop_ACT_822> ACTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service Charges
     /// </summary>
@@ -212,7 +208,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(SER))]
     public class Loop_SER_822
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -231,7 +227,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Customer Account Analysis
     /// </summary>
@@ -240,7 +236,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "822")]
     public class TS822 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

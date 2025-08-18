@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(HL))]
     public class Loop_HL_870
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,7 +78,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(8)]
         public virtual List<Loop_PO1_870> PO1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Status Report
     /// </summary>
@@ -87,7 +87,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(ISR))]
     public class Loop_ISR_870
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -113,7 +113,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Status Report
     /// </summary>
@@ -122,7 +122,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(ISR))]
     public class Loop_ISR_870_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -198,7 +198,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(11)]
         public virtual ITA ITA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -207,7 +207,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(N1))]
     public class Loop_N1_870
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -253,7 +253,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Purchase Order Baseline Item Data
     /// </summary>
@@ -262,7 +262,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(PO1))]
     public class Loop_PO1_870
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -315,7 +315,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(7)]
         public virtual List<Loop_ISR_870_2> ISRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Order Status Report
     /// </summary>
@@ -324,7 +324,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "870")]
     public class TS870 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

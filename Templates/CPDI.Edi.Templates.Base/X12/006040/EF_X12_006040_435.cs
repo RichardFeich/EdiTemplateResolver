@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LQ))]
     public class Loop_LQ_435
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -34,13 +34,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_435
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,13 +101,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual List<CRC> CRC { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SID))]
     public class Loop_SID_435
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(5)]
         public virtual List<Loop_LX_435> LoopLX { get; set; }
     }
-    
+
     /// <summary>
     // Standard Transportation Commodity Code Master
     /// </summary>
@@ -150,7 +150,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "435")]
     public class TS435 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

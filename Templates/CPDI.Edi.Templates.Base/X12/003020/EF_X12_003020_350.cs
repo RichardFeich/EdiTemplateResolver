@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(LS))]
     public class Loop_LS_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(LS))]
     public class Loop_LS_350_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -80,7 +80,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port of Discharge Information
     /// </summary>
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(P4))]
     public class Loop_P4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,7 +107,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(2)]
         public virtual Loop_LS_350_2 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Customs Release Information
     /// </summary>
@@ -116,7 +116,7 @@ namespace EdiFabric.Templates.X12003020
     [Group(typeof(X4))]
     public class Loop_X4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +135,7 @@ namespace EdiFabric.Templates.X12003020
         [Pos(2)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Release Information (Ocean)
     /// </summary>
@@ -144,7 +144,7 @@ namespace EdiFabric.Templates.X12003020
     [Message("X12", "350")]
     public class TS350 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Equipment Detail
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(JID))]
     public class Loop_JID_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(6)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Detail for the Operating Expense Statement
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(JIL))]
     public class Loop_JIL_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -132,7 +132,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(8)]
         public virtual List<Loop_JID_819> JIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -194,7 +194,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Partner Share Accounting
     /// </summary>
@@ -203,7 +203,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(PSA))]
     public class Loop_PSA_819
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -261,7 +261,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(8)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Operating Expense Statement
     /// </summary>
@@ -270,7 +270,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "819")]
     public class TS819 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

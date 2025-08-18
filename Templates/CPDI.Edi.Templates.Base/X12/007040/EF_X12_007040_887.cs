@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G14))]
     public class Loop_0100_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,13 +52,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G15))]
     public class Loop_0200_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,13 +95,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(5)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LIN))]
     public class Loop_0300_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,13 +117,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(2)]
         public virtual List<Loop_0310_887> Loop0310 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G28))]
     public class Loop_0310_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -154,7 +154,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(4)]
         public virtual G51 G51 { get; set; }
     }
-    
+
     /// <summary>
     // Coupon Notification
     /// </summary>
@@ -163,7 +163,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "887")]
     public class TS887 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

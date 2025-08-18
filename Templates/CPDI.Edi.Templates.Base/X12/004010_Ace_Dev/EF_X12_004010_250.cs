@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(N1))]
     public class Loop_N1_250
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68,7 +68,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Purchase Order Reference
     /// </summary>
@@ -77,7 +77,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(PRF))]
     public class Loop_PRF_250
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(7)]
         public virtual List<Loop_N1_250> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Purchase Order Shipment Management Document
     /// </summary>
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "250")]
     public class TS250 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

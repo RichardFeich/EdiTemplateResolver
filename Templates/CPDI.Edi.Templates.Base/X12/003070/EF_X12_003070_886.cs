@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003070
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(ENT))]
     public class Loop_ENT_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +44,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(3)]
         public virtual List<Loop_N1_886> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Numbers
     /// </summary>
@@ -53,7 +53,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(G28))]
     public class Loop_G28_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -100,7 +100,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(6)]
         public virtual List<CRC> CRC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -109,7 +109,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(N1))]
     public class Loop_N1_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +142,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(4)]
         public virtual List<Loop_G28_886> G28Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Customer Call Reporting
     /// </summary>
@@ -151,7 +151,7 @@ namespace EdiFabric.Templates.X12003070
     [Message("X12", "886")]
     public class TS886 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

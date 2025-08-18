@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(N1))]
     public class Loop_N1_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70,7 +70,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Receiving Conditions
     /// </summary>
@@ -79,7 +79,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(RCD))]
     public class Loop_RCD_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(20)]
         public virtual List<MAN> MAN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -230,7 +230,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(SLN))]
     public class Loop_SLN_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -249,7 +249,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(2)]
         public virtual List<PID> PID { get; set; }
     }
-    
+
     /// <summary>
     /// Receiving Advice
     /// </summary>
@@ -258,7 +258,7 @@ namespace EdiFabric.Templates.X12003010
     [Message("X12", "861")]
     public class TS861 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

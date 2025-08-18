@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(AMT))]
     public class Loop_AMT_362
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(3)]
         public virtual List<Loop_LQ_362> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Description, Marks and Numbers
     /// </summary>
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(L5))]
     public class Loop_L5_362
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(10)]
         public virtual List<Loop_AMT_362> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(LQ))]
     public class Loop_LQ_362
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -160,7 +160,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(3)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port or Terminal
     /// </summary>
@@ -169,7 +169,7 @@ namespace EdiFabric.Templates.X12004060
     [Group(typeof(R4))]
     public class Loop_R4_362
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -188,7 +188,7 @@ namespace EdiFabric.Templates.X12004060
         [Pos(2)]
         public virtual List<NX2> NX2 { get; set; }
     }
-    
+
     /// <summary>
     /// Cargo Insurance Advice of Shipment
     /// </summary>
@@ -197,7 +197,7 @@ namespace EdiFabric.Templates.X12004060
     [Message("X12", "362")]
     public class TS362 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

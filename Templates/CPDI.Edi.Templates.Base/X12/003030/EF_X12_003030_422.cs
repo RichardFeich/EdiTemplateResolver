@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Origin Station
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(F9))]
     public class Loop_F9_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -53,7 +53,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<Loop_SCO_422> SCOLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -62,7 +62,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LX))]
     public class Loop_LX_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,7 +96,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<Loop_F9_422> F9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -105,7 +105,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N7))]
     public class Loop_N7_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -130,7 +130,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Shipper's Car Ordered
     /// </summary>
@@ -139,7 +139,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(SCO))]
     public class Loop_SCO_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<Loop_N7_422> N7Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Shipper's Car Order
     /// </summary>
@@ -180,7 +180,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "422")]
     public class TS422 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

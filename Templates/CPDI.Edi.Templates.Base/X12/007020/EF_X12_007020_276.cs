@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_1000_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61,13 +61,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(HL))]
     public class Loop_2000_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,13 +105,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual List<Loop_2200_276> Loop2200 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_2100_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -150,13 +150,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(5)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(TRN))]
     public class Loop_2200_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -192,13 +192,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(5)]
         public virtual List<Loop_2210_276> Loop2210 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SVC))]
     public class Loop_2210_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -230,7 +230,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(4)]
         public virtual List<TOO> TOO { get; set; }
     }
-    
+
     /// <summary>
     // Health Care Claim Status Request
     /// </summary>
@@ -239,7 +239,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "276")]
     public class TS276 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

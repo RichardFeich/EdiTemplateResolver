@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CI))]
     public class Loop_CI_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50,13 +50,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(5)]
         public virtual List<Loop_SWC_424> LoopSWC { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ED))]
     public class Loop_ED_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,13 +112,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(8)]
         public virtual NTE NTE { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -159,13 +159,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual List<Loop_CI_424> LoopCI { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SWC))]
     public class Loop_SWC_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -181,7 +181,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(2)]
         public virtual List<Loop_ED_424> LoopED { get; set; }
     }
-    
+
     /// <summary>
     // Rail Carrier Services Settlement
     /// </summary>
@@ -190,7 +190,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "424")]
     public class TS424 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

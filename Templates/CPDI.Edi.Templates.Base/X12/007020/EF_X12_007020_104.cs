@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(FOB))]
     public class Loop_FOB_104
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,13 +121,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(16)]
         public virtual List<ACS> ACS { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(L5))]
     public class Loop_L5_104
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -160,13 +160,13 @@ namespace EdiFabric.Templates.X12007020
         [Pos(4)]
         public virtual List<L4> L4 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_104
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -209,7 +209,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     // Air Shipment Information
     /// </summary>
@@ -218,7 +218,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "104")]
     public class TS104 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

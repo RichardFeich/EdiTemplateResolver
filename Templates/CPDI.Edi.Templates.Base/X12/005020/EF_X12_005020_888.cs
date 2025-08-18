@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Maintenance Type
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(G53))]
     public class Loop_G53_888
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +51,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual List<Loop_LX_888> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Characteristics - Consumer Unit
     /// </summary>
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(G55))]
     public class Loop_G55_888
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -151,7 +151,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(13)]
         public virtual LDT LDT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -160,7 +160,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(LM))]
     public class Loop_LM_888
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -180,7 +180,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -189,7 +189,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(LX))]
     public class Loop_LX_888
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -380,7 +380,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(28)]
         public virtual List<Loop_LM_888> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -389,7 +389,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_888
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -420,7 +420,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -429,7 +429,7 @@ namespace EdiFabric.Templates.X12005020
     [Group(typeof(N1))]
     public class Loop_N1_888_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -479,7 +479,7 @@ namespace EdiFabric.Templates.X12005020
         [Pos(7)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Item Maintenance
     /// </summary>
@@ -488,7 +488,7 @@ namespace EdiFabric.Templates.X12005020
     [Message("X12", "888")]
     public class TS888 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

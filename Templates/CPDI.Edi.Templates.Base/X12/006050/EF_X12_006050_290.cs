@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(MI))]
     public class Loop_MI_290
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,13 +37,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_N1_290_2> LoopN1 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_290
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -85,13 +85,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual ASM ASM { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_290_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -116,7 +116,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<PAI> PAI { get; set; }
     }
-    
+
     /// <summary>
     // Cooperative Advertising Agreements
     /// </summary>
@@ -125,7 +125,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "290")]
     public class TS290 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

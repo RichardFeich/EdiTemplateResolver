@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(HL))]
     public class Loop_HL_157
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(2)]
         public virtual List<Loop_NM1_157> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(N1))]
     public class Loop_N1_157
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -90,7 +90,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -99,7 +99,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(NM1))]
     public class Loop_NM1_157
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -162,7 +162,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(9)]
         public virtual List<Loop_SPY_157> SPYLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Scope of Power of Attorney
     /// </summary>
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12005010
     [Group(typeof(SPY))]
     public class Loop_SPY_157
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -221,7 +221,7 @@ namespace EdiFabric.Templates.X12005010
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Notice of Power of Attorney
     /// </summary>
@@ -230,7 +230,7 @@ namespace EdiFabric.Templates.X12005010
     [Message("X12", "157")]
     public class TS157 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

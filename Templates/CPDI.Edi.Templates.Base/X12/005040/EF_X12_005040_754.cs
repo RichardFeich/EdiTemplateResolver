@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005040
     [Group(typeof(LX))]
     public class Loop_LX_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -82,7 +82,7 @@ namespace EdiFabric.Templates.X12005040
         [Pos(9)]
         public virtual Loop_N1_754 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -91,7 +91,7 @@ namespace EdiFabric.Templates.X12005040
     [Group(typeof(N1))]
     public class Loop_N1_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -122,7 +122,7 @@ namespace EdiFabric.Templates.X12005040
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity Information
     /// </summary>
@@ -131,7 +131,7 @@ namespace EdiFabric.Templates.X12005040
     [Group(typeof(QTY))]
     public class Loop_QTY_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -149,7 +149,7 @@ namespace EdiFabric.Templates.X12005040
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Routing Instructions
     /// </summary>
@@ -158,7 +158,7 @@ namespace EdiFabric.Templates.X12005040
     [Message("X12", "754")]
     public class TS754 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

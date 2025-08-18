@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(FA1))]
     public class Loop_FA1_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Invoice Shipment Summary
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(ISS))]
     public class Loop_ISS_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual PID PID { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data (Invoice)
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(IT1))]
     public class Loop_IT1_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -261,7 +261,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(28)]
         public virtual List<Loop_FA1_810> FA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -270,7 +270,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(LM))]
     public class Loop_LM_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -290,7 +290,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -299,7 +299,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N1))]
     public class Loop_N1_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -351,7 +351,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(7)]
         public virtual DMG DMG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Extended Reference Information
     /// </summary>
@@ -360,7 +360,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(N9))]
     public class Loop_N9_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -380,7 +380,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -389,7 +389,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(PID))]
     public class Loop_PID_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -408,7 +408,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service, Promotion, Allowance, or Charge Information
     /// </summary>
@@ -417,7 +417,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(SAC))]
     public class Loop_SAC_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -435,7 +435,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual List<Loop_TXI_810> TXILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service, Promotion, Allowance, or Charge Information
     /// </summary>
@@ -444,7 +444,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(SAC))]
     public class Loop_SAC_810_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -468,7 +468,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual List<Loop_TXI_810> TXILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -477,7 +477,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(SLN))]
     public class Loop_SLN_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -527,7 +527,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(7)]
         public virtual List<TXI> TXI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Information
     /// </summary>
@@ -536,7 +536,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(TXI))]
     public class Loop_TXI_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -554,7 +554,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(2)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Vessel Identification
     /// </summary>
@@ -563,7 +563,7 @@ namespace EdiFabric.Templates.X12006030
     [Group(typeof(V1))]
     public class Loop_V1_810
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -587,7 +587,7 @@ namespace EdiFabric.Templates.X12006030
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Invoice
     /// </summary>
@@ -596,7 +596,7 @@ namespace EdiFabric.Templates.X12006030
     [Message("X12", "810")]
     public class TS810 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

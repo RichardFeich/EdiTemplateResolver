@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004040
     [Group(typeof(N1))]
     public class Loop_N1_853
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12004040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Carrier Details (Routing Sequence/Transit Time)
     /// </summary>
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12004040
     [Group(typeof(TD5))]
     public class Loop_TD5_853
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -140,7 +140,7 @@ namespace EdiFabric.Templates.X12004040
         [Pos(9)]
         public virtual List<Loop_N1_853> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Routing and Carrier Instruction
     /// </summary>
@@ -149,7 +149,7 @@ namespace EdiFabric.Templates.X12004040
     [Message("X12", "853")]
     public class TS853 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

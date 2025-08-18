@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_1000_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,13 +54,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(HL))]
     public class Loop_2000_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -200,13 +200,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(22)]
         public virtual List<Loop_2500_111> Loop2500 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(PDL))]
     public class Loop_2100_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,13 +225,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(III))]
     public class Loop_2200_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -250,13 +250,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AM1))]
     public class Loop_2300_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -324,13 +324,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(9)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_2400_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -360,13 +360,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual List<Loop_2450_111> Loop2450 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N3))]
     public class Loop_2450_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -391,13 +391,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NX1))]
     public class Loop_2500_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -443,7 +443,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual List<IN1> IN1 { get; set; }
     }
-    
+
     /// <summary>
     // Individual Insurance Policy and Client Information
     /// </summary>
@@ -452,7 +452,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "111")]
     public class TS111 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

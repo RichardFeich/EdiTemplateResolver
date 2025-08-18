@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_433
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58,13 +58,13 @@ namespace EdiFabric.Templates.X12007040
         [Pos(6)]
         public virtual List<Loop_R2B_433> LoopR2B { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(R2B))]
     public class Loop_R2B_433
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -115,7 +115,7 @@ namespace EdiFabric.Templates.X12007040
         [Pos(7)]
         public virtual List<XD> XD { get; set; }
     }
-    
+
     /// <summary>
     // Railroad Reciprocal Switch File
     /// </summary>
@@ -124,7 +124,7 @@ namespace EdiFabric.Templates.X12007040
     [Message("X12", "433")]
     public class TS433 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

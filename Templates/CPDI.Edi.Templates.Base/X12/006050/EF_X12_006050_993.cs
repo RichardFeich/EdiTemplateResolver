@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(S4A))]
     public class Loop_S4A_993
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33,7 +33,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual SVA SVA { get; set; }
     }
-    
+
     /// <summary>
     // Secured Receipt or Acknowledgment
     /// </summary>
@@ -42,7 +42,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "993")]
     public class TS993 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

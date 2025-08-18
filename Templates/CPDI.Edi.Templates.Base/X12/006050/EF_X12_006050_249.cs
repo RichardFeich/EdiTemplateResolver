@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ANI))]
     public class Loop_ANI_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67,13 +67,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(8)]
         public virtual List<Loop_AOI_249> LoopAOI { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AOI))]
     public class Loop_AOI_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,13 +96,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_AOL_249> LoopAOL { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AOL))]
     public class Loop_AOL_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,13 +125,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_AOR_249> LoopAOR { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AOR))]
     public class Loop_AOR_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -158,13 +158,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(AST))]
     public class Loop_AST_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -189,13 +189,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<AOC> AOC { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(GID))]
     public class Loop_GID_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -248,13 +248,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(7)]
         public virtual List<Loop_ANI_249> LoopANI { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_249
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -292,13 +292,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(5)]
         public virtual G61 G61 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_249_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -330,7 +330,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     // Animal Toxicological Data
     /// </summary>
@@ -339,7 +339,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "249")]
     public class TS249 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

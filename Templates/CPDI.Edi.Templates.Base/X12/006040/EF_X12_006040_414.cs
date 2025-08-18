@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CIC))]
     public class Loop_CIC_414
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,13 +38,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(3)]
         public virtual List<Loop_LX_414> LoopLX { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CTC))]
     public class Loop_CTC_414
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61,13 +61,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(2)]
         public virtual List<Loop_CIC_414> LoopCIC { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_414
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,7 +125,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual CV CV { get; set; }
     }
-    
+
     /// <summary>
     // Rail Carhire Settlements
     /// </summary>
@@ -134,7 +134,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "414")]
     public class TS414 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

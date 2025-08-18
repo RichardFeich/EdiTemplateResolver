@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N9))]
     public class Loop_N9_109
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -33,13 +33,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(2)]
         public virtual SG SG { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(R4))]
     public class Loop_R4_109
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -69,7 +69,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual List<Loop_N9_109> LoopN9 { get; set; }
     }
-    
+
     /// <summary>
     // Vessel Content Details
     /// </summary>
@@ -78,7 +78,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "109")]
     public class TS109 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

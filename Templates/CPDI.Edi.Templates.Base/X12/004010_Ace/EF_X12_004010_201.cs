@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(AMT))]
     public class Loop_AMT_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual MSG MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Consumer Credit Account
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(CDA))]
     public class Loop_CDA_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +97,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Financial Asset Account
     /// </summary>
@@ -106,7 +106,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(FAA))]
     public class Loop_FAA_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -157,7 +157,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public virtual MSG MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -166,7 +166,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(IN1))]
     public class Loop_IN1_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -319,7 +319,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(22)]
         public virtual Loop_LS_201 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Characteristics Requested
     /// </summary>
@@ -328,7 +328,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(LRQ))]
     public class Loop_LRQ_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -439,7 +439,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(15)]
         public virtual List<Loop_LX_201> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -448,7 +448,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(LS))]
     public class Loop_LS_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -474,7 +474,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -483,7 +483,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(LX))]
     public class Loop_LX_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -533,7 +533,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(7)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -542,7 +542,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(N1))]
     public class Loop_N1_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -587,7 +587,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -596,7 +596,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(N1))]
     public class Loop_N1_201_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -659,7 +659,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(9)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -668,7 +668,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(NM1))]
     public class Loop_NM1_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -687,7 +687,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual List<ACT> ACT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -696,7 +696,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(NX1))]
     public class Loop_NX1_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -736,7 +736,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(5)]
         public virtual List<PDE> PDE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -745,7 +745,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(NX1))]
     public class Loop_NX1_201_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -777,7 +777,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public virtual ARS ARS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Housing Expense
     /// </summary>
@@ -786,7 +786,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(PEX))]
     public class Loop_PEX_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -804,7 +804,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual MSG MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Real Estate Property Information
     /// </summary>
@@ -813,7 +813,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(REA))]
     public class Loop_REA_201
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -848,7 +848,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public virtual List<NX2> NX2 { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Loan Application
     /// </summary>
@@ -857,7 +857,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Message("X12", "201")]
     public class TS201 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

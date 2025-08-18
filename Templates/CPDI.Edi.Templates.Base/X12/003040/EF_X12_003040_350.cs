@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Port of Discharge Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(P4))]
     public class Loop_P4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +44,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(3)]
         public virtual List<Loop_X4_350> X4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Customs Release Information
     /// </summary>
@@ -53,7 +53,7 @@ namespace EdiFabric.Templates.X12003040
     [Group(typeof(X4))]
     public class Loop_X4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -80,7 +80,7 @@ namespace EdiFabric.Templates.X12003040
         [Pos(3)]
         public virtual List<N7> N7 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Release Information
     /// </summary>
@@ -89,7 +89,7 @@ namespace EdiFabric.Templates.X12003040
     [Message("X12", "350")]
     public class TS350 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

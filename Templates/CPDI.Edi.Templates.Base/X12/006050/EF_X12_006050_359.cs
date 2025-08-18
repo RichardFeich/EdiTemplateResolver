@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(NM1))]
     public class Loop_NM1_359
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,13 +65,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(7)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(VEH))]
     public class Loop_VEH_359
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,13 +95,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(VID))]
     public class Loop_VID_359
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,7 +125,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual AAA AAA { get; set; }
     }
-    
+
     /// <summary>
     // Customs Customer Profile Management
     /// </summary>
@@ -134,7 +134,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "359")]
     public class TS359 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LM))]
     public class Loop_LM_504
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_504
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -90,7 +90,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(6)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Numbers
     /// </summary>
@@ -99,7 +99,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(REF))]
     public class Loop_REF_504
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -123,7 +123,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Clauses and Provisions
     /// </summary>
@@ -132,7 +132,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "504")]
     public class TS504 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

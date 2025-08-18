@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_1000_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73,13 +73,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_2000_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -108,13 +108,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(4)]
         public virtual List<Loop_2100_835> Loop2100 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CLP))]
     public class Loop_2100_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -199,13 +199,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(12)]
         public virtual List<Loop_2110_835> Loop2110 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(SVC))]
     public class Loop_2110_835
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -266,7 +266,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(8)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     // Health Care Claim Payment/Advice
     /// </summary>
@@ -275,7 +275,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "835")]
     public class TS835 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(P4))]
     public class Loop_P4_354
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -41,7 +41,7 @@ namespace EdiFabric.Templates.X12007010
         [Pos(3)]
         public virtual List<X02> X02 { get; set; }
     }
-    
+
     /// <summary>
     // Customs Automated Manifest Archive Status
     /// </summary>
@@ -50,7 +50,7 @@ namespace EdiFabric.Templates.X12007010
     [Message("X12", "354")]
     public class TS354 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

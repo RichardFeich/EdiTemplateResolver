@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(CIC))]
     public class Loop_CIC_432
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -40,13 +40,13 @@ namespace EdiFabric.Templates.X12007030
         [Pos(3)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(LX))]
     public class Loop_LX_432
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +77,7 @@ namespace EdiFabric.Templates.X12007030
         [Pos(4)]
         public virtual List<Loop_CIC_432> LoopCIC { get; set; }
     }
-    
+
     /// <summary>
     // Rail Deprescription
     /// </summary>
@@ -86,7 +86,7 @@ namespace EdiFabric.Templates.X12007030
     [Message("X12", "432")]
     public class TS432 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

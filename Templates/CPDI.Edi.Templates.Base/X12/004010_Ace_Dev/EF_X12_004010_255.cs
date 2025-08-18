@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(ACT))]
     public class Loop_ACT_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -85,7 +85,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(9)]
         public virtual List<Loop_NM1_255_2> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -94,7 +94,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(EFI))]
     public class Loop_EFI_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,7 +112,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LS))]
     public class Loop_LS_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -146,7 +146,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -155,7 +155,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LX))]
     public class Loop_LX_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -219,7 +219,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(9)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -228,7 +228,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LX))]
     public class Loop_LX_255_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -337,7 +337,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(16)]
         public virtual List<AM1> AM1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -346,7 +346,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(NM1))]
     public class Loop_NM1_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -385,7 +385,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -394,7 +394,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(NM1))]
     public class Loop_NM1_255_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -432,7 +432,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual List<Loop_PO1_255> PO1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -441,7 +441,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(PO1))]
     public class Loop_PO1_255
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -493,7 +493,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(7)]
         public virtual Loop_LS_255 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Underwriting Information Services
     /// </summary>
@@ -502,7 +502,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "255")]
     public class TS255 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

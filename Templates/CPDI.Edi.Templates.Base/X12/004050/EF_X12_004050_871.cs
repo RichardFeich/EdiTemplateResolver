@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LIN))]
     public class Loop_LIN_871
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74,7 +74,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(8)]
         public virtual List<Loop_N1_871_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -83,7 +83,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(N1))]
     public class Loop_N1_871
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +135,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(7)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -144,7 +144,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(N1))]
     public class Loop_N1_871_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -189,7 +189,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Yes/No Question
     /// </summary>
@@ -198,7 +198,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(YNQ))]
     public class Loop_YNQ_871
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -223,7 +223,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(3)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Component Parts Content
     /// </summary>
@@ -232,7 +232,7 @@ namespace EdiFabric.Templates.X12004050
     [Message("X12", "871")]
     public class TS871 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

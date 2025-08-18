@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003070
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(LH1))]
     public class Loop_LH1_421
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -85,7 +85,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -94,7 +94,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(LS))]
     public class Loop_LS_421
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -120,7 +120,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Name
     /// </summary>
@@ -129,7 +129,7 @@ namespace EdiFabric.Templates.X12003070
     [Group(typeof(S1))]
     public class Loop_S1_421
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +147,7 @@ namespace EdiFabric.Templates.X12003070
         [Pos(2)]
         public virtual S9 S9 { get; set; }
     }
-    
+
     /// <summary>
     /// Estimated Time of Arrival and Car Scheduling
     /// </summary>
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12003070
     [Message("X12", "421")]
     public class TS421 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(DTM))]
     public class Loop_DTM_866
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(5)]
         public virtual List<Loop_LIN_866> LINLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(LIN))]
     public class Loop_LIN_866
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,7 +87,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(3)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -96,7 +96,7 @@ namespace EdiFabric.Templates.X12003010
     [Group(typeof(N1))]
     public class Loop_N1_866
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +147,7 @@ namespace EdiFabric.Templates.X12003010
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Production Sequence
     /// </summary>
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12003010
     [Message("X12", "866")]
     public class TS866 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

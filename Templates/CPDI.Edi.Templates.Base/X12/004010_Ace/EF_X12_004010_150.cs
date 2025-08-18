@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(FGS))]
     public class Loop_FGS_150
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +44,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(3)]
         public virtual List<Loop_TRS_150> TRSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -53,7 +53,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(N1))]
     public class Loop_N1_150
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,7 +71,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(2)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Form
     /// </summary>
@@ -80,7 +80,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(TFS))]
     public class Loop_TFS_150
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -114,7 +114,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public virtual List<Loop_FGS_150> FGSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Rate
     /// </summary>
@@ -123,7 +123,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Group(typeof(TRS))]
     public class Loop_TRS_150
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12004010_Ace
         [Pos(4)]
         public virtual List<Loop_N1_150> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Rate Notification
     /// </summary>
@@ -165,7 +165,7 @@ namespace EdiFabric.Templates.X12004010_Ace
     [Message("X12", "150")]
     public class TS150 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Interchange Identification Segment
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(IIS))]
     public class Loop_IIS_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<Loop_N1_242> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -73,7 +73,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(3)]
         public virtual List<Loop_STS_242> STSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Interchange Status Segment
     /// </summary>
@@ -82,7 +82,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(STS))]
     public class Loop_STS_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,7 +101,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Data Status Tracking
     /// </summary>
@@ -110,7 +110,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "242")]
     public class TS242 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

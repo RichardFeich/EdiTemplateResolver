@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(LM))]
     public class Loop_LM_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +38,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -47,7 +47,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(N1))]
     public class Loop_N1_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -99,7 +99,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Receiving Conditions
     /// </summary>
@@ -108,7 +108,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(RCD))]
     public class Loop_RCD_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -256,7 +256,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(21)]
         public virtual List<Loop_N1_861> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -265,7 +265,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(SLN))]
     public class Loop_SLN_861
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -291,7 +291,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(3)]
         public virtual List<Loop_LM_861> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Receiving Advice/Acceptance Certificate
     /// </summary>
@@ -300,7 +300,7 @@ namespace EdiFabric.Templates.X12003060
     [Message("X12", "861")]
     public class TS861 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

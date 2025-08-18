@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(III))]
     public class Loop_III_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(IN1))]
     public class Loop_IN1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -99,7 +99,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(7)]
         public virtual List<Loop_YNQ_262> YNQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -108,7 +108,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LQ))]
     public class Loop_LQ_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -148,7 +148,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -157,7 +157,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LX))]
     public class Loop_LX_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -227,7 +227,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(9)]
         public virtual List<Loop_LQ_262> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -236,7 +236,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(N1))]
     public class Loop_N1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -279,7 +279,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(6)]
         public virtual REF REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -288,7 +288,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(NX1))]
     public class Loop_NX1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -342,7 +342,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(7)]
         public virtual List<Loop_III_262> IIILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Yes/No Question
     /// </summary>
@@ -351,7 +351,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(YNQ))]
     public class Loop_YNQ_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -393,7 +393,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Appraisal Report
     /// </summary>
@@ -402,7 +402,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "262")]
     public class TS262 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

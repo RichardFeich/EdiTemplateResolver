@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006010
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(LX))]
     public class Loop_LX_141
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74,7 +74,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(8)]
         public virtual RC RC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -83,7 +83,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(N1))]
     public class Loop_N1_141
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -129,7 +129,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Total Monetary Value Summary
     /// </summary>
@@ -138,7 +138,7 @@ namespace EdiFabric.Templates.X12006010
     [Group(typeof(TDS))]
     public class Loop_TDS_141
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -162,7 +162,7 @@ namespace EdiFabric.Templates.X12006010
         [Pos(3)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Product Service Claim Response
     /// </summary>
@@ -171,7 +171,7 @@ namespace EdiFabric.Templates.X12006010
     [Message("X12", "141")]
     public class TS141 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

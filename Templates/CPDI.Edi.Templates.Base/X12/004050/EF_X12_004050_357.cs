@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Line Number
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(LX))]
     public class Loop_LX_357
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(2)]
         public virtual M13 M13 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Supplementary In-Bond Information
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(M21))]
     public class Loop_M21_357
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +75,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(4)]
         public virtual N1 N1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port Information
     /// </summary>
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12004050
     [Group(typeof(P4))]
     public class Loop_P4_357
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,7 +111,7 @@ namespace EdiFabric.Templates.X12004050
         [Pos(3)]
         public virtual List<Loop_M21_357> M21Loop { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs In-Bond Information
     /// </summary>
@@ -120,7 +120,7 @@ namespace EdiFabric.Templates.X12004050
     [Message("X12", "357")]
     public class TS357 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

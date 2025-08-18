@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_867
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +60,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Transfer and Resale Detail
     /// </summary>
@@ -73,7 +69,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(PTD))]
     public class Loop_PTD_867
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -126,7 +122,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(7)]
         public virtual MAN MAN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -135,7 +131,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(QTY))]
     public class Loop_QTY_867
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -222,7 +218,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(12)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Product Transfer and Resale Report
     /// </summary>
@@ -231,7 +227,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "867")]
     public class TS867 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

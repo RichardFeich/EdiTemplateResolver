@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ENT))]
     public class Loop_0100_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,13 +38,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(3)]
         public virtual List<Loop_0110_886> Loop0110 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_0110_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -74,13 +74,13 @@ namespace EdiFabric.Templates.X12006050
         [Pos(4)]
         public virtual List<Loop_0111_886> Loop0111 { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(G28))]
     public class Loop_0111_886
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +127,7 @@ namespace EdiFabric.Templates.X12006050
         [Pos(6)]
         public virtual List<CRC> CRC { get; set; }
     }
-    
+
     /// <summary>
     // Customer Call Reporting
     /// </summary>
@@ -136,7 +136,7 @@ namespace EdiFabric.Templates.X12006050
     [Message("X12", "886")]
     public class TS886 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

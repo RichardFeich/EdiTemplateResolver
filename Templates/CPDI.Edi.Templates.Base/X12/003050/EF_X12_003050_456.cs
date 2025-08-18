@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Rail Event Reporting
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(ER))]
     public class Loop_ER_456
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,7 +49,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(4)]
         public virtual ES ES { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -58,7 +58,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(LX))]
     public class Loop_LX_456
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -195,7 +195,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(20)]
         public virtual List<Loop_ER_456> ERLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Name
     /// </summary>
@@ -204,7 +204,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(S1))]
     public class Loop_S1_456
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -223,7 +223,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<S9> S9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Motor Vehicle Control
     /// </summary>
@@ -232,7 +232,7 @@ namespace EdiFabric.Templates.X12003050
     [Group(typeof(VC))]
     public class Loop_VC_456
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -251,7 +251,7 @@ namespace EdiFabric.Templates.X12003050
         [Pos(2)]
         public virtual List<N1> N1 { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Equipment Inquiry or Advice
     /// </summary>
@@ -260,7 +260,7 @@ namespace EdiFabric.Templates.X12003050
     [Message("X12", "456")]
     public class TS456 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

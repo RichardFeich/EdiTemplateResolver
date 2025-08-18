@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Carrier Interchange Agreement
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(CI))]
     public class Loop_CI_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -56,7 +56,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(5)]
         public virtual List<Loop_SWC_424> SWCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Description
     /// </summary>
@@ -65,7 +65,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(ED))]
     public class Loop_ED_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(8)]
         public virtual NTE NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -130,7 +130,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(N1))]
     public class Loop_N1_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -174,7 +174,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(6)]
         public virtual List<Loop_CI_424> CILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Switching Conditions
     /// </summary>
@@ -183,7 +183,7 @@ namespace EdiFabric.Templates.X12005030
     [Group(typeof(SWC))]
     public class Loop_SWC_424
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -202,7 +202,7 @@ namespace EdiFabric.Templates.X12005030
         [Pos(2)]
         public virtual List<Loop_ED_424> EDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Carrier Services Settlement
     /// </summary>
@@ -211,7 +211,7 @@ namespace EdiFabric.Templates.X12005030
     [Message("X12", "424")]
     public class TS424 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

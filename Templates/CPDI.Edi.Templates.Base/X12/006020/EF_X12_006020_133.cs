@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Student Activities and Awards
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(ATV))]
     public class Loop_ATV_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for School Enrollment Data
     /// </summary>
@@ -45,7 +45,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(ENM))]
     public class Loop_ENM_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +75,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Field of Study
     /// </summary>
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(FOS))]
     public class Loop_FOS_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -108,7 +108,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -117,7 +117,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(HL))]
     public class Loop_HL_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -220,7 +220,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(16)]
         public virtual List<Loop_ATV_133> ATVLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -229,7 +229,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(N1))]
     public class Loop_N1_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -273,7 +273,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(6)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -282,7 +282,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(N1))]
     public class Loop_N1_133_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -326,7 +326,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(6)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -335,7 +335,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(N1))]
     public class Loop_N1_133_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -367,7 +367,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for School Accreditation and Licensing
     /// </summary>
@@ -376,7 +376,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(SLA))]
     public class Loop_SLA_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -406,7 +406,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual Loop_N1_133_3 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Special Program
     /// </summary>
@@ -415,7 +415,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(SP))]
     public class Loop_SP_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -439,7 +439,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual List<NM1> NM1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Yes/No Question
     /// </summary>
@@ -448,7 +448,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(YNQ))]
     public class Loop_YNQ_133
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -472,7 +472,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual List<PCT> PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Educational Institution Record
     /// </summary>
@@ -481,7 +481,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "133")]
     public class TS133 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

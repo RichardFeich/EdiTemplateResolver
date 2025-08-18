@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12005050
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Party Identification
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12005050
     [Group(typeof(N1))]
     public class Loop_N1_269
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +54,7 @@ namespace EdiFabric.Templates.X12005050
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -63,7 +63,7 @@ namespace EdiFabric.Templates.X12005050
     [Group(typeof(NM1))]
     public class Loop_NM1_269
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,7 +112,7 @@ namespace EdiFabric.Templates.X12005050
         [Pos(7)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service Information
     /// </summary>
@@ -121,7 +121,7 @@ namespace EdiFabric.Templates.X12005050
     [Group(typeof(SVC))]
     public class Loop_SVC_269
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,7 +139,7 @@ namespace EdiFabric.Templates.X12005050
         [Pos(2)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trace
     /// </summary>
@@ -148,7 +148,7 @@ namespace EdiFabric.Templates.X12005050
     [Group(typeof(TRN))]
     public class Loop_TRN_269
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -193,7 +193,7 @@ namespace EdiFabric.Templates.X12005050
         [Pos(6)]
         public virtual List<Loop_SVC_269> SVCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Benefit Coordination Verification
     /// </summary>
@@ -202,7 +202,7 @@ namespace EdiFabric.Templates.X12005050
     [Message("X12", "269")]
     public class TS269 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

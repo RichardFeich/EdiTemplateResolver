@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contract Number Detail
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(CON))]
     public class Loop_CON_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,7 +61,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<Loop_PAD_845> PADLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -74,7 +70,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -120,7 +116,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -129,7 +125,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_845_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -182,7 +178,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Adjustment Detail
     /// </summary>
@@ -191,7 +187,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(PAD))]
     public class Loop_PAD_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -269,7 +265,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(11)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Price Authorization Acknowledgment/Status
     /// </summary>
@@ -278,7 +274,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "845")]
     public class TS845 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

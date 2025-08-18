@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12007020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(ED))]
     public class Loop_ED_451
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +60,7 @@ namespace EdiFabric.Templates.X12007020
         [Pos(6)]
         public virtual ES ES { get; set; }
     }
-    
+
     /// <summary>
     // Railroad Event Report
     /// </summary>
@@ -69,7 +69,7 @@ namespace EdiFabric.Templates.X12007020
     [Message("X12", "451")]
     public class TS451 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

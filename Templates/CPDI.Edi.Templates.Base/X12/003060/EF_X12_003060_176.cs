@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003060
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(AMT))]
     public class Loop_AMT_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +48,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Legal Claims
     /// </summary>
@@ -57,7 +57,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(BBC))]
     public class Loop_BBC_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +75,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Legal Claims
     /// </summary>
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(BBC))]
     public class Loop_BBC_176_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -102,7 +102,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Case Description
     /// </summary>
@@ -111,7 +111,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(CDS))]
     public class Loop_CDS_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -207,7 +207,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(15)]
         public virtual List<Loop_EFI_176> EFILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -216,7 +216,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(DTM))]
     public class Loop_DTM_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -234,7 +234,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual List<CRC> CRC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -243,7 +243,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(EFI))]
     public class Loop_EFI_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -262,7 +262,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -271,7 +271,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(LM))]
     public class Loop_LM_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -296,7 +296,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -305,7 +305,7 @@ namespace EdiFabric.Templates.X12003060
     [Group(typeof(NM1))]
     public class Loop_NM1_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -365,7 +365,7 @@ namespace EdiFabric.Templates.X12003060
         [Pos(9)]
         public virtual List<Loop_DTM_176> DTMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Court Submission
     /// </summary>
@@ -374,7 +374,7 @@ namespace EdiFabric.Templates.X12003060
     [Message("X12", "176")]
     public class TS176 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

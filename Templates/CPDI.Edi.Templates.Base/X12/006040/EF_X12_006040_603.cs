@@ -3,19 +3,19 @@ namespace EdiFabric.Templates.X12006040
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N1))]
     public class Loop_N1_603
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,13 +51,13 @@ namespace EdiFabric.Templates.X12006040
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     [Serializable()]
     [DataContract()]
     [Group(typeof(N21))]
     public class Loop_N21_603
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -110,7 +110,7 @@ namespace EdiFabric.Templates.X12006040
         [Pos(7)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     // Transportation Equipment Registration
     /// </summary>
@@ -119,7 +119,7 @@ namespace EdiFabric.Templates.X12006040
     [Message("X12", "603")]
     public class TS603 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

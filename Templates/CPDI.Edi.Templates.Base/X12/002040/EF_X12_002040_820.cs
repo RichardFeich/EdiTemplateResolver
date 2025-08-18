@@ -1,15 +1,11 @@
-namespace EdiFabric.Templates.X12002040
+namespace CPDI.EdiFabric.Templates.Base.X12002040
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -18,7 +14,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(LS))]
     public class Loop_LS_820
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -45,7 +41,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -54,7 +50,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_820
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -100,7 +96,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -109,7 +105,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(N1))]
     public class Loop_N1_820_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -129,7 +125,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(2)]
         public virtual List<Loop_RMT_820> RMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Remittance Advice
     /// </summary>
@@ -138,7 +134,7 @@ namespace EdiFabric.Templates.X12002040
     [Group(typeof(RMT))]
     public class Loop_RMT_820
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -170,7 +166,7 @@ namespace EdiFabric.Templates.X12002040
         [Pos(4)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Payment Order/Remittance Advice
     /// </summary>
@@ -179,7 +175,7 @@ namespace EdiFabric.Templates.X12002040
     [Message("X12", "820")]
     public class TS820 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

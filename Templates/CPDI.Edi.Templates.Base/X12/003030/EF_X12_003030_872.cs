@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12003030
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loan Buydown
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(BUY))]
     public class Loop_BUY_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +37,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<TBA> TBA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -46,7 +46,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(IN1))]
     public class Loop_IN1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -84,7 +84,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual BFS BFS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -93,7 +93,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(LX))]
     public class Loop_LX_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +147,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<Loop_MII_872> MIILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Closing Data
     /// </summary>
@@ -156,7 +156,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(MCD))]
     public class Loop_MCD_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -175,7 +175,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Insurance Information
     /// </summary>
@@ -184,7 +184,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(MII))]
     public class Loop_MII_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -306,7 +306,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(17)]
         public virtual List<Loop_IN1_872> IN1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -315,7 +315,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N1))]
     public class Loop_N1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -355,7 +355,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(5)]
         public virtual List<Loop_N4_872> N4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Geographic Location
     /// </summary>
@@ -364,7 +364,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(N4))]
     public class Loop_N4_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -383,7 +383,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<N3> N3 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Real Estate Property Identification
     /// </summary>
@@ -392,7 +392,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(NX1))]
     public class Loop_NX1_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -420,7 +420,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(3)]
         public virtual List<Loop_PAS_872> PASLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property Appraisal Summary
     /// </summary>
@@ -429,7 +429,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(PAS))]
     public class Loop_PAS_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -461,7 +461,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Multifamily Housing Project
     /// </summary>
@@ -470,7 +470,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(PRJ))]
     public class Loop_PRJ_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -489,7 +489,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Paperwork
     /// </summary>
@@ -498,7 +498,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(PWK))]
     public class Loop_PWK_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -550,7 +550,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Real Estate Property Information
     /// </summary>
@@ -559,7 +559,7 @@ namespace EdiFabric.Templates.X12003030
     [Group(typeof(REA))]
     public class Loop_REA_872
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -578,7 +578,7 @@ namespace EdiFabric.Templates.X12003030
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Mortgage Insurance Application
     /// </summary>
@@ -587,7 +587,7 @@ namespace EdiFabric.Templates.X12003030
     [Message("X12", "872")]
     public class TS872 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

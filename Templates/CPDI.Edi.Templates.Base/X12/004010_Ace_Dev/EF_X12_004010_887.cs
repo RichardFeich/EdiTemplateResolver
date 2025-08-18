@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Coupon Special Processing
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(G14))]
     public class Loop_G14_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55,7 +55,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Coupon Distribution
     /// </summary>
@@ -64,7 +64,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(G15))]
     public class Loop_G15_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,7 +101,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(5)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Numbers
     /// </summary>
@@ -110,7 +110,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(G28))]
     public class Loop_G28_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -141,7 +141,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(4)]
         public virtual G51 G51 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -150,7 +150,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Group(typeof(LIN))]
     public class Loop_LIN_887
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -169,7 +169,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
         [Pos(2)]
         public virtual List<Loop_G28_887> G28Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Coupon Notification
     /// </summary>
@@ -178,7 +178,7 @@ namespace EdiFabric.Templates.X12004010_Ace_Dev
     [Message("X12", "887")]
     public class TS887 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

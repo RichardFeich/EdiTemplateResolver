@@ -3,13 +3,13 @@ namespace EdiFabric.Templates.X12006020
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
+    using System.Xml.Serialization;
     using EdiFabric.Core.Annotations.Edi;
     using EdiFabric.Core.Annotations.Validation;
     using EdiFabric.Core.Model.Edi;
     using EdiFabric.Core.Model.Edi.X12;
-    using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Eligibility or Benefit Information
     /// </summary>
@@ -18,7 +18,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(EB))]
     public class Loop_EB_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,7 +125,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(16)]
         public virtual Loop_LS_271 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -134,7 +134,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(HL))]
     public class Loop_HL_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -166,7 +166,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(4)]
         public virtual List<Loop_NM1_271> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Information
     /// </summary>
@@ -175,7 +175,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(III))]
     public class Loop_III_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -214,7 +214,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(5)]
         public virtual List<Loop_LQ_271> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code Identification
     /// </summary>
@@ -223,7 +223,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(LQ))]
     public class Loop_LQ_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -249,7 +249,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual List<PCT> PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -258,7 +258,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(LS))]
     public class Loop_LS_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -283,7 +283,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -292,7 +292,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(NM1))]
     public class Loop_NM1_271
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -394,7 +394,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(15)]
         public virtual List<Loop_EB_271> EBLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -403,7 +403,7 @@ namespace EdiFabric.Templates.X12006020
     [Group(typeof(NM1))]
     public class Loop_NM1_271_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -446,7 +446,7 @@ namespace EdiFabric.Templates.X12006020
         [Pos(6)]
         public virtual PRV PRV { get; set; }
     }
-    
+
     /// <summary>
     /// Eligibility, Coverage or Benefit Information
     /// </summary>
@@ -455,7 +455,7 @@ namespace EdiFabric.Templates.X12006020
     [Message("X12", "271")]
     public class TS271 : EdiMessage
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
