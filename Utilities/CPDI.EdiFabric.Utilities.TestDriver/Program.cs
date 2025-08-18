@@ -79,7 +79,7 @@ while (ediReader.Read())
 
     switch (ediReader.Item)
     {
-        case CPDI.EdiFabric.Templates.X12004010.Ace.TS940:                  // Ace Template Project Assembly, Custom Namespace/Type (template)
+        case CPDI.EdiFabric.Templates.Ace.X12004010.TS940:                  // Ace Template Project Assembly, Custom Namespace/Type (template)
             Console.WriteLine($"1 - Found TS940 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
             break;
 

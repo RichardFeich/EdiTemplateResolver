@@ -1,8 +1,7 @@
 ﻿using System.Reflection;
 using CPDI.EdiFabric.Utilities.Interfaces;
-using EdiFabric.Core.Model.Edi.X12;
-using EdiISA = global::EdiFabric.Core.Model.Edi.X12.ISA;
 using EdiGS = global::EdiFabric.Core.Model.Edi.X12.GS;
+using EdiISA = global::EdiFabric.Core.Model.Edi.X12.ISA;
 using EdiST = global::EdiFabric.Core.Model.Edi.X12.ST;
 
 namespace CPDI.EdiFabric.Utilities

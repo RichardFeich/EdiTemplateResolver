@@ -31,3 +31,6 @@ _ReSharper*/
 .idea/
 #Nuget packages folder
 packages/
+*.dbmdl
+*.jfm
+/Utilities/CPDI.EdiFabric.Utilities.DataBase/CPDI.EdiFabric.Utilities.DataBase.jfm

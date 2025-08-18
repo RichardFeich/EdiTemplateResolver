@@ -55,14 +55,14 @@ namespace CPDI.EdiFabric.Utilities
 
             // 1) Resolve partnerKey via alias table (optional)
             var pk = db.QueryFirstOrDefault<string>(
-                         "SELECT TOP 1 PartnerKey FROM dbo.EdiPartnerAlias WHERE RawId = @raw ORDER BY Id",
+                         "SELECT TOP 1 PartnerKey FROM edi.EdiPartnerAlias WHERE RawId = @raw ORDER BY Id",
                          new { raw = partnerKey })
                      ?? partnerKey;
 
             // 2) Partner-specific (or default) mapping for exact version & ST
             var rows = db.Query<TemplateRow>(@"
                 SELECT TOP 50 *
-                FROM dbo.EdiTemplateMapping
+                FROM edi.EdiTemplateMapping
                 WHERE IsEnabled = 1
                   AND PartnerKey IN (@pk, '*')
                   AND VersionNorm = @ver
@@ -78,7 +78,7 @@ namespace CPDI.EdiFabric.Utilities
                 // 3) Graceful fallback: same ST in defaults, nearest lower version then highest
                 rows = db.Query<TemplateRow>(@"
                     SELECT *
-                    FROM dbo.EdiTemplateMapping
+                    FROM edi.EdiTemplateMapping
                     WHERE IsEnabled = 1
                       AND PartnerKey = '*'
                       AND St01 = @st
