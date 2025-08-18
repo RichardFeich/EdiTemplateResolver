@@ -25,13 +25,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="delete_BAK.ps1" />
     <Compile Include="Script3.ps1" />
-    <Compile Include="Script4.ps1" />
-    <Compile Include="Set-X12TsBaseClass.ps1" />
-    <Compile Include="Update-X12TemplateInheritance.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
 </Project>
