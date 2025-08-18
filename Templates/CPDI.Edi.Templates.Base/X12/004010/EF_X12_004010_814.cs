@@ -1,0 +1,284 @@
+namespace EdiFabric.Templates.X12004010
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using EdiFabric.Core.Annotations.Edi;
+    using EdiFabric.Core.Annotations.Validation;
+    using EdiFabric.Core.Model.Edi;
+    using EdiFabric.Core.Model.Edi.X12;
+    using System.Xml.Serialization;
+    
+    
+    /// <summary>
+    /// Loop for Type of Financial Accounting Data
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(FA1))]
+    public class Loop_FA1_814
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        /// Type of Financial Accounting Data
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual FA1 FA1 { get; set; }
+        /// <summary>
+        /// Accounting Data
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(2)]
+        public virtual List<FA2> FA2 { get; set; }
+    }
+    
+    /// <summary>
+    /// Loop for Item Identification
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(LIN))]
+    public class Loop_LIN_814
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        /// Item Identification
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual LIN LIN { get; set; }
+        /// <summary>
+        /// Action or Status Indicator
+        /// </summary>
+        [DataMember]
+        [Pos(2)]
+        public virtual ASI ASI { get; set; }
+        /// <summary>
+        /// Reference Identification
+        /// </summary>
+        [DataMember]
+        [Pos(3)]
+        public virtual List<REF> REF { get; set; }
+        /// <summary>
+        /// Date/Time Reference
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual List<DTM> DTM { get; set; }
+        /// <summary>
+        /// Currency
+        /// </summary>
+        [DataMember]
+        [Pos(5)]
+        public virtual CUR CUR { get; set; }
+        /// <summary>
+        /// Monetary Amount
+        /// </summary>
+        [DataMember]
+        [Pos(6)]
+        public virtual List<AMT> AMT { get; set; }
+        /// <summary>
+        /// Electronic Funds Transfer Information
+        /// </summary>
+        [DataMember]
+        [Pos(7)]
+        public virtual PM PM { get; set; }
+        /// <summary>
+        /// Loop for Type of Financial Accounting Data
+        /// </summary>
+        [DataMember]
+        [Pos(8)]
+        public virtual List<Loop_FA1_814> FA1Loop { get; set; }
+        /// <summary>
+        /// Loop for Individual or Organizational Name
+        /// </summary>
+        [DataMember]
+        [Pos(9)]
+        public virtual List<Loop_NM1_814> NM1Loop { get; set; }
+    }
+    
+    /// <summary>
+    /// Loop for Name
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(N1))]
+    public class Loop_N1_814
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        /// Name
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual N1 N1 { get; set; }
+        /// <summary>
+        /// Additional Name Information
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(2)]
+        public virtual List<N2> N2 { get; set; }
+        /// <summary>
+        /// Address Information
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(3)]
+        public virtual List<N3> N3 { get; set; }
+        /// <summary>
+        /// Geographic Location
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual N4 N4 { get; set; }
+        /// <summary>
+        /// Administrative Communications Contact
+        /// </summary>
+        [DataMember]
+        [Pos(5)]
+        public virtual List<PER> PER { get; set; }
+        /// <summary>
+        /// Reference Identification
+        /// </summary>
+        [DataMember]
+        [Pos(6)]
+        public virtual List<REF> REF { get; set; }
+        /// <summary>
+        /// Date/Time Reference
+        /// </summary>
+        [DataMember]
+        [Pos(7)]
+        public virtual List<DTM> DTM { get; set; }
+    }
+    
+    /// <summary>
+    /// Loop for Individual or Organizational Name
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(NM1))]
+    public class Loop_NM1_814
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        /// Individual or Organizational Name
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual NM1 NM1 { get; set; }
+        /// <summary>
+        /// Additional Name Information
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(2)]
+        public virtual List<N2> N2 { get; set; }
+        /// <summary>
+        /// Address Information
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(3)]
+        public virtual List<N3> N3 { get; set; }
+        /// <summary>
+        /// Geographic Location
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual N4 N4 { get; set; }
+        /// <summary>
+        /// Administrative Communications Contact
+        /// </summary>
+        [DataMember]
+        [Pos(5)]
+        public virtual List<PER> PER { get; set; }
+        /// <summary>
+        /// Reference Identification
+        /// </summary>
+        [DataMember]
+        [Pos(6)]
+        public virtual List<REF> REF { get; set; }
+        /// <summary>
+        /// Date/Time Reference
+        /// </summary>
+        [DataMember]
+        [Pos(7)]
+        public virtual List<DTM> DTM { get; set; }
+    }
+    
+    /// <summary>
+    /// General Request, Response or Confirmation
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Message("X12", "814")]
+    public class TS814 : EdiMessage
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        /// Transaction Set Header
+        /// </summary>
+        [DataMember]
+        [Pos(1)]
+        public virtual ST ST { get; set; }
+        /// <summary>
+        /// Beginning Segment
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(2)]
+        public virtual BGN BGN { get; set; }
+        /// <summary>
+        /// Currency
+        /// </summary>
+        [DataMember]
+        [Pos(3)]
+        public virtual CUR CUR { get; set; }
+        /// <summary>
+        /// Loop for Type of Financial Accounting Data
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual List<Loop_FA1_814> FA1Loop { get; set; }
+        /// <summary>
+        /// Loop for Name
+        /// </summary>
+        [DataMember]
+        [Pos(5)]
+        public virtual List<Loop_N1_814> N1Loop { get; set; }
+        /// <summary>
+        /// Loop for Item Identification
+        /// </summary>
+        [DataMember]
+        [Pos(6)]
+        public virtual List<Loop_LIN_814> LINLoop { get; set; }
+        /// <summary>
+        /// Transaction Set Trailer
+        /// </summary>
+        [DataMember]
+        [Pos(7)]
+        public virtual SE SE { get; set; }
+    }
+}

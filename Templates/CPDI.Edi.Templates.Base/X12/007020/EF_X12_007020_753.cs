@@ -1,0 +1,231 @@
+namespace EdiFabric.Templates.X12007020
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using EdiFabric.Core.Annotations.Edi;
+    using EdiFabric.Core.Annotations.Validation;
+    using EdiFabric.Core.Model.Edi;
+    using EdiFabric.Core.Model.Edi.X12;
+    using System.Xml.Serialization;
+    
+    
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(N1))]
+    public class Loop_0200_753
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        // Party Identification
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual N1 N1 { get; set; }
+        /// <summary>
+        // Additional Name Information
+        /// </summary>
+        [DataMember]
+        [Pos(2)]
+        public virtual N2 N2 { get; set; }
+        /// <summary>
+        // Party Location
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(3)]
+        public virtual List<N3> N3 { get; set; }
+        /// <summary>
+        // Geographic Location
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual N4 N4 { get; set; }
+        /// <summary>
+        // Business Instructions and Reference Number
+        /// </summary>
+        [DataMember]
+        [ListCount(5)]
+        [Pos(5)]
+        public virtual List<L11> L11 { get; set; }
+        /// <summary>
+        // Date/Time
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(6)]
+        public virtual List<G62> G62 { get; set; }
+        /// <summary>
+        // Unitized Shipment Information
+        /// </summary>
+        [DataMember]
+        [Pos(7)]
+        public virtual USI USI { get; set; }
+        /// <summary>
+        // Shipment Weight
+        /// </summary>
+        [DataMember]
+        [Pos(8)]
+        public virtual AT8 AT8 { get; set; }
+        [DataMember]
+        [ListCount(99999)]
+        [Pos(9)]
+        public virtual List<Loop_0205_753> Loop0205 { get; set; }
+        [DataMember]
+        [ListCount(99999)]
+        [Pos(10)]
+        public virtual List<Loop_0210_753> Loop0210 { get; set; }
+    }
+    
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(CMC))]
+    public class Loop_0205_753
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        // Commodity Classification
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual CMC CMC { get; set; }
+        /// <summary>
+        // Shipment Weight
+        /// </summary>
+        [DataMember]
+        [Pos(2)]
+        public virtual AT8 AT8 { get; set; }
+    }
+    
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(OID))]
+    public class Loop_0210_753
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        // Order Information Detail
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual OID OID { get; set; }
+        /// <summary>
+        // Commodity Classification
+        /// </summary>
+        [DataMember]
+        [Pos(2)]
+        public virtual CMC CMC { get; set; }
+        /// <summary>
+        // Yes/No Question
+        /// </summary>
+        [DataMember]
+        [Pos(3)]
+        public virtual YNQ YNQ { get; set; }
+    }
+    
+    [Serializable()]
+    [DataContract()]
+    [Group(typeof(N1))]
+    public class Loop_N1_753
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        // Party Identification
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual N1 N1 { get; set; }
+        /// <summary>
+        // Additional Name Information
+        /// </summary>
+        [DataMember]
+        [Pos(2)]
+        public virtual N2 N2 { get; set; }
+        /// <summary>
+        // Party Location
+        /// </summary>
+        [DataMember]
+        [ListCount(2)]
+        [Pos(3)]
+        public virtual List<N3> N3 { get; set; }
+        /// <summary>
+        // Geographic Location
+        /// </summary>
+        [DataMember]
+        [Pos(4)]
+        public virtual N4 N4 { get; set; }
+    }
+    
+    /// <summary>
+    // Request for Routing Instructions
+    /// </summary>
+    [Serializable()]
+    [DataContract()]
+    [Message("X12", "753")]
+    public class TS753 : EdiMessage
+    {
+        
+        [XmlIgnore]
+        [IgnoreDataMember]
+        public int Id { get; set; }
+        /// <summary>
+        // Transaction Set Header
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(1)]
+        public virtual ST ST { get; set; }
+        /// <summary>
+        // Beginning Segment
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(2)]
+        public virtual BGN BGN { get; set; }
+        /// <summary>
+        // Administrative Communications Contact
+        /// </summary>
+        [DataMember]
+        [Pos(3)]
+        public virtual PER PER { get; set; }
+        [DataMember]
+        [Required]
+        [Pos(4)]
+        public virtual Loop_N1_753 LoopN1 { get; set; }
+        /// <summary>
+        // Transaction Set Line Number
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(5)]
+        public virtual LX LX { get; set; }
+        [DataMember]
+        [Required]
+        [ListCount(9999)]
+        [Pos(6)]
+        public virtual List<Loop_0200_753> Loop0200 { get; set; }
+        /// <summary>
+        // Transaction Set Trailer
+        /// </summary>
+        [DataMember]
+        [Required]
+        [Pos(7)]
+        public virtual SE SE { get; set; }
+    }
+}

@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Templates\CPDI.EdiFabric.Templates.Ace\CPDI.EdiFabric.Templates.Ace.csproj" />
+    <ProjectReference Include="..\CPDI.EdiFabric.Utilities\CPDI.EdiFabric.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EdiDocs\008086593_2025-03-14T15_36_38.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\008091993_2025-03-20T20_09_59.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\008091994_2025-03-20T20_09_59.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\2007OP6516_2023-12-01T19_32_36.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\2224315_2023-12-01T01_37_11.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\4400056976_2023-12-01T23_06_40.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\5503358856_2024-01-11T21_00_43.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\5503361742_2024-01-12T19_02_58.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\5503368882_2024-01-17T19_40_50.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EdiDocs\5503368882_2024-01-17T19_40_50.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

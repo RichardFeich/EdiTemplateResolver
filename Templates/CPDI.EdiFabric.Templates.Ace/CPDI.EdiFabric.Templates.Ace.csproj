@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>CS0246</NoWarn>
+    <NoWarn>CS8618</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="X12\004060_Clone4050\**" />
+    <EmbeddedResource Remove="X12\004060_Clone4050\**" />
+    <None Remove="X12\004060_Clone4050\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EdiFabric" Version="10.7.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CPDI.Edi.X12.Abstractions\CPDI.Edi.X12.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

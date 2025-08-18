@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Orders xmlns="http://www.spscommerce.com/RSX"> 
+<Order>
+    <Header>
+        <OrderHeader>
+            <TradingPartnerId>DYAALLCHAMPIONP</TradingPartnerId>
+            <PurchaseOrderNumber>5503368882</PurchaseOrderNumber>
+            <TsetPurposeCode>00</TsetPurposeCode>
+            <PurchaseOrderTypeCode>SA</PurchaseOrderTypeCode>
+            <PurchaseOrderDate>2024-01-17</PurchaseOrderDate>
+            <BuyersCurrency>USD</BuyersCurrency>
+            <Vendor>0001074924</Vendor>
+        </OrderHeader>
+        <Contact>
+            <ContactTypeCode>BD</ContactTypeCode>
+            <ContactName>Becky Harp</ContactName>
+            <ContactEmail>becky.harp@ecolab.com</ContactEmail>
+        </Contact>
+        <Address>
+            <AddressTypeCode>ST</AddressTypeCode>
+            <LocationCodeQualifier>9</LocationCodeQualifier>
+            <AddressLocationNumber>0025469000668</AddressLocationNumber>
+            <AddressName>Ecolab - Winston-Salem Chem ECCC</AddressName>
+            <Address1>90 Piedmont IND Dr. STE 300</Address1>
+            <City>Winston-Salem</City>
+            <State>NC</State>
+            <PostalCode>27107</PostalCode>
+            <Country>US</Country>
+        </Address>
+        <Address>
+            <AddressTypeCode>SF</AddressTypeCode>
+            <LocationCodeQualifier>9</LocationCodeQualifier>
+            <AddressLocationNumber>6309721020</AddressLocationNumber>
+            <AddressName>CHAMPION PACKAGING &amp; DISTRIBUTING</AddressName>
+            <Address1>PO BOX 989</Address1>
+            <City>BEDFORD PARK</City>
+            <State>IL</State>
+            <PostalCode>60499-098</PostalCode>
+            <Country>US</Country>
+        </Address>
+        <FOBRelatedInstruction>
+            <FOBPayCode>PP</FOBPayCode>
+            <FOBLocationQualifier>OR</FOBLocationQualifier>
+            <FOBLocationDescription>BEDFORD PARK,IL</FOBLocationDescription>
+        </FOBRelatedInstruction>
+    </Header>
+    <LineItems>
+        <LineItem>
+            <OrderLine>
+                <LineSequenceNumber>00010</LineSequenceNumber>
+                <BuyerPartNumber>1114152</BuyerPartNumber>
+                <VendorPartNumber>VENDOR# EC1114152</VendorPartNumber>
+                <OrderQty>1008</OrderQty>
+                <OrderQtyUOM>EA</OrderQtyUOM>
+                <PurchasePrice>12.76</PurchasePrice>
+            </OrderLine>
+            <Date>
+                <DateTimeQualifier1>002</DateTimeQualifier1>
+                <Date1>2024-02-26</Date1>
+            </Date>
+            <ProductOrItemDescription>
+                <ItemDescriptionType>08</ItemDescriptionType>
+                <ProductDescription>ESTEEM SANI-NC 4X1GL</ProductDescription>
+            </ProductOrItemDescription>
+        </LineItem>
+    </LineItems>
+    <Summary>
+        <TotalAmount>12862.08</TotalAmount>
+        <TotalLineItemNumber>1</TotalLineItemNumber>
+    </Summary>
+</Order>
+</Orders>

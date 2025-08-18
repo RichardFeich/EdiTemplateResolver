@@ -1,0 +1,35 @@
+ISA*00*          *00*          *14*072271711HDP   *12*3317575600     *250314*1135*^*00406*000500049*0*P*>~
+GS*PO*072271711HDP*3317575600*20250314*1135*500018*X*004060~
+ST*850*0019~
+BEG*00*SA*008086593**20250314~
+CUR*SE*USD~
+REF*ZZ**The amount of this purchase order is the amount that~
+REF*ZZ**will be paid. Any Discrepancies must be brought to~
+REF*ZZ**the buyers attention before this order is shipped.~
+REF*ZZ**Packing Lists, Invoices, Bills Of Lading, and all~
+REF*ZZ**packages must reference our purchase order number.~
+REF*ZZ**Failure to comply could cause a delay in payment.~
+REF*ZZ**Packing Lists are required. 48 Hour notice required~
+REF*ZZ**for delivery on more than 2 skids.~
+REF*ZZ**Please Note: The Home Depot Pro will not accept chemical~
+REF*ZZ**products that do not meet OSHA GHS/HazCom 2012 labeling~
+REF*ZZ**and SDS requirements. If non-compliant products are~
+REF*ZZ**received they will be refused and shipped back to~
+REF*ZZ**supplier at the suppliers expense.~
+PER*BD*Meredith A. Gray*FX*999-999-9999~
+ITD************NET 60 DAYS~
+ITD************0060~
+DTM*010*20250318~
+N1*ST*The Home Depot Pro*92*206~
+N3*33 RUNWAY DRIVE~
+N4*LEVITTOWN*PA*190574700*US~
+N1*BT*THE HOME DEPOT PRO*92*080792989~
+N1*VN*CHAMPION PACKAGING & DISTIBUTI*92*53030~
+PO1*0001*192*CA*13.95**VN*CD160001*BP*333069249~
+PID*F****CDS 1GAL LIQUID CHLORINE CS4~
+PO4*1~
+CTT*1~
+AMT*TT*2678.4~
+SE*31*0019~
+GE*1*500018~
+IEA*1*000500049~

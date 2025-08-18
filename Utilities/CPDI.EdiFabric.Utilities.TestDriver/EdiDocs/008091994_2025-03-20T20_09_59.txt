@@ -1,0 +1,35 @@
+ISA*00*          *00*          *14*072271711HDP   *12*3317575600     *250320*1606*^*00406*000500063*0*P*>~
+GS*PO*072271711HDP*3317575600*20250320*1606*500029*X*004060~
+ST*850*0030~
+BEG*00*SA*008091994**20250320~
+CUR*SE*USD~
+REF*ZZ**The amount of this purchase order is the amount that~
+REF*ZZ**will be paid. Any Discrepancies must be brought to~
+REF*ZZ**the buyers attention before this order is shipped.~
+REF*ZZ**Packing Lists, Invoices, Bills Of Lading, and all~
+REF*ZZ**packages must reference our purchase order number.~
+REF*ZZ**Failure to comply could cause a delay in payment.~
+REF*ZZ**Packing Lists are required. 48 Hour notice required~
+REF*ZZ**for delivery on more than 2 skids.~
+REF*ZZ**Please Note: The Home Depot Pro will not accept chemical~
+REF*ZZ**products that do not meet OSHA GHS/HazCom 2012 labeling~
+REF*ZZ**and SDS requirements. If non-compliant products are~
+REF*ZZ**received they will be refused and shipped back to~
+REF*ZZ**supplier at the suppliers expense.~
+PER*BD*Meredith A. Gray*FX*999-999-9999~
+ITD************NET 60 DAYS~
+ITD************0060~
+DTM*010*20250324~
+N1*ST*The Home Depot Pro*92*225~
+N3*50 TELEDYNE PLACE~
+N4*LA VERGNE*TN*370860000*US~
+N1*BT*THE HOME DEPOT PRO*92*080792989~
+N1*VN*CHAMPION PACKAGING & DISTIBUTI*92*53030~
+PO1*0001*728*CA*22.06**VN*AR110001*BP*335044098~
+PID*F****ULTRA BLEACH GERMICIDAL 6/CS~
+PO4*1~
+CTT*1~
+AMT*TT*16059.68~
+SE*31*0030~
+GE*1*500029~
+IEA*1*000500063~
