@@ -101,44 +101,4 @@ namespace CPDI.EdiFabric.Utilities
             return v.Length >= 6 ? v[..6] : v.PadLeft(6, '0');
         }
     }
-    //public sealed class DbTemplateFactory
-    //{
-    //    private readonly IEdiTemplateResolver _resolver;
-
-    //    // Optional: let callers customize how to pick partner id from ISA
-    //    private readonly Func<ISA, string> _partnerSelector;
-
-    //    public DbTemplateFactory(IEdiTemplateResolver resolver,Func<ISA, string>? partnerSelector = null)
-    //    {
-    //        _resolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
-    //        _partnerSelector = partnerSelector ?? (isa =>
-    //            // common choice: prefer ISA06, fallback to ISA08
-    //            (isa?.InterchangeSenderID_6 ?? isa?.InterchangeReceiverID_8 ?? "*").Trim());
-    //    }
-
-    //    // === The core resolver used by both delegates ===
-    //    public Type Create(ISA isa, GS gs, ST st)
-    //    {
-    //        if (st is null) throw new ArgumentNullException(nameof(st));
-
-    //        var st01 = st.TransactionSetIdentifierCode_01?.Trim()
-    //                      ?? throw new NotSupportedException("Missing ST01.");
-
-    //        var version = gs?.VersionAndRelease_8
-    //                   ?? isa?.InterchangeControlVersionNumber_12
-    //                   ?? "004010";
-
-    //        if (isa is null) throw new ArgumentNullException(nameof(isa));
-    //        var partner = _partnerSelector(isa);
-
-    //        return _resolver.Resolve(partner, version, st01);
-    //    }
-
-    //    // === Convenience for builds that expect TypeInfo ===
-    //    public TypeInfo CreateTypeInfo(ISA isa, GS gs, ST st) => Create(isa, gs, st).GetTypeInfo();
-
-    //    // === Ready-to-pass delegates (nice for DI) ===
-    //    public Func<ISA, GS, ST, Type> AsTypeDelegate() => Create;
-    //    public Func<ISA, GS, ST, TypeInfo> AsTypeInfoDelegate() => CreateTypeInfo;
-    //}
 }

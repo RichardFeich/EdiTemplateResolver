@@ -17,4 +17,8 @@
     <Folder Include="Entities\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Templates\CPDI.Edi.X12.Abstractions\CPDI.Edi.X12.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
