@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Templates\CPDI.Edi.X12.Abstractions\CPDI.Edi.X12.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Templates\CPDI.EdiFabric.Templates.Ace\CPDI.EdiFabric.Templates.Ace.csproj" />
+    <ProjectReference Include="..\..\Templates\CPDI.EdiFabric.Templates.Acme\CPDI.EdiFabric.Templates.Acme.csproj" />
+    <ProjectReference Include="..\..\Templates\CPDI.EdiFabric.Templates.Archive\CPDI.EdiFabric.Templates.Archive.csproj" />
+    <ProjectReference Include="..\..\Templates\CPDI.EdiFabric.Templates.Base\CPDI.EdiFabric.Templates.Base.csproj" />
     <ProjectReference Include="..\CPDI.EdiFabric.Utilities\CPDI.EdiFabric.Utilities.csproj" />
   </ItemGroup>
 

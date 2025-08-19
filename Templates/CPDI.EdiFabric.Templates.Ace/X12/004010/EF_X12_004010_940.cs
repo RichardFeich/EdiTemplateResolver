@@ -465,7 +465,7 @@
     [Serializable()]
     [DataContract()]
     [Message("X12", "940")]
-    public class TS940 : EdiMessage, ITS940, ITS850
+    public class TS940 : EdiMessage, ITS940
     {
 
         [XmlIgnore]

@@ -3,6 +3,8 @@ using CPDI.EdiFabric.Utilities.WebValidator.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
+EdiFabric.SerialKey.Set("ca157c4e10e14ef1990daa75ae3be4f8");
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

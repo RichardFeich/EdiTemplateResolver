@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+	  <AssemblyName>CPDI.EdiFabric.Templates.Base</AssemblyName>
+	  <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <NoWarn>CS0246</NoWarn>
     <NoWarn>CS8618</NoWarn>

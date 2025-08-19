@@ -1,7 +1,9 @@
-﻿using CPDI.EdiFabric.Utilities;
+﻿using CPDI.Edi.X12.Abstractions;
+using CPDI.EdiFabric.Utilities;
 using CPDI.EdiFabric.Utilities.Infrastructure;
 using CPDI.EdiFabric.Utilities.Interfaces;
 using CPDI.EdiFabric.Utilities.Models;
+using CPDI.EdiFabric.Utilities.TestDriver;
 using EdiFabric.Core.Model.Edi;
 using EdiFabric.Core.Model.Edi.ErrorContexts;
 using EdiFabric.Core.Model.Edi.X12;
@@ -61,55 +63,20 @@ var partnerId = string.Empty;
 
 while (ediReader.Read())
 {
-
-    //switch (item)
-    //{
-    //    case ITS850 po: Handle850(po); break;
-    //    case ITS855 ack: Handle855(ack); break;
-    //    case ITS856 asn: Handle856(asn); break;
-    //    default: LogUnknown(item); break;
-    //}
-
+    Console.WriteLine($"Type:{ediReader.Item}");
+    switch (ediReader.Item)
+    {
+        case ITS850 po: DummyHandlers.Handle850(po); break;
+        case ITS855 ack: DummyHandlers.Handle855(ack); break;
+        case ITS856 asn: DummyHandlers.Handle856(asn); break;
+        case ITS940 wso: DummyHandlers.Handle940(wso); break;
+        default: break;
+    }
 
     if (ediReader.Item is ISA isa)
     {
         // Example: Receiver ID from ISA08, Sender ID from ISA06
         partnerId = isa.InterchangeSenderID_6;
-    }
-
-    switch (ediReader.Item)
-    {
-        case CPDI.EdiFabric.Templates.Ace.X12004010.TS940:                  // Ace Template Project Assembly, Custom Namespace/Type (template)
-            Console.WriteLine($"1 - Found TS940 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
-            break;
-
-        //case EdiFabric.Templates.X12004010_Ace.TS940:           // Default-Shared Assembly, Custom Namespace/Type
-        //    Console.WriteLine($"2 - Found TS940 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
-        //    break;
-
-        //case EdiFabric.Templates.X12004010.TS940:               // Default-Shared Assembly, Default Namespace
-        //    Console.WriteLine($"3 - Found TS940 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
-        //    break;
-
-        //case EdiFabric.Templates.X12004060.TS850:               // Default-Shared Assembly, Cloned Template from 4050    
-        //    Console.WriteLine($"4 - Found TS850 transaction from {ediReader.Item.GetType().FullName} - {partnerId}");
-        //    break;
-
-        //case EdiFabric.Templates.X12004010_Ace_Dev.TS940:       // Default-Shared Assembly, Custom Namespace/Type DEVELOPMENT    
-        //    Console.WriteLine($"5 - Found TS940 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
-        //    break;
-
-        //case EdiFabric.Templates.X12004010.TS850:               // Default-Shared Assembly, Default Namespace
-        //    Console.WriteLine($"6 - Found TS850 transaction from - {ediReader.Item.GetType().FullName} - {partnerId}");
-        //    break;
-
-        //case EdiFabric.Core.Model.Edi.EdiMessage m when m is not null:
-        //    Console.WriteLine($"7 - Default message type: {m.GetType().FullName}  - {partnerId}");
-        //    break;
-
-        default:
-            // null or non-EDI item (e.g., ReaderErrorContext)
-            break;
     }
 
     if (ediReader.Item is ReaderErrorContext rec)
