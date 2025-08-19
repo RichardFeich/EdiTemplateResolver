@@ -1,4 +1,4 @@
-namespace CPDI.EdiFabric.Templates.Ace.X12004010
+﻿namespace CPDI.EdiFabric.Templates.Ace.X12004010
 {
     using System;
     using System.Collections.Generic;
@@ -211,7 +211,7 @@ namespace CPDI.EdiFabric.Templates.Ace.X12004010
     [Serializable()]
     [DataContract()]
     [Message("X12", "423")]
-    public class TS423 : EdiMessage
+    public class TS423 : EdiMessage, ITS423
     {
 
         [XmlIgnore]
@@ -277,3 +277,4 @@ namespace CPDI.EdiFabric.Templates.Ace.X12004010
         public virtual SE SE { get; set; }
     }
 }
+

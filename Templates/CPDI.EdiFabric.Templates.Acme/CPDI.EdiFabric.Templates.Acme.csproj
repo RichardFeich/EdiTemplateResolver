@@ -12,4 +12,8 @@
     <PackageReference Include="EdiFabric" Version="10.7.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CPDI.Edi.X12.Abstractions\CPDI.Edi.X12.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

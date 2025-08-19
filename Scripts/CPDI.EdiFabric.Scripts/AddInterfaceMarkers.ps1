@@ -16,6 +16,7 @@
 .EXAMPLE
   .\AddInterfaceMarkers.ps1 -Path C:\Projects\CPDI_EDI\src\TemplateResolver\Templates\CPDI.Edi.Templates.Base\X12 -Include 'EF_X12_*.cs' -Recurse -WhatIf
   .\AddInterfaceMarkers.ps1 -Path C:\Projects\CPDI_EDI\src\TemplateResolver\Templates\CPDI.EdiFabric.Templates.Acme\X12 -Include 'EF_X12_*.cs' -Recurse -WhatIf
+  .\AddInterfaceMarkers.ps1 -Path C:\Projects\CPDI_EDI\src\TemplateResolver\Templates\CPDI.EdiFabric.Templates.Ace\X12 -Include 'EF_X12_*.cs' -Recurse -WhatIf
 
 .EXAMPLE
   .\AddInterfaceMarkers.ps1 -Path 'C:\Proj\Templates' -Backup
