@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Cryptographic Service Message Certificates and Keys
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CSC))]
     public class Loop_CSC_815
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Cryptographic Service Message
     /// </summary>
@@ -46,7 +42,7 @@
     [Message("X12", "815")]
     public class TS815 : EdiMessage, ITS815
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

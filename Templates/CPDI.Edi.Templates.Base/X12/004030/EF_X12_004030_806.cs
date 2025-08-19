@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Calendar
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CAL))]
     public class Loop_CAL_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +38,7 @@
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Milestone
     /// </summary>
@@ -51,7 +47,7 @@
     [Group(typeof(MLS))]
     public class Loop_MLS_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +89,7 @@
         [Pos(6)]
         public virtual List<PCT> PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Text
     /// </summary>
@@ -102,7 +98,7 @@
     [Group(typeof(MTX))]
     public class Loop_MTX_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -132,7 +128,7 @@
         [Pos(4)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -141,7 +137,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -191,7 +187,7 @@
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Resource
     /// </summary>
@@ -200,7 +196,7 @@
     [Group(typeof(RSC))]
     public class Loop_RSC_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -248,7 +244,7 @@
         [Pos(7)]
         public virtual List<RPA> RPA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Resource
     /// </summary>
@@ -257,7 +253,7 @@
     [Group(typeof(RSC))]
     public class Loop_RSC_806_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -311,7 +307,7 @@
         [Pos(8)]
         public virtual List<PAM> PAM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Task Identification
     /// </summary>
@@ -320,7 +316,7 @@
     [Group(typeof(TID))]
     public class Loop_TID_806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -398,7 +394,7 @@
         [Pos(12)]
         public virtual List<Loop_MLS_806> MLSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Project Schedule Reporting
     /// </summary>
@@ -407,7 +403,7 @@
     [Message("X12", "806")]
     public class TS806 : EdiMessage, ITS806
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date or Time or Period
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(DTP))]
     public class Loop_DTP_275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +44,7 @@
         [Pos(4)]
         public virtual Loop_EFI_275 EFILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -57,7 +53,7 @@
     [Group(typeof(EFI))]
     public class Loop_EFI_275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -76,7 +72,7 @@
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -85,7 +81,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -140,7 +136,7 @@
         [Pos(8)]
         public virtual List<Loop_DTP_275> DTPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -149,7 +145,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -207,7 +203,7 @@
         [Pos(8)]
         public virtual List<Loop_NX1_275> NX1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -216,7 +212,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -240,7 +236,7 @@
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Patient Information
     /// </summary>
@@ -249,7 +245,7 @@
     [Message("X12", "275")]
     public class TS275 : EdiMessage, ITS275
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

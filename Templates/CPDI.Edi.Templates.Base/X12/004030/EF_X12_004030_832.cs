@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Conditions Indicator
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CRC))]
     public class Loop_CRC_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Pricing Information
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(CTP))]
     public class Loop_CTP_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -134,7 +130,7 @@
         [Pos(13)]
         public virtual Loop_LS_832 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Characteristics - Vendor's Selling Unit
     /// </summary>
@@ -143,7 +139,7 @@
     [Group(typeof(G39))]
     public class Loop_G39_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +157,7 @@
         [Pos(2)]
         public virtual CTP CTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Bracket Price
     /// </summary>
@@ -170,7 +166,7 @@
     [Group(typeof(G40))]
     public class Loop_G40_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -188,7 +184,7 @@
         [Pos(2)]
         public virtual SAC SAC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Price Bracket Identification
     /// </summary>
@@ -197,7 +193,7 @@
     [Group(typeof(G93))]
     public class Loop_G93_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -227,7 +223,7 @@
         [Pos(4)]
         public virtual G26 G26 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hazardous Information, Finished Goods
     /// </summary>
@@ -236,7 +232,7 @@
     [Group(typeof(LFG))]
     public class Loop_LFG_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -254,7 +250,7 @@
         [Pos(2)]
         public virtual List<Loop_CRC_832> CRCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -263,7 +259,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -495,7 +491,7 @@
         [Pos(36)]
         public virtual List<Loop_N9_832> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -504,7 +500,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -523,7 +519,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -532,7 +528,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_832_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -551,7 +547,7 @@
         [Pos(2)]
         public virtual List<Loop_LQ_832> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -560,7 +556,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -596,7 +592,7 @@
         [Pos(5)]
         public virtual List<Loop_PID_832> PIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -605,7 +601,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -630,7 +626,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -639,7 +635,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -709,7 +705,7 @@
         [Pos(10)]
         public virtual SPI SPI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -718,7 +714,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_832_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -794,7 +790,7 @@
         [Pos(11)]
         public virtual SPI SPI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -803,7 +799,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_832_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -855,7 +851,7 @@
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -864,7 +860,7 @@
     [Group(typeof(N9))]
     public class Loop_N9_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -900,7 +896,7 @@
         [Pos(5)]
         public virtual List<EFI> EFI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -909,7 +905,7 @@
     [Group(typeof(PID))]
     public class Loop_PID_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -933,7 +929,7 @@
         [Pos(3)]
         public virtual MTX MTX { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Multi-Pack Configuration
     /// </summary>
@@ -942,7 +938,7 @@
     [Group(typeof(PKL))]
     public class Loop_PKL_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -979,7 +975,7 @@
         [Pos(5)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -988,7 +984,7 @@
     [Group(typeof(SLN))]
     public class Loop_SLN_832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1078,7 +1074,7 @@
         [Pos(14)]
         public virtual List<Loop_N1_832_3> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Price/Sales Catalog
     /// </summary>
@@ -1087,7 +1083,7 @@
     [Message("X12", "832")]
     public class TS832 : EdiMessage, ITS832
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

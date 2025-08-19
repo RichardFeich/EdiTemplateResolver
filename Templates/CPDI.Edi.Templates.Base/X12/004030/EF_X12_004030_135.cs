@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -116,7 +112,7 @@
         [Pos(14)]
         public virtual Loop_LM_135 LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -125,7 +121,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -163,7 +159,7 @@
         [Pos(5)]
         public virtual List<Loop_LX_135_2> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -172,7 +168,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -191,7 +187,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -200,7 +196,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -259,7 +255,7 @@
         [Pos(8)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -268,7 +264,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_135_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -313,7 +309,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -322,7 +318,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -361,7 +357,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Previous Loan Information
     /// </summary>
@@ -370,7 +366,7 @@
     [Group(typeof(PLI))]
     public class Loop_PLI_135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -402,7 +398,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Student Aid Origination Record
     /// </summary>
@@ -411,7 +407,7 @@
     [Message("X12", "135")]
     public class TS135 : EdiMessage, ITS135
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

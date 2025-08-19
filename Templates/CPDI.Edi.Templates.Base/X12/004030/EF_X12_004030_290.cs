@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Media Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(MI))]
     public class Loop_MI_290
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual List<Loop_N1_290_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_290
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -94,7 +90,7 @@
         [Pos(6)]
         public virtual ASM ASM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -103,7 +99,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_290_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +124,7 @@
         [Pos(3)]
         public virtual List<PAI> PAI { get; set; }
     }
-    
+
     /// <summary>
     /// Cooperative Advertising Agreements
     /// </summary>
@@ -137,7 +133,7 @@
     [Message("X12", "290")]
     public class TS290 : EdiMessage, ITS290
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

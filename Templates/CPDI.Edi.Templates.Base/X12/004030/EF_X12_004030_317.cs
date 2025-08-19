@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item - Quantity and Weight
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(L0))]
     public class Loop_L0_317
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual H1 H1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_317
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,7 +92,7 @@
         [Pos(6)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Delivery/Pickup Order
     /// </summary>
@@ -105,7 +101,7 @@
     [Message("X12", "317")]
     public class TS317 : EdiMessage, ITS317
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

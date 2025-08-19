@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Transaction Set Response Header
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AK2))]
     public class Loop_AK2_997
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +40,7 @@
         [Pos(3)]
         public virtual AK5 AK5 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Data Segment Note
     /// </summary>
@@ -53,7 +49,7 @@
     [Group(typeof(AK3))]
     public class Loop_AK3_997
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(2)]
         public virtual List<AK4> AK4 { get; set; }
     }
-    
+
     /// <summary>
     /// Functional Acknowledgment
     /// </summary>
@@ -81,7 +77,7 @@
     [Message("X12", "997")]
     public class TS997 : EdiMessage, ITS997
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

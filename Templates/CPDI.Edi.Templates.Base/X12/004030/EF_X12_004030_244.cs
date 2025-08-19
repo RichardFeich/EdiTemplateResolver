@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Business Function
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(BSF))]
     public class Loop_BSF_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +40,7 @@
         [Pos(3)]
         public virtual List<Loop_PID_244> PIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -53,7 +49,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,7 +74,7 @@
         [Pos(3)]
         public virtual List<Loop_BSF_244> BSFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -87,7 +83,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -113,7 +109,7 @@
         [Pos(3)]
         public virtual List<Loop_N1_244> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Location ID Component
     /// </summary>
@@ -122,7 +118,7 @@
     [Group(typeof(NX2))]
     public class Loop_NX2_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -140,7 +136,7 @@
         [Pos(2)]
         public virtual List<COM> COM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -149,7 +145,7 @@
     [Group(typeof(PID))]
     public class Loop_PID_244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -167,7 +163,7 @@
         [Pos(2)]
         public virtual CID CID { get; set; }
     }
-    
+
     /// <summary>
     /// Product Source Information
     /// </summary>
@@ -176,7 +172,7 @@
     [Message("X12", "244")]
     public class TS244 : EdiMessage, ITS244
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

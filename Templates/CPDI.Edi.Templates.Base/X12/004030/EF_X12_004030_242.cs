@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61,7 +57,7 @@
         [Pos(6)]
         public virtual List<Loop_STS_242> STSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Interchange Status Segment
     /// </summary>
@@ -70,7 +66,7 @@
     [Group(typeof(STS))]
     public class Loop_STS_242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,7 +97,7 @@
         [Pos(4)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Data Status Tracking
     /// </summary>
@@ -110,7 +106,7 @@
     [Message("X12", "242")]
     public class TS242 : EdiMessage, ITS242
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

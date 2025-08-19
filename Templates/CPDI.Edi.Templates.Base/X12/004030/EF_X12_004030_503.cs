@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(8)]
         public virtual Loop_LS_503 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -81,7 +77,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -100,7 +96,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -109,7 +105,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -134,7 +130,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -143,7 +139,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -193,7 +189,7 @@
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -202,7 +198,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_503_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -270,7 +266,7 @@
         [Pos(10)]
         public virtual List<Loop_LM_503> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -279,7 +275,7 @@
     [Group(typeof(QTY))]
     public class Loop_QTY_503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -327,7 +323,7 @@
         [Pos(7)]
         public virtual List<Loop_N1_503_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Pricing History
     /// </summary>
@@ -336,7 +332,7 @@
     [Message("X12", "503")]
     public class TS503 : EdiMessage, ITS503
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

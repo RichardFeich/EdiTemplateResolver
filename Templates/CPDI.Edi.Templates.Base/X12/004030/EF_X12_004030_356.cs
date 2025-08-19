@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Port Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(P4))]
     public class Loop_P4_356
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +34,7 @@
         [Pos(2)]
         public virtual List<M20> M20 { get; set; }
     }
-    
+
     /// <summary>
     /// U.S. Customs Permit to Transfer Request
     /// </summary>
@@ -47,7 +43,7 @@
     [Message("X12", "356")]
     public class TS356 : EdiMessage, ITS356
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Load Detail
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CLD))]
     public class Loop_CLD_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -267,7 +263,7 @@
         [Pos(32)]
         public virtual List<Loop_V1_856> V1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -276,7 +272,7 @@
     [Group(typeof(LH1))]
     public class Loop_LH1_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -348,7 +344,7 @@
         [Pos(10)]
         public virtual LHE LHE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -357,7 +353,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -377,7 +373,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -386,7 +382,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -438,7 +434,7 @@
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service, Promotion, Allowance, or Charge Information
     /// </summary>
@@ -447,7 +443,7 @@
     [Group(typeof(SAC))]
     public class Loop_SAC_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -465,7 +461,7 @@
         [Pos(2)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Carrier Details (Equipment)
     /// </summary>
@@ -474,7 +470,7 @@
     [Group(typeof(TD3))]
     public class Loop_TD3_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -492,7 +488,7 @@
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Vessel Identification
     /// </summary>
@@ -501,7 +497,7 @@
     [Group(typeof(V1))]
     public class Loop_V1_856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -525,7 +521,7 @@
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Ship Notice/Manifest
     /// </summary>
@@ -534,7 +530,7 @@
     [Message("X12", "856")]
     public class TS856 : EdiMessage, ITS856
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

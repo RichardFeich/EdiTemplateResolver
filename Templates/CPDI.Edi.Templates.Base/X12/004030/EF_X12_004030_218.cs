@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Class
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CL))]
     public class Loop_CL_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual RTS RTS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Class
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(CL))]
     public class Loop_CL_218_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -70,7 +66,7 @@
         [Pos(3)]
         public virtual List<TFD> TFD { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -79,7 +75,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +101,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -114,7 +110,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_10
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -140,7 +136,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -149,7 +145,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_11
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -175,7 +171,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -184,7 +180,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_12
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -210,7 +206,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -219,7 +215,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_13
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -245,7 +241,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -254,7 +250,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -280,7 +276,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -289,7 +285,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -315,7 +311,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -324,7 +320,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -350,7 +346,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -359,7 +355,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -385,7 +381,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -394,7 +390,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -420,7 +416,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -429,7 +425,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -455,7 +451,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -464,7 +460,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -490,7 +486,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -499,7 +495,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_218_9
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -525,7 +521,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -534,7 +530,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -559,7 +555,7 @@
         [Pos(3)]
         public virtual Loop_LS_218_8 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -568,7 +564,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -619,7 +615,7 @@
         [Pos(7)]
         public virtual Loop_LS_218_9 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -628,7 +624,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -653,7 +649,7 @@
         [Pos(3)]
         public virtual Loop_LS_218_11 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -662,7 +658,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -688,7 +684,7 @@
         [Pos(3)]
         public virtual List<Loop_SCL_218_4> SCLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -697,7 +693,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -722,7 +718,7 @@
         [Pos(3)]
         public virtual SCL SCL { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -731,7 +727,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_6
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -756,7 +752,7 @@
         [Pos(3)]
         public virtual Loop_LS_218_2 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -765,7 +761,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_7
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -797,7 +793,7 @@
         [Pos(4)]
         public virtual List<TFD> TFD { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -806,7 +802,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_218_8
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -832,7 +828,7 @@
         [Pos(3)]
         public virtual List<GY> GY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -841,7 +837,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -886,7 +882,7 @@
         [Pos(6)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Basis/Scales
     /// </summary>
@@ -895,7 +891,7 @@
     [Group(typeof(SCL))]
     public class Loop_SCL_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -920,7 +916,7 @@
         [Pos(3)]
         public virtual RTS RTS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Basis/Scales
     /// </summary>
@@ -929,7 +925,7 @@
     [Group(typeof(SCL))]
     public class Loop_SCL_218_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -955,7 +951,7 @@
         [Pos(3)]
         public virtual List<Loop_CL_218> CLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Basis/Scales
     /// </summary>
@@ -964,7 +960,7 @@
     [Group(typeof(SCL))]
     public class Loop_SCL_218_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -982,7 +978,7 @@
         [Pos(2)]
         public virtual RTS RTS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Basis/Scales
     /// </summary>
@@ -991,7 +987,7 @@
     [Group(typeof(SCL))]
     public class Loop_SCL_218_4
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1024,7 +1020,7 @@
         [Pos(4)]
         public virtual List<Loop_CL_218> CLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Basis/Scales
     /// </summary>
@@ -1033,7 +1029,7 @@
     [Group(typeof(SCL))]
     public class Loop_SCL_218_5
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1051,7 +1047,7 @@
         [Pos(2)]
         public virtual Loop_LS_218_4 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tariff Section
     /// </summary>
@@ -1060,7 +1056,7 @@
     [Group(typeof(TS))]
     public class Loop_TS_218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -1105,7 +1101,7 @@
         [Pos(6)]
         public virtual List<TFM> TFM { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Tariff Information
     /// </summary>
@@ -1114,7 +1110,7 @@
     [Message("X12", "218")]
     public class TS218 : EdiMessage, ITS218
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ACT))]
     public class Loop_ACT_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68,7 +64,7 @@
         [Pos(7)]
         public virtual List<Loop_FIR_821> FIRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Balance Information
     /// </summary>
@@ -77,7 +73,7 @@
     [Group(typeof(BLN))]
     public class Loop_BLN_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -95,7 +91,7 @@
         [Pos(2)]
         public virtual List<AVA> AVA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -104,7 +100,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +131,7 @@
         [Pos(4)]
         public virtual List<Loop_FA1_821> FA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -144,7 +140,7 @@
     [Group(typeof(FA1))]
     public class Loop_FA1_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -163,7 +159,7 @@
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Financial Information
     /// </summary>
@@ -172,7 +168,7 @@
     [Group(typeof(FIR))]
     public class Loop_FIR_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -244,7 +240,7 @@
         [Pos(11)]
         public virtual List<Loop_NM1_821> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -253,7 +249,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -273,7 +269,7 @@
         [Pos(2)]
         public virtual List<Loop_LQ_821> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -282,7 +278,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -301,7 +297,7 @@
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -310,7 +306,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -346,7 +342,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -355,7 +351,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -391,7 +387,7 @@
         [Pos(5)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Information
     /// </summary>
@@ -400,7 +396,7 @@
     [Group(typeof(RTE))]
     public class Loop_RTE_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -418,7 +414,7 @@
         [Pos(2)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Summary
     /// </summary>
@@ -427,7 +423,7 @@
     [Group(typeof(TSU))]
     public class Loop_TSU_821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -445,7 +441,7 @@
         [Pos(2)]
         public virtual List<AVA> AVA { get; set; }
     }
-    
+
     /// <summary>
     /// Financial Information Reporting
     /// </summary>
@@ -454,7 +450,7 @@
     [Message("X12", "821")]
     public class TS821 : EdiMessage, ITS821
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

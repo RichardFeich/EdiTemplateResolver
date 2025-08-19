@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(DTM))]
     public class Loop_DTM_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +34,7 @@
         [Pos(2)]
         public virtual List<BOX> BOX { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -47,7 +43,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +71,7 @@
         [Pos(3)]
         public virtual List<Loop_DTM_170> DTMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Screen Theater Identification
     /// </summary>
@@ -84,7 +80,7 @@
     [Group(typeof(THE))]
     public class Loop_THE_170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -104,7 +100,7 @@
         [Pos(2)]
         public virtual List<Loop_LX_170> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Revenue Receipts Statement
     /// </summary>
@@ -113,7 +109,7 @@
     [Message("X12", "170")]
     public class TS170 : EdiMessage, ITS170
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

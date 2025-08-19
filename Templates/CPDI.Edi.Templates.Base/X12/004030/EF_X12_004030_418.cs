@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LH1))]
     public class Loop_LH1_418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -92,7 +88,7 @@
         [Pos(10)]
         public virtual List<Loop_N1_418> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -101,7 +97,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +123,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -136,7 +132,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -168,7 +164,7 @@
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Block Identification
     /// </summary>
@@ -177,7 +173,7 @@
     [Group(typeof(W1))]
     public class Loop_W1_418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -197,7 +193,7 @@
         [Pos(2)]
         public virtual List<Loop_W2_418> W2Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Identification
     /// </summary>
@@ -206,7 +202,7 @@
     [Group(typeof(W2))]
     public class Loop_W2_418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -291,7 +287,7 @@
         [Pos(12)]
         public virtual LHR LHR { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Advance Interchange Consist
     /// </summary>
@@ -300,7 +296,7 @@
     [Message("X12", "418")]
     public class TS418 : EdiMessage, ITS418
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

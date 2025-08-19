@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Excavation Ticket Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(EXI))]
     public class Loop_EXI_620
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +71,7 @@
         [Pos(8)]
         public virtual List<Loop_N1_620> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Event Location
     /// </summary>
@@ -84,7 +80,7 @@
     [Group(typeof(LIE))]
     public class Loop_LIE_620
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -103,7 +99,7 @@
         [Pos(2)]
         public virtual List<PPA> PPA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -112,7 +108,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_620
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -131,7 +127,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -140,7 +136,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_620
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -203,7 +199,7 @@
         [Pos(9)]
         public virtual List<Loop_LM_620> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Excavation Communication
     /// </summary>
@@ -212,7 +208,7 @@
     [Message("X12", "620")]
     public class TS620 : EdiMessage, ITS620
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

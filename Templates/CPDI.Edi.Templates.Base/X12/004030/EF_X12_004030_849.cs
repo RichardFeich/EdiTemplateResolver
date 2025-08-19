@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contract Number Detail
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CON))]
     public class Loop_CON_849
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(7)]
         public virtual List<Loop_PAD_849> PADLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -81,7 +77,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_849
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -127,7 +123,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Adjustment Detail
     /// </summary>
@@ -136,7 +132,7 @@
     [Group(typeof(PAD))]
     public class Loop_PAD_849
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -228,7 +224,7 @@
         [Pos(13)]
         public virtual SSS SSS { get; set; }
     }
-    
+
     /// <summary>
     /// Response to Product Transfer Account Adjustment
     /// </summary>
@@ -237,7 +233,7 @@
     [Message("X12", "849")]
     public class TS849 : EdiMessage, ITS849
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

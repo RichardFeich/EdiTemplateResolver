@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -55,7 +51,7 @@
         [Pos(5)]
         public virtual List<Loop_N4_265> N4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -64,7 +60,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +85,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -98,7 +94,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -201,7 +197,7 @@
         [Pos(15)]
         public virtual List<Loop_PWK_265> PWKLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Closing Data
     /// </summary>
@@ -210,7 +206,7 @@
     [Group(typeof(MCD))]
     public class Loop_MCD_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -229,7 +225,7 @@
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -238,7 +234,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -284,7 +280,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -293,7 +289,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_265_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -346,7 +342,7 @@
         [Pos(7)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Geographic Location
     /// </summary>
@@ -355,7 +351,7 @@
     [Group(typeof(N4))]
     public class Loop_N4_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -381,7 +377,7 @@
         [Pos(3)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Paperwork
     /// </summary>
@@ -390,7 +386,7 @@
     [Group(typeof(PWK))]
     public class Loop_PWK_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -442,7 +438,7 @@
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Title Insurance Services
     /// </summary>
@@ -451,7 +447,7 @@
     [Group(typeof(TIS))]
     public class Loop_TIS_265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -470,7 +466,7 @@
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Title Insurance Services
     /// </summary>
@@ -479,7 +475,7 @@
     [Group(typeof(TIS))]
     public class Loop_TIS_265_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -505,7 +501,7 @@
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Title Insurance Services Order
     /// </summary>
@@ -514,7 +510,7 @@
     [Message("X12", "265")]
     public class TS265 : EdiMessage, ITS265
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

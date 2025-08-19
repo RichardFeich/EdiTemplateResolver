@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(FGS))]
     public class Loop_FGS_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +56,7 @@
         [Pos(6)]
         public virtual List<Loop_N1_826> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -69,7 +65,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -113,7 +109,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Form
     /// </summary>
@@ -122,7 +118,7 @@
     [Group(typeof(TFS))]
     public class Loop_TFS_826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -170,7 +166,7 @@
         [Pos(7)]
         public virtual List<Loop_FGS_826> FGSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Tax Information Exchange
     /// </summary>
@@ -179,7 +175,7 @@
     [Message("X12", "826")]
     public class TS826 : EdiMessage, ITS826
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

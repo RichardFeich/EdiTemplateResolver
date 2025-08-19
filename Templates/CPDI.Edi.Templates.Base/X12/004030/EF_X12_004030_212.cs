@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Shipment Status Details
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AT7))]
     public class Loop_AT7_212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,7 +45,7 @@
         [Pos(4)]
         public virtual Loop_MS2_212 MS2Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -58,7 +54,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +131,7 @@
         [Pos(11)]
         public virtual Loop_N1_212_2 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment or Container Owner and Type
     /// </summary>
@@ -144,7 +140,7 @@
     [Group(typeof(MS2))]
     public class Loop_MS2_212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -168,7 +164,7 @@
         [Pos(3)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -177,7 +173,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -227,7 +223,7 @@
         [Pos(7)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -236,7 +232,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_212_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -274,7 +270,7 @@
         [Pos(5)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Order Identification Detail
     /// </summary>
@@ -283,7 +279,7 @@
     [Group(typeof(OID))]
     public class Loop_OID_212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -302,7 +298,7 @@
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Delivery Trailer Manifest
     /// </summary>
@@ -311,7 +307,7 @@
     [Message("X12", "212")]
     public class TS212 : EdiMessage, ITS212
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ACT))]
     public class Loop_ACT_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -96,7 +92,7 @@
         [Pos(11)]
         public virtual List<Loop_MSG_273> MSGLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Beneficiary or Owner Information
     /// </summary>
@@ -105,7 +101,7 @@
     [Group(typeof(BEN))]
     public class Loop_BEN_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +143,7 @@
         [Pos(6)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -156,7 +152,7 @@
     [Group(typeof(BLI))]
     public class Loop_BLI_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,7 +221,7 @@
         [Pos(10)]
         public virtual List<Loop_BEN_273> BENLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -234,7 +230,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -349,7 +345,7 @@
         [Pos(17)]
         public virtual List<Loop_BLI_273> BLILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -358,7 +354,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -402,7 +398,7 @@
         [Pos(6)]
         public virtual List<Loop_NM1_273_2> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -411,7 +407,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -480,7 +476,7 @@
         [Pos(10)]
         public virtual List<Loop_ENT_273> ENTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Message Text
     /// </summary>
@@ -489,7 +485,7 @@
     [Group(typeof(MSG))]
     public class Loop_MSG_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -513,7 +509,7 @@
         [Pos(3)]
         public virtual NM1 NM1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -522,7 +518,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -561,7 +557,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -570,7 +566,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_273_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -602,7 +598,7 @@
         [Pos(4)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Insurance/Annuity Application Status
     /// </summary>
@@ -611,7 +607,7 @@
     [Message("X12", "273")]
     public class TS273 : EdiMessage, ITS273
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

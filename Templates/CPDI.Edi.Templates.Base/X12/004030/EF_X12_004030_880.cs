@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -61,7 +57,7 @@
         [Pos(6)]
         public virtual List<Loop_REF_880> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Detail - Invoice
     /// </summary>
@@ -70,7 +66,7 @@
     [Group(typeof(G17))]
     public class Loop_G17_880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -129,7 +125,7 @@
         [Pos(8)]
         public virtual List<Loop_G72_880> G72Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Detail - Invoice
     /// </summary>
@@ -138,7 +134,7 @@
     [Group(typeof(G17))]
     public class Loop_G17_880_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -157,7 +153,7 @@
         [Pos(2)]
         public virtual List<G19> G19 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Allowance or Charge
     /// </summary>
@@ -166,7 +162,7 @@
     [Group(typeof(G72))]
     public class Loop_G72_880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -185,7 +181,7 @@
         [Pos(2)]
         public virtual List<G73> G73 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -194,7 +190,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,7 +221,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -234,7 +230,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -271,7 +267,7 @@
         [Pos(5)]
         public virtual List<Loop_G17_880_2> G17Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Grocery Products Invoice
     /// </summary>
@@ -280,7 +276,7 @@
     [Message("X12", "880")]
     public class TS880 : EdiMessage, ITS880
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

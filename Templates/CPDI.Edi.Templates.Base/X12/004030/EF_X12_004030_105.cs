@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +50,7 @@
         [Pos(5)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -63,7 +59,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_105_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,7 +83,7 @@
         [Pos(3)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -96,7 +92,7 @@
     [Group(typeof(EFI))]
     public class Loop_EFI_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -114,7 +110,7 @@
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -123,7 +119,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -159,7 +155,7 @@
         [Pos(5)]
         public virtual List<Loop_EFI_105> EFILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -168,7 +164,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,7 +183,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -196,7 +192,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_105_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -215,7 +211,7 @@
         [Pos(2)]
         public virtual List<Loop_LQ_105> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -224,7 +220,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -308,7 +304,7 @@
         [Pos(13)]
         public virtual List<Loop_REF_105_2> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -317,7 +313,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -353,7 +349,7 @@
         [Pos(5)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -362,7 +358,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -411,7 +407,7 @@
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -420,7 +416,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_105_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -530,7 +526,7 @@
         [Pos(17)]
         public virtual List<Loop_LM_105_2> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Location ID Component
     /// </summary>
@@ -539,7 +535,7 @@
     [Group(typeof(NX2))]
     public class Loop_NX2_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -569,7 +565,7 @@
         [Pos(4)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -578,7 +574,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -596,7 +592,7 @@
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -605,7 +601,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_105_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -635,7 +631,7 @@
         [Pos(4)]
         public virtual CUR CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Business Entity Filings
     /// </summary>
@@ -644,7 +640,7 @@
     [Message("X12", "105")]
     public class TS105 : EdiMessage, ITS105
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

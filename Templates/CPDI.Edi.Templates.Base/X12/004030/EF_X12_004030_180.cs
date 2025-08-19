@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(BLI))]
     public class Loop_BLI_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -147,7 +143,7 @@
         [Pos(19)]
         public virtual List<Loop_FA1_180> FA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -156,7 +152,7 @@
     [Group(typeof(FA1))]
     public class Loop_FA1_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -175,7 +171,7 @@
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -184,7 +180,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -204,7 +200,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -213,7 +209,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -251,7 +247,7 @@
         [Pos(5)]
         public virtual List<Loop_LM_180> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -260,7 +256,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -299,7 +295,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -308,7 +304,7 @@
     [Group(typeof(QTY))]
     public class Loop_QTY_180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -353,7 +349,7 @@
         [Pos(6)]
         public virtual List<Loop_LX_180> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Return Merchandise Authorization and Notification
     /// </summary>
@@ -362,7 +358,7 @@
     [Message("X12", "180")]
     public class TS180 : EdiMessage, ITS180
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

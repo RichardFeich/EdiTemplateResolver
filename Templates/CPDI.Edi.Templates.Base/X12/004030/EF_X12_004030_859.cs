@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hazardous Material
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(H1))]
     public class Loop_H1_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<H2> H2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item - Quantity and Weight
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(L0))]
     public class Loop_L0_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(3)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -81,7 +77,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -216,7 +212,7 @@
         [Pos(20)]
         public virtual List<Loop_H1_859> H1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -225,7 +221,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -271,7 +267,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -280,7 +276,7 @@
     [Group(typeof(N7))]
     public class Loop_N7_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -338,7 +334,7 @@
         [Pos(8)]
         public virtual List<GA> GA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Details
     /// </summary>
@@ -347,7 +343,7 @@
     [Group(typeof(S5))]
     public class Loop_S5_859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -387,7 +383,7 @@
         [Pos(5)]
         public virtual List<Loop_N1_859> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Freight Invoice
     /// </summary>
@@ -396,7 +392,7 @@
     [Message("X12", "859")]
     public class TS859 : EdiMessage, ITS859
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

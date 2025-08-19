@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Motor Vehicle Control
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(VC))]
     public class Loop_VC_928
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<ID> ID { get; set; }
     }
-    
+
     /// <summary>
     /// Automotive Inspection Detail
     /// </summary>
@@ -46,7 +42,7 @@
     [Message("X12", "928")]
     public class TS928 : EdiMessage, ITS928
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

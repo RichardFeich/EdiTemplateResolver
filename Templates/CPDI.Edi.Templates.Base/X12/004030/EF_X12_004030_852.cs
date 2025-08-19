@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Performance Requirements
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(G95))]
     public class Loop_G95_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -109,7 +105,7 @@
         [Pos(9)]
         public virtual List<Loop_ZA_852> ZALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -118,7 +114,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -180,7 +176,7 @@
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Activity Reporting
     /// </summary>
@@ -189,7 +185,7 @@
     [Group(typeof(ZA))]
     public class Loop_ZA_852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -226,7 +222,7 @@
         [Pos(5)]
         public virtual Loop_G95_852 G95Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Product Activity Data
     /// </summary>
@@ -235,7 +231,7 @@
     [Message("X12", "852")]
     public class TS852 : EdiMessage, ITS852
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

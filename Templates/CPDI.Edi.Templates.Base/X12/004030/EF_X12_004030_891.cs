@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Adjustment
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ADX))]
     public class Loop_ADX_891
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_891
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,7 +67,7 @@
         [Pos(2)]
         public virtual List<Loop_N9_891> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -80,7 +76,7 @@
     [Group(typeof(N9))]
     public class Loop_N9_891
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +101,7 @@
         [Pos(3)]
         public virtual List<Loop_ADX_891> ADXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Deduction Research Report
     /// </summary>
@@ -114,7 +110,7 @@
     [Message("X12", "891")]
     public class TS891 : EdiMessage, ITS891
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

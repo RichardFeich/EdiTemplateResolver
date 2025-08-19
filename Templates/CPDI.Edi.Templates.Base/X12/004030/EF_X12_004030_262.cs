@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(III))]
     public class Loop_III_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +101,7 @@
         [Pos(8)]
         public virtual List<Loop_YNQ_262> YNQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Existing Real Estate Loan Specific Data
     /// </summary>
@@ -114,7 +110,7 @@
     [Group(typeof(LN2))]
     public class Loop_LN2_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -138,7 +134,7 @@
         [Pos(3)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -147,7 +143,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -213,7 +209,7 @@
         [Pos(9)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -222,7 +218,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -272,7 +268,7 @@
         [Pos(7)]
         public virtual List<Loop_IN1_262> IN1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Measurements
     /// </summary>
@@ -281,7 +277,7 @@
     [Group(typeof(MEA))]
     public class Loop_MEA_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -306,7 +302,7 @@
         [Pos(3)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -315,7 +311,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -358,7 +354,7 @@
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -367,7 +363,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -489,7 +485,7 @@
         [Pos(18)]
         public virtual List<Loop_RET_262> RETLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Housing Expense
     /// </summary>
@@ -498,7 +494,7 @@
     [Group(typeof(PEX))]
     public class Loop_PEX_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -522,7 +518,7 @@
         [Pos(3)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Real Estate Transaction
     /// </summary>
@@ -531,7 +527,7 @@
     [Group(typeof(RET))]
     public class Loop_RET_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -585,7 +581,7 @@
         [Pos(8)]
         public virtual List<Loop_LN2_262> LN2Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Yes/No Question
     /// </summary>
@@ -594,7 +590,7 @@
     [Group(typeof(YNQ))]
     public class Loop_YNQ_262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -627,7 +623,7 @@
         [Pos(4)]
         public virtual List<Loop_III_262> IIILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Information Report
     /// </summary>
@@ -636,7 +632,7 @@
     [Message("X12", "262")]
     public class TS262 : EdiMessage, ITS262
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

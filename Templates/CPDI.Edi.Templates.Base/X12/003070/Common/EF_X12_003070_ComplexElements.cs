@@ -1,11 +1,8 @@
-namespace EdiFabric.Templates.X12003070
+namespace CPDI.EdiFabric.Templates.Base.X12003070
 {
     using System;
     using System.Runtime.Serialization;
     using System.Xml.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi.X12;
 
 
     /// <summary>

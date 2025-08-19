@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +93,7 @@
         [Pos(12)]
         public virtual Loop_LS_285 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -106,7 +102,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_285_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -197,7 +193,7 @@
         [Pos(14)]
         public virtual List<Loop_TC2_285> TC2Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -206,7 +202,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -231,7 +227,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Geographic Location
     /// </summary>
@@ -240,7 +236,7 @@
     [Group(typeof(N4))]
     public class Loop_N4_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -258,7 +254,7 @@
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -267,7 +263,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -322,7 +318,7 @@
         [Pos(8)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -331,7 +327,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -356,7 +352,7 @@
         [Pos(3)]
         public virtual List<Loop_LM_285> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Commodity
     /// </summary>
@@ -365,7 +361,7 @@
     [Group(typeof(TC2))]
     public class Loop_TC2_285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -395,7 +391,7 @@
         [Pos(4)]
         public virtual List<Loop_N4_285> N4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Commercial Vehicle Safety and Credentials Information Exchange
     /// </summary>
@@ -404,7 +400,7 @@
     [Message("X12", "285")]
     public class TS285 : EdiMessage, ITS285
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

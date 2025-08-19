@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +73,7 @@
         [Pos(8)]
         public virtual List<Loop_OID_163> OIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Order Identification Detail
     /// </summary>
@@ -86,7 +82,7 @@
     [Group(typeof(OID))]
     public class Loop_OID_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +101,7 @@
         [Pos(2)]
         public virtual List<SDQ> SDQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Details
     /// </summary>
@@ -114,7 +110,7 @@
     [Group(typeof(S5))]
     public class Loop_S5_163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -186,7 +182,7 @@
         [Pos(10)]
         public virtual List<Loop_OID_163> OIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Appointment Schedule Information
     /// </summary>
@@ -195,7 +191,7 @@
     [Message("X12", "163")]
     public class TS163 : EdiMessage, ITS163
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

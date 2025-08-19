@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<Loop_LIN_877> LINLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Numbers
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(G28))]
     public class Loop_G28_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +60,7 @@
         [Pos(2)]
         public virtual G69 G69 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -73,7 +69,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -91,7 +87,7 @@
         [Pos(2)]
         public virtual List<Loop_G28_877> G28Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Manufacturer Coupon Family Code Structure
     /// </summary>
@@ -100,7 +96,7 @@
     [Message("X12", "877")]
     public class TS877 : EdiMessage, ITS877
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Electronic Systems Environment
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ENE))]
     public class Loop_ENE_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +38,7 @@
         [Pos(3)]
         public virtual List<Loop_TXN_838> TXNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Place/Location Description
     /// </summary>
@@ -51,7 +47,7 @@
     [Group(typeof(LCD))]
     public class Loop_LCD_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,7 +83,7 @@
         [Pos(5)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -96,7 +92,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -115,7 +111,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -124,7 +120,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -149,7 +145,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -158,7 +154,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -200,7 +196,7 @@
         [Pos(6)]
         public virtual List<Loop_ENE_838> ENELoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -209,7 +205,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -338,7 +334,7 @@
         [Pos(20)]
         public virtual List<Loop_LM_838> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -347,7 +343,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_838_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -403,7 +399,7 @@
         [Pos(8)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period Amount
     /// </summary>
@@ -412,7 +408,7 @@
     [Group(typeof(PAM))]
     public class Loop_PAM_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -442,7 +438,7 @@
         [Pos(4)]
         public virtual List<CUR> CUR { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Supplier Rating
     /// </summary>
@@ -451,7 +447,7 @@
     [Group(typeof(SPR))]
     public class Loop_SPR_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -475,7 +471,7 @@
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trading Partner Detail
     /// </summary>
@@ -484,7 +480,7 @@
     [Group(typeof(TPD))]
     public class Loop_TPD_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -526,7 +522,7 @@
         [Pos(6)]
         public virtual List<Loop_SPR_838> SPRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trade Union Data
     /// </summary>
@@ -535,7 +531,7 @@
     [Group(typeof(TUD))]
     public class Loop_TUD_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -585,7 +581,7 @@
         [Pos(7)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Transaction Capabilities
     /// </summary>
@@ -594,7 +590,7 @@
     [Group(typeof(TXN))]
     public class Loop_TXN_838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -618,7 +614,7 @@
         [Pos(3)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Trading Partner Profile
     /// </summary>
@@ -627,7 +623,7 @@
     [Message("X12", "838")]
     public class TS838 : EdiMessage, ITS838
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

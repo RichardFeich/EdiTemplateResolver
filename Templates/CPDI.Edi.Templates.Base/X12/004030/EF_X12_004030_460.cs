@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,7 +48,7 @@
         [Pos(4)]
         public virtual List<Loop_R9_460> R9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Patron
     /// </summary>
@@ -61,7 +57,7 @@
     [Group(typeof(PT))]
     public class Loop_PT_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -93,7 +89,7 @@
         [Pos(4)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Junctions and Proportions
     /// </summary>
@@ -102,7 +98,7 @@
     [Group(typeof(R2B))]
     public class Loop_R2B_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -121,7 +117,7 @@
         [Pos(2)]
         public virtual List<R2C> R2C { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Route Code
     /// </summary>
@@ -130,7 +126,7 @@
     [Group(typeof(R9))]
     public class Loop_R9_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -156,7 +152,7 @@
         [Pos(3)]
         public virtual List<Loop_R2B_460> R2BLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Level
     /// </summary>
@@ -165,7 +161,7 @@
     [Group(typeof(SB))]
     public class Loop_SB_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -192,7 +188,7 @@
         [Pos(3)]
         public virtual List<Loop_SC_460> SCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Sub-level
     /// </summary>
@@ -201,7 +197,7 @@
     [Group(typeof(SC))]
     public class Loop_SC_460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -242,7 +238,7 @@
         [Pos(5)]
         public virtual List<Loop_LX_460> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Price Distribution Request or Response
     /// </summary>
@@ -251,7 +247,7 @@
     [Message("X12", "460")]
     public class TS460 : EdiMessage, ITS460
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

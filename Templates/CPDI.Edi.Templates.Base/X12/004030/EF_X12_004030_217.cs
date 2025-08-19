@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_217
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +40,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -53,7 +49,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_217_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -79,7 +75,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -88,7 +84,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_217
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +131,7 @@
         [Pos(6)]
         public virtual List<RST> RST { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -144,7 +140,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_217_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -190,7 +186,7 @@
         [Pos(6)]
         public virtual List<RST> RST { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -199,7 +195,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_217
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -236,7 +232,7 @@
         [Pos(5)]
         public virtual G61 G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -245,7 +241,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_217_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -277,7 +273,7 @@
         [Pos(4)]
         public virtual Loop_LS_217_2 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Loading and Route Guide
     /// </summary>
@@ -286,7 +282,7 @@
     [Message("X12", "217")]
     public class TS217 : EdiMessage, ITS217
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,4 +1,4 @@
-﻿namespace EdiFabric.Templates.X12004000_Ace
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004000_Ace
 {
     using System;
     using System.Runtime.Serialization;

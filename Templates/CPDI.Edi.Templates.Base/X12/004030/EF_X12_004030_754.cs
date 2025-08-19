@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -75,7 +71,7 @@
         [Pos(8)]
         public virtual Loop_N1_754 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -84,7 +80,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -115,7 +111,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -124,7 +120,7 @@
     [Group(typeof(QTY))]
     public class Loop_QTY_754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +138,7 @@
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Routing Instructions
     /// </summary>
@@ -151,7 +147,7 @@
     [Message("X12", "754")]
     public class TS754 : EdiMessage, ITS754
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

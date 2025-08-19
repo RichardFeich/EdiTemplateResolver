@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Informational Values
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AM1))]
     public class Loop_AM1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57,7 +53,7 @@
         [Pos(5)]
         public virtual List<Loop_AMT_256> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -66,7 +62,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -97,7 +93,7 @@
         [Pos(4)]
         public virtual List<Loop_RPA_256> RPALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -106,7 +102,7 @@
     [Group(typeof(BLI))]
     public class Loop_BLI_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +157,7 @@
         [Pos(8)]
         public virtual List<Loop_AM1_256> AM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -170,7 +166,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -246,7 +242,7 @@
         [Pos(11)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -255,7 +251,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -312,7 +308,7 @@
         [Pos(8)]
         public virtual List<Loop_ENT_256> ENTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -321,7 +317,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -360,7 +356,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -369,7 +365,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_256_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -421,7 +417,7 @@
         [Pos(7)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Amounts or Percents
     /// </summary>
@@ -430,7 +426,7 @@
     [Group(typeof(RPA))]
     public class Loop_RPA_256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -449,7 +445,7 @@
         [Pos(2)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Periodic Compensation
     /// </summary>
@@ -458,7 +454,7 @@
     [Message("X12", "256")]
     public class TS256 : EdiMessage, ITS256
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

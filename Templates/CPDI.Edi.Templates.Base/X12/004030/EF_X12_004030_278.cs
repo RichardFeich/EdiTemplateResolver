@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_278
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -155,7 +151,7 @@
         [Pos(21)]
         public virtual List<Loop_NM1_278> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -164,7 +160,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_278
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -240,7 +236,7 @@
         [Pos(11)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Services Review Information
     /// </summary>
@@ -249,7 +245,7 @@
     [Message("X12", "278")]
     public class TS278 : EdiMessage, ITS278
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

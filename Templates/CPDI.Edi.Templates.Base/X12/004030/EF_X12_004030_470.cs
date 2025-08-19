@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Load and Equipment Type
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LET))]
     public class Loop_LET_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(7)]
         public virtual List<Loop_LX_470> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -81,7 +77,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,7 +103,7 @@
         [Pos(3)]
         public virtual List<L5> L5 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -116,7 +112,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -152,7 +148,7 @@
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Clearance
     /// </summary>
@@ -161,7 +157,7 @@
     [Message("X12", "470")]
     public class TS470 : EdiMessage, ITS470
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

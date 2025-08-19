@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_883
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +34,7 @@
         [Pos(2)]
         public virtual List<Loop_UIT_883> UITLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -47,7 +43,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_883_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,7 +61,7 @@
         [Pos(2)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -74,7 +70,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_883
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -106,7 +102,7 @@
         [Pos(4)]
         public virtual List<Loop_N1_883_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -115,7 +111,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_883
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -154,7 +150,7 @@
         [Pos(5)]
         public virtual List<Loop_LIN_883_2> LINLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -163,7 +159,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_883_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -188,7 +184,7 @@
         [Pos(3)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Unit Detail
     /// </summary>
@@ -197,7 +193,7 @@
     [Group(typeof(UIT))]
     public class Loop_UIT_883
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -223,7 +219,7 @@
         [Pos(3)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Market Development Fund Allocation
     /// </summary>
@@ -232,7 +228,7 @@
     [Message("X12", "883")]
     public class TS883 : EdiMessage, ITS883
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

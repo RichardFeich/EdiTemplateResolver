@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.EdiFabric.Utilities.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.Edi.X12.Abstractions", "Templates\CPDI.Edi.X12.Abstractions\CPDI.Edi.X12.Abstractions.csproj", "{8197A3AE-F3E1-4D6A-A9C0-D82152275284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.Edi.Templates.Base", "Templates\CPDI.Edi.Templates.Base\CPDI.Edi.Templates.Base.csproj", "{A94EBC8F-F837-9243-C73B-B0A4F0767D20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.EdiFabric.Templates.Base", "Templates\CPDI.Edi.Templates.Base\CPDI.EdiFabric.Templates.Base.csproj", "{A94EBC8F-F837-9243-C73B-B0A4F0767D20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPDI.EdiFabric.Templates.Acme", "Templates\CPDI.EdiFabric.Templates.Acme\CPDI.EdiFabric.Templates.Acme.csproj", "{B6475716-0DFA-4B79-91C6-53654FA6F942}"
 EndProject

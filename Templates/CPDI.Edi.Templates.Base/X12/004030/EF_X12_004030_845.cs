@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contract Number Detail
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CON))]
     public class Loop_CON_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -76,7 +72,7 @@
         [Pos(8)]
         public virtual List<Loop_PAD_845> PADLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Pricing Information
     /// </summary>
@@ -85,7 +81,7 @@
     [Group(typeof(CTP))]
     public class Loop_CTP_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -118,7 +114,7 @@
         [Pos(4)]
         public virtual List<Loop_N1_845_3> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -127,7 +123,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -152,7 +148,7 @@
         [Pos(3)]
         public virtual List<SLN> SLN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -161,7 +157,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -214,7 +210,7 @@
         [Pos(7)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -223,7 +219,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_845_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -283,7 +279,7 @@
         [Pos(8)]
         public virtual List<CTB> CTB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -292,7 +288,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_845_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -338,7 +334,7 @@
         [Pos(6)]
         public virtual List<CTB> CTB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product Adjustment Detail
     /// </summary>
@@ -347,7 +343,7 @@
     [Group(typeof(PAD))]
     public class Loop_PAD_845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -445,7 +441,7 @@
         [Pos(14)]
         public virtual List<Loop_CTP_845> CTPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Price Authorization Acknowledgment/Status
     /// </summary>
@@ -454,7 +450,7 @@
     [Message("X12", "845")]
     public class TS845 : EdiMessage, ITS845
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

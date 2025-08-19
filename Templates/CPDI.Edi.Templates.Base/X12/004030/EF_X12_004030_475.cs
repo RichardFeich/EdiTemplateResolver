@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Route Code
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(R9))]
     public class Loop_R9_475
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +47,7 @@
         [Pos(4)]
         public virtual List<RDD> RDD { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Route File Maintenance
     /// </summary>
@@ -60,7 +56,7 @@
     [Message("X12", "475")]
     public class TS475 : EdiMessage, ITS475
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

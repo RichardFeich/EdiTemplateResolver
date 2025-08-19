@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Student Activities and Awards
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ATV))]
     public class Loop_ATV_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Course Record
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(CRS))]
     public class Loop_CRS_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -111,7 +107,7 @@
         [Pos(9)]
         public virtual List<Loop_MKS_130> MKSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Degree Record
     /// </summary>
@@ -120,7 +116,7 @@
     [Group(typeof(DEG))]
     public class Loop_DEG_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -159,7 +155,7 @@
         [Pos(5)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Health Condition
     /// </summary>
@@ -168,7 +164,7 @@
     [Group(typeof(HC))]
     public class Loop_HC_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -210,7 +206,7 @@
         [Pos(6)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -219,7 +215,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -273,7 +269,7 @@
         [Pos(7)]
         public virtual NTE NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -282,7 +278,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -329,7 +325,7 @@
         [Pos(6)]
         public virtual List<Loop_SES_130> SESLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Marks Awarded
     /// </summary>
@@ -338,7 +334,7 @@
     [Group(typeof(MKS))]
     public class Loop_MKS_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -356,7 +352,7 @@
         [Pos(2)]
         public virtual LUI LUI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -365,7 +361,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -401,7 +397,7 @@
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Address Information
     /// </summary>
@@ -410,7 +406,7 @@
     [Group(typeof(N3))]
     public class Loop_N3_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -428,7 +424,7 @@
         [Pos(2)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Program Subject Area and Eligibility
     /// </summary>
@@ -437,7 +433,7 @@
     [Group(typeof(OPS))]
     public class Loop_OPS_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -463,7 +459,7 @@
         [Pos(3)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subtest
     /// </summary>
@@ -472,7 +468,7 @@
     [Group(typeof(SBT))]
     public class Loop_SBT_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -498,7 +494,7 @@
         [Pos(3)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Academic Session Header
     /// </summary>
@@ -507,7 +503,7 @@
     [Group(typeof(SES))]
     public class Loop_SES_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -571,7 +567,7 @@
         [Pos(9)]
         public virtual List<Loop_DEG_130> DEGLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Special Program
     /// </summary>
@@ -580,7 +576,7 @@
     [Group(typeof(SP))]
     public class Loop_SP_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -623,7 +619,7 @@
         [Pos(6)]
         public virtual List<Loop_OPS_130> OPSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Student Academic Status
     /// </summary>
@@ -632,7 +628,7 @@
     [Group(typeof(SST))]
     public class Loop_SST_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -669,7 +665,7 @@
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Academic Summary
     /// </summary>
@@ -678,7 +674,7 @@
     [Group(typeof(SUM))]
     public class Loop_SUM_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -697,7 +693,7 @@
         [Pos(2)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Test Score Record
     /// </summary>
@@ -706,7 +702,7 @@
     [Group(typeof(TST))]
     public class Loop_TST_130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -724,7 +720,7 @@
         [Pos(2)]
         public virtual List<Loop_SBT_130> SBTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Student Educational Record (Transcript)
     /// </summary>
@@ -733,7 +729,7 @@
     [Message("X12", "130")]
     public class TS130 : EdiMessage, ITS130
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

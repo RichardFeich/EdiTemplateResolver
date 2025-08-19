@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Advance Car Disposition
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(E6))]
     public class Loop_E6_419
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +38,7 @@
         [Pos(3)]
         public virtual W5 W5 { get; set; }
     }
-    
+
     /// <summary>
     /// Advance Car Disposition
     /// </summary>
@@ -51,7 +47,7 @@
     [Message("X12", "419")]
     public class TS419 : EdiMessage, ITS419
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

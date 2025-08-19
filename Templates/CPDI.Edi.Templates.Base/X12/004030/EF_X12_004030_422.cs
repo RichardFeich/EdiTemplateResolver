@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Origin Station
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(F9))]
     public class Loop_F9_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -52,7 +48,7 @@
         [Pos(4)]
         public virtual List<Loop_SCR_422> SCRLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -61,7 +57,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -79,7 +75,7 @@
         [Pos(2)]
         public virtual N9 N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -88,7 +84,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -114,7 +110,7 @@
         [Pos(3)]
         public virtual List<Loop_F9_422> F9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -123,7 +119,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +157,7 @@
         [Pos(5)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -170,7 +166,7 @@
     [Group(typeof(N7))]
     public class Loop_N7_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -195,7 +191,7 @@
         [Pos(3)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Shipper's Car Ordered Rail
     /// </summary>
@@ -204,7 +200,7 @@
     [Group(typeof(SCR))]
     public class Loop_SCR_422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -273,7 +269,7 @@
         [Pos(9)]
         public virtual List<Loop_N7_422> N7Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Shipper's Car Order
     /// </summary>
@@ -282,7 +278,7 @@
     [Message("X12", "422")]
     public class TS422 : EdiMessage, ITS422
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

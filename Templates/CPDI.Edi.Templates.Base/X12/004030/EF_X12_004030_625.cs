@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Characteristic/Class ID
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CID))]
     public class Loop_CID_625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -42,7 +38,7 @@
         [Pos(3)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -51,7 +47,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -117,7 +113,7 @@
         [Pos(10)]
         public virtual List<Loop_LM_625> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Event Location
     /// </summary>
@@ -126,7 +122,7 @@
     [Group(typeof(LIE))]
     public class Loop_LIE_625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -151,7 +147,7 @@
         [Pos(3)]
         public virtual List<MEA> MEA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -160,7 +156,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -179,7 +175,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -188,7 +184,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -224,7 +220,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Well Information
     /// </summary>
@@ -233,7 +229,7 @@
     [Message("X12", "625")]
     public class TS625 : EdiMessage, ITS625
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

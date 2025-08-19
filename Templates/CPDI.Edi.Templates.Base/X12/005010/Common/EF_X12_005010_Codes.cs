@@ -1,8 +1,7 @@
-namespace EdiFabric.Templates.X12005010
+namespace CPDI.EdiFabric.Templates.Base.X12005010
 {
     using System;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
 
     /// <summary>
     /// Car Hire Detail/Summary Code

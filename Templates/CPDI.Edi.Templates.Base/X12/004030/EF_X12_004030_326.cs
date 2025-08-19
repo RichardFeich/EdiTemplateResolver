@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(N7))]
     public class Loop_N7_326
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<VC> VC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port or Terminal
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(R4))]
     public class Loop_R4_326
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +60,7 @@
         [Pos(2)]
         public virtual DTM DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Vessel Identification
     /// </summary>
@@ -73,7 +69,7 @@
     [Group(typeof(V1))]
     public class Loop_V1_326
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -126,7 +122,7 @@
         [Pos(7)]
         public virtual List<Loop_R4_326> R4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Consignment Summary List
     /// </summary>
@@ -135,7 +131,7 @@
     [Message("X12", "326")]
     public class TS326 : EdiMessage, ITS326
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Miscellaneous and Accessorial Charges
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(MC))]
     public class Loop_MC_485
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<FK> FK { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Rate Header
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(RA))]
     public class Loop_RA_485
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -79,7 +75,7 @@
         [Pos(4)]
         public virtual List<SW> SW { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Docket Sub-level
     /// </summary>
@@ -88,7 +84,7 @@
     [Group(typeof(SC))]
     public class Loop_SC_485
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -107,7 +103,7 @@
         [Pos(2)]
         public virtual List<Loop_RA_485> RALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Ratemaking Action
     /// </summary>
@@ -116,7 +112,7 @@
     [Message("X12", "485")]
     public class TS485 : EdiMessage, ITS485
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

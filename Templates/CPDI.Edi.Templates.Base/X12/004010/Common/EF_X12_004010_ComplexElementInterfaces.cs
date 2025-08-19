@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12004010
+namespace CPDI.EdiFabric.Templates.Base.X12004010
 {
 
 

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(EFI))]
     public class Loop_EFI_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(FGS))]
     public class Loop_FGS_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -94,7 +90,7 @@
         [Pos(7)]
         public virtual List<Loop_LQ_197> LQLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -103,7 +99,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +138,7 @@
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -151,7 +147,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_197_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -184,7 +180,7 @@
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -193,7 +189,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -230,7 +226,7 @@
         [Pos(5)]
         public virtual List<Loop_IN1_197_2> IN1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -239,7 +235,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -257,7 +253,7 @@
         [Pos(2)]
         public virtual G86 G86 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -266,7 +262,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -312,7 +308,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -321,7 +317,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -357,7 +353,7 @@
         [Pos(5)]
         public virtual List<Loop_EFI_197> EFILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -366,7 +362,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -397,7 +393,7 @@
         [Pos(4)]
         public virtual List<PDE> PDE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -406,7 +402,7 @@
     [Group(typeof(PID))]
     public class Loop_PID_197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -465,7 +461,7 @@
         [Pos(8)]
         public virtual Loop_LX_197 LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Title Evidence
     /// </summary>
@@ -474,7 +470,7 @@
     [Message("X12", "197")]
     public class TS197 : EdiMessage, ITS197
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_453
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +40,7 @@
         [Pos(3)]
         public virtual List<ISC> ISC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Requested Service Schedule
     /// </summary>
@@ -53,7 +49,7 @@
     [Group(typeof(SR))]
     public class Loop_SR_453
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -72,7 +68,7 @@
         [Pos(2)]
         public virtual List<Loop_LX_453> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Service Commitment Advice
     /// </summary>
@@ -81,7 +77,7 @@
     [Message("X12", "453")]
     public class TS453 : EdiMessage, ITS453
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

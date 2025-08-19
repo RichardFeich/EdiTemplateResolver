@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +56,7 @@
         [Pos(6)]
         public virtual List<Loop_TRN_276> TRNLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -69,7 +65,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -114,7 +110,7 @@
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -123,7 +119,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_276_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -154,7 +150,7 @@
         [Pos(4)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service Information
     /// </summary>
@@ -163,7 +159,7 @@
     [Group(typeof(SVC))]
     public class Loop_SVC_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,7 +183,7 @@
         [Pos(3)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Trace
     /// </summary>
@@ -196,7 +192,7 @@
     [Group(typeof(TRN))]
     public class Loop_TRN_276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -234,7 +230,7 @@
         [Pos(5)]
         public virtual List<Loop_SVC_276> SVCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Health Care Claim Status Request
     /// </summary>
@@ -243,7 +239,7 @@
     [Message("X12", "276")]
     public class TS276 : EdiMessage, ITS276
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

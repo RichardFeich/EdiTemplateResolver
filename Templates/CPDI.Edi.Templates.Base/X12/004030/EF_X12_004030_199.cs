@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -67,7 +63,7 @@
         [Pos(7)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -76,7 +72,7 @@
     [Group(typeof(FGS))]
     public class Loop_FGS_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -94,7 +90,7 @@
         [Pos(2)]
         public virtual List<Loop_AMT_199> AMTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -103,7 +99,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +138,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -151,7 +147,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -221,7 +217,7 @@
         [Pos(10)]
         public virtual List<Loop_FGS_199> FGSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -230,7 +226,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -276,7 +272,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -285,7 +281,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -317,7 +313,7 @@
         [Pos(4)]
         public virtual List<PDE> PDE { get; set; }
     }
-    
+
     /// <summary>
     /// Real Estate Settlement Information
     /// </summary>
@@ -326,7 +322,7 @@
     [Message("X12", "199")]
     public class TS199 : EdiMessage, ITS199
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

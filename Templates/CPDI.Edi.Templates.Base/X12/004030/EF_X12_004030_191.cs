@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Entity
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ENT))]
     public class Loop_ENT_191
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -104,7 +100,7 @@
         [Pos(12)]
         public virtual List<Loop_REF_191> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -113,7 +109,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_191
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -165,7 +161,7 @@
         [Pos(7)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -174,7 +170,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_191_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -220,7 +216,7 @@
         [Pos(6)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -229,7 +225,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_191
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -295,7 +291,7 @@
         [Pos(9)]
         public virtual List<Loop_IN1_191_2> IN1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Student Loan Pre-Claims and Claims
     /// </summary>
@@ -304,7 +300,7 @@
     [Message("X12", "191")]
     public class TS191 : EdiMessage, ITS191
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

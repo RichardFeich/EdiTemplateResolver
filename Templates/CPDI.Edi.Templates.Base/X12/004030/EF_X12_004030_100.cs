@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Informational Values
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AM1))]
     public class Loop_AM1_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(BLI))]
     public class Loop_BLI_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -87,7 +83,7 @@
         [Pos(6)]
         public virtual List<Loop_SI_100> SILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -96,7 +92,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -159,7 +155,7 @@
         [Pos(9)]
         public virtual List<Loop_PID_100> PIDLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Geographic Location
     /// </summary>
@@ -168,7 +164,7 @@
     [Group(typeof(N4))]
     public class Loop_N4_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -199,7 +195,7 @@
         [Pos(4)]
         public virtual List<Loop_PO1_100_2> PO1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -208,7 +204,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -247,7 +243,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Administrative Communications Contact
     /// </summary>
@@ -256,7 +252,7 @@
     [Group(typeof(PER))]
     public class Loop_PER_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -281,7 +277,7 @@
         [Pos(3)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Product/Item Description
     /// </summary>
@@ -290,7 +286,7 @@
     [Group(typeof(PID))]
     public class Loop_PID_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -345,7 +341,7 @@
         [Pos(8)]
         public virtual List<Loop_N4_100> N4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -354,7 +350,7 @@
     [Group(typeof(PO1))]
     public class Loop_PO1_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -386,7 +382,7 @@
         [Pos(4)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -395,7 +391,7 @@
     [Group(typeof(PO1))]
     public class Loop_PO1_100_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -420,7 +416,7 @@
         [Pos(3)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Service Characteristic Identification
     /// </summary>
@@ -429,7 +425,7 @@
     [Group(typeof(SI))]
     public class Loop_SI_100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -453,7 +449,7 @@
         [Pos(3)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Insurance Plan Description
     /// </summary>
@@ -462,7 +458,7 @@
     [Message("X12", "100")]
     public class TS100 : EdiMessage, ITS100
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Informational Values
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AM1))]
     public class Loop_AM1_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,7 +74,7 @@
         [Pos(9)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -87,7 +83,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -225,7 +221,7 @@
         [Pos(22)]
         public virtual List<Loop_NX1_111> NX1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Information
     /// </summary>
@@ -234,7 +230,7 @@
     [Group(typeof(III))]
     public class Loop_III_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -252,7 +248,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Address Information
     /// </summary>
@@ -261,7 +257,7 @@
     [Group(typeof(N3))]
     public class Loop_N3_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -285,7 +281,7 @@
         [Pos(3)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -294,7 +290,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -333,7 +329,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -342,7 +338,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_111_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -373,7 +369,7 @@
         [Pos(4)]
         public virtual List<Loop_N3_111> N3Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -382,7 +378,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -424,7 +420,7 @@
         [Pos(6)]
         public virtual List<IN1> IN1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Payment Details
     /// </summary>
@@ -433,7 +429,7 @@
     [Group(typeof(PDL))]
     public class Loop_PDL_111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -451,7 +447,7 @@
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Individual Insurance Policy and Client Information
     /// </summary>
@@ -460,7 +456,7 @@
     [Message("X12", "111")]
     public class TS111 : EdiMessage, ITS111
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

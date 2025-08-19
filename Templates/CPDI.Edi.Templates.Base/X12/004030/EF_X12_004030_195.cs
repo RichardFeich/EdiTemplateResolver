@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Conditions Indicator
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(CRC))]
     public class Loop_CRC_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -63,7 +59,7 @@
         [Pos(2)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Conditions Indicator
     /// </summary>
@@ -72,7 +68,7 @@
     [Group(typeof(CRC))]
     public class Loop_CRC_195_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -90,7 +86,7 @@
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Conditions Indicator
     /// </summary>
@@ -99,7 +95,7 @@
     [Group(typeof(CRC))]
     public class Loop_CRC_195_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +131,7 @@
         [Pos(5)]
         public virtual List<Loop_N1_195_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -144,7 +140,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -175,7 +171,7 @@
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -184,7 +180,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_195_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -215,7 +211,7 @@
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -224,7 +220,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_195_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -243,7 +239,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Measurements
     /// </summary>
@@ -252,7 +248,7 @@
     [Group(typeof(MEA))]
     public class Loop_MEA_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -270,7 +266,7 @@
         [Pos(2)]
         public virtual List<LIE> LIE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -279,7 +275,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -354,7 +350,7 @@
         [Pos(11)]
         public virtual List<Loop_LM_195> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -363,7 +359,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_195_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -395,7 +391,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Baseline Item Data
     /// </summary>
@@ -404,7 +400,7 @@
     [Group(typeof(PO1))]
     public class Loop_PO1_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -452,7 +448,7 @@
         [Pos(7)]
         public virtual List<Loop_CRC_195_3> CRCLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -461,7 +457,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -485,7 +481,7 @@
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -494,7 +490,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_195_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -512,7 +508,7 @@
         [Pos(2)]
         public virtual List<LIE> LIE { get; set; }
     }
-    
+
     /// <summary>
     /// Federal Communications Commission (FCC) License Application
     /// </summary>
@@ -521,7 +517,7 @@
     [Message("X12", "195")]
     public class TS195 : EdiMessage, ITS195
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

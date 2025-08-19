@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_455
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -60,7 +56,7 @@
         [Pos(6)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Railroad Parameter Trace Registration
     /// </summary>
@@ -69,7 +65,7 @@
     [Message("X12", "455")]
     public class TS455 : EdiMessage, ITS455
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

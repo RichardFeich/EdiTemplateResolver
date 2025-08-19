@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_854
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -44,7 +40,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -53,7 +49,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_854
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -91,7 +87,7 @@
         [Pos(5)]
         public virtual List<Loop_N1_854_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -100,7 +96,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_854
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -145,7 +141,7 @@
         [Pos(6)]
         public virtual List<N9> N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -154,7 +150,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_854_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -200,7 +196,7 @@
         [Pos(6)]
         public virtual List<Loop_Q8_854> Q8Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -209,7 +205,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_854_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -241,7 +237,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Detail Delivery Exception Information
     /// </summary>
@@ -250,7 +246,7 @@
     [Group(typeof(Q8))]
     public class Loop_Q8_854
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -280,7 +276,7 @@
         [Pos(4)]
         public virtual Loop_LS_854 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Shipment Delivery Discrepancy Information
     /// </summary>
@@ -289,7 +285,7 @@
     [Message("X12", "854")]
     public class TS854 : EdiMessage, ITS854
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

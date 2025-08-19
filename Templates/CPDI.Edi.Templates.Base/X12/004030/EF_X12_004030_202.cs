@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Amount and Settlement Method
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ASM))]
     public class Loop_ASM_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Conditions Indicator
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(CRC))]
     public class Loop_CRC_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -123,7 +119,7 @@
         [Pos(10)]
         public virtual List<Loop_SCM_202> SCMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Delivery Execution Information
     /// </summary>
@@ -132,7 +128,7 @@
     [Group(typeof(DEX))]
     public class Loop_DEX_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -219,7 +215,7 @@
         [Pos(12)]
         public virtual List<Loop_NM1_202> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Insurer or Guarantor Information
     /// </summary>
@@ -228,7 +224,7 @@
     [Group(typeof(IGI))]
     public class Loop_IGI_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -253,7 +249,7 @@
         [Pos(3)]
         public virtual List<PCT> PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loan Specific Data
     /// </summary>
@@ -262,7 +258,7 @@
     [Group(typeof(LN1))]
     public class Loop_LN1_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -294,7 +290,7 @@
         [Pos(4)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -303,7 +299,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -456,7 +452,7 @@
         [Pos(22)]
         public virtual List<Loop_UWI_202> UWILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -465,7 +461,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -510,7 +506,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -519,7 +515,7 @@
     [Group(typeof(N9))]
     public class Loop_N9_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -538,7 +534,7 @@
         [Pos(2)]
         public virtual List<Loop_DEX_202> DEXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -547,7 +543,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -566,7 +562,7 @@
         [Pos(2)]
         public virtual List<Loop_LX_202> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -575,7 +571,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -607,7 +603,7 @@
         [Pos(4)]
         public virtual List<PDS> PDS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period Amount
     /// </summary>
@@ -616,7 +612,7 @@
     [Group(typeof(PAM))]
     public class Loop_PAM_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -642,7 +638,7 @@
         [Pos(3)]
         public virtual REF REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Credit Score Model
     /// </summary>
@@ -651,7 +647,7 @@
     [Group(typeof(SCM))]
     public class Loop_SCM_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -670,7 +666,7 @@
         [Pos(2)]
         public virtual List<SCS> SCS { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Underwriting Information
     /// </summary>
@@ -679,7 +675,7 @@
     [Group(typeof(UWI))]
     public class Loop_UWI_202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -710,7 +706,7 @@
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Secondary Mortgage Market Loan Delivery
     /// </summary>
@@ -719,7 +715,7 @@
     [Message("X12", "202")]
     public class TS202 : EdiMessage, ITS202
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

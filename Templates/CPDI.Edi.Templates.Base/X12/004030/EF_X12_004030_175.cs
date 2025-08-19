@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Case Description
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CDS))]
     public class Loop_CDS_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,7 +45,7 @@
         [Pos(4)]
         public virtual Loop_LS_175 LSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Administration of Justice Event Description
     /// </summary>
@@ -58,7 +54,7 @@
     [Group(typeof(CED))]
     public class Loop_CED_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -136,7 +132,7 @@
         [Pos(12)]
         public virtual List<Loop_NM1_175> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -145,7 +141,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -164,7 +160,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -173,7 +169,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -199,7 +195,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -208,7 +204,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -238,7 +234,7 @@
         [Pos(4)]
         public virtual List<Loop_LM_175> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -247,7 +243,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -321,7 +317,7 @@
         [Pos(11)]
         public virtual List<Loop_LX_175> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Court and Law Enforcement Notice
     /// </summary>
@@ -330,7 +326,7 @@
     [Message("X12", "175")]
     public class TS175 : EdiMessage, ITS175
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

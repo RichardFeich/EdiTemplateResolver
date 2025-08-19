@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Income
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AIN))]
     public class Loop_AIN_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual DTP DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Activity or Process Information
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(API))]
     public class Loop_API_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -64,7 +60,7 @@
         [Pos(2)]
         public virtual List<Loop_N1_198_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Consumer Credit Account
     /// </summary>
@@ -73,7 +69,7 @@
     [Group(typeof(CDA))]
     public class Loop_CDA_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,7 +108,7 @@
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Date or Time or Period
     /// </summary>
@@ -121,7 +117,7 @@
     [Group(typeof(DTP))]
     public class Loop_DTP_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -139,7 +135,7 @@
         [Pos(2)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Financial Asset Account
     /// </summary>
@@ -148,7 +144,7 @@
     [Group(typeof(FAA))]
     public class Loop_FAA_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -186,7 +182,7 @@
         [Pos(5)]
         public virtual List<Loop_DTP_198> DTPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -195,7 +191,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -242,7 +238,7 @@
         [Pos(6)]
         public virtual List<Loop_API_198> APILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -251,7 +247,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -296,7 +292,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -305,7 +301,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_198_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -369,7 +365,7 @@
         [Pos(9)]
         public virtual List<Loop_PWK_198> PWKLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -378,7 +374,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -458,7 +454,7 @@
         [Pos(11)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Paperwork
     /// </summary>
@@ -467,7 +463,7 @@
     [Group(typeof(PWK))]
     public class Loop_PWK_198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -536,7 +532,7 @@
         [Pos(10)]
         public virtual List<Loop_CDA_198> CDALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loan Verification Information
     /// </summary>
@@ -545,7 +541,7 @@
     [Message("X12", "198")]
     public class TS198 : EdiMessage, ITS198
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

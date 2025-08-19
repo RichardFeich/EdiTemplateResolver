@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_153
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -84,7 +80,7 @@
         [Pos(10)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -93,7 +89,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_153
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -153,7 +149,7 @@
         [Pos(9)]
         public virtual List<Loop_PAM_153> PAMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period Amount
     /// </summary>
@@ -162,7 +158,7 @@
     [Group(typeof(PAM))]
     public class Loop_PAM_153
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -186,7 +182,7 @@
         [Pos(3)]
         public virtual List<CHB> CHB { get; set; }
     }
-    
+
     /// <summary>
     /// Unemployment Insurance Tax Claim or Charge Information
     /// </summary>
@@ -195,7 +191,7 @@
     [Message("X12", "153")]
     public class TS153 : EdiMessage, ITS153
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

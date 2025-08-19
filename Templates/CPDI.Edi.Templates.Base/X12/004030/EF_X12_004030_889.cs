@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Line Item Detail - Promotion
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(G45))]
     public class Loop_G45_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -77,7 +73,7 @@
         [Pos(8)]
         public virtual List<QTY> QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Promotion Conditions
     /// </summary>
@@ -86,7 +82,7 @@
     [Group(typeof(G94))]
     public class Loop_G94_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -105,7 +101,7 @@
         [Pos(2)]
         public virtual List<G95> G95 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Promotion Conditions
     /// </summary>
@@ -114,7 +110,7 @@
     [Group(typeof(G94))]
     public class Loop_G94_889_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -133,7 +129,7 @@
         [Pos(2)]
         public virtual List<Loop_G95_889> G95Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Performance Requirements
     /// </summary>
@@ -142,7 +138,7 @@
     [Group(typeof(G95))]
     public class Loop_G95_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -161,7 +157,7 @@
         [Pos(2)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -170,7 +166,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -209,7 +205,7 @@
         [Pos(5)]
         public virtual List<Loop_G45_889> G45Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -218,7 +214,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -255,7 +251,7 @@
         [Pos(5)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Promotion Announcement
     /// </summary>
@@ -264,7 +260,7 @@
     [Message("X12", "889")]
     public class TS889 : EdiMessage, ITS889
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

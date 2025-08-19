@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Employment Position
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(EMS))]
     public class Loop_EMS_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,7 +67,7 @@
         [Pos(3)]
         public virtual List<Loop_NM1_274> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Health Care Provider License
     /// </summary>
@@ -80,7 +76,7 @@
     [Group(typeof(HPL))]
     public class Loop_HPL_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -98,7 +94,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Industry Code
     /// </summary>
@@ -107,7 +103,7 @@
     [Group(typeof(LQ))]
     public class Loop_LQ_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -151,7 +147,7 @@
         [Pos(6)]
         public virtual List<YNQ> YNQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -160,7 +156,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -315,7 +311,7 @@
         [Pos(23)]
         public virtual List<Loop_EMS_274> EMSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -324,7 +320,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -361,7 +357,7 @@
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -370,7 +366,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -389,7 +385,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Healthcare Provider Information
     /// </summary>
@@ -398,7 +394,7 @@
     [Message("X12", "274")]
     public class TS274 : EdiMessage, ITS274
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

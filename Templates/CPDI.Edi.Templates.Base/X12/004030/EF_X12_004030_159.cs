@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Date or Time or Period
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(DTP))]
     public class Loop_DTP_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -48,7 +44,7 @@
         [Pos(4)]
         public virtual List<Loop_N9_159> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Period
     /// </summary>
@@ -57,7 +53,7 @@
     [Group(typeof(G63))]
     public class Loop_G63_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -88,7 +84,7 @@
         [Pos(4)]
         public virtual List<Loop_N9_159> N9Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -97,7 +93,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -124,7 +120,7 @@
         [Pos(3)]
         public virtual List<Loop_THE_159> THELoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -133,7 +129,7 @@
     [Group(typeof(N9))]
     public class Loop_N9_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -169,7 +165,7 @@
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Screen Theater Identification
     /// </summary>
@@ -178,7 +174,7 @@
     [Group(typeof(THE))]
     public class Loop_THE_159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -246,7 +242,7 @@
         [Pos(10)]
         public virtual List<Loop_G63_159> G63Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Motion Picture Booking Confirmation
     /// </summary>
@@ -255,7 +251,7 @@
     [Message("X12", "159")]
     public class TS159 : EdiMessage, ITS159
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

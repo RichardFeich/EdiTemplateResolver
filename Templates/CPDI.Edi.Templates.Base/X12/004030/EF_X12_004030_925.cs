@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Identification of Claim (Tracer)
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(F10))]
     public class Loop_F10_925
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual F02 F02 { get; set; }
     }
-    
+
     /// <summary>
     /// Claim Tracer
     /// </summary>
@@ -45,7 +41,7 @@
     [Message("X12", "925")]
     public class TS925 : EdiMessage, ITS925
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

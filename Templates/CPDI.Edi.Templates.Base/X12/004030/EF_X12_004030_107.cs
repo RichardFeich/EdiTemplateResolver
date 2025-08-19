@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Rate Request Identifier
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CA1))]
     public class Loop_CA1_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -89,7 +85,7 @@
         [Pos(10)]
         public virtual Loop_N1_107_2 N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -98,7 +94,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -164,7 +160,7 @@
         [Pos(9)]
         public virtual List<Loop_CA1_107> CA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment or Container Owner and Type
     /// </summary>
@@ -173,7 +169,7 @@
     [Group(typeof(MS2))]
     public class Loop_MS2_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -191,7 +187,7 @@
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -200,7 +196,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -238,7 +234,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -247,7 +243,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_107_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -285,7 +281,7 @@
         [Pos(5)]
         public virtual List<G62> G62 { get; set; }
     }
-    
+
     /// <summary>
     /// Request for Motor Carrier Rate Proposal
     /// </summary>
@@ -294,7 +290,7 @@
     [Message("X12", "107")]
     public class TS107 : EdiMessage, ITS107
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

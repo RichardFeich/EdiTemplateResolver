@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Monetary Amount
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(AMT))]
     public class Loop_AMT_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -54,7 +50,7 @@
         [Pos(5)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Legal Claims
     /// </summary>
@@ -63,7 +59,7 @@
     [Group(typeof(BBC))]
     public class Loop_BBC_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -81,7 +77,7 @@
         [Pos(2)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Legal Claims
     /// </summary>
@@ -90,7 +86,7 @@
     [Group(typeof(BBC))]
     public class Loop_BBC_176_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -108,7 +104,7 @@
         [Pos(2)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Date/Time Reference
     /// </summary>
@@ -117,7 +113,7 @@
     [Group(typeof(DTM))]
     public class Loop_DTM_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -135,7 +131,7 @@
         [Pos(2)]
         public virtual List<CRC> CRC { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Electronic Format Identification
     /// </summary>
@@ -144,7 +140,7 @@
     [Group(typeof(EFI))]
     public class Loop_EFI_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -163,7 +159,7 @@
         [Pos(2)]
         public virtual BIN BIN { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -172,7 +168,7 @@
     [Group(typeof(FGS))]
     public class Loop_FGS_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -274,7 +270,7 @@
         [Pos(16)]
         public virtual List<Loop_EFI_176> EFILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -283,7 +279,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -314,7 +310,7 @@
         [Pos(4)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -323,7 +319,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -401,7 +397,7 @@
         [Pos(12)]
         public virtual List<Loop_DTM_176> DTMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Court Submission
     /// </summary>
@@ -410,7 +406,7 @@
     [Message("X12", "176")]
     public class TS176 : EdiMessage, ITS176
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

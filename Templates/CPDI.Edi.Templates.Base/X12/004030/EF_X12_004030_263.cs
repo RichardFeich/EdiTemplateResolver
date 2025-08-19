@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Period
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(G63))]
     public class Loop_G63_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual PCT PCT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -71,7 +67,7 @@
         [Pos(3)]
         public virtual List<Loop_REF_263> REFLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -80,7 +76,7 @@
     [Group(typeof(REF))]
     public class Loop_REF_263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -132,7 +128,7 @@
         [Pos(7)]
         public virtual List<Loop_G63_263> G63Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Residential Mortgage Insurance Application Response
     /// </summary>
@@ -141,7 +137,7 @@
     [Message("X12", "263")]
     public class TS263 : EdiMessage, ITS263
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

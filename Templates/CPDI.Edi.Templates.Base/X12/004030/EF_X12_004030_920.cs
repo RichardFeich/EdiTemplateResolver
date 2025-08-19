@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Identification of Shipment
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(F02))]
     public class Loop_F02_920
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -78,7 +74,7 @@
         [Pos(8)]
         public virtual List<Loop_F09_920> F09Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Detail - Supporting Evidence for Claim
     /// </summary>
@@ -87,7 +83,7 @@
     [Group(typeof(F09))]
     public class Loop_F09_920
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -119,7 +115,7 @@
         [Pos(4)]
         public virtual List<NTE> NTE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -128,7 +124,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_920
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -160,7 +156,7 @@
         [Pos(4)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loss or Damage Claim - General Commodities
     /// </summary>
@@ -169,7 +165,7 @@
     [Message("X12", "920")]
     public class TS920 : EdiMessage, ITS920
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

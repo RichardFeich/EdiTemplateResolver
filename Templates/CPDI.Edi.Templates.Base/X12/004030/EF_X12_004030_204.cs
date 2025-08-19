@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Contact
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(G61))]
     public class Loop_G61_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -51,7 +47,7 @@
         [Pos(4)]
         public virtual List<Loop_LH1_204> LH1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Description, Marks and Numbers
     /// </summary>
@@ -60,7 +56,7 @@
     [Group(typeof(L5))]
     public class Loop_L5_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -91,7 +87,7 @@
         [Pos(4)]
         public virtual List<Loop_G61_204> G61Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Description, Marks and Numbers
     /// </summary>
@@ -100,7 +96,7 @@
     [Group(typeof(L5))]
     public class Loop_L5_204_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -125,7 +121,7 @@
         [Pos(3)]
         public virtual List<Loop_G61_204> G61Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -134,7 +130,7 @@
     [Group(typeof(LH1))]
     public class Loop_LH1_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -187,7 +183,7 @@
         [Pos(7)]
         public virtual List<LHT> LHT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -196,7 +192,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -240,7 +236,7 @@
         [Pos(6)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -249,7 +245,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_204_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -287,7 +283,7 @@
         [Pos(5)]
         public virtual List<G61> G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Equipment Details
     /// </summary>
@@ -296,7 +292,7 @@
     [Group(typeof(N7))]
     public class Loop_N7_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -333,7 +329,7 @@
         [Pos(5)]
         public virtual List<M7> M7 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Order Identification Detail
     /// </summary>
@@ -342,7 +338,7 @@
     [Group(typeof(OID))]
     public class Loop_OID_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -375,7 +371,7 @@
         [Pos(4)]
         public virtual List<Loop_L5_204_2> L5Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Stop-off Details
     /// </summary>
@@ -384,7 +380,7 @@
     [Group(typeof(S5))]
     public class Loop_S5_204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -470,7 +466,7 @@
         [Pos(12)]
         public virtual List<Loop_N7_204> N7Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Load Tender
     /// </summary>
@@ -479,7 +475,7 @@
     [Message("X12", "204")]
     public class TS204 : EdiMessage, ITS204
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

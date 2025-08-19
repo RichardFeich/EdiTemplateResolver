@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Export Shipment Identifying Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(BA1))]
     public class Loop_BA1_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<Loop_X4_350_2> X4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Reference Identification
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(N9))]
     public class Loop_N9_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -65,7 +61,7 @@
         [Pos(2)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Port Information
     /// </summary>
@@ -74,7 +70,7 @@
     [Group(typeof(P4))]
     public class Loop_P4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -114,7 +110,7 @@
         [Pos(5)]
         public virtual List<Loop_X4_350> X4Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Customs Release Information
     /// </summary>
@@ -123,7 +119,7 @@
     [Group(typeof(X4))]
     public class Loop_X4_350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -150,7 +146,7 @@
         [Pos(3)]
         public virtual List<N7> N7 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Customs Release Information
     /// </summary>
@@ -159,7 +155,7 @@
     [Group(typeof(X4))]
     public class Loop_X4_350_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -178,7 +174,7 @@
         [Pos(2)]
         public virtual List<K1> K1 { get; set; }
     }
-    
+
     /// <summary>
     /// Customs Status Information
     /// </summary>
@@ -187,7 +183,7 @@
     [Message("X12", "350")]
     public class TS350 : EdiMessage, ITS350
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

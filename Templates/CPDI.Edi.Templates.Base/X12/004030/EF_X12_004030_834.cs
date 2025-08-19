@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Account Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(ACT))]
     public class Loop_ACT_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -68,7 +64,7 @@
         [Pos(7)]
         public virtual AMT AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Income
     /// </summary>
@@ -77,7 +73,7 @@
     [Group(typeof(AIN))]
     public class Loop_AIN_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -101,7 +97,7 @@
         [Pos(3)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Beneficiary or Owner Information
     /// </summary>
@@ -110,7 +106,7 @@
     [Group(typeof(BEN))]
     public class Loop_BEN_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -158,7 +154,7 @@
         [Pos(7)]
         public virtual DMG DMG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Coordination of Benefits
     /// </summary>
@@ -167,7 +163,7 @@
     [Group(typeof(COB))]
     public class Loop_COB_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -199,7 +195,7 @@
         [Pos(4)]
         public virtual List<Loop_NM1_834_2> NM1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Disability Information
     /// </summary>
@@ -208,7 +204,7 @@
     [Group(typeof(DSB))]
     public class Loop_DSB_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -234,7 +230,7 @@
         [Pos(3)]
         public virtual List<AD1> AD1 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Financial Contribution
     /// </summary>
@@ -243,7 +239,7 @@
     [Group(typeof(FC))]
     public class Loop_FC_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -267,7 +263,7 @@
         [Pos(3)]
         public virtual List<Loop_INV_834> INVLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Flexible Spending Account
     /// </summary>
@@ -276,7 +272,7 @@
     [Group(typeof(FSA))]
     public class Loop_FSA_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -308,7 +304,7 @@
         [Pos(4)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Health Coverage
     /// </summary>
@@ -317,7 +313,7 @@
     [Group(typeof(HD))]
     public class Loop_HD_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -370,7 +366,7 @@
         [Pos(7)]
         public virtual List<Loop_COB_834> COBLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Insured Benefit
     /// </summary>
@@ -379,7 +375,7 @@
     [Group(typeof(INS))]
     public class Loop_INS_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -444,7 +440,7 @@
         [Pos(9)]
         public virtual List<Loop_RP_834> RPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Investment Vehicle Selection
     /// </summary>
@@ -453,7 +449,7 @@
     [Group(typeof(INV))]
     public class Loop_INV_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -503,7 +499,7 @@
         [Pos(7)]
         public virtual List<K3> K3 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Life Coverage
     /// </summary>
@@ -512,7 +508,7 @@
     [Group(typeof(LC))]
     public class Loop_LC_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -551,7 +547,7 @@
         [Pos(5)]
         public virtual List<Loop_BEN_834> BENLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -560,7 +556,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -631,7 +627,7 @@
         [Pos(10)]
         public virtual PLA PLA { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -640,7 +636,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -686,7 +682,7 @@
         [Pos(6)]
         public virtual List<Loop_ACT_834> ACTLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -695,7 +691,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -775,7 +771,7 @@
         [Pos(12)]
         public virtual List<LUI> LUI { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -784,7 +780,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_834_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -821,7 +817,7 @@
         [Pos(5)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -830,7 +826,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_834_3
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -872,7 +868,7 @@
         [Pos(6)]
         public virtual List<Loop_NX1_834> NX1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -881,7 +877,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -911,7 +907,7 @@
         [Pos(4)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Retirement Product
     /// </summary>
@@ -920,7 +916,7 @@
     [Group(typeof(RP))]
     public class Loop_RP_834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -995,7 +991,7 @@
         [Pos(11)]
         public virtual List<Loop_AIN_834> AINLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Benefit Enrollment and Maintenance
     /// </summary>
@@ -1004,7 +1000,7 @@
     [Message("X12", "834")]
     public class TS834 : EdiMessage, ITS834
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

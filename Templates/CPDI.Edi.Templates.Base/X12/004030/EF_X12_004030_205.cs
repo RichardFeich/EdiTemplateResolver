@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Change Detail Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CDI))]
     public class Loop_CDI_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -36,7 +32,7 @@
         [Pos(2)]
         public virtual List<Loop_LX_205> LXLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual Identification
     /// </summary>
@@ -45,7 +41,7 @@
     [Group(typeof(IN1))]
     public class Loop_IN1_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -84,7 +80,7 @@
         [Pos(5)]
         public virtual List<Loop_NX1_205> NX1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -93,7 +89,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -146,7 +142,7 @@
         [Pos(7)]
         public virtual List<III> III { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Note Characteristics
     /// </summary>
@@ -155,7 +151,7 @@
     [Group(typeof(MNC))]
     public class Loop_MNC_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -247,7 +243,7 @@
         [Pos(13)]
         public virtual List<Loop_IN1_205> IN1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Individual or Organizational Name
     /// </summary>
@@ -256,7 +252,7 @@
     [Group(typeof(NM1))]
     public class Loop_NM1_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -302,7 +298,7 @@
         [Pos(6)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Property or Entity Identification
     /// </summary>
@@ -311,7 +307,7 @@
     [Group(typeof(NX1))]
     public class Loop_NX1_205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -335,7 +331,7 @@
         [Pos(3)]
         public virtual List<PDS> PDS { get; set; }
     }
-    
+
     /// <summary>
     /// Mortgage Note
     /// </summary>
@@ -344,7 +340,7 @@
     [Message("X12", "205")]
     public class TS205 : EdiMessage, ITS205
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Claim Status Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CSI))]
     public class Loop_CSI_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -119,7 +115,7 @@
         [Pos(14)]
         public virtual List<Loop_FIS_260> FISLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Default Information
     /// </summary>
@@ -128,7 +124,7 @@
     [Group(typeof(DFI))]
     public class Loop_DFI_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -156,7 +152,7 @@
         [Pos(3)]
         public virtual List<AMT> AMT { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Foreclosure
     /// </summary>
@@ -165,7 +161,7 @@
     [Group(typeof(FCL))]
     public class Loop_FCL_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -184,7 +180,7 @@
         [Pos(2)]
         public virtual List<DTP> DTP { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Mortgage Loan Fiscal Data
     /// </summary>
@@ -193,7 +189,7 @@
     [Group(typeof(FIS))]
     public class Loop_FIS_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -217,7 +213,7 @@
         [Pos(3)]
         public virtual MSG MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -226,7 +222,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -268,7 +264,7 @@
         [Pos(6)]
         public virtual PER PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Real Estate Condition
     /// </summary>
@@ -277,7 +273,7 @@
     [Group(typeof(REC))]
     public class Loop_REC_260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -309,7 +305,7 @@
         [Pos(4)]
         public virtual Loop_FCL_260 FCLLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Application for Mortgage Insurance Benefits
     /// </summary>
@@ -318,7 +314,7 @@
     [Message("X12", "260")]
     public class TS260 : EdiMessage, ITS260
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Product Information
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(G21))]
     public class Loop_G21_878
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -62,7 +58,7 @@
         [Pos(6)]
         public virtual List<Loop_N1_878_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -71,7 +67,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_878
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -102,7 +98,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -111,7 +107,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_878_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -167,7 +163,7 @@
         [Pos(8)]
         public virtual List<G72> G72 { get; set; }
     }
-    
+
     /// <summary>
     /// Product Authorization/De-authorization
     /// </summary>
@@ -176,7 +172,7 @@
     [Message("X12", "878")]
     public class TS878 : EdiMessage, ITS878
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

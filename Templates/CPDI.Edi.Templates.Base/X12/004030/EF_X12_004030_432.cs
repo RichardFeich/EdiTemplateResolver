@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Car Information Control
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CIC))]
     public class Loop_CIC_432
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -43,7 +39,7 @@
         [Pos(3)]
         public virtual QTY QTY { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -52,7 +48,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_432
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,7 +82,7 @@
         [Pos(4)]
         public virtual List<Loop_CIC_432> CICLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Rail Deprescription
     /// </summary>
@@ -95,7 +91,7 @@
     [Message("X12", "432")]
     public class TS432 : EdiMessage, ITS432
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

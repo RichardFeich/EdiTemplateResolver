@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Automatic Equipment Identification
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(EI))]
     public class Loop_EI_160
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -58,7 +54,7 @@
         [Pos(5)]
         public virtual List<Loop_TSI_160> TSILoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Quantity
     /// </summary>
@@ -67,7 +63,7 @@
     [Group(typeof(QTY))]
     public class Loop_QTY_160
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -86,7 +82,7 @@
         [Pos(2)]
         public virtual List<DTM> DTM { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Automatic Equipment Tag Status Information
     /// </summary>
@@ -95,7 +91,7 @@
     [Group(typeof(TSI))]
     public class Loop_TSI_160
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -128,7 +124,7 @@
         [Pos(4)]
         public virtual List<Loop_QTY_160> QTYLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Transportation Automatic Equipment Identification
     /// </summary>
@@ -137,7 +133,7 @@
     [Message("X12", "160")]
     public class TS160 : EdiMessage, ITS160
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Forecast Schedule
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(FST))]
     public class Loop_FST_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -49,7 +45,7 @@
         [Pos(4)]
         public virtual List<Loop_LM_830> LMLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Item Identification
     /// </summary>
@@ -58,7 +54,7 @@
     [Group(typeof(LIN))]
     public class Loop_LIN_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -285,7 +281,7 @@
         [Pos(33)]
         public virtual List<Loop_SHP_830> SHPLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -294,7 +290,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -314,7 +310,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -323,7 +319,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -375,7 +371,7 @@
         [Pos(7)]
         public virtual FOB FOB { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Ship/Delivery Pattern
     /// </summary>
@@ -384,7 +380,7 @@
     [Group(typeof(SDP))]
     public class Loop_SDP_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -403,7 +399,7 @@
         [Pos(2)]
         public virtual List<FST> FST { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Shipped/Received Information
     /// </summary>
@@ -412,7 +408,7 @@
     [Group(typeof(SHP))]
     public class Loop_SHP_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -431,7 +427,7 @@
         [Pos(2)]
         public virtual List<REF> REF { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Subline Item Detail
     /// </summary>
@@ -440,7 +436,7 @@
     [Group(typeof(SLN))]
     public class Loop_SLN_830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -466,7 +462,7 @@
         [Pos(3)]
         public virtual List<NM1> NM1 { get; set; }
     }
-    
+
     /// <summary>
     /// Planning Schedule with Release Capability
     /// </summary>
@@ -475,7 +471,7 @@
     [Message("X12", "830")]
     public class TS830 : EdiMessage, ITS830
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

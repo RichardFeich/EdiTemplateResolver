@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Summary Freight Bill Detail
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(CF2))]
     public class Loop_CF2_224
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<L11> L11 { get; set; }
     }
-    
+
     /// <summary>
     /// Motor Carrier Summary Freight Bill Manifest
     /// </summary>
@@ -46,7 +42,7 @@
     [Message("X12", "224")]
     public class TS224 : EdiMessage, ITS224
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

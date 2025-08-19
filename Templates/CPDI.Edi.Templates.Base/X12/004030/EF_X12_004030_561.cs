@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(FA1))]
     public class Loop_FA1_561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -50,7 +46,7 @@
         [Pos(4)]
         public virtual N9 N9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hierarchical Level
     /// </summary>
@@ -59,7 +55,7 @@
     [Group(typeof(HL))]
     public class Loop_HL_561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -154,7 +150,7 @@
         [Pos(14)]
         public virtual List<Loop_SCH_561> SCHLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -163,7 +159,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -183,7 +179,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -192,7 +188,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -230,7 +226,7 @@
         [Pos(5)]
         public virtual G61 G61 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -239,7 +235,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_561_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -271,7 +267,7 @@
         [Pos(4)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Schedule
     /// </summary>
@@ -280,7 +276,7 @@
     [Group(typeof(SCH))]
     public class Loop_SCH_561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -298,7 +294,7 @@
         [Pos(2)]
         public virtual List<Loop_N1_561_2> N1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Contract Abstract
     /// </summary>
@@ -307,7 +303,7 @@
     [Message("X12", "561")]
     public class TS561 : EdiMessage, ITS561
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

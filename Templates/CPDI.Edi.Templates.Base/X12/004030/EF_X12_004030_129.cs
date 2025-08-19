@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Rate Destination
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(RT))]
     public class Loop_RT_129
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -38,7 +34,7 @@
         [Pos(2)]
         public virtual List<RT1> RT1 { get; set; }
     }
-    
+
     /// <summary>
     /// Vehicle Carrier Rate Update
     /// </summary>
@@ -47,7 +43,7 @@
     [Message("X12", "129")]
     public class TS129 : EdiMessage, ITS129
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

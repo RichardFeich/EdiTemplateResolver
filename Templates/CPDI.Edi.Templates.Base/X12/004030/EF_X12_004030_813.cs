@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Form Group
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(FGS))]
     public class Loop_FGS_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -57,7 +53,7 @@
         [Pos(5)]
         public virtual List<Loop_TIA_813> TIALoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -66,7 +62,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -112,7 +108,7 @@
         [Pos(6)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -121,7 +117,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_813_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -160,7 +156,7 @@
         [Pos(5)]
         public virtual N4 N4 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Form
     /// </summary>
@@ -169,7 +165,7 @@
     [Group(typeof(TFS))]
     public class Loop_TFS_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -222,7 +218,7 @@
         [Pos(7)]
         public virtual List<Loop_FGS_813> FGSLoop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Tax Information and Amount
     /// </summary>
@@ -231,7 +227,7 @@
     [Group(typeof(TIA))]
     public class Loop_TIA_813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -257,7 +253,7 @@
         [Pos(3)]
         public virtual List<MSG> MSG { get; set; }
     }
-    
+
     /// <summary>
     /// Electronic Filing of Tax Return Data
     /// </summary>
@@ -266,7 +262,7 @@
     [Message("X12", "813")]
     public class TS813 : EdiMessage, ITS813
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }

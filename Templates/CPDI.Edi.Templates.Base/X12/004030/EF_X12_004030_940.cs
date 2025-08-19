@@ -1,15 +1,11 @@
-﻿namespace EdiFabric.Templates.X12004030
+﻿namespace CPDI.EdiFabric.Templates.Base.X12004030
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using EdiFabric.Core.Annotations.Edi;
-    using EdiFabric.Core.Annotations.Validation;
-    using EdiFabric.Core.Model.Edi;
-    using EdiFabric.Core.Model.Edi.X12;
     using System.Xml.Serialization;
-    
-    
+
+
     /// <summary>
     /// Loop for Type of Financial Accounting Data
     /// </summary>
@@ -18,7 +14,7 @@
     [Group(typeof(FA1))]
     public class Loop_FA1_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -37,7 +33,7 @@
         [Pos(2)]
         public virtual List<FA2> FA2 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Hazardous Identification Information
     /// </summary>
@@ -46,7 +42,7 @@
     [Group(typeof(LH1))]
     public class Loop_LH1_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -113,7 +109,7 @@
         [Pos(9)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Code Source Information
     /// </summary>
@@ -122,7 +118,7 @@
     [Group(typeof(LM))]
     public class Loop_LM_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -142,7 +138,7 @@
         [Pos(2)]
         public virtual List<LQ> LQ { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Loop Header
     /// </summary>
@@ -151,7 +147,7 @@
     [Group(typeof(LS))]
     public class Loop_LS_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -176,7 +172,7 @@
         [Pos(3)]
         public virtual LE LE { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -185,7 +181,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -234,7 +230,7 @@
         [Pos(7)]
         public virtual List<Loop_W01_940> W01Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Assigned Number
     /// </summary>
@@ -243,7 +239,7 @@
     [Group(typeof(LX))]
     public class Loop_LX_940_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -293,7 +289,7 @@
         [Pos(7)]
         public virtual List<Loop_LH1_940> LH1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -302,7 +298,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -341,7 +337,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Name
     /// </summary>
@@ -350,7 +346,7 @@
     [Group(typeof(N1))]
     public class Loop_N1_940_2
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -387,7 +383,7 @@
         [Pos(5)]
         public virtual List<PER> PER { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Carrier Details (Equipment)
     /// </summary>
@@ -396,7 +392,7 @@
     [Group(typeof(TD3))]
     public class Loop_TD3_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -414,7 +410,7 @@
         [Pos(2)]
         public virtual AT9 AT9 { get; set; }
     }
-    
+
     /// <summary>
     /// Loop for Line Item Detail - Warehouse
     /// </summary>
@@ -423,7 +419,7 @@
     [Group(typeof(W01))]
     public class Loop_W01_940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
@@ -533,7 +529,7 @@
         [Pos(16)]
         public virtual List<Loop_FA1_940> FA1Loop { get; set; }
     }
-    
+
     /// <summary>
     /// Warehouse Shipping Order
     /// </summary>
@@ -542,7 +538,7 @@
     [Message("X12", "940")]
     public class TS940 : EdiMessage, ITS940
     {
-        
+
         [XmlIgnore]
         [IgnoreDataMember]
         public int Id { get; set; }
