@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12005010
+﻿namespace EdiFabric.Templates.X12005010
 {
     using System;
     using System.Collections.Generic;
@@ -234,7 +234,7 @@ namespace EdiFabric.Templates.X12005010
     [Serializable()]
     [DataContract()]
     [Message("X12", "196")]
-    public class TS196 : EdiMessage
+    public class TS196 : EdiMessage, ITS196
     {
 
         [XmlIgnore]
@@ -287,3 +287,4 @@ namespace EdiFabric.Templates.X12005010
         public virtual SE SE { get; set; }
     }
 }
+

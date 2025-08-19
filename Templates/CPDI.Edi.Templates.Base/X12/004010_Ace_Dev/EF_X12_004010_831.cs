@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12004000_Ace_Dev
+﻿namespace EdiFabric.Templates.X12004000_Ace_Dev
 {
     using System;
     using System.Collections.Generic;
@@ -43,7 +43,7 @@ namespace EdiFabric.Templates.X12004000_Ace_Dev
     [Serializable()]
     [DataContract()]
     [Message("X12", "831")]
-    public class TS831 : EdiMessage
+    public class TS831 : EdiMessage, ITS831
     {
 
         [XmlIgnore]
@@ -102,3 +102,4 @@ namespace EdiFabric.Templates.X12004000_Ace_Dev
         public virtual SE SE { get; set; }
     }
 }
+

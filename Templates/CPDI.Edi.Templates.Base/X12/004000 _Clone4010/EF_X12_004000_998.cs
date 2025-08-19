@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12004000
+﻿namespace EdiFabric.Templates.X12004000
 {
     using System;
     using System.Runtime.Serialization;
@@ -15,7 +15,7 @@ namespace EdiFabric.Templates.X12004000
     [Serializable()]
     [DataContract()]
     [Message("X12", "998")]
-    public class TS998 : EdiMessage
+    public class TS998 : EdiMessage, ITS998
     {
 
         [XmlIgnore]
@@ -42,3 +42,4 @@ namespace EdiFabric.Templates.X12004000
         public virtual SE SE { get; set; }
     }
 }
+

@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12005010
+﻿namespace EdiFabric.Templates.X12005010
 {
     using System;
     using System.Runtime.Serialization;
@@ -15,7 +15,7 @@ namespace EdiFabric.Templates.X12005010
     [Serializable()]
     [DataContract()]
     [Message("X12", "466")]
-    public class TS466 : EdiMessage
+    public class TS466 : EdiMessage, ITS466
     {
 
         [XmlIgnore]
@@ -66,3 +66,4 @@ namespace EdiFabric.Templates.X12005010
         public virtual SE SE { get; set; }
     }
 }
+

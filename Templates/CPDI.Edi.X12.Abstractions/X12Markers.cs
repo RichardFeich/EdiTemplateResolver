@@ -168,6 +168,7 @@ namespace CPDI.Edi.X12.Abstractions
     public interface ITS215 : IX12Transaction { }
     public interface ITS216 : IX12Transaction { }
     public interface ITS217 : IX12Transaction { }
+    public interface ITS218 : IX12Transaction { }
     public interface ITS219 : IX12Transaction { }
     public interface ITS220 : IX12Transaction { }
     public interface ITS222 : IX12Transaction { }
