@@ -6,7 +6,8 @@
   .\RenameFiles.ps1 -Path "C:\Projects\Templates" -WhatIf
 
 .EXAMPLE
-  .\RenameFiles.ps1 -Path . -FromVersion 004010 -ToVersion 004000 -Recurse
+  .\RenameFiles.ps1 -Path 'C:\Projects\CPDI_EDI\src\TemplateResolver\Templates\CPDI.Edi.Templates.Base\X12\004000 _Clone4010' -FromVersion 004010 -ToVersion 004000 -Recurse
+  .\RenameFiles.ps1 -Path 'C:\Projects\CPDI_EDI\src\TemplateResolver\Templates\CPDI.Edi.Templates.Base\X12\004060_Clone4050' -FromVersion 004050 -ToVersion 004060 -Recurse
 
 .NOTES
   - Only renames when the exact FromVersion appears between underscores in the name.
