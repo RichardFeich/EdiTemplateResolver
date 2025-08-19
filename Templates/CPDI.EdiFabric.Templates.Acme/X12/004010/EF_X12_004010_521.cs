@@ -1,4 +1,4 @@
-namespace CPDI.EdiFabric.Templates.X12004010.Acme
+﻿namespace CPDI.EdiFabric.Templates.X12004010.Acme
 {
     using System;
     using System.Collections.Generic;
@@ -285,7 +285,7 @@ namespace CPDI.EdiFabric.Templates.X12004010.Acme
     [Serializable()]
     [DataContract()]
     [Message("X12", "521")]
-    public class TS521 : EdiMessage
+    public class TS521 : EdiMessage, ITS521
     {
 
         [XmlIgnore]
@@ -367,3 +367,4 @@ namespace CPDI.EdiFabric.Templates.X12004010.Acme
         public virtual SE SE { get; set; }
     }
 }
+

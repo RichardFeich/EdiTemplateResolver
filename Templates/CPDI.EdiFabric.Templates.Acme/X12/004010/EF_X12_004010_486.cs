@@ -1,4 +1,4 @@
-namespace CPDI.EdiFabric.Templates.X12004010.Acme
+﻿namespace CPDI.EdiFabric.Templates.X12004010.Acme
 {
     using System;
     using System.Runtime.Serialization;
@@ -11,7 +11,7 @@ namespace CPDI.EdiFabric.Templates.X12004010.Acme
     [Serializable()]
     [DataContract()]
     [Message("X12", "486")]
-    public class TS486 : EdiMessage
+    public class TS486 : EdiMessage, ITS486
     {
 
         [XmlIgnore]
@@ -58,3 +58,4 @@ namespace CPDI.EdiFabric.Templates.X12004010.Acme
         public virtual SE SE { get; set; }
     }
 }
+
