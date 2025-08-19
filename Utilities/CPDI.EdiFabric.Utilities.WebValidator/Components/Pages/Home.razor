@@ -1,7 +1,135 @@
 ﻿@page "/"
+@using CPDI.EdiFabric.Utilities.WebValidator.Service
 
-<PageTitle>Home</PageTitle>
+@inject IEdiValidationService ValidationService
+@rendermode InteractiveServer
 
-<h1>Hello, world!</h1>
+<h3>EDI Upload & Validate</h3>
 
-Welcome to your new app.
+<InputFile OnChange="OnBlazorInputFileChange" accept=".txt,.edi,.x12,.edi.txt" />
+
+@if (_busy)
+{
+    <p><em>Validating…</em></p>
+}
+
+@if (_error is not null)
+{
+    <div class="text-red-600">@_error</div>
+}
+
+@if (_summary is not null)
+{
+    <div class="mt-3">
+        <h4>Summary</h4>
+        <ul>
+            <li><strong>Overall valid:</strong> @_summary.IsValid</li>
+            <li><strong>Items:</strong> @_summary.ItemsCount</li>
+            <li><strong>Template:</strong> @_summary.SelectedTemplateFullName (@_summary.SelectedTemplateAssembly)</li>
+            <li><strong>Assembly:</strong>@_summary.SelectedTemplateAssembly</li>
+        </ul>
+
+        @if (_summary.Messages?.Count > 0)
+        {
+            <details class="mt-2">
+                <summary>Messages (@_summary.Messages.Count)</summary>
+                <ul>
+                    @foreach (var m in _summary.Messages)
+                    {
+                        <li>@m</li>
+                    }
+                </ul>
+            </details>
+        }
+
+        <h4 class="mt-4">Items</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Valid</th>
+                    <th>Name</th>
+                    <th>Ctrl #</th>
+                    <th>Edition</th>
+                    <th>Release</th>
+                    <th>Validated Segments</th>
+                    <th>Has Errors</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var (item, i) in _summary.Items.Select((x, i) => (x, i)))
+                {
+                    <tr class="@(item.HasErrors ? "table-warning" : string.Empty)">
+                        <td>@i</td>
+                        <td>@item.IsValid</td>
+                        <td>@item.Name</td>
+                        <td>@item.ControlNumber</td>
+                        <td>@item.Edition</td>
+                        <td>@item.Release</td>
+                        <td>@item.ValidatedSegmentsCount</td>
+                        <td>@item.HasErrors</td>
+                    </tr>
+                    @if (item.Flattened?.Count > 0)
+                    {
+                        <tr>
+                            <td colspan="8">
+                                <details>
+                                    <summary>Details (Flattened)</summary>
+                                    <ul>
+                                        @foreach (var f in item.Flattened)
+                                        {
+                                            <li>@f</li>
+                                        }
+                                    </ul>
+                                </details>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    private bool _busy;
+    private string? _error;
+    private EdiValidationSummary? _summary;
+
+    private async Task OnBlazorInputFileChange(InputFileChangeEventArgs e)
+    {
+        _error = null;
+        _summary = null;
+        _busy = true;
+        try
+        {
+            var file = e.File;
+            if (file.Size == 0)
+            {
+                _error = "File is empty.";
+                return;
+			}  
+            
+            using var cts = new CancellationTokenSource();
+            cts.CancelAfter(TimeSpan.FromMinutes(10));
+
+            using var src = file.OpenReadStream(maxAllowedSize: 50 * 1024 * 1024); // 50 MB
+            using var ms = new MemoryStream();     // buffer so we can seek / re-read safely
+            await src.CopyToAsync(ms, cts.Token);
+            ms.Position = 0;
+
+            _summary = await ValidationService.ValidateAsync(ms, cts.Token);
+        }
+        catch (Exception ex)
+        {
+            //Log.LogError(ex, "EDI validation failed");
+            _error = ex.Message;
+        }
+        finally
+        {
+            _busy = false;
+            StateHasChanged();
+        }
+    }
+}
+

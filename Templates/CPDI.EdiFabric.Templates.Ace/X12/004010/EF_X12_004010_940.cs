@@ -465,7 +465,7 @@ namespace CPDI.EdiFabric.Templates.Ace.X12004010
     [Serializable()]
     [DataContract()]
     [Message("X12", "940")]
-    public class TS940 : EdiMessage , ITS850
+    public class TS940 : EdiMessage, ITS850
     {
 
         [XmlIgnore]

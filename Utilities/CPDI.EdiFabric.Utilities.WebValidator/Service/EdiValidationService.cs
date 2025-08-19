@@ -1,9 +1,9 @@
 ﻿using CPDI.EdiFabric.Utilities.Infrastructure;
 using CPDI.EdiFabric.Utilities.Interfaces;
 using CPDI.EdiFabric.Utilities.Models;
-using CPDI.EdiFabric.Utilities.WebValidator.Models;
 using EdiFabric.Core.Model.Edi;
 using EdiFabric.Framework.Readers;
+using Microsoft.Extensions.Logging;
 using EdiValidationSummary = CPDI.EdiFabric.Utilities.Models.EdiValidationSummary;
 
 namespace CPDI.EdiFabric.Utilities.WebValidator.Service
@@ -40,7 +40,6 @@ namespace CPDI.EdiFabric.Utilities.WebValidator.Service
 
             try
             {
-
                 IEdiTemplateResolver resolver = new DbEdiTemplateResolver(_connectionString);
                 var dbTemplateFactory = new DbTemplateFactory(resolver);
 
@@ -58,7 +57,7 @@ namespace CPDI.EdiFabric.Utilities.WebValidator.Service
                 var results = await validator.ValidateX12Async(ediStream, validatorOptions);
 
                 // 5) Map results to DTOs
-                var items = results?.ToList() ?? new List<Utilities.Models.EdiValidationItemResult>();
+                var items = results?.ToList() ?? new List<EdiValidationItemResult>();
 
                 if (results is not null)
                 {
@@ -80,14 +79,17 @@ namespace CPDI.EdiFabric.Utilities.WebValidator.Service
                         Items: items,
                         Messages: items.SelectMany(i => i.RawContext?.Flatten() ?? i.Flattened).ToArray());
                 return summary;
-
+            }
+            catch(Exception ex)
+            {
+                _log.LogError($"error: {ex}");
+                throw;
 
             }
             finally
             {
                 buffer?.Dispose();
             }
-
         }
     }
 }
