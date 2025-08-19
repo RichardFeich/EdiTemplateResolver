@@ -1,4 +1,4 @@
-namespace EdiFabric.Templates.X12004010_Ace_Dev
+namespace EdiFabric.Templates.X12004000_Ace_Dev
 {
 
 
