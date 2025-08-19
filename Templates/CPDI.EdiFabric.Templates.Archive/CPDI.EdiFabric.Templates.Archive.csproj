@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="X12\**" />
+    <EmbeddedResource Remove="X12\**" />
+    <None Remove="X12\**" />
+  </ItemGroup>
+
 </Project>

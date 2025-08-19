@@ -19,7 +19,6 @@
     <Compile Remove="X12\004010_Ace\**" />
     <Compile Remove="X12\004010_Ace_Dev\**" />
     <Compile Remove="X12\004020\**" />
-    <Compile Remove="X12\004030\**" />
     <Compile Remove="X12\004040\**" />
     <Compile Remove="X12\004050\**" />
     <Compile Remove="X12\005020\**" />
@@ -45,7 +44,6 @@
     <EmbeddedResource Remove="X12\004010_Ace\**" />
     <EmbeddedResource Remove="X12\004010_Ace_Dev\**" />
     <EmbeddedResource Remove="X12\004020\**" />
-    <EmbeddedResource Remove="X12\004030\**" />
     <EmbeddedResource Remove="X12\004040\**" />
     <EmbeddedResource Remove="X12\004050\**" />
     <EmbeddedResource Remove="X12\005020\**" />
@@ -71,7 +69,6 @@
     <None Remove="X12\004010_Ace\**" />
     <None Remove="X12\004010_Ace_Dev\**" />
     <None Remove="X12\004020\**" />
-    <None Remove="X12\004030\**" />
     <None Remove="X12\004040\**" />
     <None Remove="X12\004050\**" />
     <None Remove="X12\005020\**" />
